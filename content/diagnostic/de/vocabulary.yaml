@@ -4,7 +4,7 @@ language: de
 skill: vocabulary
 key_confidence: reviewed
 reviewed_by: "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
-reviewed_at: "2026-10-17T12:00:00+07:00"
+reviewed_at: "2026-10-21T14:00:00+07:00"
 items:
   # ---------- pre_a1 ----------
   - key: de:diag:voc-pre-a1-danke

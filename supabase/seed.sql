@@ -50665,7 +50665,7 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Welchen Weihnachtsbaum nimmst du? – Ich nehme {{b1}} {{b2}} Baum hier. (dieser, groß)"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
@@ -50737,7 +50737,7 @@ select content_private.import_bundle($bundle${
         ],
         "template": "Auf unserer Hochzeit bekommt {{b1}} Gast eine kleine Kerze."
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
@@ -50798,7 +50798,7 @@ select content_private.import_bundle($bundle${
         ],
         "shuffle": true
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
@@ -50859,7 +50859,7 @@ select content_private.import_bundle($bundle${
         "stem": "Chọn từ đúng: ___ Fest feiern wir jedes Jahr. (das Fest)",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
@@ -50920,7 +50920,7 @@ select content_private.import_bundle($bundle${
         "stem": "Chiều 31/12 bạn gặp ông hàng xóm lớn tuổi (bạn vẫn xưng Sie với ông). Bạn chúc câu nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
@@ -50981,7 +50981,7 @@ select content_private.import_bundle($bundle${
         "stem": "Chọn từ đúng: Wir feiern Tết nicht im Dezember, ___ im Januar oder Februar.",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
@@ -51042,7 +51042,7 @@ select content_private.import_bundle($bundle${
         "source_lang": "vi",
         "source_text": "Năm nào chúng tôi cũng ăn Tết ở Hà Nội."
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
@@ -51127,7 +51127,7 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
@@ -51223,7 +51223,7 @@ select content_private.import_bundle($bundle${
           }
         ]
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
@@ -816341,7 +816341,7 @@ select content_private.import_bundle($bundle${
       "key": "ja:item:n3-dekakeru",
       "language_code": "ja",
       "level_code": "n3",
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
@@ -817063,7 +817063,7 @@ select content_private.import_bundle($bundle${
       "key": "ja:item:n3-gram-kawari-ni",
       "language_code": "ja",
       "level_code": "n3",
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
@@ -817314,7 +817314,7 @@ select content_private.import_bundle($bundle${
       "key": "ja:item:n3-gram-koto-ni-suru",
       "language_code": "ja",
       "level_code": "n3",
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
@@ -818071,7 +818071,7 @@ select content_private.import_bundle($bundle${
       "key": "ja:item:n3-gram-ta-bakari",
       "language_code": "ja",
       "level_code": "n3",
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
@@ -818110,7 +818110,7 @@ select content_private.import_bundle($bundle${
       "key": "ja:item:n3-gram-tabi-ni",
       "language_code": "ja",
       "level_code": "n3",
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
@@ -818285,7 +818285,7 @@ select content_private.import_bundle($bundle${
       "key": "ja:item:n3-gram-tokoro-da",
       "language_code": "ja",
       "level_code": "n3",
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
@@ -818367,7 +818367,7 @@ select content_private.import_bundle($bundle${
       "key": "ja:item:n3-gram-tsuide-ni",
       "language_code": "ja",
       "level_code": "n3",
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
@@ -818490,7 +818490,7 @@ select content_private.import_bundle($bundle${
       "key": "ja:item:n3-gram-wari-ni",
       "language_code": "ja",
       "level_code": "n3",
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
@@ -818619,7 +818619,7 @@ select content_private.import_bundle($bundle${
       "key": "ja:item:n3-gram-you-ni-naru",
       "language_code": "ja",
       "level_code": "n3",
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "grammar"
@@ -818911,7 +818911,7 @@ select content_private.import_bundle($bundle${
       "key": "ja:item:n3-hayaoki",
       "language_code": "ja",
       "level_code": "n3",
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
@@ -819037,7 +819037,7 @@ select content_private.import_bundle($bundle${
       "key": "ja:item:n3-hinshitsu",
       "language_code": "ja",
       "level_code": "n3",
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
@@ -819462,7 +819462,7 @@ select content_private.import_bundle($bundle${
       "key": "ja:item:n3-jisui",
       "language_code": "ja",
       "level_code": "n3",
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
@@ -819978,7 +819978,7 @@ select content_private.import_bundle($bundle${
       "key": "ja:item:n3-keiken",
       "language_code": "ja",
       "level_code": "n3",
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
@@ -820105,7 +820105,7 @@ select content_private.import_bundle($bundle${
       "key": "ja:item:n3-kenkou",
       "language_code": "ja",
       "level_code": "n3",
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
@@ -820189,7 +820189,7 @@ select content_private.import_bundle($bundle${
       "key": "ja:item:n3-ki-ga-tsuku",
       "language_code": "ja",
       "level_code": "n3",
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
@@ -820401,7 +820401,7 @@ select content_private.import_bundle($bundle${
       "key": "ja:item:n3-kyuuryou",
       "language_code": "ja",
       "level_code": "n3",
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
@@ -821136,7 +821136,7 @@ select content_private.import_bundle($bundle${
       "key": "ja:item:n3-nyuusha",
       "language_code": "ja",
       "level_code": "n3",
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
@@ -821219,7 +821219,7 @@ select content_private.import_bundle($bundle${
       "key": "ja:item:n3-omoidasu",
       "language_code": "ja",
       "level_code": "n3",
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
@@ -821734,7 +821734,7 @@ select content_private.import_bundle($bundle${
       "key": "ja:item:n3-setsuyaku",
       "language_code": "ja",
       "level_code": "n3",
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
@@ -822162,7 +822162,7 @@ select content_private.import_bundle($bundle${
       "key": "ja:item:n3-shuukan",
       "language_code": "ja",
       "level_code": "n3",
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
@@ -822593,7 +822593,7 @@ select content_private.import_bundle($bundle${
       "key": "ja:item:n3-todoku",
       "language_code": "ja",
       "level_code": "n3",
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
@@ -828218,7 +828218,7 @@ select content_private.import_bundle($bundle${
       "key": "ja:item:n3-yoru",
       "language_code": "ja",
       "level_code": "n3",
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
@@ -828344,7 +828344,7 @@ select content_private.import_bundle($bundle${
       "key": "ja:item:n3-yuubinkyoku",
       "language_code": "ja",
       "level_code": "n3",
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
@@ -996325,7 +996325,7 @@ select content_private.import_bundle($bundle${
         }
       ],
       "order_index": 1,
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ",
       "skills": [
         "grammar",
@@ -1110869,7 +1110869,7 @@ select content_private.import_bundle($bundle${
       "key": "de:unit:a1u08-gesundheit-aemter",
       "order_index": 9,
       "program_id": "6106cbb4-ebc2-5a2e-b378-8898ba391ce8",
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published",
@@ -1111004,7 +1111004,7 @@ select content_private.import_bundle($bundle${
       "key": "de:unit:a2u08-pruefung-a2",
       "order_index": 10,
       "program_id": "fa35887f-d77c-5044-acd5-c9b064ca4187",
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published",
@@ -1111184,7 +1111184,7 @@ select content_private.import_bundle($bundle${
       "key": "de:unit:b1u10-pruefung-b1",
       "order_index": 15,
       "program_id": "e3b67114-d74a-50ec-b9cf-c318a13e480a",
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published",
@@ -1111394,7 +1111394,7 @@ select content_private.import_bundle($bundle${
       "key": "de:unit:b2u10-pruefung-b2",
       "order_index": 15,
       "program_id": "377cd40a-407b-560b-afd8-bcc3e30f1bca",
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "status": "published",
@@ -1113368,7 +1113368,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Wir haben ___ Hund und zwei Katzen.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1113413,7 +1113413,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Ich muss morgen früh ___.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1113458,7 +1113458,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Wo ist ___ Handy? – Auf dem Tisch.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1113503,7 +1113503,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Mein Bruder kann sehr gut ___.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1113548,7 +1113548,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Gestern ___ ich eine Pizza gegessen.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1113593,7 +1113593,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Ich habe ein Kind und meine Schwester hat zwei ___.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1113638,7 +1113638,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Er ___ gern Fußball.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1113683,7 +1113683,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Ich ___ jeden Tag um sechs Uhr ___.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1113728,7 +1113728,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Câu nào có trật tự từ đúng?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1113773,7 +1113773,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Trong các câu sau, câu nào đặt động từ đúng vị trí?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1113818,7 +1113818,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Meine Großeltern haben einen ___ Garten hinter dem Haus.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1113863,7 +1113863,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Das ist der ___ Film des Jahres.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1113908,7 +1113908,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Ich fahre jeden Morgen mit ___ Bus zur Arbeit.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1113953,7 +1113953,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Ich freue mich ___ das Wochenende.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1113998,7 +1113998,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Berlin ist ___ als München.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1114043,7 +1114043,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Letzte Woche ___ ich krank und konnte nicht arbeiten.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1114088,7 +1114088,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Gestern ___ wir im Kino. Der Film war toll.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1114133,7 +1114133,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Ich lege das Buch auf ___ Tisch.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1114178,7 +1114178,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Chọn phần đúng để hoàn thành câu: Ich bleibe heute zu Hause, …",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1114223,7 +1114223,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Ich bleibe zu Hause, ___ ich krank bin.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1114268,7 +1114268,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Am Wochenende habe ich mit ___ Freunden einen Ausflug gemacht.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1114313,7 +1114313,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Das rote Auto vor der Tür ist das Auto ___ Lehrerin.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1114358,7 +1114358,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Wenn ich du ___, würde ich das nicht machen.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1114403,7 +1114403,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Wenn ich mehr Zeit hätte, ___ ich öfter reisen.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1114448,7 +1114448,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Nachdem er gegessen ___, ging er schlafen.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1114493,7 +1114493,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "___ es stark regnete, gingen wir spazieren.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1114538,7 +1114538,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Gestern ___ das Fenster von dem Kind geöffnet.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1114583,7 +1114583,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Dieses Haus ___ im Jahr 1950 von meinem Großvater gebaut.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1114628,7 +1114628,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Der Mann, ___ ich gestern geholfen habe, ist mein neuer Nachbar.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1114673,7 +1114673,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Der Film, ___ wir gestern gesehen haben, war sehr spannend.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1114718,7 +1114718,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Er tat so, ___ er alles verstanden hätte.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1114763,7 +1114763,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Die Prüfung war äußerst schwierig, ___ hat Lan sie mit sehr gutem Ergebnis bestanden.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1114808,7 +1114808,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Wäre er früher gekommen, ___ er den Zug nicht verpasst.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1114853,7 +1114853,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Man kann viel Energie sparen, ___ man das Licht in leeren Räumen ausschaltet.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1114898,7 +1114898,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Chọn dạng Konjunktiv I (lời dẫn gián tiếp): Der Minister erklärte, er ___ von dem Plan nichts gewusst.",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1114943,7 +1114943,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Das Problem ___ sich leider nicht so einfach lösen.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1114988,7 +1114988,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Cách danh từ hóa nào đúng cho mệnh đề “Nachdem der Vertrag unterzeichnet worden war, …”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1115033,7 +1115033,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Die von der Regierung ___ Maßnahmen stoßen bei vielen Bürgern auf Kritik.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1115078,7 +1115078,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Câu nào cùng nghĩa với “Das Problem lässt sich leicht lösen.”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1115123,7 +1115123,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "___ der hohen Kosten entschied sich die Stadt für den Bau.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1115168,7 +1115168,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Das ist ___ Buch.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1115213,7 +1115213,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "___ Kind spielt im Garten.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1115258,7 +1115258,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "___ Tisch ist neu.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1115303,7 +1115303,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "___ Frau ist nett.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1115348,7 +1115348,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Ich ___ Student.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1115393,7 +1115393,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Hallo! Ich ___ Lan.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1115438,7 +1115438,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Entschuldigung, wie alt ___ Sie?",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1115483,7 +1115483,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Wie ___ du? – Ich heiße Tom.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1115528,7 +1115528,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Wir ___ aus Vietnam.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1115573,7 +1115573,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "___ kommst du? – Aus Vietnam.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1115619,7 +1115619,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Katrin Vogel có thể gặp ông Schmidt vào lúc nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1115665,7 +1115665,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Vào thứ Bảy, bao lâu thì có một chuyến xe buýt số 42?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1115711,7 +1115711,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Anna sẽ đến văn phòng lúc mấy giờ?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1115757,7 +1115757,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo thực đơn, món nào được ghi rõ là món chay?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1115803,7 +1115803,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo lời nhắn gửi bà, Felix đang ở đâu?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1115849,7 +1115849,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Mark nhờ Lisa mang theo gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1115895,7 +1115895,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo mẩu quảng cáo, ai KHÔNG thể thuê căn phòng này?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1115941,7 +1115941,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Vào thứ Hai, bể bơi thế nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1115987,7 +1115987,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Trong tin nhắn, Ben nhờ Sara làm gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1116033,7 +1116033,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Ai không thể thuê căn hộ này?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1116079,7 +1116079,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Ai phù hợp nhất với công việc mà gia đình Koch đăng tuyển?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1116125,7 +1116125,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo bài báo, điều nào ĐÚNG?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1116171,7 +1116171,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo đoạn hội thoại, tòa thị chính nằm ở đâu?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1116217,7 +1116217,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người viết KHÔNG thích điều gì ở Köln?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1116263,7 +1116263,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo thông báo của thư viện thành phố, điều nào ĐÚNG?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1116309,7 +1116309,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo tấm bưu thiếp, hôm qua Clara đã làm gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1116355,7 +1116355,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Monika Hahn sẽ đến bữa tiệc mùa hè vào khoảng mấy giờ?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1116401,7 +1116401,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Vì sao bác sĩ Peters hủy lịch hẹn?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1116447,7 +1116447,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo thông báo, vì sao cả tòa nhà bị cắt nước?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1116493,7 +1116493,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Mỗi học sinh cần mang theo gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1116539,7 +1116539,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Vì sao ông Wolf không nhận được vị trí?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1116585,7 +1116585,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người viết blog vẫn đi S-Bahn trong trường hợp nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1116631,7 +1116631,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Sau khi chương trình tẩy cặn kết thúc, phải làm gì trước khi pha cà phê lại?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1116677,7 +1116677,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Lukas Brandt muốn cửa hàng trực tuyến làm gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1116723,7 +1116723,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Mia khuyên gì nếu Tom muốn bán nhanh?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1116769,7 +1116769,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo Jule_88, nên làm gì để chắc chắn có lịch hẹn ở Bürgeramt (văn phòng dịch vụ công dân)?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1116815,7 +1116815,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người viết đánh giá việc làm việc tại nhà như thế nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1116861,7 +1116861,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo bản tin, điều nào ĐÚNG?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1116907,7 +1116907,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Điều nào sau đây đúng với tình hình tàu điện ngầm?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1116953,7 +1116953,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Vì sao người viết nấu ăn thường xuyên hơn?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1116999,7 +1116999,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Tác giả có khả năng đồng ý nhất với nhận định nào sau đây?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1117045,7 +1117045,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Có thể suy ra điều gì từ đoạn văn?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1117091,7 +1117091,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Có thể suy ra điều gì từ bức thư của Jan Petersen?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1117137,7 +1117137,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Bài viết đánh giá homeoffice như thế nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1117183,7 +1117183,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo tác giả, điều gì quyết định việc ngủ ngắn ở nơi làm việc có trở nên phổ biến hay không?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1117229,7 +1117229,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người viết thư muốn điều gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1117275,7 +1117275,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo bài báo, phần lớn người mua quần áo cũ làm vậy chủ yếu vì lý do gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1117321,7 +1117321,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Quan điểm của tác giả về việc cấm điện thoại thông minh ở trường học là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1117367,7 +1117367,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Quan điểm của tác giả về Tempo 30 là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1117413,7 +1117413,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Câu “Vorübergehend ist offenbar ein dehnbarer Begriff” trong bài bình luận thể hiện điều gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1117459,7 +1117459,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Anna sẽ về đến nhà lúc mấy giờ?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1117505,7 +1117505,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Tiệm bánh Müller đóng cửa vào ngày nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1117551,7 +1117551,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo lời giới thiệu của Jonas, Paul bao nhiêu tuổi?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1117597,7 +1117597,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo tin nhắn, Lea đang ở đâu?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1117643,7 +1117643,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Gia đình Weber có mấy người con?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1117689,7 +1117689,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Max rủ Mia đi xem phim lúc mấy giờ?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1117735,7 +1117735,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo đoạn giới thiệu, Paul làm nghề gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1117781,7 +1117781,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Muốn vào bảo tàng, bạn đi cửa nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1117827,7 +1117827,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo bảng tên này, Anna Weber đến từ nước nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1117873,7 +1117873,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Tấm biển “Bitte nicht rauchen!” yêu cầu bạn điều gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1117918,7 +1117918,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Bạn bị đau đầu và cần mua thuốc. Bạn đến đâu?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1117963,7 +1117963,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Bạn muốn mua bánh mì và bánh ngọt. Bạn đến đâu?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1118008,7 +1118008,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “bekommen” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1118053,7 +1118053,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Ich fahre jeden Tag mit dem ___ zur Arbeit.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1118098,7 +1118098,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Bữa ăn buổi sáng trong tiếng Đức gọi là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1118143,7 +1118143,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “màu xanh lá cây”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1118188,7 +1118188,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "“Es ist halb acht.” Bây giờ là mấy giờ?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1118233,7 +1118233,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Zum Frühstück trinke ich einen ___ mit Milch.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1118278,7 +1118278,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Ngày nào đứng ngay sau “Dienstag”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1118323,7 +1118323,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Ich bin sehr müde. Ich möchte jetzt ___.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1118368,7 +1118368,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Mein Zimmer ist sehr unordentlich. Ich muss es heute ___.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1118413,7 +1118413,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Anna sucht eine neue Stelle. Sie ___ sich bei einer Firma in Berlin.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1118458,7 +1118458,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ tiếng Đức “das Gift” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1118503,7 +1118503,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “die Heizung” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1118548,7 +1118548,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Es regnet stark. Nimm lieber einen ___ mit!",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1118593,7 +1118593,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Wir möchten am Samstag essen gehen und müssen einen Tisch ___.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1118638,7 +1118638,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Ich habe Kopfschmerzen. Ich nehme eine ___.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1118683,7 +1118683,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Ich habe Zahnschmerzen. Ich muss einen ___ beim Zahnarzt machen.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1118728,7 +1118728,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Ich bin zu spät zum Bahnhof gekommen und habe den Zug ___.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1118773,7 +1118773,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Entschuldigung, ich ___ leider nicht, wo der Bahnhof ist.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1118818,7 +1118818,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Kannst du mir bitte ___ sagen, wann du ankommst?",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1118863,7 +1118863,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Ich kann mich nicht mehr ___ seinen Namen erinnern.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1118908,7 +1118908,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “die Gewohnheit” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1118953,7 +1118953,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Interessierst du dich eigentlich ___ Politik?",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1118998,7 +1118998,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Ich kann mich nicht auf die Arbeit ___, weil es so laut ist.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1119043,7 +1119043,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Bitte ___ Sie nach 22 Uhr Rücksicht auf die Nachbarn.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1119088,7 +1119088,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Nach dem Studium sucht sie eine ___ als Ingenieurin.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1119133,7 +1119133,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào trái nghĩa với “befristet” (có thời hạn) trong hợp đồng lao động?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1119178,7 +1119178,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Danh từ nào được tạo từ động từ “vorbereiten” (chuẩn bị)?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1119223,7 +1119223,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Wir warten schon seit einer Stunde ___ den Bus.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1119268,7 +1119268,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Ob wir das Projekt fortsetzen, hängt vor allem ___ der Finanzierung ab.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1119313,7 +1119313,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Im Seminar setzen wir uns kritisch ___ dem Thema Migration auseinander.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1119358,7 +1119358,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Der Zeuge hat vor Gericht ___, dass er den Täter nicht erkannt hat.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1119403,7 +1119403,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Die Regierung will die Steuern ___, um mehr Geld für Schulen zu haben.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1119448,7 +1119448,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Das neue Gesetz tritt am 1. Januar in ___.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1119493,7 +1119493,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Trong cụm “nachhaltige Landwirtschaft”, từ “nachhaltig” có nghĩa gần nhất là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1119538,7 +1119538,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Trong email gửi giáo sư bạn chưa quen, câu nào phù hợp nhất để xin tài liệu?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1119583,7 +1119583,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “der Verbraucher” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1119628,7 +1119628,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Die Mieter haben gegen die Mieterhöhung schriftlich ___ eingelegt.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1119673,7 +1119673,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Die Firma ___ allen Mitarbeitern kostenlose Laptops zur Verfügung.",
         "stem_lang": "de"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1119718,7 +1119718,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “cảm ơn”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1119763,7 +1119763,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Bạn muốn chúc ai đó ngủ ngon trước khi đi ngủ. Bạn nói gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1119808,7 +1119808,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Buổi sáng gặp đồng nghiệp ở cơ quan, bạn chào thế nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1119853,7 +1119853,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “die Schwester” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1119898,7 +1119898,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Số 17 trong tiếng Đức là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1119943,7 +1119943,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “cái bàn”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1119988,7 +1119988,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “der Vater” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1120033,7 +1120033,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “nước”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1120078,7 +1120078,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Ai đó hỏi bạn “Wie geht es Ihnen?”. Câu trả lời phù hợp là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1120123,7 +1120123,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Số 12 trong tiếng Đức là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-17T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1124928,7 +1124928,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "あなたは がくせいです___。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1124973,7 +1124973,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "ここに ほん___ あります。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1125018,7 +1125018,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "あした がっこう___ いきます。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1125063,7 +1125063,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "まいあさ みず___ のみます。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1125108,7 +1125108,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "これは わたし___ かばんです。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1125153,7 +1125153,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "ともだち___ いっしょに えいがを みます。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1125198,7 +1125198,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "これは わたし___ ほんです。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1125243,7 +1125243,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "わたし___ がくせいです。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1125288,7 +1125288,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "彼の 長年の 努力は、称賛に___。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1125333,7 +1125333,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "あの 人は 一度 話し始めた___、何時間でも 止まらない。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1125378,7 +1125378,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "そんな 簡単な ことは、わざわざ 説明する___。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1125423,7 +1125423,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "兄が 社交的なの___、弟は 人見知りだ。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1125468,7 +1125468,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "教師___者、生徒の模範でなければならない。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1125513,7 +1125513,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "本日___、当店は閉店いたします。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1125558,7 +1125558,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "ベルが 鳴る___、生徒たちは 教室を 飛び出した。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1125603,7 +1125603,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "彼の 熱意 あふれる スピーチは、聴衆を 感動させ___。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1125648,7 +1125648,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "彼は 英語___、フランス語も 話せる。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1125693,7 +1125693,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "台風で 電車が 止まったので、会議は 延期せ___。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1125738,7 +1125738,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "引き受けた___、最後まで 責任を 持って やるべきだ。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1125783,7 +1125783,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "この イベントは、年齢___、どなたでも 参加できます。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1125828,7 +1125828,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "お客様の 要望___、サービスを 改善した。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1125873,7 +1125873,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "彼は 疲れている___、笑顔で 質問に 答えた。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1125918,7 +1125918,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "会議の 結果___、計画を 変更する 可能性も ある。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1125963,7 +1125963,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "母親が 見ていない___、子どもは お菓子を 食べて しまった。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1126008,7 +1126008,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "日本に 来た___なので、まだ 日本語が よく わかりません。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1126053,7 +1126053,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "あんなに 練習したのだから、彼が 負ける___。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1126098,7 +1126098,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "この 写真は、わたし___ 大切な 思い出です。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1126143,7 +1126143,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "父は 私に 部屋を 掃除___。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1126188,7 +1126188,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "彼は 毎日 遅くまで 働いている___、病気に なってしまった。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1126233,7 +1126233,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "子どもの ころ、母は わたしに 毎日 野菜を ___。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1126278,7 +1126278,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "忘れない___、手帳に メモして おきます。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1126323,7 +1126323,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "試験に 合格できる___、毎日 勉強しています。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1126368,7 +1126368,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "空が 暗く なって きました。雨が ___そうです。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1126413,7 +1126413,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "いくら 練習___、上手に なりません。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1126458,7 +1126458,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "空が 暗いですね。雨が ふり___ です。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1126503,7 +1126503,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "この 本は むずかし___ 読めません。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1126548,7 +1126548,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "テーブルの 上に 花が 置いて___。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1126593,7 +1126593,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "駅に ___、電話して ください。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1126638,7 +1126638,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "わたしは 先生に 名前を ___。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1126683,7 +1126683,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "わたしは 日本語の 新聞が 少し ___。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1126728,7 +1126728,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "わたしは コーヒー___ すきです。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1126773,7 +1126773,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "雨が 降っています___、かさを 持って 行きます。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1126818,7 +1126818,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "きのう えいがを みました。とても おもしろ___。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1126863,7 +1126863,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "あした いっしょに ごはんを ___。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1126908,7 +1126908,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "すみません、ちょっと ___ください。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1126953,7 +1126953,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "つくえの 上に ねこが ___。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1126998,7 +1126998,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "きのうは あまり さむく___。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1127043,7 +1127043,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "おなかが すきましたから、なにか ___たいです。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "grammar",
       "status": "published"
@@ -1127089,7 +1127089,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người viết ra khỏi nhà lúc mấy giờ?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1127135,7 +1127135,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Con mèo Tama thích gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1127181,7 +1127181,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Bạn muốn đi thang máy. Theo tấm biển này, bạn nên đi về hướng nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1127227,7 +1127227,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người viết ăn cơm hộp ở đâu?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1127273,7 +1127273,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo thực đơn này, một cốc cà phê giá bao nhiêu?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1127319,7 +1127319,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Mỗi sáng người viết làm gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1127365,7 +1127365,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Nhà Yamada có gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1127411,7 +1127411,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo lời giới thiệu, Linh đến từ đâu?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1127457,7 +1127457,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người viết có thái độ thế nào đối với khái niệm “間”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1127503,7 +1127503,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người viết cho rằng “truyền thống” là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1127549,7 +1127549,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo người viết, điều quan trọng nhất là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1127595,7 +1127595,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người viết chủ trương điều gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1127641,7 +1127641,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Ý chính của đoạn văn về thất bại là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1127687,7 +1127687,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người viết cho rằng con đường chắc chắn để vực dậy các đô thị địa phương là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1127733,7 +1127733,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Điều người viết muốn nhấn mạnh là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1127779,7 +1127779,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người viết đánh giá thói quen “積ん読” như thế nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1127825,7 +1127825,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo người viết, các cửa hàng cần làm gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1127871,7 +1127871,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Vì sao chủ quán chấp nhận tốn công?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1127917,7 +1127917,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người viết muốn nói điều gì nhất trong đoạn văn về “食品ロス”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1127963,7 +1127963,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người viết đánh giá việc xây dựng môi trường hỗ trợ nuôi dạy con như thế nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1128009,7 +1128009,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Quan điểm của người viết về việc học ngoại ngữ là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1128055,7 +1128055,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo bài, ngủ trưa quá 30 phút có thể gây ra điều gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1128101,7 +1128101,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người viết muốn nói điều gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1128147,7 +1128147,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Câu nào đúng với nội dung bài về tiệm bánh kẹo truyền thống?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1128193,7 +1128193,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Điều nào đúng theo đoạn văn?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1128239,7 +1128239,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người chuyển hàng nên làm thế nào vào thứ Hai tuần sau?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1128285,7 +1128285,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Lúc 2 giờ chiều ngày 20/10, cư dân muốn lên tầng thì nên làm gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1128331,7 +1128331,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo bài, tên gọi “風呂敷” bắt nguồn từ đâu?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1128377,7 +1128377,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo bài, mặt trái của việc làm việc tại nhà là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1128423,7 +1128423,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Sau khi nghe lời của cấp trên, Yamada đã làm gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1128469,7 +1128469,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Khi mới đi du học, điều khiến người viết khó khăn nhất là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1128515,7 +1128515,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Điều gì khiến người viết bắt đầu tham gia tình nguyện dọn công viên?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1128561,7 +1128561,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người viết quyết định tặng mẹ món quà gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1128607,7 +1128607,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Muốn bỏ chai lọ thì phải mang ra vào lúc nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1128653,7 +1128653,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Hiện giờ người viết có thể làm gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1128699,7 +1128699,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người viết chưa làm việc gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1128745,7 +1128745,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Vì sao người viết đến cuộc họp muộn?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1128791,7 +1128791,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Câu nào đúng với thông báo của thư viện?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1128837,7 +1128837,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Người viết nhờ Tanaka làm gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1128883,7 +1128883,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Hiện nay người viết thấy việc gì còn khó?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1128929,7 +1128929,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Hôm qua người viết đã làm gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1128975,7 +1128975,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Chị gái của người viết làm việc ở đâu?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1129021,7 +1129021,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Theo tấm biển của cửa hàng rau quả, bạn có thể đến mua vào lúc nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1129067,7 +1129067,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Mẹ của người viết làm nghề gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1129113,7 +1129113,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Tanaka và Yamada hẹn gặp nhau ở đâu, lúc mấy giờ?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1129159,7 +1129159,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Phòng của người viết như thế nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1129205,7 +1129205,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Điểm bất tiện của nhà hàng này là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1129251,7 +1129251,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Chủ nhật người viết đã làm gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "reading",
       "status": "published"
@@ -1129296,7 +1129296,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “ほん” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1129341,7 +1129341,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “con chó”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1129386,7 +1129386,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “bác sĩ”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1129431,7 +1129431,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “cà phê”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1129476,7 +1129476,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “đôi giày”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1129521,7 +1129521,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “nước”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1129566,7 +1129566,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “ねこ” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1129611,7 +1129611,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Lời chào “おはよう” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1129656,7 +1129656,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “吟味する” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1129701,7 +1129701,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Thành ngữ “五十歩百歩” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1129746,7 +1129746,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “bao quát, toàn diện”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1129791,7 +1129791,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “逸脱” (いつだつ) có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1129836,7 +1129836,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “顕著” (けんちょ) có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1129881,7 +1129881,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "これからの社会は、若い世代が___ことになる。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1129926,7 +1129926,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "“おおむね” gần nghĩa nhất với từ nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1129971,7 +1129971,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Cụm “余儀なく〜される” (よぎなく) có nghĩa gần nhất với điều nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1130016,7 +1130016,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "大雨は農作物に大きな被害を___。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1130061,7 +1130061,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “妥協” (だきょう) có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1130106,7 +1130106,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “把握する” (はあくする) có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1130151,7 +1130151,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Tính từ “著しい” (いちじるしい) có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1130196,7 +1130196,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Quán ngữ “顔が広い” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1130241,7 +1130241,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “xu hướng, khuynh hướng”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1130286,7 +1130286,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “検討する” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1130331,7 +1130331,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "“たちまち” gần nghĩa nhất với từ nào?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1130376,7 +1130376,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “諦める（あきらめる）” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1130421,7 +1130421,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “ảnh hưởng”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1130466,7 +1130466,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “kinh nghiệm”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1130511,7 +1130511,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "バスが___来なくて、会議に遅れてしまった。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1130556,7 +1130556,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Phó từ “おそらく” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1130601,7 +1130601,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “習慣” (しゅうかん) có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1130646,7 +1130646,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “相談” (そうだん) có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1130691,7 +1130691,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "友達との約束を___しまい、謝りました。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1130736,7 +1130736,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “危ない（あぶない）” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1130781,7 +1130781,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “便利” (べんり) có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1130826,7 +1130826,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “急ぐ（いそぐ）” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1130871,7 +1130871,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “chuẩn bị”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1130916,7 +1130916,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “bị hỏng” (máy móc, đồ dùng không chạy được nữa)?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1130961,7 +1130961,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “おみやげ” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1131006,7 +1131006,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “宿題” (しゅくだい) có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1131051,7 +1131051,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "傘を電車の中に___しまいました。",
         "stem_lang": "ja"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1131096,7 +1131096,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “駅（えき）” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1131141,7 +1131141,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “trường học”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1131186,7 +1131186,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “hôm qua”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1131231,7 +1131231,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “毎日” (まいにち) có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1131276,7 +1131276,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “おとうと” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1131321,7 +1131321,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào trái nghĩa với “安い（やすい）” (rẻ)?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1131366,7 +1131366,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ “休み（やすみ）” có nghĩa là gì?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
@@ -1131411,7 +1131411,7 @@ select content_private.import_diagnostic_bundle($diagnostic${
         "stem": "Từ nào có nghĩa là “bưu điện”?",
         "stem_lang": "vi"
       },
-      "reviewed_at": "2026-10-16T12:00:00+07:00",
+      "reviewed_at": "2026-10-21T14:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill": "vocabulary",
       "status": "published"
