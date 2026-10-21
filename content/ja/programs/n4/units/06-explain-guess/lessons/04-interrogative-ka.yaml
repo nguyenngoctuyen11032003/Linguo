@@ -1,0 +1,372 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n4-dareka-demo
+order_index: 4
+level: n4
+title:
+  vi: Rủ rê và từ bất định - 何か・誰か・お茶でも
+objectives:
+  - vi: Dùng だれか, なにか, どこか, いつか để nói "ai đó, cái gì đó, nơi nào đó, lúc nào đó".
+  - vi: Rủ nhẹ nhàng bằng N でも ～ませんか.
+  - vi: Dùng 誘う, 断る, 招待, 紹介 trong hội thoại mời và từ chối.
+estimated_minutes: 16
+skills:
+  - grammar
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n4-to-omou
+items:
+  - item: ja:item:n4-u6-gram-interrog-ka
+  - item: ja:item:n4-u6-gram-demo
+  - item: ja:item:n4-u6-sasou
+  - item: ja:item:n4-u6-kotowaru
+  - item: ja:item:n4-u6-shoutai
+  - item: ja:item:n4-u6-shoukai
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn rủ bạn một cách nhẹ nhàng - お茶でも飲みませんか。 - và dùng từ bất định - 何か食べませんか。どこか行きませんか。
+  - type: explain
+    text:
+      vi: "Từ để hỏi + か thành từ bất định: だれか (ai đó), なにか / 何か (cái gì đó), どこか (nơi nào đó), いつか (lúc nào đó). Ví dụ 何か飲みませんか (Uống gì đó nhé?), どこか行きましょう (Mình đi đâu đó nhé)."
+  - type: explain
+    text:
+      vi: Trợ từ に, へ, で, と đứng sau か - どこかへ行きます, だれかと話しました; còn が và を thường bỏ - だれか来ました (không nói だれかが), 何か食べます (không nói 何かを).
+  - type: explain
+    text:
+      vi: "N でも nêu một ví dụ làm gợi ý nhẹ nhàng: お茶でも飲みませんか (Uống trà hay gì đó nhé?). Dùng trong lời mời thân mật, người nghe có thể chọn khác. Mời, từ chối, giới thiệu - 誘う, 断る, 招待, 紹介."
+  - type: deep_explain
+    text:
+      vi: 'Cẩn thận với でも. N でも (gợi ý) khác でも ở đầu câu (nhưng) và khác ～ても (dù, N3). Trong lời từ chối, người Nhật thường không nói thẳng いいえ mà dùng "ちょっと…" hoặc ～んです: すみません、その日はちょっと用事があるんです. Chữ Hán - 誘う, 断る, 招待, 紹介.'
+  - type: example
+    target: 何か食べませんか。- いいですね。
+    target_lang: ja
+    translation:
+      vi: Bạn ăn gì đó nhé? - Hay đấy.
+    note:
+      vi: 何か - cái gì đó.
+  - type: example
+    target: お茶でも飲みませんか。
+    target_lang: ja
+    translation:
+      vi: Hay là mình uống trà nhé?
+    note:
+      vi: N でも - gợi ý.
+  - type: example
+    target: 来週の日曜日にどこか行きませんか。
+    target_lang: ja
+    translation:
+      vi: Chủ nhật tuần sau mình đi đâu đó nhé?
+    note:
+      vi: どこか - nơi nào đó.
+  - type: example
+    target: 友達を誘いましたが、用事があると言って断られました。
+    target_lang: ja
+    translation:
+      vi: Tôi rủ bạn nhưng bạn nói có việc nên từ chối.
+    note:
+      vi: 誘う・断られました - rủ và bị từ chối.
+  - type: common_mistake
+    wrong: だれかが来ませんか。(Có ai đến không?)
+    right: だれか来ましたか。
+    target_lang: ja
+    note:
+      vi: Từ bất định だれか thường bỏ が khi làm chủ ngữ.
+  - type: common_mistake
+    wrong: お茶ても飲みませんか。
+    right: お茶でも飲みませんか。
+    target_lang: ja
+    note:
+      vi: Gợi ý là N でも (でも, không phải ても).
+  - type: summary
+    points:
+      - vi: だれか ai đó · 何か cái gì đó · どこか nơi nào đó · いつか lúc nào đó.
+      - vi: が・を thường bỏ sau か; に・へ・で・と giữ.
+      - vi: N でも ～ませんか - lời mời nhẹ nhàng.
+      - vi: 誘う rủ · 断る từ chối · 招待 lời mời · 紹介 giới thiệu.
+exercises:
+  - key: ja:exercise:n4-dareka-demo-d1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u6-gram-interrog-ka
+    prompt:
+      stem: Bạn muốn rủ “Mình đi đâu đó nhé”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: m1w
+          text: どこを行きませんか。
+          lang: ja
+        - id: ios
+          text: どこで行きませんか。
+          lang: ja
+        - id: rvt
+          text: どこが行きませんか。
+          lang: ja
+        - id: gu0
+          text: どこか行きませんか。
+          lang: ja
+    answer:
+      correct_option_id: gu0
+    explanation:
+      vi: どこか + 行きませんか (bỏ へ cũng được). どこが, どこを, どこで không tạo nghĩa "đâu đó".
+    display_answer: どこか行きませんか。
+  - key: ja:exercise:n4-dareka-demo-d2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u6-gram-demo
+    prompt:
+      stem: Bạn muốn rủ uống trà nhẹ nhàng. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: c3v
+          text: お茶でも飲みませんか。
+          lang: ja
+        - id: wcg
+          text: お茶をも飲みませんか。
+          lang: ja
+        - id: y88
+          text: お茶でもで飲みませんか。
+          lang: ja
+        - id: fug
+          text: お茶ても飲みませんか。
+          lang: ja
+    answer:
+      correct_option_id: c3v
+    explanation:
+      vi: N でも - gợi ý. ても là dạng khác (dù), にも hay をも không dùng thế.
+    display_answer: お茶でも飲みませんか。
+  - key: ja:exercise:n4-dareka-demo-d3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-u6-sasou
+    prompt:
+      audio_asset_id: null
+      fallback_text: 友達を映画に誘いましたが、用事があると言って断られました。
+      options:
+        - id: ggu
+          text: Tôi mời bạn đi uống trà và bạn đồng ý.
+          lang: vi
+        - id: l3e
+          text: Tôi giới thiệu bạn đi xem phim nhưng không ai đến.
+          lang: vi
+        - id: ou1
+          text: Tôi rủ bạn đi xem phim nhưng bạn nói có việc nên từ chối.
+          lang: vi
+        - id: mwi
+          text: Bạn rủ tôi đi xem phim nhưng tôi từ chối.
+          lang: vi
+    answer:
+      correct_option_id: ou1
+    explanation:
+      vi: 誘いました - đã rủ; 用事があると言って - nói có việc; 断られました - bị từ chối.
+    display_answer: Tôi rủ bạn đi xem phim nhưng bạn nói có việc nên từ chối.
+  - key: ja:exercise:n4-dareka-demo-d4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u6-gram-interrog-ka
+    prompt:
+      template: "{{b1}}飲みませんか。 (Bạn uống gì đó nhé?)"
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Từ để hỏi + か.
+        - Bắt đầu bằng 何 - 何か.
+    answer:
+      blanks:
+        b1:
+          - 何か
+          - なにか
+    known_wrong:
+      - answer: 何を
+        feedback_vi: 何を là "cái gì" (hỏi); "cái gì đó" là 何か.
+        error_tag: question_word
+    explanation:
+      vi: 何か - cái gì đó.
+    display_answer: 何か飲みませんか。
+  - key: ja:exercise:n4-dareka-demo-d5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u6-shoukai
+    prompt:
+      stem: Bạn muốn giới thiệu bạn mình cho đồng nghiệp. Cụm nào hợp?
+      stem_lang: vi
+      options:
+        - id: n2v
+          text: 友達を信じます
+          lang: ja
+        - id: po8
+          text: 友達を誘います
+          lang: ja
+        - id: kyo
+          text: 友達を断ります
+          lang: ja
+        - id: nxt
+          text: 友達を紹介します
+          lang: ja
+    answer:
+      correct_option_id: nxt
+    explanation:
+      vi: 紹介します là giới thiệu. 断ります là từ chối, 誘います là rủ, 信じます là tin.
+    display_answer: 友達を紹介します
+  - key: ja:exercise:n4-dareka-demo-d6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u6-gram-demo
+    prompt:
+      template: 日曜日は映画{{b1}}見に行きませんか。 (Chủ nhật hay là đi xem phim nhé?)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - でも
+    known_wrong:
+      - answer: ても
+        feedback_vi: ても là dạng "dù"; gợi ý nhẹ dùng でも.
+        error_tag: form
+    explanation:
+      vi: N でも - gợi ý, chẳng hạn.
+    display_answer: 日曜日は映画でも見に行きませんか。
+  - key: ja:exercise:n4-dareka-demo-d7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u6-kotowaru
+    prompt:
+      template: 誘われましたが、用事があって{{b1}}。 (Tôi được rủ nhưng có việc nên đã từ chối.)
+      blanks:
+        - id: b1
+          width_hint: 6
+    answer:
+      blanks:
+        b1:
+          - 断りました
+          - ことわりました
+    known_wrong:
+      - answer: 誘いました
+        feedback_vi: 誘いました là đã rủ; ở đây tôi là người từ chối.
+        error_tag: verb_choice
+    explanation:
+      vi: 断りました - đã từ chối.
+    display_answer: 誘われましたが、用事があって断りました。
+  - key: ja:exercise:n4-dareka-demo-d8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u6-gram-interrog-ka
+    prompt:
+      source_text: Chủ nhật mình đi đâu đó nhé?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 日曜日はどこか行きませんか。
+        - 日曜日にどこかへ行きませんか。
+        - にちようびはどこかいきませんか。
+        - 日曜日にどこか行きませんか。
+        - 日曜日、どこかへ行きましょう。
+    known_wrong:
+      - answer: 日曜日はどこが行きませんか。
+        feedback_vi: どこか (đâu đó), không dùng どこが.
+        error_tag: form
+    explanation:
+      vi: どこか - nơi nào đó; ～ませんか - lời rủ.
+    display_answer: 日曜日はどこか行きませんか。
+  - key: ja:exercise:n4-dareka-demo-d9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-u6-shoutai
+    prompt:
+      source_text: 田中さんに結婚式に招待されました。何かプレゼントを買いたいです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi được anh Tanaka mời dự đám cưới. Tôi muốn mua một món quà gì đó.
+        - Anh Tanaka mời tôi đến đám cưới. Tôi muốn mua quà.
+        - Tôi được anh Tanaka mời đi đám cưới, tôi muốn mua món quà nào đó.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi mời anh Tanaka dự đám cưới. Tôi muốn mua món quà gì đó.
+        feedback_vi: 招待されました là bị động (được mời).
+        error_tag: passive
+    explanation:
+      vi: 招待されました - được mời; 何か - cái gì đó; ～たいです - muốn.
+    display_answer: Tôi được anh Tanaka mời dự đám cưới. Tôi muốn mua một món quà gì đó.
+  - key: ja:exercise:n4-dareka-demo-d10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u6-gram-demo
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Chủ nhật hay là đi xem phim nhé?"'
+      tokens:
+        - id: t2
+          text: 映画でも
+        - id: t1
+          text: 日曜日は
+        - id: t4
+          text: 行きませんか。
+        - id: t3
+          text: 見に
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Chủ đề → N でも (gợi ý) → 見に (mục đích) → 行きませんか.
+    display_answer: 日曜日は映画でも見に行きませんか。
+  - key: ja:exercise:n4-dareka-demo-d11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u6-kotowaru
+    prompt:
+      stem: Bạn bị rủ đi chơi nhưng có việc. Cách từ chối nào tự nhiên và lịch sự?
+      stem_lang: vi
+      options:
+        - id: vh4
+          text: すみません、その日はちょっと用事があるんです。
+          lang: ja
+        - id: lg5
+          text: いいえ、行きません。
+          lang: ja
+        - id: m3n
+          text: 私は行く必要がありません。
+          lang: ja
+        - id: ns0
+          text: いやです。
+          lang: ja
+    answer:
+      correct_option_id: vh4
+    explanation:
+      vi: Từ chối khéo thường dùng ちょっと + lý do (用事があるんです). Câu thẳng いいえ, いやです nghe thô, 行く必要がありません nghe lạnh lùng.
+    display_answer: すみません、その日はちょっと用事があるんです。

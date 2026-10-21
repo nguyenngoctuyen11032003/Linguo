@@ -1,0 +1,384 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n4-kamoshirenai
+order_index: 2
+level: n4
+title:
+  vi: Phỏng đoán - ～かもしれません・でしょう・たぶん
+objectives:
+  - vi: Nói khả năng "có thể" bằng ～かもしれません.
+  - vi: Dùng たぶん, きっと, かならず, ぜったい để thể hiện mức chắc chắn.
+  - vi: "Nói về an toàn và nguy hiểm: 安全, 危険, 危ない."
+estimated_minutes: 16
+skills:
+  - grammar
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n4-n-desu
+items:
+  - item: ja:item:n4-u6-gram-kamoshirenai
+  - item: ja:item:n4-u6-tabun
+  - item: ja:item:n4-u6-kitto
+  - item: ja:item:n4-u6-kanarazu
+  - item: ja:item:n4-u6-zettai
+  - item: ja:item:n4-u6-moshikashitara
+  - item: ja:item:n4-u6-abunai
+  - item: ja:item:n4-u6-kiken
+  - item: ja:item:n4-u6-anzen
+  - item: ja:item:n4-gram-deshou
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được mức độ chắc chắn - 明日は雨が降るかもしれません。たぶん来ないでしょう。きっと大丈夫です。
+  - type: explain
+    text:
+      vi: ～かもしれません nghĩa là "có thể, biết đâu". Gắn vào thể thường (行くかもしれません, 高いかもしれません); danh từ và tính từ な dùng thẳng (雨かもしれません, 静かかもしれません) không thêm だ/な. Khả năng chỉ khoảng 30-50%.
+  - type: explain
+    text:
+      vi: "Các phó từ chỉ mức chắc chắn: たぶん (có lẽ, ~70%), きっと (chắc chắn, ~90%), かならず (nhất định, ~100%), ぜったい (tuyệt đối), もしかしたら (biết đâu, có thể). たぶん thường đi với でしょう."
+  - type: explain
+    text:
+      vi: Phủ định - 行かないかもしれません (có thể không đi); khác với 行けないかもしれません (có thể không đi được). Câu hỏi かもしれませんか không thường dùng; hỏi khả năng dùng でしょうか.
+  - type: deep_explain
+    text:
+      vi: かもしれません mang ý khả năng thấp hơn でしょう. Với việc đã chắc chắn như hứa hẹn thì dùng かならず, ví dụ 明日かならず行きます. ぜったい thường đi với phủ định mạnh hoặc lời quyết - ぜったい行きません. Nói rút gọn thân mật - かもしれない / かも. Chữ Hán - 多分, 必ず, 絶対, 危ない, 危険, 安全.
+  - type: example
+    target: 明日は雨が降るかもしれません。かさを持っていきましょう。
+    target_lang: ja
+    translation:
+      vi: Ngày mai có thể sẽ mưa. Chúng ta mang ô theo nhé.
+    note:
+      vi: かもしれません - có thể.
+  - type: example
+    target: たぶん山田さんは来ないでしょう。
+    target_lang: ja
+    translation:
+      vi: Có lẽ anh Yamada sẽ không đến.
+    note:
+      vi: たぶん + でしょう.
+  - type: example
+    target: この道は危ないかもしれません。気をつけてください。
+    target_lang: ja
+    translation:
+      vi: Con đường này có thể nguy hiểm. Hãy cẩn thận.
+    note:
+      vi: 危ない - nguy hiểm.
+  - type: example
+    target: 必ず連絡します。
+    target_lang: ja
+    translation:
+      vi: Nhất định tôi sẽ liên lạc.
+    note:
+      vi: 必ず - nhất định.
+  - type: common_mistake
+    wrong: 明日は雨だかもしれません。
+    right: 明日は雨かもしれません。
+    target_lang: ja
+    note:
+      vi: Với danh từ và tính từ な, かもしれません gắn trực tiếp, không thêm だ.
+  - type: common_mistake
+    wrong: たぶん来るかもしれません。
+    right: たぶん来るでしょう。 / 来るかもしれません。
+    target_lang: ja
+    note:
+      vi: たぶん đi với でしょう; かもしれません đã mang ý khả năng nên không cần たぶん.
+  - type: summary
+    points:
+      - vi: ～かもしれません - có thể; danh từ / Na bỏ だ.
+      - vi: たぶん - có lẽ · きっと - chắc chắn · かならず - nhất định · ぜったい - tuyệt đối.
+      - vi: 危ない・危険 nguy hiểm · 安全 an toàn.
+      - vi: もしかしたら - biết đâu.
+exercises:
+  - key: ja:exercise:n4-kamoshirenai-k1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u6-gram-kamoshirenai
+    prompt:
+      stem: Chọn câu đúng - 明日は___かもしれません。
+      stem_lang: vi
+      options:
+        - id: dzx
+          text: 雨の
+          lang: ja
+        - id: evb
+          text: 雨
+          lang: ja
+        - id: brf
+          text: 雨で
+          lang: ja
+        - id: mlh
+          text: 雨だ
+          lang: ja
+    answer:
+      correct_option_id: evb
+    explanation:
+      vi: Danh từ + かもしれません (không thêm だ). 雨だかもしれません là sai.
+    display_answer: 雨
+  - key: ja:exercise:n4-kamoshirenai-k2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u6-kitto
+    prompt:
+      stem: Từ nào có nghĩa là “chắc chắn là” (mức rất chắc)?
+      stem_lang: vi
+      options:
+        - id: qok
+          text: きっと
+          lang: ja
+        - id: xl6
+          text: たぶん
+          lang: ja
+        - id: jt0
+          text: もしかしたら
+          lang: ja
+        - id: viz
+          text: あまり
+          lang: ja
+    answer:
+      correct_option_id: qok
+    explanation:
+      vi: きっと là chắc chắn. もしかしたら là biết đâu (thấp), たぶん là có lẽ (vừa), あまり + phủ định là "không...lắm".
+    display_answer: きっと
+  - key: ja:exercise:n4-kamoshirenai-k3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-u6-tabun
+    prompt:
+      audio_asset_id: null
+      fallback_text: 明日はたぶん雨でしょう。かさを持っていきましょう。
+      options:
+        - id: nh3
+          text: Ngày mai chắc chắn sẽ nắng. Không cần ô.
+          lang: vi
+        - id: f8f
+          text: Ngày mai có thể có tuyết. Mang áo ấm.
+          lang: vi
+        - id: d6y
+          text: Hôm qua có lẽ mưa. Tôi quên ô.
+          lang: vi
+        - id: od4
+          text: Ngày mai có lẽ sẽ mưa. Mang ô theo nhé.
+          lang: vi
+    answer:
+      correct_option_id: od4
+    explanation:
+      vi: たぶん - có lẽ; 雨でしょう - chắc sẽ mưa; 明日 - ngày mai.
+    display_answer: Ngày mai có lẽ sẽ mưa. Mang ô theo nhé.
+  - key: ja:exercise:n4-kamoshirenai-k4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u6-gram-kamoshirenai
+    prompt:
+      template: 山田さんは来ない{{b1}}。 (Anh Yamada có thể không đến.)
+      blanks:
+        - id: b1
+          width_hint: 8
+      hint_levels:
+        - Cụm nghĩa "có thể".
+        - Bắt đầu bằng か - かもしれません.
+    answer:
+      blanks:
+        b1:
+          - かもしれません
+          - かもしれない
+    known_wrong:
+      - answer: でしょうか
+        feedback_vi: でしょうか là câu hỏi; ở đây là câu khẳng định "có thể không đến".
+        error_tag: form
+    explanation:
+      vi: ～ない + かもしれません - có thể không ...
+    display_answer: 山田さんは来ないかもしれません。
+  - key: ja:exercise:n4-kamoshirenai-k5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u6-anzen
+    prompt:
+      stem: Bạn muốn nói “Ở đây rất an toàn”. Từ nào?
+      stem_lang: vi
+      options:
+        - id: tod
+          text: 心配
+          lang: ja
+        - id: ou9
+          text: 不便
+          lang: ja
+        - id: ygz
+          text: 危険
+          lang: ja
+        - id: f1a
+          text: 安全
+          lang: ja
+    answer:
+      correct_option_id: f1a
+    explanation:
+      vi: 安全 là an toàn. 危険 là nguy hiểm, 不便 là bất tiện, 心配 là lo lắng.
+    display_answer: 安全
+  - key: ja:exercise:n4-kamoshirenai-k6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u6-kanarazu
+    prompt:
+      template: 明日は{{b1}}連絡します。 (Ngày mai nhất định tôi sẽ liên lạc.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 必ず
+          - かならず
+    known_wrong:
+      - answer: たぶん
+        feedback_vi: たぶん là có lẽ, không phải lời cam kết.
+        error_tag: adverb_choice
+      - answer: もしかしたら
+        feedback_vi: もしかしたら là biết đâu, ý khả năng thấp.
+        error_tag: adverb_choice
+    explanation:
+      vi: 必ず - nhất định, dùng khi cam kết.
+    display_answer: 明日は必ず連絡します。
+  - key: ja:exercise:n4-kamoshirenai-k7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u6-abunai
+    prompt:
+      template: この道は車が多くて{{b1}}です。 (Con đường này nhiều xe nên nguy hiểm.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - 危ない
+          - あぶない
+    known_wrong:
+      - answer: 安全
+        feedback_vi: 安全 là an toàn - trái nghĩa.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 危ない là nguy hiểm.
+    display_answer: この道は車が多くて危ないです。
+  - key: ja:exercise:n4-kamoshirenai-k8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u6-gram-kamoshirenai
+    prompt:
+      source_text: Ngày mai có thể sẽ mưa.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 明日は雨が降るかもしれません。
+        - あしたはあめがふるかもしれません。
+        - 明日は雨かもしれません。
+        - あしたはあめかもしれません。
+        - 明日、雨が降るかもしれません。
+    known_wrong:
+      - answer: 明日は雨が降るでしょうかもしれません。
+        feedback_vi: Không dùng でしょう cùng かもしれません.
+        error_tag: form
+      - answer: 明日は雨だかもしれません。
+        feedback_vi: 雨だかもしれません là sai.
+        error_tag: na_form
+    explanation:
+      vi: ～かもしれません - có thể; 雨が降る - trời mưa.
+    display_answer: 明日は雨が降るかもしれません。
+  - key: ja:exercise:n4-kamoshirenai-k9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-u6-zettai
+    prompt:
+      source_text: 絶対に行きません。でも、友達は来るかもしれません。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi tuyệt đối không đi. Nhưng bạn tôi có thể sẽ đến.
+        - Tôi nhất định không đi. Nhưng có thể bạn tôi sẽ đến.
+        - Tôi tuyệt đối sẽ không đi, nhưng biết đâu bạn tôi sẽ đến.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi nhất định sẽ đi. Bạn tôi cũng sẽ đến.
+        feedback_vi: 絶対に行きません là tuyệt đối không đi.
+        error_tag: meaning
+    explanation:
+      vi: 絶対に + phủ định - tuyệt đối không; 来るかもしれません - có thể sẽ đến.
+    display_answer: Tôi tuyệt đối không đi. Nhưng bạn tôi có thể sẽ đến.
+  - key: ja:exercise:n4-kamoshirenai-k10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u6-kiken
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Chỗ này nguy hiểm, nên hãy cẩn thận."'
+      tokens:
+        - id: t3
+          text: 気を
+        - id: t2
+          text: 危険ですから、
+        - id: t1
+          text: ここは
+        - id: t4
+          text: つけてください。
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Lý do (危険ですから) trước, rồi lời nhắc (気をつけてください).
+    display_answer: ここは危険ですから、気をつけてください。
+  - key: ja:exercise:n4-kamoshirenai-k11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u6-moshikashitara
+    prompt:
+      stem: Bạn không chắc, chỉ thấy khả năng nhỏ. Từ nào hợp nhất? ___ 来ないかもしれません。
+      stem_lang: vi
+      options:
+        - id: u9z
+          text: 必ず
+          lang: ja
+        - id: h1p
+          text: もしかしたら
+          lang: ja
+        - id: x49
+          text: きっと
+          lang: ja
+        - id: c36
+          text: ぜったい
+          lang: ja
+    answer:
+      correct_option_id: h1p
+    explanation:
+      vi: もしかしたら + かもしれません - biết đâu. 必ず, ぜったい, きっと diễn tả mức chắc chắn cao nên mâu thuẫn với かもしれません.
+    display_answer: もしかしたら

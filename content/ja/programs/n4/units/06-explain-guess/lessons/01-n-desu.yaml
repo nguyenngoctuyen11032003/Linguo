@@ -1,0 +1,381 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n4-n-desu
+order_index: 1
+level: n4
+title:
+  vi: Giải thích lý do - ～んです・～んですが
+objectives:
+  - vi: Giải thích lý do và hoàn cảnh bằng thể thường + んです.
+  - vi: Hỏi lý do mềm mỏng bằng どうして／なぜ ～んですか.
+  - vi: Mở lời nhờ vả hay hỏi han bằng ～んですが.
+estimated_minutes: 16
+skills:
+  - grammar
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n4-natural-expressions-review
+items:
+  - item: ja:item:n4-u6-gram-n-desu
+  - item: ja:item:n4-u6-gram-n-desu-ga
+  - item: ja:item:n4-u6-youji
+  - item: ja:item:n4-u6-tsukareru
+  - item: ja:item:n4-u6-guai
+  - item: ja:item:n4-u6-chikoku
+  - item: ja:item:n4-u6-denchi
+  - item: ja:item:n4-u6-kyuu-ni
+  - item: ja:item:n4-u6-jitsuwa
+  - item: ja:item:n4-u6-doushita-ndesuka
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn giải thích được vì sao mình đến muộn hay không đi được - 電車が遅れたんです。 - và mở lời lịch sự bằng ちょっとお聞きしたいんですが。
+  - type: explain
+    text:
+      vi: ～んです gắn vào thể thường (rút gọn của のです). Động từ và tính từ い giữ nguyên thể thường - 遅れたんです, 痛いんです, 行かないんです. Danh từ và tính từ な thêm な - 病気なんです, 暇なんです.
+  - type: explain
+    text:
+      vi: Dùng ～んです khi muốn giải thích lý do hay hoàn cảnh. Hỏi lý do thân thiện - どうして遅れたんですか。 Câu trả lời cũng kết thúc bằng んです - 電車が止まったんです。 Dạng không んです (遅れました) chỉ nêu sự việc, không mang sắc thái giải thích.
+  - type: explain
+    text:
+      vi: ～んですが mở lời trước khi nhờ hay hỏi - すみません、道を聞きたいんですが。 Đây là cách nói lịch sự và mềm hơn nói thẳng ～たいです. Vế sau (yêu cầu) thường được hiểu ngầm.
+  - type: deep_explain
+    text:
+      vi: Lưu ý ba điểm. (1) Với danh từ hiện tại phải dùng なんです chứ không dùng だんです. (2) んです là khẩu ngữ; trong văn viết và thông báo người ta dùng のです. (3) Dùng quá nhiều んです nghe như đang bào chữa; câu hỏi thông tin thuần tuý như これはいくらですか không cần んです.
+  - type: example
+    target: どうして遅刻したんですか。- 電車が事故で止まったんです。
+    target_lang: ja
+    translation:
+      vi: Sao bạn đến muộn vậy? - Vì tàu dừng do tai nạn.
+    note:
+      vi: Hỏi lý do và đáp lý do đều dùng んです.
+  - type: example
+    target: 頭が痛いんです。今日は帰ってもいいですか。
+    target_lang: ja
+    translation:
+      vi: Tôi bị đau đầu. Hôm nay tôi về được không ạ?
+    note:
+      vi: 痛いんです - giải thích lý do xin về.
+  - type: example
+    target: すみません、ちょっとお聞きしたいんですが。
+    target_lang: ja
+    translation:
+      vi: Xin lỗi, tôi muốn hỏi một chút.
+    note:
+      vi: ～んですが - mở lời.
+  - type: example
+    target: 実は、用事があるんです。
+    target_lang: ja
+    translation:
+      vi: Thật ra là tôi có việc bận.
+    note:
+      vi: 実は + んです - thú nhận lý do.
+  - type: common_mistake
+    wrong: 今日は病気だんです。
+    right: 今日は病気なんです。
+    target_lang: ja
+    note:
+      vi: "Danh từ + んです phải dùng な: 病気なんです, không dùng だんです."
+  - type: common_mistake
+    wrong: どうして遅れましたんですか。
+    right: どうして遅れたんですか。
+    target_lang: ja
+    note:
+      vi: んです đi với thể thường (遅れた), không đi với thể ます.
+  - type: summary
+    points:
+      - vi: Thể thường + んです - giải thích lý do, hoàn cảnh.
+      - vi: Danh từ / tính từ な + なんです.
+      - vi: ～んですが - mở lời nhờ, hỏi.
+      - vi: どうしたんですか - hỏi khi thấy ai đó khác thường.
+exercises:
+  - key: ja:exercise:n4-n-desu-n1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u6-gram-n-desu
+    prompt:
+      stem: Chọn câu đúng - 今日は休みます。___。
+      stem_lang: vi
+      options:
+        - id: r95
+          text: 頭が痛いんです
+          lang: ja
+        - id: o1y
+          text: 頭が痛いですんです
+          lang: ja
+        - id: nwv
+          text: 頭が痛いだんです
+          lang: ja
+        - id: vjg
+          text: 頭が痛くなんです
+          lang: ja
+    answer:
+      correct_option_id: r95
+    explanation:
+      vi: "Tính từ い + んです: 痛いんです. Thêm です trước んです hay dùng だ, な với tính từ い đều sai."
+    display_answer: 頭が痛いんです
+  - key: ja:exercise:n4-n-desu-n2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u6-gram-n-desu
+    prompt:
+      stem: Chọn câu đúng - 今日は行けません。実は、___。
+      stem_lang: vi
+      options:
+        - id: t3g
+          text: 用事がありますんです
+          lang: ja
+        - id: dxh
+          text: 用事があるでんです
+          lang: ja
+        - id: lqk
+          text: 用事があるんです
+          lang: ja
+        - id: t72
+          text: 用事があるなんです
+          lang: ja
+    answer:
+      correct_option_id: lqk
+    explanation:
+      vi: "Động từ + んです dùng thể thường: あるんです. ありますんです, あるなんです đều sai."
+    display_answer: 用事があるんです
+  - key: ja:exercise:n4-n-desu-n3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-u6-tsukareru
+    prompt:
+      audio_asset_id: null
+      fallback_text: 昨日は遅くまで働いたので、とても疲れているんです。
+      options:
+        - id: b2m
+          text: Hôm qua tôi làm việc đến khuya nên rất mệt.
+          lang: vi
+        - id: qeq
+          text: Hôm qua tôi đi chơi muộn nên rất vui.
+          lang: vi
+        - id: tey
+          text: Hôm qua tôi làm việc sớm nên không mệt.
+          lang: vi
+        - id: ki4
+          text: Hôm qua tôi ngủ muộn nên rất buồn ngủ.
+          lang: vi
+    answer:
+      correct_option_id: b2m
+    explanation:
+      vi: 遅くまで働いた - làm việc đến muộn; 疲れている - đang mệt; んです giải thích lý do.
+    display_answer: Hôm qua tôi làm việc đến khuya nên rất mệt.
+  - key: ja:exercise:n4-n-desu-n4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u6-gram-n-desu
+    prompt:
+      template: 今日は休みます。病気{{b1}}です。 (Tôi nghỉ hôm nay. Tôi bị bệnh.)
+      blanks:
+        - id: b1
+          width_hint: 2
+      hint_levels:
+        - Danh từ dùng な trước んです.
+        - Một chữ - な.
+    answer:
+      blanks:
+        b1:
+          - な
+    known_wrong:
+      - answer: だ
+        feedback_vi: "だんです là dạng sai; danh từ thêm な: 病気なんです."
+        error_tag: na_form
+      - answer: の
+        feedback_vi: "Dạng ～のです cũng đúng nhưng trước の phải là な: 病気なのです."
+        error_tag: na_form
+    explanation:
+      vi: Danh từ + な + んです - 病気なんです.
+    display_answer: 今日は休みます。病気なんです。
+  - key: ja:exercise:n4-n-desu-n5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u6-gram-n-desu-ga
+    prompt:
+      stem: Bạn muốn hỏi đường lịch sự. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: pln
+          text: すみません、駅へ行きたいですんですが。
+          lang: ja
+        - id: zwr
+          text: すみません、駅へ行きたいんですが。
+          lang: ja
+        - id: v4n
+          text: すみません、駅へ行きますんですが。
+          lang: ja
+        - id: teh
+          text: すみません、駅へ行くなんですが。
+          lang: ja
+    answer:
+      correct_option_id: zwr
+    explanation:
+      vi: ～たいんですが - muốn..., nhưng; thể thường たい + んです. Các dạng khác sai ngữ pháp.
+    display_answer: すみません、駅へ行きたいんですが。
+  - key: ja:exercise:n4-n-desu-n6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u6-youji
+    prompt:
+      template: 今日は{{b1}}があるので、早く帰ります。 (Hôm nay tôi có việc bận nên về sớm.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 用事
+          - ようじ
+    known_wrong:
+      - answer: 約束
+        feedback_vi: 約束 là cuộc hẹn; "việc bận" là 用事.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 用事 là việc bận cần làm.
+    display_answer: 今日は用事があるので、早く帰ります。
+  - key: ja:exercise:n4-n-desu-n7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u6-gram-n-desu
+    prompt:
+      template: どうして遅れた{{b1}}ですか。 (Sao bạn đến muộn vậy?)
+      blanks:
+        - id: b1
+          width_hint: 2
+    answer:
+      blanks:
+        b1:
+          - ん
+    known_wrong:
+      - answer: の
+        feedback_vi: ん là dạng rút gọn của の trong んです; viết ですか sau ん, không dùng のんです.
+        error_tag: form
+    explanation:
+      vi: 遅れたんですか - hỏi lý do với んです.
+    display_answer: どうして遅れたんですか。
+  - key: ja:exercise:n4-n-desu-n8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u6-gram-n-desu
+    prompt:
+      source_text: Xin lỗi, tôi bị đau bụng nên hôm nay nghỉ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - すみません、お腹が痛いんです。今日は休みます。
+        - すみません、おなかがいたいんです。きょうはやすみます。
+        - すみません、お腹が痛いので、今日は休みます。
+        - すみません、おなかがいたいので、きょうはやすみます。
+        - すみません、お腹が痛いんですが、今日は休みます。
+    known_wrong:
+      - answer: すみません、お腹が痛いですんです。今日は休みます。
+        feedback_vi: んです không đi với です; dùng 痛いんです.
+        error_tag: form
+      - answer: すみません、お腹がいたいだんです。
+        feedback_vi: Tính từ い + んです trực tiếp, không thêm だ.
+        error_tag: form
+    explanation:
+      vi: お腹が痛いんです giải thích lý do; hoặc dùng ので nêu nguyên nhân.
+    display_answer: すみません、お腹が痛いんです。今日は休みます。
+  - key: ja:exercise:n4-n-desu-n9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-u6-jitsuwa
+    prompt:
+      source_text: 実は、昨日財布を落としたんです。それで、お金がないんです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Thật ra hôm qua tôi làm rơi ví. Vì thế tôi không có tiền.
+        - Nói thật là hôm qua tôi đánh rơi ví nên không có tiền.
+        - Thật ra là hôm qua tôi bị rơi mất ví, cho nên tôi không còn tiền.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Thật ra hôm qua tôi nhặt được ví. Vì thế tôi có tiền.
+        feedback_vi: 落とした là làm rơi, không phải nhặt.
+        error_tag: meaning
+    explanation:
+      vi: 実は - thật ra; 落とした - đã làm rơi; それで - vì thế; んです giải thích lý do.
+    display_answer: Thật ra hôm qua tôi làm rơi ví. Vì thế tôi không có tiền.
+  - key: ja:exercise:n4-n-desu-n10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u6-gram-n-desu-ga
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Xin lỗi, tôi muốn hỏi một chút."'
+      tokens:
+        - id: t4
+          text: んですが。
+        - id: t1
+          text: すみません、
+        - id: t3
+          text: お聞きしたい
+        - id: t2
+          text: ちょっと
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Mở lời → ちょっと (một chút) → お聞きしたい (muốn hỏi, khiêm nhường) → んですが.
+    display_answer: すみません、ちょっとお聞きしたいんですが。
+  - key: ja:exercise:n4-n-desu-n11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u6-doushita-ndesuka
+    prompt:
+      stem: Bạn thấy đồng nghiệp trông rất mệt mỏi. Bạn hỏi gì tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - id: yei
+          text: どうしましたんですか。
+          lang: ja
+        - id: wjz
+          text: どうしたんですか。
+          lang: ja
+        - id: pju
+          text: どうしたですか。
+          lang: ja
+        - id: tl6
+          text: どうしたなんですか。
+          lang: ja
+    answer:
+      correct_option_id: wjz
+    explanation:
+      vi: どうしたんですか - thể thường (した) + んですか. Các dạng khác sai về cách nối.
+    display_answer: どうしたんですか。

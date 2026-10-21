@@ -1,0 +1,657 @@
+# Học liệu unit "Giải thích, phỏng đoán và trích dẫn" (JLPT N4). reading là cách đọc kana (furigana); romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n4-u6-gram-n-desu
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: Thể thường + んです / のです (Naな・Nな + んです)
+      romanization: plain form + n desu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Giải thích lý do hay hoàn cảnh, hoặc hỏi lý do một cách mềm mỏng. Danh từ và tính từ な thêm な trước んです (学生なんです, 静かなんです); ở thì hiện tại phủ định - 行かないんです.
+      examples:
+        - target: どうして遅れたんですか。- 電車が遅れたんです。
+          translation:
+            vi: Sao bạn đến muộn vậy? - Vì tàu bị trễ.
+        - target: 頭が痛いんです。
+          translation:
+            vi: Tôi bị đau đầu (nên mới vậy).
+      confusion:
+        vi: んです dùng khi người nói muốn giải thích hay người nghe đang chờ lý do; câu hỏi thuần tuý (これは本ですか) không cần んです.
+  - key: ja:item:n4-u6-gram-n-desu-ga
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: V/A thể thường + んですが、～
+      romanization: n desu ga
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: 'Mở lời trước khi nhờ vả, hỏi han hoặc xin phép: nêu hoàn cảnh bằng ～んですが rồi nói yêu cầu. Nghĩa đen "là thế này, nhưng...".'
+      examples:
+        - target: すみません、ちょっとお聞きしたいんですが。
+          translation:
+            vi: Xin lỗi, tôi muốn hỏi một chút.
+        - target: 日本語を勉強しているんですが、いい本を教えてください。
+          translation:
+            vi: Tôi đang học tiếng Nhật; xin bạn giới thiệu cho tôi một cuốn sách hay.
+  - key: ja:item:n4-u6-youji
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 用事
+      reading: ようじ
+      romanization: youji
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc bận, công việc cần làm
+      examples:
+        - target: 今日は用事があるので、早く帰ります。
+          translation:
+            vi: Hôm nay tôi có việc bận nên về sớm.
+  - key: ja:item:n4-u6-tsukareru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 疲れる
+      reading: つかれる
+      romanization: tsukareru
+      pos: động từ
+    back:
+      meaning:
+        vi: mệt, mệt mỏi
+      examples:
+        - target: 昨日は遅くまで働いたので、疲れました。
+          translation:
+            vi: Hôm qua tôi làm việc muộn nên mệt.
+  - key: ja:item:n4-u6-guai
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 具合
+      reading: ぐあい
+      romanization: guai
+      pos: danh từ
+    back:
+      meaning:
+        vi: tình trạng (sức khoẻ, máy móc)
+      examples:
+        - target: 具合が悪いので、今日は休みます。
+          translation:
+            vi: Tôi không khoẻ nên hôm nay nghỉ.
+      confusion:
+        vi: 具合が悪い - không khoẻ (người) hoặc trục trặc (máy). Hỏi thăm - ご具合はいかがですか.
+  - key: ja:item:n4-u6-chikoku
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 遅刻
+      reading: ちこく
+      romanization: chikoku
+      pos: danh từ
+    back:
+      meaning:
+        vi: đến muộn (giờ học, giờ làm)
+      examples:
+        - target: 電車が止まって、会社に遅刻しました。
+          translation:
+            vi: Tàu dừng nên tôi đến công ty muộn.
+      pronunciation_note:
+        vi: 遅刻する - đến muộn; khác 遅れる (muộn nói chung).
+  - key: ja:item:n4-u6-denchi
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 電池
+      reading: でんち
+      romanization: denchi
+      pos: danh từ
+    back:
+      meaning:
+        vi: pin
+      examples:
+        - target: 携帯の電池がなくなりました。
+          translation:
+            vi: Điện thoại hết pin.
+  - key: ja:item:n4-u6-kyuu-ni
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 急に
+      reading: きゅうに
+      romanization: kyuu ni
+      pos: phó từ
+    back:
+      meaning:
+        vi: đột nhiên, bất ngờ
+      examples:
+        - target: 急に雨が降ってきました。
+          translation:
+            vi: Trời đột nhiên mưa.
+  - key: ja:item:n4-u6-jitsuwa
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 実は
+      reading: じつは
+      romanization: jitsu wa
+      pos: phó từ
+    back:
+      meaning:
+        vi: thật ra là, nói thật thì
+      examples:
+        - target: 実は、お金がないんです。
+          translation:
+            vi: Thật ra là tôi không có tiền.
+      pronunciation_note:
+        vi: 実は mở đầu lời thú nhận hay giải thích bất ngờ.
+  - key: ja:item:n4-u6-gram-kamoshirenai
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: Thể thường + かもしれません (Naかもしれません / Nかもしれません)
+      romanization: plain form + kamoshiremasen
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Có thể, biết đâu - khả năng xảy ra nhưng chưa chắc. Danh từ và tính từ な gắn thẳng, không thêm だ/な.
+      examples:
+        - target: 明日は雨が降るかもしれません。
+          translation:
+            vi: Ngày mai có thể mưa.
+        - target: この道は危ないかもしれません。
+          translation:
+            vi: Con đường này có thể nguy hiểm.
+      confusion:
+        vi: かもしれません chỉ khả năng thấp-vừa; mức cao hơn dùng でしょう (たぶん) hoặc きっと.
+  - key: ja:item:n4-u6-tabun
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 多分
+      reading: たぶん
+      romanization: tabun
+      pos: phó từ
+    back:
+      meaning:
+        vi: có lẽ, chắc là (khoảng 70%)
+      examples:
+        - target: たぶん山田さんは来ないでしょう。
+          translation:
+            vi: Có lẽ anh Yamada sẽ không đến.
+  - key: ja:item:n4-u6-kitto
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: きっと
+      romanization: kitto
+      pos: phó từ
+    back:
+      meaning:
+        vi: chắc chắn là (mức rất cao)
+      examples:
+        - target: きっとうまくいきますよ。
+          translation:
+            vi: Chắc chắn sẽ thuận lợi thôi.
+  - key: ja:item:n4-u6-kanarazu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 必ず
+      reading: かならず
+      romanization: kanarazu
+      pos: phó từ
+    back:
+      meaning:
+        vi: nhất định, chắc chắn sẽ
+      examples:
+        - target: 必ず連絡します。
+          translation:
+            vi: Nhất định tôi sẽ liên lạc.
+  - key: ja:item:n4-u6-zettai
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 絶対
+      reading: ぜったい
+      romanization: zettai
+      pos: phó từ
+    back:
+      meaning:
+        vi: tuyệt đối, nhất quyết
+      examples:
+        - target: 絶対に行きません。
+          translation:
+            vi: Tôi tuyệt đối không đi.
+      pronunciation_note:
+        vi: ぜったい có っ - ngắt một nhịp.
+  - key: ja:item:n4-u6-moshikashitara
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: もしかしたら
+      romanization: moshikashitara
+      pos: phó từ
+    back:
+      meaning:
+        vi: biết đâu, có lẽ (khả năng thấp)
+      examples:
+        - target: もしかしたら、雨が降るかもしれません。
+          translation:
+            vi: Biết đâu trời sẽ mưa.
+  - key: ja:item:n4-u6-abunai
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 危ない
+      reading: あぶない
+      romanization: abunai
+      pos: tính từ い
+    back:
+      meaning:
+        vi: nguy hiểm
+      examples:
+        - target: この道は車が多くて危ないです。
+          translation:
+            vi: Con đường này nhiều xe nên nguy hiểm.
+  - key: ja:item:n4-u6-kiken
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 危険
+      reading: きけん
+      romanization: kiken
+      pos: tính từ な
+    back:
+      meaning:
+        vi: nguy hiểm (mang tính cảnh báo)
+      examples:
+        - target: ここは危険ですから入らないでください。
+          translation:
+            vi: Chỗ này nguy hiểm nên xin đừng vào.
+      confusion:
+        vi: 危ない dùng trong hội thoại; 危険 trang trọng hơn, hay xuất hiện trên biển báo.
+  - key: ja:item:n4-u6-anzen
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 安全
+      reading: あんぜん
+      romanization: anzen
+      pos: tính từ な
+    back:
+      meaning:
+        vi: an toàn
+      examples:
+        - target: この町は安全です。
+          translation:
+            vi: Thị trấn này an toàn.
+  - key: ja:item:n4-u6-gram-to-omou
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: ～と思います / ～と思っています
+      romanization: to omoimasu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Nghĩ rằng, cho rằng. Trước と dùng thể thường. Dạng ～と思っています diễn tả ý kiến, suy nghĩ đang giữ. Hỏi ý kiến - ～についてどう思いますか.
+      examples:
+        - target: 明日は雨が降ると思います。
+          translation:
+            vi: Tôi nghĩ ngày mai sẽ mưa.
+        - target: 日本語は面白いと思います。
+          translation:
+            vi: Tôi nghĩ tiếng Nhật rất thú vị.
+      confusion:
+        vi: Với suy nghĩ của người thứ ba dùng ～と思っています (山田さんは来ないと思っています); ～と思います chỉ dùng cho suy nghĩ của chính mình.
+  - key: ja:item:n4-u6-gram-to-iu
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: ～と言いました / 「～」と言いました
+      romanization: to iimashita
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Dẫn lời nói. Trực tiếp - 「…」と言いました (trong ngoặc kép); gián tiếp - thể thường + と言いました (thì ở vế trích theo thời điểm nói ban đầu).
+      examples:
+        - target: 山田さんは「明日は休みです」と言いました。
+          translation:
+            vi: Anh Yamada nói "Ngày mai là ngày nghỉ".
+        - target: 先生は明日テストがあると言いました。
+          translation:
+            vi: Cô giáo nói ngày mai có bài kiểm tra.
+      confusion:
+        vi: Nói "bảo ai" dùng に - 山田さんに「ありがとう」と言いました.
+  - key: ja:item:n4-u6-kangaeru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 考える
+      reading: かんがえる
+      romanization: kangaeru
+      pos: động từ
+    back:
+      meaning:
+        vi: suy nghĩ, cân nhắc
+      examples:
+        - target: もう少し考えてから決めます。
+          translation:
+            vi: Tôi suy nghĩ thêm một chút rồi mới quyết.
+  - key: ja:item:n4-u6-shinjiru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 信じる
+      reading: しんじる
+      romanization: shinjiru
+      pos: động từ
+    back:
+      meaning:
+        vi: tin, tin tưởng
+      examples:
+        - target: あなたの話を信じます。
+          translation:
+            vi: Tôi tin lời bạn.
+  - key: ja:item:n4-u6-tsutaeru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 伝える
+      reading: つたえる
+      romanization: tsutaeru
+      pos: động từ
+    back:
+      meaning:
+        vi: truyền đạt, nhắn lại
+      examples:
+        - target: 山田さんにこのことを伝えてください。
+          translation:
+            vi: Xin hãy nhắn việc này cho anh Yamada.
+  - key: ja:item:n4-u6-futsuu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 普通
+      reading: ふつう
+      romanization: futsuu
+      pos: danh từ / phó từ
+    back:
+      meaning:
+        vi: bình thường; thông thường
+      examples:
+        - target: 普通は朝七時に起きます。
+          translation:
+            vi: Bình thường tôi dậy lúc 7 giờ sáng.
+      pronunciation_note:
+        vi: "ふつう có trường âm: fu-tsuu."
+  - key: ja:item:n4-u6-tokuni
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 特に
+      reading: とくに
+      romanization: toku ni
+      pos: phó từ
+    back:
+      meaning:
+        vi: đặc biệt là, nhất là
+      examples:
+        - target: 特に問題はありません。
+          translation:
+            vi: Không có vấn đề gì đặc biệt.
+  - key: ja:item:n4-u6-tatoeba
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 例えば
+      reading: たとえば
+      romanization: tatoeba
+      pos: phó từ
+    back:
+      meaning:
+        vi: ví dụ như, chẳng hạn
+      examples:
+        - target: 例えば、すしや天ぷらがあります。
+          translation:
+            vi: Ví dụ có sushi và tempura.
+  - key: ja:item:n4-u6-dou-omoimasu
+    type: phrase
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - speaking
+      - vocabulary
+    front:
+      text: どう思いますか
+      reading: どうおもいますか
+      romanization: dou omoimasu ka
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Bạn nghĩ thế nào? (hỏi ý kiến)
+      examples:
+        - target: この計画についてどう思いますか。
+          translation:
+            vi: Bạn nghĩ thế nào về kế hoạch này?
+  - key: ja:item:n4-u6-gram-interrog-ka
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: 疑問詞 + か (だれか・なにか・どこか・いつか)
+      romanization: dare ka, nani ka, doko ka, itsu ka
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Ai đó, cái gì đó, nơi nào đó, lúc nào đó - từ để hỏi thêm か thành đại từ bất định. Dùng khi chưa biết hoặc không cần nói rõ.
+      examples:
+        - target: だれか来ましたか。
+          translation:
+            vi: Có ai đến à?
+        - target: 何か飲みませんか。
+          translation:
+            vi: Bạn uống gì đó không?
+      confusion:
+        vi: Với trợ từ に, へ, を đứng sau か - どこかへ行きます (đi đâu đó); trợ từ が, を thường lược bỏ.
+  - key: ja:item:n4-u6-gram-demo
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: N でも (ví dụ gợi ý)
+      romanization: N demo
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: 'Gợi ý một lựa chọn trong số nhiều ("hay là... chẳng hạn"): お茶でも飲みませんか. Dùng trong lời mời nhẹ, không ràng buộc.'
+      examples:
+        - target: お茶でも飲みませんか。
+          translation:
+            vi: Uống trà gì đó nhé?
+        - target: 日曜日に映画でも見に行きませんか。
+          translation:
+            vi: Chủ nhật đi xem phim hay gì đó nhé?
+      confusion:
+        vi: N でも (gợi ý) khác でも (nhưng) ở đầu câu và khác ～ても (dù).
+  - key: ja:item:n4-u6-sasou
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 誘う
+      reading: さそう
+      romanization: sasou
+      pos: động từ
+    back:
+      meaning:
+        vi: rủ, mời (đi cùng)
+      examples:
+        - target: 友達を映画に誘いました。
+          translation:
+            vi: Tôi đã rủ bạn đi xem phim.
+  - key: ja:item:n4-u6-kotowaru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 断る
+      reading: ことわる
+      romanization: kotowaru
+      pos: động từ
+    back:
+      meaning:
+        vi: từ chối
+      examples:
+        - target: 誘われましたが、用事があって断りました。
+          translation:
+            vi: Tôi được rủ nhưng có việc bận nên đã từ chối.
+  - key: ja:item:n4-u6-shoutai
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 招待
+      reading: しょうたい
+      romanization: shoutai
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời mời (dự tiệc, sự kiện)
+      examples:
+        - target: 結婚式に招待されました。
+          translation:
+            vi: Tôi được mời dự đám cưới.
+  - key: ja:item:n4-u6-shoukai
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 紹介
+      reading: しょうかい
+      romanization: shoukai
+      pos: danh từ
+    back:
+      meaning:
+        vi: giới thiệu
+      examples:
+        - target: 友達を紹介します。
+          translation:
+            vi: Tôi sẽ giới thiệu bạn tôi.
+  - key: ja:item:n4-u6-doushita-ndesuka
+    type: phrase
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - speaking
+      - vocabulary
+    front:
+      text: どうしたんですか
+      romanization: dou shita n desu ka
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Bạn bị sao vậy? (hỏi khi thấy ai đó có vẻ khác thường)
+      examples:
+        - target: 顔色が悪いですね。どうしたんですか。
+          translation:
+            vi: Sắc mặt bạn kém nhỉ. Bạn bị sao vậy?

@@ -1,0 +1,377 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n4-to-omou
+order_index: 3
+level: n4
+title:
+  vi: Ý kiến và trích dẫn - ～と思います・～と言いました
+objectives:
+  - vi: Nói ý kiến của mình bằng ～と思います.
+  - vi: Dẫn lời người khác trực tiếp 「～」と言いました và gián tiếp ～と言いました.
+  - vi: Hỏi ý kiến bằng どう思いますか và dùng 考える, 信じる, 伝える.
+estimated_minutes: 16
+skills:
+  - grammar
+  - vocabulary
+  - speaking
+  - reading
+prerequisites:
+  - ja:lesson:n4-kamoshirenai
+items:
+  - item: ja:item:n4-u6-gram-to-omou
+  - item: ja:item:n4-u6-gram-to-iu
+  - item: ja:item:n4-u6-kangaeru
+  - item: ja:item:n4-u6-shinjiru
+  - item: ja:item:n4-u6-tsutaeru
+  - item: ja:item:n4-u6-futsuu
+  - item: ja:item:n4-u6-tokuni
+  - item: ja:item:n4-u6-tatoeba
+  - item: ja:item:n4-u6-dou-omoimasu
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nêu ý kiến - 日本語は面白いと思います。 - và kể lại lời người khác - 先生は明日テストがあると言いました。
+  - type: explain
+    text:
+      vi: ～と思います nghĩa là "tôi nghĩ rằng". Trước と dùng thể thường - 明日は雨が降ると思います; tính từ な và danh từ giữ だ - 静かだと思います, 学生だと思います.
+  - type: explain
+    text:
+      vi: "Dẫn lời: ～と言いました. Trực tiếp - 「明日は休みです」と言いました (giữ nguyên câu nói, đặt trong 「」). Gián tiếp - 明日は休みだと言いました (đổi sang thể thường). Người được nói với dùng に - 山田さんに言いました."
+  - type: explain
+    text:
+      vi: Hỏi ý kiến - ～についてどう思いますか (bạn nghĩ thế nào về ...?). Từ liên quan - 考える (suy nghĩ), 信じる (tin), 伝える (truyền đạt), 例えば (ví dụ), 特に (nhất là), 普通 (bình thường).
+  - type: deep_explain
+    text:
+      vi: Lưu ý phân biệt ～と思います và ～と思っています. Nói ý kiến của chính mình ngay lúc nói dùng ～と思います; nói ý kiến của người khác hay ý kiến đang kéo dài dùng ～と思っています (山田さんは来ないと思っています). Khi chưa chắc, người Nhật hay thêm たぶん hoặc ～と思いますが để giảm sắc thái khẳng định. Dạng phủ định "tôi không nghĩ là..." hay nói ～ないと思います, không nói ～と思いません.
+  - type: example
+    target: 明日はいい天気になると思います。
+    target_lang: ja
+    translation:
+      vi: Tôi nghĩ ngày mai thời tiết sẽ đẹp.
+    note:
+      vi: ～と思います - tôi nghĩ.
+  - type: example
+    target: 山田さんは「明日は休みです」と言いました。
+    target_lang: ja
+    translation:
+      vi: Anh Yamada nói "Ngày mai là ngày nghỉ".
+    note:
+      vi: 「」 - trích dẫn trực tiếp.
+  - type: example
+    target: 先生は明日テストがあると言いました。
+    target_lang: ja
+    translation:
+      vi: Cô giáo nói ngày mai có bài kiểm tra.
+    note:
+      vi: Trích dẫn gián tiếp - thể thường + と.
+  - type: example
+    target: この計画についてどう思いますか。- いいと思います。
+    target_lang: ja
+    translation:
+      vi: Bạn nghĩ thế nào về kế hoạch này? - Tôi nghĩ là tốt.
+    note:
+      vi: どう思いますか - hỏi ý kiến.
+  - type: common_mistake
+    wrong: 明日は雨が降るですと思います。
+    right: 明日は雨が降ると思います。
+    target_lang: ja
+    note:
+      vi: Trước と dùng thể thường (降る), không dùng thể です.
+  - type: common_mistake
+    wrong: 山田さんは来るだと言いました。
+    right: 山田さんは来ると言いました。
+    target_lang: ja
+    note:
+      vi: Động từ thể thường + と; だ chỉ dùng với danh từ và tính từ な.
+  - type: summary
+    points:
+      - vi: ～と思います - tôi nghĩ; ～と思っています - (ai) đang nghĩ.
+      - vi: 「～」と言いました - trực tiếp; thể thường + と言いました - gián tiếp.
+      - vi: どう思いますか - bạn nghĩ sao?
+      - vi: 考える suy nghĩ · 信じる tin · 伝える truyền đạt.
+exercises:
+  - key: ja:exercise:n4-to-omou-o1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u6-gram-to-omou
+    prompt:
+      stem: Chọn câu đúng - 日本語は面白い___。
+      stem_lang: vi
+      options:
+        - id: j3i
+          text: と思います
+          lang: ja
+        - id: hfp
+          text: ですと思います
+          lang: ja
+        - id: ues
+          text: ますと思います
+          lang: ja
+        - id: smu
+          text: のと思います
+          lang: ja
+    answer:
+      correct_option_id: j3i
+    explanation:
+      vi: Trước と dùng thể thường (面白い) rồi ～と思います. ですと, ますと, のと đều sai.
+    display_answer: と思います
+  - key: ja:exercise:n4-to-omou-o2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u6-gram-to-iu
+    prompt:
+      stem: Chọn câu đúng - 先生は明日テストが___と言いました。
+      stem_lang: vi
+      options:
+        - id: qmy
+          text: ある
+          lang: ja
+        - id: nje
+          text: あるの
+          lang: ja
+        - id: oul
+          text: あります
+          lang: ja
+        - id: d31
+          text: あるです
+          lang: ja
+    answer:
+      correct_option_id: qmy
+    explanation:
+      vi: "Trích dẫn gián tiếp dùng thể thường: ある. あります (lịch sự) không dùng ở đây."
+    display_answer: ある
+  - key: ja:exercise:n4-to-omou-o3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-u6-tsutaeru
+    prompt:
+      audio_asset_id: null
+      fallback_text: 山田さんにこのことを伝えてください。明日は休みだと言っていました。
+      options:
+        - id: xra
+          text: Xin hãy hỏi anh Yamada. Ngày mai có thể nghỉ.
+          lang: vi
+        - id: ilb
+          text: Anh Yamada đã nhắn việc này. Hôm nay nghỉ.
+          lang: vi
+        - id: xv4
+          text: Xin hãy nhắn việc này cho anh Yamada. Ngày mai nghe nói là nghỉ.
+          lang: vi
+        - id: c8d
+          text: Xin hãy nhắn anh Yamada đến. Hôm nay là ngày nghỉ.
+          lang: vi
+    answer:
+      correct_option_id: xv4
+    explanation:
+      vi: 伝えてください - xin hãy nhắn lại; 休みだと言っていました - (họ) đang nói là nghỉ.
+    display_answer: Xin hãy nhắn việc này cho anh Yamada. Ngày mai nghe nói là nghỉ.
+  - key: ja:exercise:n4-to-omou-o4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u6-gram-to-omou
+    prompt:
+      template: 私は明日雨が降る{{b1}}思います。 (Tôi nghĩ ngày mai trời sẽ mưa.)
+      blanks:
+        - id: b1
+          width_hint: 2
+      hint_levels:
+        - Trợ từ trích dẫn.
+        - Một chữ - と.
+    answer:
+      blanks:
+        b1:
+          - と
+    known_wrong:
+      - answer: って
+        feedback_vi: って là dạng khẩu ngữ; dạng cơ bản ở N4 là と.
+        error_tag: form
+    explanation:
+      vi: ～と思います - trợ từ と nối nội dung suy nghĩ.
+    display_answer: 私は明日雨が降ると思います。
+  - key: ja:exercise:n4-to-omou-o5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u6-dou-omoimasu
+    prompt:
+      stem: Bạn muốn hỏi ý kiến về kế hoạch. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: is0
+          text: この計画についてどう伝えますか。
+          lang: ja
+        - id: rku
+          text: この計画についてどう信じますか。
+          lang: ja
+        - id: s1h
+          text: この計画についてどう思いますか。
+          lang: ja
+        - id: zw2
+          text: この計画についてどう言いますか。
+          lang: ja
+    answer:
+      correct_option_id: s1h
+    explanation:
+      vi: Hỏi ý kiến dùng どう思いますか. 言う (nói), 信じる (tin), 伝える (truyền đạt) không dùng để hỏi ý kiến.
+    display_answer: この計画についてどう思いますか。
+  - key: ja:exercise:n4-to-omou-o6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u6-kangaeru
+    prompt:
+      template: もう少し{{b1}}から決めます。 (Tôi suy nghĩ thêm chút rồi mới quyết.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - 考えて
+          - かんがえて
+    known_wrong:
+      - answer: 信じて
+        feedback_vi: 信じる là tin; suy nghĩ là 考える.
+        error_tag: verb_choice
+    explanation:
+      vi: 考えて là thể て của 考える - suy nghĩ.
+    display_answer: もう少し考えてから決めます。
+  - key: ja:exercise:n4-to-omou-o7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u6-gram-to-iu
+    prompt:
+      template: 山田さんは「明日は休みです」{{b1}}言いました。 (Anh Yamada nói "Ngày mai là ngày nghỉ".)
+      blanks:
+        - id: b1
+          width_hint: 2
+    answer:
+      blanks:
+        b1:
+          - と
+    known_wrong:
+      - answer: を
+        feedback_vi: Lời trích dẫn được nối bằng と, không dùng を.
+        error_tag: particle_to_wo
+    explanation:
+      vi: 「…」と言いました - trích dẫn trực tiếp.
+    display_answer: 山田さんは「明日は休みです」と言いました。
+  - key: ja:exercise:n4-to-omou-o8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u6-gram-to-omou
+    prompt:
+      source_text: Tôi nghĩ tiếng Nhật rất thú vị.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 日本語は面白いと思います。
+        - にほんごはおもしろいとおもいます。
+        - 日本語はおもしろいと思います。
+        - 私は日本語は面白いと思います。
+        - 日本語は面白いと思っています。
+    known_wrong:
+      - answer: 日本語は面白いですと思います。
+        feedback_vi: Trước と dùng thể thường (面白い).
+        error_tag: form
+      - answer: 日本語は面白いを思います。
+        feedback_vi: Dùng と, không dùng を.
+        error_tag: particle_to_wo
+    explanation:
+      vi: 面白い + と思います - tôi nghĩ là thú vị.
+    display_answer: 日本語は面白いと思います。
+  - key: ja:exercise:n4-to-omou-o9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-u6-gram-to-iu
+    prompt:
+      source_text: 田中さんは「来週、日本へ行きます」と言いました。私は少し驚きました。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Anh Tanaka nói "Tuần sau tôi đi Nhật". Tôi hơi ngạc nhiên.
+        - Anh Tanaka nói rằng tuần sau anh ấy sẽ đi Nhật. Tôi hơi ngạc nhiên.
+        - Anh Tanaka nói "Tuần sau tôi sẽ đi Nhật", tôi hơi bất ngờ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Anh Tanaka nói "Tuần trước tôi đã đi Nhật". Tôi hơi ngạc nhiên.
+        feedback_vi: 来週 là tuần sau, không phải tuần trước.
+        error_tag: time_word
+    explanation:
+      vi: 来週 - tuần sau; 行きます - sẽ đi; 驚きました - đã ngạc nhiên.
+    display_answer: Anh Tanaka nói "Tuần sau tôi đi Nhật". Tôi hơi ngạc nhiên.
+  - key: ja:exercise:n4-to-omou-o10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u6-gram-to-omou
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Tôi nghĩ ngày mai sẽ có tuyết."'
+      tokens:
+        - id: t2
+          text: 雪が
+        - id: t3
+          text: 降ると
+        - id: t4
+          text: 思います。
+        - id: t1
+          text: 明日は
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Thời gian → chủ ngữ (雪が) → thể thường + と → 思います.
+    display_answer: 明日は雪が降ると思います。
+  - key: ja:exercise:n4-to-omou-o11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u6-futsuu
+    prompt:
+      stem: Bạn muốn nói “Bình thường tôi dậy lúc 7 giờ”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: va2
+          text: 普通を七時に起きます。
+          lang: ja
+        - id: czm
+          text: 普通が七時に起きます。
+          lang: ja
+        - id: dmn
+          text: 普通で七時に起きます。
+          lang: ja
+        - id: nm9
+          text: 普通は七時に起きます。
+          lang: ja
+    answer:
+      correct_option_id: nm9
+    explanation:
+      vi: 普通は + câu - "bình thường thì...". で, を, が không hợp trong câu này.
+    display_answer: 普通は七時に起きます。
