@@ -1,0 +1,496 @@
+# Học liệu unit "Động từ ghép, khả năng văn viết và điểm khởi đầu" (JLPT N2). reading là cách đọc kana (furigana); romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n2-u9-gram-kiru
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: V ます (bỏ ます) + 切る / 切れない
+      romanization: V-stem + kiru / kirenai
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Làm hết, làm trọn, làm đến cùng (きる); không thể làm hết (きれない). 疲れ切る (kiệt sức), 言い切る (khẳng định chắc chắn), 食べきれない (ăn không hết).
+      examples:
+        - target: この量は一人では食べきれません。
+          translation:
+            vi: Lượng này một mình tôi không ăn hết được.
+        - target: 毎日の仕事で疲れ切っています。
+          translation:
+            vi: Công việc hằng ngày làm tôi kiệt sức.
+  - key: ja:item:n2-u9-gram-nuku
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: V ます (bỏ ます) + 抜く
+      romanization: V-stem + nuku
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Làm đến cùng bất chấp khó khăn, kiên trì: やり抜く (làm đến cùng), 耐え抜く (chịu đựng đến cùng), 考え抜く (suy nghĩ thấu đáo)."
+      examples:
+        - target: どんなに苦しくても、最後までやり抜きます。
+          translation:
+            vi: Dù vất vả đến mấy tôi cũng sẽ làm đến cùng.
+        - target: 考え抜いた末に、結論を出しました。
+          translation:
+            vi: Sau khi suy nghĩ thấu đáo, tôi đã đưa ra kết luận.
+  - key: ja:item:n2-u9-gram-toosu
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: V ます (bỏ ます) + 通す
+      romanization: V-stem + toosu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Làm liên tục, làm suốt cho đến cuối hoặc đến cùng: 歩き通す (đi bộ suốt), 見通す (nhìn thấu), 貫き通す (kiên trì giữ vững)."
+      examples:
+        - target: 山道を一日中歩き通しました。
+          translation:
+            vi: Tôi đã đi bộ suốt cả ngày trên đường núi.
+        - target: 最後まで自分の意見を言い通しました。
+          translation:
+            vi: Tôi nói ý kiến của mình đến cùng.
+  - key: ja:item:n2-u9-gram-komu
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: V ます (bỏ ます) + 込む
+      romanization: V-stem + komu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Vào trong; ở trong trạng thái sâu: 考え込む (chìm trong suy nghĩ), 乗り込む (lên xe), 読み込む (đọc kỹ), 思い込む (tin chắc, nghĩ rằng)."
+      examples:
+        - target: 彼は難しい顔で考え込んでいました。
+          translation:
+            vi: Anh ấy chìm trong suy nghĩ với vẻ mặt nặng nề.
+        - target: バスに乗り込むと、すぐ発車しました。
+          translation:
+            vi: Vừa lên xe buýt thì xe chạy ngay.
+  - key: ja:item:n2-u9-gram-au
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: V ます (bỏ ます) + 合う
+      romanization: V-stem + au
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Làm lẫn nhau, cùng nhau: 話し合う (thảo luận), 助け合う (giúp đỡ nhau), 愛し合う (yêu nhau), 協力し合う (hợp tác với nhau)."
+      examples:
+        - target: 困ったときは、みんなで助け合いましょう。
+          translation:
+            vi: Khi gặp khó khăn, mọi người hãy giúp đỡ lẫn nhau.
+        - target: 二人はよく話し合って、結論を出しました。
+          translation:
+            vi: Hai người thảo luận kỹ rồi đưa ra kết luận.
+  - key: ja:item:n2-u9-gram-ppanashi
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: V て / V ます (bỏ ます) + っぱなし
+      romanization: V-stem + ppanashi
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Để nguyên trạng thái, bỏ mặc (thường chê trách): 開けっぱなし (để mở), つけっぱなし (để bật), 出しっぱなし (để ra ngoài), 言われっぱなし (bị nói mà không đáp lại)."
+      examples:
+        - target: 電気をつけっぱなしで寝てしまいました。
+          translation:
+            vi: Tôi ngủ quên mà để đèn bật nguyên.
+        - target: 窓を開けっぱなしにしないでください。
+          translation:
+            vi: Xin đừng để cửa sổ mở toang.
+  - key: ja:item:n2-u9-gram-tate
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: V ます (bỏ ます) + たて
+      romanization: V-stem + tate
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Vừa mới (làm xong), còn mới nguyên: 焼きたてのパン (bánh mì vừa nướng), 生まれたて (mới sinh), 洗いたて (vừa giặt)."
+      examples:
+        - target: 焼きたてのパンはおいしいです。
+          translation:
+            vi: Bánh mì vừa nướng thì ngon.
+        - target: 洗いたてのシャツは気持ちがいいです。
+          translation:
+            vi: Áo sơ mi vừa giặt xong thật dễ chịu.
+  - key: ja:item:n2-u9-uchiakeru
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 打ち明ける
+      reading: うちあける
+      romanization: uchiakeru
+      pos: động từ
+    back:
+      meaning:
+        vi: thổ lộ, thú nhận
+      examples:
+        - target: 彼女に自分の気持ちを打ち明けました。
+          translation:
+            vi: Tôi đã thổ lộ tình cảm của mình với cô ấy.
+  - key: ja:item:n2-u9-minaosu
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 見直す
+      reading: みなおす
+      romanization: minaosu
+      pos: động từ
+    back:
+      meaning:
+        vi: xem lại; đánh giá lại
+      examples:
+        - target: 計画を見直す必要があります。
+          translation:
+            vi: Cần xem xét lại kế hoạch.
+  - key: ja:item:n2-u9-torikumu
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 取り組む
+      reading: とりくむ
+      romanization: torikumu
+      pos: động từ
+    back:
+      meaning:
+        vi: dốc sức giải quyết, nỗ lực làm
+      examples:
+        - target: 環境問題に取り組んでいます。
+          translation:
+            vi: Chúng tôi đang nỗ lực giải quyết vấn đề môi trường.
+  - key: ja:item:n2-u9-uketomeru
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 受け止める
+      reading: うけとめる
+      romanization: uketomeru
+      pos: động từ
+    back:
+      meaning:
+        vi: đón nhận, tiếp nhận (lời nói, sự thật)
+      examples:
+        - target: 批判を真剣に受け止めます。
+          translation:
+            vi: Tôi tiếp nhận lời phê bình một cách nghiêm túc.
+  - key: ja:item:n2-u9-norikoeru
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 乗り越える
+      reading: のりこえる
+      romanization: norikoeru
+      pos: động từ
+    back:
+      meaning:
+        vi: vượt qua (khó khăn)
+      examples:
+        - target: 困難を乗り越えて、成功しました。
+          translation:
+            vi: Vượt qua khó khăn, anh ấy đã thành công.
+  - key: ja:item:n2-u9-minogasu
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 見逃す
+      reading: みのがす
+      romanization: minogasu
+      pos: động từ
+    back:
+      meaning:
+        vi: bỏ lỡ; làm ngơ
+      examples:
+        - target: 大事なチャンスを見逃してしまいました。
+          translation:
+            vi: Tôi đã bỏ lỡ một cơ hội quan trọng.
+  - key: ja:item:n2-u9-kuichigau
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 食い違う
+      reading: くいちがう
+      romanization: kuichigau
+      pos: động từ
+    back:
+      meaning:
+        vi: khác nhau, mâu thuẫn (ý kiến, lời khai)
+      examples:
+        - target: 二人の意見が食い違っています。
+          translation:
+            vi: Ý kiến của hai người mâu thuẫn nhau.
+  - key: ja:item:n2-u9-omoikomu
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 思い込む
+      reading: おもいこむ
+      romanization: omoikomu
+      pos: động từ
+    back:
+      meaning:
+        vi: tin chắc, nghĩ chắc rằng (thường sai)
+      examples:
+        - target: 試験は明日だと思い込んでいました。
+          translation:
+            vi: Tôi cứ tin chắc kỳ thi là ngày mai.
+  - key: ja:item:n2-u9-gram-uru
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: V ます (bỏ ます) + 得る / 得ない
+      romanization: V-stem + uru / enai
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Có thể (xảy ra) / không thể. Đọc うる / えない trong văn viết; chỉ khả năng khách quan, thường dùng với あり得る (có thể có), 考え得る (có thể nghĩ tới).
+      examples:
+        - target: そんなことはあり得ません。
+          translation:
+            vi: Chuyện như vậy là không thể xảy ra.
+        - target: 考え得る限りの対策をしました。
+          translation:
+            vi: Chúng tôi đã làm mọi đối sách có thể nghĩ tới.
+      confusion:
+        vi: "得る khác できる: 得る thiên về khả năng khách quan trong văn viết; できる dùng cho năng lực, khả năng của người."
+  - key: ja:item:n2-u9-gram-kaneru
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: V ます (bỏ ます) + かねる
+      romanization: V-stem + kaneru
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Khó mà làm được, không thể (về mặt tình cảm hoặc quy định; từ chối lịch sự). 申し上げかねます (tôi không thể nói), お答えしかねます (tôi khó trả lời).
+      examples:
+        - target: その件については、お答えしかねます。
+          translation:
+            vi: Về việc đó, tôi khó trả lời được.
+        - target: 私一人では決めかねます。
+          translation:
+            vi: Một mình tôi khó mà quyết định.
+      confusion:
+        vi: かねる (không thể) ≠ かねない (có nguy cơ, đã học ở bài trước).
+  - key: ja:item:n2-u9-gram-gatai
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: V ます (bỏ ます) + がたい
+      romanization: V-stem + gatai
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Khó mà ... (thường vì cảm xúc, khó chấp nhận): 信じがたい (khó tin), 許しがたい (khó tha thứ), 忘れがたい (khó quên), 理解しがたい (khó hiểu)."
+      examples:
+        - target: 信じがたい話ですが、本当です。
+          translation:
+            vi: Chuyện khó tin nhưng là sự thật.
+        - target: あの日のことは、忘れがたい思い出です。
+          translation:
+            vi: Chuyện ngày đó là một kỷ niệm khó quên.
+  - key: ja:item:n2-u9-gram-wo-kikkake-ni
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: N / V こと + をきっかけに(して)
+      romanization: N o kikkake ni
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Nhân cơ hội ..., khởi đầu từ ... (một sự kiện làm khởi điểm cho thay đổi).
+      examples:
+        - target: 病気をきっかけに、生活を見直しました。
+          translation:
+            vi: Nhân dịp bị bệnh, tôi đã xem xét lại lối sống.
+        - target: 留学をきっかけに、日本語に興味を持ちました。
+          translation:
+            vi: Nhờ đi du học mà tôi bắt đầu quan tâm đến tiếng Nhật.
+  - key: ja:item:n2-u9-gram-ni-sakidatte
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: N / V辞書形 + に先立って
+      romanization: N ni sakidatte
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Trước khi (làm việc lớn, quan trọng), như chuẩn bị. Trang trọng: 開会に先立って (trước khi khai mạc)."
+      examples:
+        - target: 試験に先立って、注意事項を説明します。
+          translation:
+            vi: Trước kỳ thi, tôi sẽ giải thích các điều cần lưu ý.
+        - target: 出発に先立って、ミーティングを行います。
+          translation:
+            vi: Trước khi xuất phát sẽ họp.
+  - key: ja:item:n2-u9-gram-ni-ataru
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: N / V辞書形 + に際して / にあたって
+      romanization: N ni saishite / ni atatte
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: 'Khi (bắt đầu làm một việc quan trọng): khi nhập học, khi ký hợp đồng. Trang trọng; 際して gần với 際に, にあたって nhấn "sắp bắt đầu".'
+      examples:
+        - target: 契約するにあたって、よく読んでください。
+          translation:
+            vi: Khi ký hợp đồng, xin hãy đọc kỹ.
+        - target: 入学に際して、書類を提出してください。
+          translation:
+            vi: Khi nhập học, xin hãy nộp hồ sơ.
+  - key: ja:item:n2-u9-gram-ko-to-naku
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: V辞書形 + ことなく
+      romanization: V-jisho koto naku
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Không (làm) mà ..., không hề ... (văn viết): 休むことなく働く (làm việc không nghỉ)."
+      examples:
+        - target: 彼は一度も休むことなく、十年間働きました。
+          translation:
+            vi: Anh ấy làm việc mười năm mà chưa nghỉ lần nào.
+        - target: 迷うことなく、その道を選びました。
+          translation:
+            vi: Không do dự, anh ấy đã chọn con đường đó.
+  - key: ja:item:n2-u9-gram-tsutsu-mo
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: V ます (bỏ ます) + つつも
+      romanization: V-stem + tsutsu mo
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Tuy ... nhưng (biết/ nghĩ vậy nhưng vẫn ...). 悪いと思いつつも (tuy nghĩ là không tốt nhưng ...).
+      examples:
+        - target: 体に悪いと知りつつも、やめられません。
+          translation:
+            vi: Biết là có hại cho sức khoẻ nhưng tôi vẫn không bỏ được.
+        - target: 忙しいと思いつつも、友達に電話してしまいました。
+          translation:
+            vi: Tuy nghĩ là mình bận nhưng tôi vẫn gọi điện cho bạn.
+  - key: ja:item:n2-u9-gram-bakari-ni
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: thể thường + ばかりに
+      romanization: plain form bakari ni
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Chỉ vì ... mà (dẫn tới kết quả xấu, nuối tiếc). Thường đi với quá khứ.
+      examples:
+        - target: 約束を忘れたばかりに、友達を怒らせてしまいました。
+          translation:
+            vi: Chỉ vì quên cuộc hẹn mà tôi đã làm bạn giận.
+        - target: お金がないばかりに、旅行に行けませんでした。
+          translation:
+            vi: Chỉ vì không có tiền mà tôi đã không đi du lịch được.
+  - key: ja:item:n2-u9-gram-ka-no-you-da
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: thể thường + かのようだ / かのような N
+      romanization: plain form ka no you da
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Cứ như thể là ... (dù thực tế không phải). Thường kèm まるで.
+      examples:
+        - target: まるで夢を見ているかのようです。
+          translation:
+            vi: Cứ như thể tôi đang mơ vậy.
+        - target: 彼は何も知らないかのように話しました。
+          translation:
+            vi: Anh ấy nói như thể không biết gì.

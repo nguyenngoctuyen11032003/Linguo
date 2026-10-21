@@ -1,0 +1,363 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n2-u9-koto-naku
+order_index: 4
+level: n2
+title:
+  vi: Phủ định điều kiện, nhượng bộ và so sánh - ～ことなく・～つつも・～ばかりに・～かのようだ
+objectives:
+  - vi: Nói "không (làm) mà ..." bằng ～ことなく.
+  - vi: Nói "tuy ... nhưng" bằng ～つつも và "chỉ vì ... mà" bằng ～ばかりに.
+  - vi: Nói "cứ như thể ..." bằng ～かのようだ.
+estimated_minutes: 18
+skills:
+  - grammar
+  - reading
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n2-u9-kikkake
+items:
+  - item: ja:item:n2-u9-gram-ko-to-naku
+  - item: ja:item:n2-u9-gram-tsutsu-mo
+  - item: ja:item:n2-u9-gram-bakari-ni
+  - item: ja:item:n2-u9-gram-ka-no-you-da
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn viết và nói chính xác hơn - 休むことなく働きました。悪いと知りつつも、やめられません。まるで夢のようです。
+  - type: explain
+    text:
+      vi: 'V辞書形 + ことなく = "không (làm) ... mà ...": 休むことなく働く (làm việc không nghỉ), 迷うことなく選ぶ (chọn không do dự). Văn viết, tương đương ～ないで / ～ずに nhưng trang trọng hơn.'
+  - type: explain
+    text:
+      vi: 'V ます (bỏ ます) + つつも = "tuy ... nhưng": biết/nghĩ như vậy nhưng vẫn làm điều trái lại. 悪いと思いつつも (tuy nghĩ là không tốt nhưng ...). Cùng nghĩa ながらも (N1) nhưng つつも thiên về nội tâm, tiếc nuối.'
+  - type: explain
+    text:
+      vi: 'thể thường + ばかりに = "chỉ vì ... mà (kết quả xấu)": 約束を忘れたばかりに、友達を怒らせてしまいました. Vế sau thường là điều đáng tiếc, nhấn nguyên nhân đơn lẻ.'
+  - type: explain
+    text:
+      vi: 'thể thường + かのようだ / かのような N = "cứ như thể ... (dù không phải)": まるで夢を見ているかのようです. Thường kèm まるで; trước かのよう dùng thể thường (danh từ và tính từ な có thể bỏ だ hoặc dùng である).'
+  - type: deep_explain
+    text:
+      vi: 'So sánh các cách nói tương tự - ～ことなく chỉ trạng thái không xảy ra; ～ずに diễn tả cách thức; ～ないで là khẩu ngữ. ばかりに khác せいで: ばかりに nhấn "chỉ vì điều đó" và mang nuối tiếc của người nói, せいで chung hơn. かのようだ nói về thể hiện cảm giác hoặc hình ảnh; ようだ (N3) là suy đoán/ví von nhẹ hơn.'
+  - type: example
+    target: 彼は一度も休むことなく、十年間働きました。
+    target_lang: ja
+    translation:
+      vi: Anh ấy làm việc mười năm mà chưa nghỉ lần nào.
+    note:
+      vi: ことなく - không hề.
+  - type: example
+    target: 体に悪いと知りつつも、やめられません。
+    target_lang: ja
+    translation:
+      vi: Biết là có hại cho sức khoẻ nhưng tôi vẫn không bỏ được.
+    note:
+      vi: つつも - tuy... nhưng.
+  - type: example
+    target: 約束を忘れたばかりに、友達を怒らせてしまいました。
+    target_lang: ja
+    translation:
+      vi: Chỉ vì quên cuộc hẹn mà tôi đã làm bạn giận.
+    note:
+      vi: ばかりに - chỉ vì.
+  - type: example
+    target: まるで夢を見ているかのようです。
+    target_lang: ja
+    translation:
+      vi: Cứ như thể tôi đang mơ vậy.
+    note:
+      vi: かのようだ - cứ như thể.
+  - type: common_mistake
+    wrong: 休まないことなく働きました。
+    right: 休むことなく働きました。
+    target_lang: ja
+    note:
+      vi: ことなく đã mang nghĩa phủ định; không thêm ない trước đó.
+  - type: common_mistake
+    wrong: 悪いと思いつつも、友達が来ました。
+    right: 悪いと思いつつも、友達に電話してしまいました。
+    target_lang: ja
+    note:
+      vi: つつも yêu cầu cùng chủ ngữ và hai hành động trái ngược; 友達が来ました là chủ ngữ khác.
+  - type: summary
+    points:
+      - vi: V辞書形 + ことなく - không hề làm mà ...
+      - vi: V ます-gốc + つつも - tuy ... nhưng.
+      - vi: thể thường + ばかりに - chỉ vì ... mà (xấu).
+      - vi: thể thường + かのようだ - cứ như thể.
+exercises:
+  - key: ja:exercise:n2-u9-koto-naku-n1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u9-gram-ko-to-naku
+    prompt:
+      stem: Chọn câu đúng - 彼は一度も___、十年間働きました。
+      stem_lang: vi
+      options:
+        - id: s9h
+          text: 休みことなく
+          lang: ja
+        - id: tna
+          text: 休むことなく
+          lang: ja
+        - id: xj7
+          text: 休んだことなく
+          lang: ja
+        - id: hna
+          text: 休まないことなく
+          lang: ja
+    answer:
+      correct_option_id: tna
+    explanation:
+      vi: "V辞書形 + ことなく: 休むことなく. 休まないことなく, 休んだことなく, 休みことなく đều sai."
+    display_answer: 休むことなく
+  - key: ja:exercise:n2-u9-koto-naku-n2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u9-gram-tsutsu-mo
+    prompt:
+      stem: Chọn câu đúng - 体に悪いと知り___、やめられません。
+      stem_lang: vi
+      options:
+        - id: zmq
+          text: はずなのに
+          lang: ja
+        - id: j3v
+          text: にもかかわらず
+          lang: ja
+        - id: hzt
+          text: ながらでも
+          lang: ja
+        - id: thl
+          text: つつも
+          lang: ja
+    answer:
+      correct_option_id: thl
+    explanation:
+      vi: V ます-gốc + つつも - tuy ... nhưng. Các dạng còn lại nghĩa gần nhưng không đúng cấu trúc hoặc ngữ cảnh.
+    display_answer: つつも
+  - key: ja:exercise:n2-u9-koto-naku-n3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u9-gram-bakari-ni
+    prompt:
+      audio_asset_id: null
+      fallback_text: 約束を忘れたばかりに、友達を怒らせてしまいました。
+      options:
+        - id: ya6
+          text: Chỉ vì bạn quên cuộc hẹn mà tôi giận.
+          lang: vi
+        - id: vep
+          text: Tôi nhớ cuộc hẹn nhưng bạn vẫn giận.
+          lang: vi
+        - id: h5s
+          text: Vì nhớ cuộc hẹn nên bạn tôi không giận.
+          lang: vi
+        - id: ipx
+          text: Chỉ vì quên cuộc hẹn mà tôi đã làm bạn giận.
+          lang: vi
+    answer:
+      correct_option_id: ipx
+    explanation:
+      vi: 約束を忘れた - quên hẹn; ばかりに - chỉ vì; 怒らせた - làm giận.
+    display_answer: Chỉ vì quên cuộc hẹn mà tôi đã làm bạn giận.
+  - key: ja:exercise:n2-u9-koto-naku-n4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u9-gram-ka-no-you-da
+    prompt:
+      template: まるで夢を見ている{{b1}}です。 (Cứ như thể tôi đang mơ vậy.)
+      blanks:
+        - id: b1
+          width_hint: 5
+      hint_levels:
+        - Cụm nghĩa "cứ như thể".
+        - Bắt đầu bằng か.
+    answer:
+      blanks:
+        b1:
+          - かのよう
+    known_wrong:
+      - answer: ような
+        feedback_vi: ような cần danh từ đứng sau; cuối câu dùng かのようです.
+        error_tag: form
+    explanation:
+      vi: thể thường + かのようだ.
+    display_answer: まるで夢を見ているかのようです。
+  - key: ja:exercise:n2-u9-koto-naku-n5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u9-gram-ko-to-naku
+    prompt:
+      stem: Bạn muốn nói “Anh ấy chọn mà không do dự”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: lw1
+          text: 彼は迷うことをなく、その道を選びました。
+          lang: ja
+        - id: kpq
+          text: 彼は迷うこないで、その道を選びました。
+          lang: ja
+        - id: gic
+          text: 彼は迷うことなく、その道を選びました。
+          lang: ja
+        - id: nfj
+          text: 彼は迷わなくこと、その道を選びました。
+          lang: ja
+    answer:
+      correct_option_id: gic
+    explanation:
+      vi: V辞書形 + ことなく. Các dạng còn lại sai hình thức.
+    display_answer: 彼は迷うことなく、その道を選びました。
+  - key: ja:exercise:n2-u9-koto-naku-n6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u9-gram-tsutsu-mo
+    prompt:
+      template: 悪いと思い{{b1}}、友達に電話してしまいました。 (Tuy nghĩ là không tốt, tôi vẫn gọi điện cho bạn.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - つつも
+    known_wrong:
+      - answer: ながら
+        feedback_vi: ながら chỉ hành động đồng thời; nghĩa "tuy... nhưng" cần つつも hoặc ながらも.
+        error_tag: form
+    explanation:
+      vi: V ます-gốc + つつも.
+    display_answer: 悪いと思いつつも、友達に電話してしまいました。
+  - key: ja:exercise:n2-u9-koto-naku-n7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u9-gram-bakari-ni
+    prompt:
+      template: お金がない{{b1}}、旅行に行けませんでした。 (Chỉ vì không có tiền mà tôi đã không đi du lịch được.)
+      blanks:
+        - id: b1
+          width_hint: 5
+    answer:
+      blanks:
+        b1:
+          - ばかりに
+    explanation:
+      vi: thể thường + ばかりに - chỉ vì.
+    display_answer: お金がないばかりに、旅行に行けませんでした。
+  - key: ja:exercise:n2-u9-koto-naku-n8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u9-gram-ko-to-naku
+    prompt:
+      source_text: Anh ấy làm việc mười năm mà chưa nghỉ lần nào.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 彼は一度も休むことなく、十年間働きました。
+        - 彼は一度も休むことなく十年間働きました。
+        - かれはいちども やすむことなく、じゅうねんかん はたらきました。
+        - 彼は十年間、一度も休むことなく働きました。
+    known_wrong:
+      - answer: 彼は一度も休まないことなく、十年間働きました。
+        feedback_vi: ことなく đã mang nghĩa phủ định.
+        error_tag: form
+    explanation:
+      vi: V辞書形 + ことなく - không hề làm mà ...
+    display_answer: 彼は一度も休むことなく、十年間働きました。
+  - key: ja:exercise:n2-u9-koto-naku-n9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n2-u9-gram-ka-no-you-da
+    prompt:
+      source_text: 悪いと知りつつも、約束を忘れたばかりに、友達に謝りました。まるで悪い夢を見ているかのようでした。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tuy biết là có lỗi, nhưng chỉ vì quên cuộc hẹn mà tôi đã xin lỗi bạn. Cứ như thể tôi đang mơ một giấc mơ xấu.
+        - Biết là không hay, nhưng chỉ vì quên hẹn nên tôi xin lỗi bạn. Cứ như thể mơ một giấc mơ xấu.
+        - Tuy biết là sai, chỉ vì quên cuộc hẹn nên tôi phải xin lỗi bạn. Cứ như đang trong ác mộng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi biết là không sao, nên không xin lỗi bạn. Cứ như thể tôi đang mơ một giấc mơ đẹp.
+        feedback_vi: 謝りました là đã xin lỗi; 悪い夢 là ác mộng.
+        error_tag: meaning
+    explanation:
+      vi: つつも - tuy; ばかりに - chỉ vì; かのようでした - cứ như thể.
+    display_answer: Tuy biết là có lỗi, nhưng chỉ vì quên cuộc hẹn mà tôi đã xin lỗi bạn. Cứ như thể tôi đang mơ một giấc mơ xấu.
+  - key: ja:exercise:n2-u9-koto-naku-n10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u9-gram-ka-no-you-da
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Cứ như thể tôi đang mơ vậy."'
+      tokens:
+        - id: t3
+          text: かのようです。
+        - id: t1
+          text: まるで
+        - id: t2
+          text: 夢を見ている
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: まるで + thể thường + かのようです.
+    display_answer: まるで夢を見ているかのようです。
+  - key: ja:exercise:n2-u9-koto-naku-n11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u9-gram-bakari-ni
+    prompt:
+      stem: Bạn nuối tiếc vì một lỗi nhỏ gây hậu quả xấu. Mẫu nào hợp?
+      stem_lang: vi
+      options:
+        - id: mnf
+          text: 約束を忘れることなく
+          lang: ja
+        - id: e0i
+          text: 約束を忘れたかのように
+          lang: ja
+        - id: bqy
+          text: 約束を忘れたばかりに
+          lang: ja
+        - id: mk0
+          text: 約束を忘れつつも
+          lang: ja
+    answer:
+      correct_option_id: bqy
+    explanation:
+      vi: ばかりに - chỉ vì (hậu quả xấu). かのように là cứ như thể, ことなく là không hề, つつも là tuy nhưng - không hợp.
+    display_answer: 約束を忘れたばかりに

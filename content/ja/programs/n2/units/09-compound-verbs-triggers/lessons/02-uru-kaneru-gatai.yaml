@@ -1,0 +1,369 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n2-u9-uru-kaneru
+order_index: 2
+level: n2
+title:
+  vi: Khả năng và khó khăn trong văn viết - ～得る・～かねる・～がたい
+objectives:
+  - vi: Nói khả năng khách quan bằng ～得る / ～得ない (うる / えない).
+  - vi: Từ chối hay bày tỏ khó khăn lịch sự bằng ～かねる.
+  - vi: Nói "khó mà ... (vì cảm xúc)" bằng ～がたい.
+estimated_minutes: 18
+skills:
+  - grammar
+  - reading
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n2-u9-compound-verbs
+items:
+  - item: ja:item:n2-u9-gram-uru
+  - item: ja:item:n2-u9-gram-kaneru
+  - item: ja:item:n2-u9-gram-gatai
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu và dùng được các mẫu trang trọng - そんなことはあり得ません。その件にはお答えしかねます。信じがたい話です。
+  - type: explain
+    text:
+      vi: 'V ます (bỏ ます) + 得る / 得ない = "có thể / không thể xảy ra" (khả năng khách quan). Đọc うる / えない. Hay dùng với あり得る (có thể có), あり得ない (không thể có), 考え得る (có thể nghĩ đến). Dạng て, た: 得て, 得た.'
+  - type: explain
+    text:
+      vi: 'V ます (bỏ ます) + かねる = "khó mà ..., không thể ..." (do hoàn cảnh, quy định, tình cảm); dùng để từ chối lịch sự: お答えしかねます, 決めかねています. Khác かねない (có nguy cơ, N2 bài trước).'
+  - type: explain
+    text:
+      vi: 'V ます (bỏ ます) + がたい = "khó mà ..." thường vì cảm xúc, tâm lý: 信じがたい (khó tin), 許しがたい (khó tha thứ), 忘れがたい (khó quên), 理解しがたい (khó hiểu). Không dùng cho khó về mặt kỹ thuật, thể chất.'
+  - type: deep_explain
+    text:
+      vi: Chú ý ranh giới - 得る (khả năng khách quan, văn viết) khác できる (năng lực của người, hội thoại). Ví dụ あり得ない (không thể có) không đồng nghĩa với できない. かねる là cách từ chối nhẹ không dùng いいえ; nghe cứng nên hay gặp ở thư và điện thoại công việc. がたい mang sắc thái cảm xúc nên 理解しがたい hợp văn bình luận hơn 理解しにくい (hơi khó hiểu về mặt kỹ thuật).
+  - type: example
+    target: そんなことはあり得ません。
+    target_lang: ja
+    translation:
+      vi: Chuyện như vậy là không thể xảy ra.
+    note:
+      vi: あり得る / あり得ない.
+  - type: example
+    target: その件については、お答えしかねます。
+    target_lang: ja
+    translation:
+      vi: Về việc đó, tôi khó mà trả lời được.
+    note:
+      vi: かねる - từ chối lịch sự.
+  - type: example
+    target: 信じがたい話ですが、本当です。
+    target_lang: ja
+    translation:
+      vi: Chuyện khó tin nhưng là sự thật.
+    note:
+      vi: 信じがたい - khó tin.
+  - type: example
+    target: あの日のことは、忘れがたい思い出です。
+    target_lang: ja
+    translation:
+      vi: Chuyện ngày đó là kỷ niệm khó quên.
+    note:
+      vi: 忘れがたい.
+  - type: common_mistake
+    wrong: お答えかねます。
+    right: お答えしかねます。
+    target_lang: ja
+    note:
+      vi: "Mẫu kính ngữ: お + ます-gốc + する + かねる → お答えしかねます."
+  - type: common_mistake
+    wrong: この問題は理解がたいです。
+    right: この問題は理解しがたいです。
+    target_lang: ja
+    note:
+      vi: "Danh từ + する → V ます-gốc: 理解し + がたい."
+  - type: summary
+    points:
+      - vi: V ます-gốc + 得る / 得ない - có thể / không thể xảy ra (khách quan).
+      - vi: V ます-gốc + かねる - khó mà (từ chối lịch sự).
+      - vi: V ます-gốc + がたい - khó mà (cảm xúc).
+      - vi: かねる (không thể) ≠ かねない (có nguy cơ).
+exercises:
+  - key: ja:exercise:n2-u9-uru-kaneru-u1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u9-gram-uru
+    prompt:
+      stem: Chọn câu đúng - そんなことは___。
+      stem_lang: vi
+      options:
+        - id: ed6
+          text: あり得なくません
+          lang: ja
+        - id: co6
+          text: あれません
+          lang: ja
+        - id: se7
+          text: あり得ません
+          lang: ja
+        - id: yjh
+          text: あることません
+          lang: ja
+    answer:
+      correct_option_id: se7
+    explanation:
+      vi: あり得ません - không thể có. Các dạng còn lại sai hình thức.
+    display_answer: あり得ません
+  - key: ja:exercise:n2-u9-uru-kaneru-u2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u9-gram-kaneru
+    prompt:
+      stem: Bạn từ chối trả lời một cách lịch sự trên điện thoại. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: sv2
+          text: その件については、答えがたいです。
+          lang: ja
+        - id: vms
+          text: その件については、お答えできるかねます。
+          lang: ja
+        - id: wcq
+          text: その件については、お答えしかねます。
+          lang: ja
+        - id: uo1
+          text: その件については、お答えかねません。
+          lang: ja
+    answer:
+      correct_option_id: wcq
+    explanation:
+      vi: お答えしかねます - từ chối lịch sự. かねません là "có nguy cơ", sai nghĩa.
+    display_answer: その件については、お答えしかねます。
+  - key: ja:exercise:n2-u9-uru-kaneru-u3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u9-gram-gatai
+    prompt:
+      audio_asset_id: null
+      fallback_text: 信じがたい話ですが、本当です。
+      options:
+        - id: uvh
+          text: Chuyện dễ tin và là sự thật.
+          lang: vi
+        - id: nlh
+          text: Chuyện không đúng và khó tin.
+          lang: vi
+        - id: uvw
+          text: Chuyện khó hiểu nên tôi không tin.
+          lang: vi
+        - id: bb2
+          text: Chuyện khó tin nhưng là sự thật.
+          lang: vi
+    answer:
+      correct_option_id: bb2
+    explanation:
+      vi: 信じがたい - khó tin; 本当です - là sự thật.
+    display_answer: Chuyện khó tin nhưng là sự thật.
+  - key: ja:exercise:n2-u9-uru-kaneru-u4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u9-gram-gatai
+    prompt:
+      template: あの日のことは、{{b1}}思い出です。 (Chuyện ngày đó là kỷ niệm khó quên.)
+      blanks:
+        - id: b1
+          width_hint: 6
+      hint_levels:
+        - Khó quên (cảm xúc).
+        - ます-gốc 忘れ + がたい.
+    answer:
+      blanks:
+        b1:
+          - 忘れがたい
+          - わすれがたい
+    known_wrong:
+      - answer: 忘れにくい
+        feedback_vi: 忘れにくい nghĩa là "dễ không quên" về mặt kỹ thuật; kỷ niệm khó quên vì cảm xúc là 忘れがたい.
+        error_tag: nuance
+    explanation:
+      vi: V ます-gốc + がたい - khó mà ... (cảm xúc).
+    display_answer: あの日のことは、忘れがたい思い出です。
+  - key: ja:exercise:n2-u9-uru-kaneru-u5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u9-gram-uru
+    prompt:
+      stem: Bạn muốn nói “Điều đó hoàn toàn có thể xảy ra”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: y8z
+          text: それは十分あり得ることです。
+          lang: ja
+        - id: i8x
+          text: それは十分ありうれることです。
+          lang: ja
+        - id: xr9
+          text: それは十分あれますことです。
+          lang: ja
+        - id: etk
+          text: それは十分あり得なことです。
+          lang: ja
+    answer:
+      correct_option_id: y8z
+    explanation:
+      vi: あり得る + こと - hoàn toàn có thể xảy ra. Các dạng còn lại sai hình thức.
+    display_answer: それは十分あり得ることです。
+  - key: ja:exercise:n2-u9-uru-kaneru-u6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u9-gram-kaneru
+    prompt:
+      template: 私一人では決め{{b1}}ています。 (Một mình tôi khó mà quyết định.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - かね
+    known_wrong:
+      - answer: がたい
+        feedback_vi: がたい là khó (cảm xúc) và không đi với ています trong ngữ cảnh này; quyết định không được vì hoàn cảnh dùng かねる.
+        error_tag: form
+    explanation:
+      vi: 決めかねている - khó mà quyết định.
+    display_answer: 私一人では決めかねています。
+  - key: ja:exercise:n2-u9-uru-kaneru-u7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u9-gram-uru
+    prompt:
+      template: そんなことは{{b1}}ません。 (Chuyện như vậy là không thể xảy ra.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - あり得
+          - ありえ
+    known_wrong:
+      - answer: あり得な
+        feedback_vi: "Cần dạng ます-gốc 得: あり得ません, không phải あり得なません."
+        error_tag: form
+    explanation:
+      vi: あり得ません - không thể xảy ra.
+    display_answer: そんなことはあり得ません。
+  - key: ja:exercise:n2-u9-uru-kaneru-u8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u9-gram-kaneru
+    prompt:
+      source_text: Về việc đó, tôi khó mà trả lời được.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - その件については、お答えしかねます。
+        - その件については、お答えしかねます
+        - そのことについては、お答えしかねます。
+        - その件につきましては、お答えしかねます。
+        - その件に関しては、お答えしかねます。
+    known_wrong:
+      - answer: その件については、お答えかねません。
+        feedback_vi: かねません có nghĩa "có nguy cơ", không phải "khó mà".
+        error_tag: form
+      - answer: その件については、お答えできません。
+        feedback_vi: Đúng nghĩa nhưng yêu cầu dùng mẫu かねる lịch sự.
+        error_tag: register
+    explanation:
+      vi: お + ます-gốc + しかねる - khó mà (lịch sự).
+    display_answer: その件については、お答えしかねます。
+  - key: ja:exercise:n2-u9-uru-kaneru-u9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n2-u9-gram-gatai
+    prompt:
+      source_text: 許しがたいことですが、彼の事情を理解し得ないわけではありません。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chuyện này khó tha thứ, nhưng không phải là tôi không thể hiểu hoàn cảnh của anh ấy.
+        - Điều đó khó tha thứ, nhưng cũng không phải không hiểu được hoàn cảnh của anh ấy.
+        - Chuyện này khó mà tha thứ, tuy vậy tôi vẫn có thể hiểu được hoàn cảnh của anh ấy.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Chuyện này dễ tha thứ, và tôi không hiểu hoàn cảnh của anh ấy.
+        feedback_vi: 許しがたい là khó tha thứ.
+        error_tag: meaning
+    explanation:
+      vi: 許しがたい - khó tha thứ; 理解し得ないわけではない - không phải là không thể hiểu.
+    display_answer: Chuyện này khó tha thứ, nhưng không phải là tôi không thể hiểu hoàn cảnh của anh ấy.
+  - key: ja:exercise:n2-u9-uru-kaneru-u10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u9-gram-gatai
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Chuyện khó tin nhưng là sự thật."'
+      tokens:
+        - id: t3
+          text: 本当です。
+        - id: t2
+          text: 話ですが、
+        - id: t1
+          text: 信じがたい
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: V ます-gốc + がたい + N + ですが, rồi kết luận.
+    display_answer: 信じがたい話ですが、本当です。
+  - key: ja:exercise:n2-u9-uru-kaneru-u11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u9-gram-uru
+    prompt:
+      stem: Trong báo cáo bạn viết “Cần xem xét mọi biện pháp có thể nghĩ tới”. Cách nói nào phù hợp?
+      stem_lang: vi
+      options:
+        - id: w1u
+          text: 考えがたいすべての対策を検討する必要があります。
+          lang: ja
+        - id: kev
+          text: 考え得るすべての対策を検討する必要があります。
+          lang: ja
+        - id: jz7
+          text: 考えれるすべての対策を検討する必要があります。
+          lang: ja
+        - id: jmf
+          text: 考えかねるすべての対策を検討する必要があります。
+          lang: ja
+    answer:
+      correct_option_id: kev
+    explanation:
+      vi: 考え得る - có thể nghĩ tới. 考えがたい (khó nghĩ), 考えかねる (khó mà nghĩ), 考えれる (khẩu ngữ) đều không phù hợp trong ý này.
+    display_answer: 考え得るすべての対策を検討する必要があります。

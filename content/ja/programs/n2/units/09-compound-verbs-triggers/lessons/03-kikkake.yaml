@@ -1,0 +1,370 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n2-u9-kikkake
+order_index: 3
+level: n2
+title:
+  vi: Điểm khởi đầu và thời điểm trang trọng - ～をきっかけに・～に先立って・～に際して・～にあたって
+objectives:
+  - vi: Nói "nhân cơ hội, khởi đầu từ ..." bằng ～をきっかけに.
+  - vi: Nói "trước khi (việc lớn)" bằng ～に先立って.
+  - vi: Nói "khi (bắt đầu việc quan trọng)" bằng ～に際して / ～にあたって.
+estimated_minutes: 18
+skills:
+  - grammar
+  - reading
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n2-u9-uru-kaneru
+items:
+  - item: ja:item:n2-u9-gram-wo-kikkake-ni
+  - item: ja:item:n2-u9-gram-ni-sakidatte
+  - item: ja:item:n2-u9-gram-ni-ataru
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu thông báo, mời họp, phát biểu - 開会に先立って、ご説明します。契約するにあたって、よくお読みください。留学をきっかけに、日本語に興味を持ちました。
+  - type: explain
+    text:
+      vi: 'N / V こと + をきっかけに(して) = "nhân cơ hội, bắt đầu từ ...": một sự kiện nhỏ làm khởi đầu cho thay đổi. Ví dụ 病気をきっかけに、生活を見直しました. Không đi với kết quả đã được dự tính trước.'
+  - type: explain
+    text:
+      vi: 'N / V辞書形 + に先立って = "trước khi (làm việc lớn)", thường để chuẩn bị: 試験に先立って、注意事項を説明します. Chỉ dùng cho việc quan trọng, có sự kiện chính sau đó.'
+  - type: explain
+    text:
+      vi: 'N / V辞書形 + に際して / にあたって = "khi (bắt đầu làm việc quan trọng)": 契約するにあたって, 入学に際して. 際して gần "vào dịp"; にあたって nhấn "sắp bắt đầu". Hai mẫu hay dùng trong thông báo, hướng dẫn, thư trang trọng.'
+  - type: deep_explain
+    text:
+      vi: Cả ba mẫu đều dùng cho việc đáng chú ý, không dùng cho sinh hoạt hằng ngày (✗ 朝ご飯を食べるにあたって). Vế sau của ～に先立って, ～にあたって thường là hành động chuẩn bị, chú ý, nhắc nhở (説明する, 確認する, お願いする). Vế sau của ～をきっかけに là thay đổi, bắt đầu (始める, 変わる, 興味を持つ).
+  - type: example
+    target: 病気をきっかけに、生活を見直しました。
+    target_lang: ja
+    translation:
+      vi: Nhân dịp bị bệnh, tôi đã xem xét lại lối sống.
+    note:
+      vi: をきっかけに - nhân cơ hội.
+  - type: example
+    target: 試験に先立って、注意事項を説明します。
+    target_lang: ja
+    translation:
+      vi: Trước kỳ thi, tôi sẽ giải thích các điều cần lưu ý.
+    note:
+      vi: に先立って - trước khi.
+  - type: example
+    target: 契約するにあたって、内容をよく確認してください。
+    target_lang: ja
+    translation:
+      vi: Khi ký hợp đồng, xin hãy xác nhận kỹ nội dung.
+    note:
+      vi: にあたって - khi.
+  - type: example
+    target: 入学に際して、必要な書類を提出してください。
+    target_lang: ja
+    translation:
+      vi: Khi nhập học, xin hãy nộp các hồ sơ cần thiết.
+    note:
+      vi: に際して - khi.
+  - type: common_mistake
+    wrong: 朝ご飯を食べるにあたって、手を洗います。
+    right: 食事の前に、手を洗います。
+    target_lang: ja
+    note:
+      vi: にあたって chỉ dùng cho việc quan trọng; bữa ăn thường ngày dùng 前に.
+  - type: common_mistake
+    wrong: 留学にきっかけに、日本語に興味を持ちました。
+    right: 留学をきっかけに、日本語に興味を持ちました。
+    target_lang: ja
+    note:
+      vi: Cấu trúc là N をきっかけに.
+  - type: summary
+    points:
+      - vi: N / V こと + をきっかけに - nhân cơ hội, khởi đầu từ.
+      - vi: N / V + に先立って - trước khi (việc lớn).
+      - vi: N / V + に際して / にあたって - khi (bắt đầu việc quan trọng).
+      - vi: Dùng cho việc đáng chú ý, văn trang trọng.
+exercises:
+  - key: ja:exercise:n2-u9-kikkake-k1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u9-gram-wo-kikkake-ni
+    prompt:
+      stem: Chọn câu đúng - 留学___、日本語に興味を持ちました。
+      stem_lang: vi
+      options:
+        - id: xut
+          text: がきっかけに
+          lang: ja
+        - id: ss5
+          text: にきっかけに
+          lang: ja
+        - id: hri
+          text: をきっかけに
+          lang: ja
+        - id: tdd
+          text: ときっかけに
+          lang: ja
+    answer:
+      correct_option_id: hri
+    explanation:
+      vi: N をきっかけに - nhân cơ hội. にきっかけに, がきっかけに sai trợ từ.
+    display_answer: をきっかけに
+  - key: ja:exercise:n2-u9-kikkake-k2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u9-gram-ni-ataru
+    prompt:
+      stem: Chọn câu đúng - 契約する___、内容をよく確認してください。
+      stem_lang: vi
+      options:
+        - id: wz5
+          text: に先立ち
+          lang: ja
+        - id: y90
+          text: とはいえ
+          lang: ja
+        - id: nyn
+          text: をきっかけに
+          lang: ja
+        - id: d3a
+          text: にあたって
+          lang: ja
+    answer:
+      correct_option_id: d3a
+    explanation:
+      vi: V辞書形 + にあたって - khi (bắt đầu việc quan trọng). に先立ち cũng có nghĩa "trước khi" nhưng nhấn chuẩn bị trước sự kiện.
+    display_answer: にあたって
+  - key: ja:exercise:n2-u9-kikkake-k3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u9-gram-ni-sakidatte
+    prompt:
+      audio_asset_id: null
+      fallback_text: 試験に先立って、注意事項を説明します。
+      options:
+        - id: pzx
+          text: Trước khi thi, hãy nộp tài liệu.
+          lang: vi
+        - id: crg
+          text: Khi thi xong, hãy nhớ các điều cần lưu ý.
+          lang: vi
+        - id: azv
+          text: Sau kỳ thi, tôi sẽ giải thích các điều cần lưu ý.
+          lang: vi
+        - id: cdg
+          text: Trước kỳ thi, tôi sẽ giải thích các điều cần lưu ý.
+          lang: vi
+    answer:
+      correct_option_id: cdg
+    explanation:
+      vi: 試験に先立って - trước kỳ thi; 説明します - sẽ giải thích.
+    display_answer: Trước kỳ thi, tôi sẽ giải thích các điều cần lưu ý.
+  - key: ja:exercise:n2-u9-kikkake-k4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u9-gram-ni-sakidatte
+    prompt:
+      template: 開会{{b1}}、一言ご挨拶いたします。 (Trước khi khai mạc, tôi xin có đôi lời chào.)
+      blanks:
+        - id: b1
+          width_hint: 6
+      hint_levels:
+        - Cụm nghĩa "trước khi".
+        - Bắt đầu bằng に.
+    answer:
+      blanks:
+        b1:
+          - に先立って
+          - に先立ち
+    known_wrong:
+      - answer: をきっかけに
+        feedback_vi: をきっかけに là nhân cơ hội; ở đây là "trước khi".
+        error_tag: nuance
+    explanation:
+      vi: N に先立って - trước khi (việc lớn).
+    display_answer: 開会に先立って、一言ご挨拶いたします。
+  - key: ja:exercise:n2-u9-kikkake-k5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u9-gram-ni-ataru
+    prompt:
+      stem: Bạn nộp hồ sơ nhập học. Câu nào phù hợp?
+      stem_lang: vi
+      options:
+        - id: ag9
+          text: 入学をはじめ、書類を提出してください。
+          lang: ja
+        - id: pj7
+          text: 入学にきっかけに、書類を提出してください。
+          lang: ja
+        - id: s6b
+          text: 入学に際して、書類を提出してください。
+          lang: ja
+        - id: nvo
+          text: 入学にあたるて、書類を提出してください。
+          lang: ja
+    answer:
+      correct_option_id: s6b
+    explanation:
+      vi: N に際して - khi (nhập học). Các dạng còn lại sai hình thức hoặc nghĩa.
+    display_answer: 入学に際して、書類を提出してください。
+  - key: ja:exercise:n2-u9-kikkake-k6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u9-gram-wo-kikkake-ni
+    prompt:
+      template: 病気{{b1}}、生活を見直しました。 (Nhân dịp bị bệnh, tôi đã xem xét lại lối sống.)
+      blanks:
+        - id: b1
+          width_hint: 7
+    answer:
+      blanks:
+        b1:
+          - をきっかけに
+          - をきっかけにして
+    known_wrong:
+      - answer: に先立って
+        feedback_vi: に先立って là "trước khi"; ở đây bệnh là dịp khởi đầu thay đổi.
+        error_tag: nuance
+    explanation:
+      vi: N をきっかけに - nhân dịp.
+    display_answer: 病気をきっかけに、生活を見直しました。
+  - key: ja:exercise:n2-u9-kikkake-k7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u9-gram-ni-ataru
+    prompt:
+      template: 契約する{{b1}}、内容をよく確認してください。 (Khi ký hợp đồng, xin hãy xác nhận kỹ nội dung.)
+      blanks:
+        - id: b1
+          width_hint: 6
+    answer:
+      blanks:
+        b1:
+          - にあたって
+          - に際して
+    known_wrong:
+      - answer: をきっかけに
+        feedback_vi: をきっかけに không dùng cho lời nhắc trước khi ký.
+        error_tag: nuance
+    explanation:
+      vi: V辞書形 + にあたって - khi (bắt đầu).
+    display_answer: 契約するにあたって、内容をよく確認してください。
+  - key: ja:exercise:n2-u9-kikkake-k8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u9-gram-wo-kikkake-ni
+    prompt:
+      source_text: Nhờ đi du học mà tôi bắt đầu quan tâm đến tiếng Nhật.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 留学をきっかけに、日本語に興味を持ちました。
+        - 留学をきっかけにして、日本語に興味を持つようになりました。
+        - りゅうがくをきっかけに、にほんごにきょうみをもちました。
+        - 留学をきっかけに日本語に興味を持ちました。
+        - 留学をきっかけに、日本語に興味を持つようになりました。
+    known_wrong:
+      - answer: 留学に先立って、日本語に興味を持ちました。
+        feedback_vi: に先立って là "trước khi" - sai nghĩa.
+        error_tag: nuance
+    explanation:
+      vi: N をきっかけに - nhờ ... mà bắt đầu.
+    display_answer: 留学をきっかけに、日本語に興味を持ちました。
+  - key: ja:exercise:n2-u9-kikkake-k9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n2-u9-gram-ni-ataru
+    prompt:
+      source_text: 入学に際して、書類を提出してください。留学をきっかけに、日本語に興味を持ちました。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Khi nhập học, xin hãy nộp hồ sơ. Nhờ đi du học mà tôi bắt đầu quan tâm đến tiếng Nhật.
+        - Khi nhập học hãy nộp giấy tờ. Từ lúc đi du học, tôi hứng thú với tiếng Nhật.
+        - Xin hãy nộp hồ sơ khi nhập học. Nhờ du học mà tôi có hứng thú với tiếng Nhật.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Sau khi nhập học, xin hãy nộp hồ sơ. Trước khi đi du học tôi đã quan tâm đến tiếng Nhật.
+        feedback_vi: 入学に際して là "khi nhập học"; きっかけに là điểm khởi đầu.
+        error_tag: meaning
+    explanation:
+      vi: 際して - khi; きっかけに - nhân dịp.
+    display_answer: Khi nhập học, xin hãy nộp hồ sơ. Nhờ đi du học mà tôi bắt đầu quan tâm đến tiếng Nhật.
+  - key: ja:exercise:n2-u9-kikkake-k10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u9-gram-ni-sakidatte
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Trước khi xuất phát sẽ họp."'
+      tokens:
+        - id: t1
+          text: 出発に
+        - id: t2
+          text: 先立って、
+        - id: t4
+          text: 行います。
+        - id: t3
+          text: ミーティングを
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: N に先立って + hành động chuẩn bị.
+    display_answer: 出発に先立って、ミーティングを行います。
+  - key: ja:exercise:n2-u9-kikkake-k11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u9-gram-ni-sakidatte
+    prompt:
+      stem: "Chọn mẫu phù hợp cho thông báo trước sự kiện: “___、会場のご案内をします。”"
+      stem_lang: vi
+      options:
+        - id: kco
+          text: 式典ばかりに
+          lang: ja
+        - id: sfu
+          text: 式典をきっかけに
+          lang: ja
+        - id: ta7
+          text: 式典に先立って
+          lang: ja
+        - id: akj
+          text: 式典にもかかわらず
+          lang: ja
+    answer:
+      correct_option_id: ta7
+    explanation:
+      vi: に先立って - trước (buổi lễ) là hợp với thông báo chuẩn bị. をきっかけに, にもかかわらず, ばかりに không hợp.
+    display_answer: 式典に先立って

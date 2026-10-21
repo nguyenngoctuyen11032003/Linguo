@@ -1,0 +1,390 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n2-u9-compound-verbs
+order_index: 1
+level: n2
+title:
+  vi: Động từ ghép - ～きる・～抜く・～込む・～合う・～っぱなし・～たて
+objectives:
+  - vi: "Dùng các hậu tố ghép: ～きる/きれない, ～抜く, ～通す, ～込む, ～合う."
+  - vi: Dùng ～っぱなし (để nguyên) và ～たて (vừa mới).
+  - vi: "Nhớ các động từ ghép thông dụng: 打ち明ける, 見直す, 取り組む, 受け止める, 乗り越える, 見逃す, 食い違う, 思い込む."
+estimated_minutes: 20
+skills:
+  - grammar
+  - vocabulary
+  - reading
+  - speaking
+prerequisites:
+  - ja:lesson:n2-resolve-scope-review
+items:
+  - item: ja:item:n2-u9-gram-kiru
+  - item: ja:item:n2-u9-gram-nuku
+  - item: ja:item:n2-u9-gram-toosu
+  - item: ja:item:n2-u9-gram-komu
+  - item: ja:item:n2-u9-gram-au
+  - item: ja:item:n2-u9-gram-ppanashi
+  - item: ja:item:n2-u9-gram-tate
+  - item: ja:item:n2-u9-uchiakeru
+  - item: ja:item:n2-u9-minaosu
+  - item: ja:item:n2-u9-torikumu
+  - item: ja:item:n2-u9-uketomeru
+  - item: ja:item:n2-u9-norikoeru
+  - item: ja:item:n2-u9-minogasu
+  - item: ja:item:n2-u9-kuichigau
+  - item: ja:item:n2-u9-omoikomu
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hiểu và dùng được các động từ ghép - この量は食べきれません。最後までやり抜きます。困ったときは助け合いましょう。電気をつけっぱなしです。
+  - type: explain
+    text:
+      vi: "V ます (bỏ ます) + 切る: làm hết, làm trọn (言い切る, 疲れ切る); 切れない: không làm hết (食べきれない). + 抜く: làm đến cùng bất chấp khó khăn (やり抜く, 耐え抜く). + 通す: làm liên tục suốt (歩き通す, 貫き通す)."
+  - type: explain
+    text:
+      vi: "+ 込む: vào sâu, chìm đắm (考え込む, 乗り込む, 思い込む). + 合う: lẫn nhau, cùng nhau (話し合う, 助け合う). + っぱなし: để nguyên trạng thái, thường mang ý chê trách (つけっぱなし, 開けっぱなし). + たて: vừa mới làm xong (焼きたて, 洗いたて)."
+  - type: explain
+    text:
+      vi: "Động từ ghép hay gặp trong tin tức và bài viết: 打ち明ける (thổ lộ), 見直す (xem lại), 取り組む (nỗ lực giải quyết), 受け止める (đón nhận), 乗り越える (vượt qua), 見逃す (bỏ lỡ), 食い違う (mâu thuẫn), 思い込む (tin chắc)."
+  - type: deep_explain
+    text:
+      vi: "Cần phân biệt sắc thái - ～抜く nhấn kiên trì chống lại khó khăn, ～通す nhấn liên tục đến cùng, ～切る nhấn hoàn tất hoặc đạt giới hạn (疲れ切る là kiệt sức hoàn toàn). Với ～合う, vế sau là hành động có đối tượng hai phía; 話し合う cần ít nhất hai người. ～っぱなし hay đi với し (しっぱなし) và に: 開けっぱなしにする. Khác ～たばかり (vừa mới, N3), ～たて nhấn trạng thái còn mới nguyên."
+  - type: example
+    target: この量は一人では食べきれません。
+    target_lang: ja
+    translation:
+      vi: Lượng này một mình tôi không ăn hết.
+    note:
+      vi: 食べきれない - không ăn hết.
+  - type: example
+    target: どんなに苦しくても、最後までやり抜きます。
+    target_lang: ja
+    translation:
+      vi: Dù vất vả thế nào tôi cũng làm đến cùng.
+    note:
+      vi: やり抜く - làm đến cùng.
+  - type: example
+    target: 二人はよく話し合って、結論を出しました。
+    target_lang: ja
+    translation:
+      vi: Hai người thảo luận kỹ rồi đưa ra kết luận.
+    note:
+      vi: 話し合う - thảo luận với nhau.
+  - type: example
+    target: 電気をつけっぱなしで寝てしまいました。
+    target_lang: ja
+    translation:
+      vi: Tôi ngủ quên mà để đèn bật nguyên.
+    note:
+      vi: つけっぱなし - để bật nguyên.
+  - type: example
+    target: 焼きたてのパンはおいしいです。
+    target_lang: ja
+    translation:
+      vi: Bánh mì vừa nướng thì ngon.
+    note:
+      vi: V ます-gốc + たて.
+  - type: common_mistake
+    wrong: この量は一人では食べ切りません。
+    right: この量は一人では食べきれません。
+    target_lang: ja
+    note:
+      vi: Phủ định khả năng dùng ～きれない (khó làm hết), không dùng ～きりません.
+  - type: common_mistake
+    wrong: 話し合う人は一人です。
+    right: 話し合うには、二人以上必要です。
+    target_lang: ja
+    note:
+      vi: 合う chỉ hành động lẫn nhau, nên cần ít nhất hai người.
+  - type: summary
+    points:
+      - vi: ～きる / きれない (làm hết / không hết) · ～抜く (làm đến cùng) · ～通す (làm suốt).
+      - vi: ～込む (vào sâu) · ～合う (lẫn nhau).
+      - vi: ～っぱなし (để nguyên) · ～たて (vừa mới).
+      - vi: 打ち明ける · 見直す · 取り組む · 受け止める · 乗り越える · 見逃す · 食い違う · 思い込む.
+exercises:
+  - key: ja:exercise:n2-u9-compound-verbs-v1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u9-gram-kiru
+    prompt:
+      stem: Chọn câu đúng - この量は一人では食べ___。
+      stem_lang: vi
+      options:
+        - id: ug4
+          text: きれません
+          lang: ja
+        - id: nsb
+          text: きりません
+          lang: ja
+        - id: mzp
+          text: あいません
+          lang: ja
+        - id: kbm
+          text: ぬきません
+          lang: ja
+    answer:
+      correct_option_id: ug4
+    explanation:
+      vi: 食べきれません - không ăn hết. きりません không phải phủ định khả năng; ぬく, あう có nghĩa khác.
+    display_answer: きれません
+  - key: ja:exercise:n2-u9-compound-verbs-v2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u9-gram-ppanashi
+    prompt:
+      stem: Bạn để đèn bật rồi đi ngủ. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: xc0
+          text: 電気をつけぬいて寝てしまいました
+          lang: ja
+        - id: s8z
+          text: 電気をつけこんで寝てしまいました
+          lang: ja
+        - id: kpd
+          text: 電気をつけっぱなしで寝てしまいました
+          lang: ja
+        - id: hgi
+          text: 電気をつけたてで寝てしまいました
+          lang: ja
+    answer:
+      correct_option_id: kpd
+    explanation:
+      vi: つけっぱなし - để bật nguyên. たて là vừa mới, ぬく, こむ không đúng nghĩa.
+    display_answer: 電気をつけっぱなしで寝てしまいました
+  - key: ja:exercise:n2-u9-compound-verbs-v3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u9-gram-au
+    prompt:
+      audio_asset_id: null
+      fallback_text: 二人はよく話し合って、結論を出しました。
+      options:
+        - id: r59
+          text: Một người đã nói và người kia nghe.
+          lang: vi
+        - id: gqb
+          text: Hai người đã thảo luận kỹ rồi đưa ra kết luận.
+          lang: vi
+        - id: i9z
+          text: Hai người đã cãi nhau rồi bỏ đi.
+          lang: vi
+        - id: ryq
+          text: Hai người không nói chuyện mà đưa ra kết luận.
+          lang: vi
+    answer:
+      correct_option_id: gqb
+    explanation:
+      vi: 話し合う - thảo luận với nhau; 結論を出す - đưa ra kết luận.
+    display_answer: Hai người đã thảo luận kỹ rồi đưa ra kết luận.
+  - key: ja:exercise:n2-u9-compound-verbs-v4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u9-gram-nuku
+    prompt:
+      template: 最後まで{{b1}}ます。 (Tôi sẽ làm đến cùng.)
+      blanks:
+        - id: b1
+          width_hint: 5
+      hint_levels:
+        - Làm đến cùng.
+        - ます-gốc của やる + 抜く.
+    answer:
+      blanks:
+        b1:
+          - やり抜き
+    known_wrong:
+      - answer: やり切り
+        feedback_vi: やり切る nghĩa "làm hết"; nhấn kiên trì bất chấp khó là やり抜く.
+        error_tag: nuance
+    explanation:
+      vi: V ます-gốc + 抜く - làm đến cùng bất chấp khó khăn.
+    display_answer: 最後までやり抜きます。
+  - key: ja:exercise:n2-u9-compound-verbs-v5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u9-norikoeru
+    prompt:
+      stem: Bạn muốn nói “Vượt qua khó khăn”. Từ nào?
+      stem_lang: vi
+      options:
+        - id: lst
+          text: 乗り越える
+          lang: ja
+        - id: ghy
+          text: 食い違う
+          lang: ja
+        - id: k2i
+          text: 見逃す
+          lang: ja
+        - id: nlt
+          text: 打ち明ける
+          lang: ja
+    answer:
+      correct_option_id: lst
+    explanation:
+      vi: 乗り越える là vượt qua. 見逃す là bỏ lỡ, 食い違う là mâu thuẫn, 打ち明ける là thổ lộ.
+    display_answer: 乗り越える
+  - key: ja:exercise:n2-u9-compound-verbs-v6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u9-gram-tate
+    prompt:
+      template: "{{b1}}のパンはおいしいです。 (Bánh mì vừa nướng thì ngon.)"
+      blanks:
+        - id: b1
+          width_hint: 5
+    answer:
+      blanks:
+        b1:
+          - 焼きたて
+          - やきたて
+    known_wrong:
+      - answer: 焼きっぱなし
+        feedback_vi: っぱなし mang ý để mặc; "vừa nướng" là たて.
+        error_tag: form
+    explanation:
+      vi: 焼く → 焼き + たて - vừa nướng.
+    display_answer: 焼きたてのパンはおいしいです。
+  - key: ja:exercise:n2-u9-compound-verbs-v7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u9-minogasu
+    prompt:
+      template: 大事なチャンスを{{b1}}しまいました。 (Tôi đã bỏ lỡ một cơ hội quan trọng.)
+      blanks:
+        - id: b1
+          width_hint: 5
+    answer:
+      blanks:
+        b1:
+          - 見逃して
+          - みのがして
+    known_wrong:
+      - answer: 見直して
+        feedback_vi: 見直す là xem lại; "bỏ lỡ" là 見逃す.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 見逃す - bỏ lỡ.
+    display_answer: 大事なチャンスを見逃してしまいました。
+  - key: ja:exercise:n2-u9-compound-verbs-v8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u9-gram-kiru
+    prompt:
+      source_text: Lượng này một mình tôi không ăn hết.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - この量は一人では食べきれません。
+        - この量は一人では食べ切れません。
+        - このりょうはひとりではたべきれません。
+        - この量は一人で食べきれない。
+    known_wrong:
+      - answer: この量は一人では食べません。
+        feedback_vi: Câu này chỉ nói "không ăn", không có nghĩa không ăn hết được.
+        error_tag: meaning
+      - answer: この量は一人では食べ抜きません。
+        feedback_vi: 抜く là làm đến cùng bất chấp khó; không ăn hết dùng きれない.
+        error_tag: verb_choice
+    explanation:
+      vi: V ます-gốc + きれない - không thể làm hết.
+    display_answer: この量は一人では食べきれません。
+  - key: ja:exercise:n2-u9-compound-verbs-v9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n2-u9-omoikomu
+    prompt:
+      source_text: 試験は明日だと思い込んでいましたが、実は今日でした。大事な機会を見逃してしまいました。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi cứ tin chắc kỳ thi là ngày mai, nhưng thật ra là hôm nay. Tôi đã bỏ lỡ một cơ hội quan trọng.
+        - Tôi cứ nghĩ kỳ thi là ngày mai nhưng thực ra là hôm nay. Tôi đã lỡ mất cơ hội quan trọng.
+        - Tôi tin chắc thi vào ngày mai, nhưng thực tế là hôm nay, nên đã bỏ lỡ cơ hội quan trọng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi nghĩ kỳ thi là hôm nay, nhưng thật ra là ngày mai. Tôi đã nắm bắt cơ hội quan trọng.
+        feedback_vi: 思い込んでいた là tin chắc là ngày mai; 見逃した là bỏ lỡ.
+        error_tag: meaning
+    explanation:
+      vi: 思い込む - tin chắc (thường sai); 実は - thật ra; 見逃す - bỏ lỡ.
+    display_answer: Tôi cứ tin chắc kỳ thi là ngày mai, nhưng thật ra là hôm nay. Tôi đã bỏ lỡ một cơ hội quan trọng.
+  - key: ja:exercise:n2-u9-compound-verbs-v10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u9-gram-au
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Khi gặp khó khăn, mọi người hãy giúp đỡ lẫn nhau."'
+      tokens:
+        - id: t3
+          text: 助け合いましょう。
+        - id: t2
+          text: みんなで
+        - id: t1
+          text: 困ったときは、
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+        - - t2
+          - t1
+          - t3
+    explanation:
+      vi: Điều kiện → chủ thể → V ます-gốc + 合う dạng ましょう.
+    display_answer: 困ったときは、みんなで助け合いましょう。
+  - key: ja:exercise:n2-u9-compound-verbs-v11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u9-kuichigau
+    prompt:
+      stem: Hai người có ý kiến trái ngược. Từ nào?
+      stem_lang: vi
+      options:
+        - id: bpg
+          text: 取り組んでいます
+          lang: ja
+        - id: rek
+          text: 打ち明けています
+          lang: ja
+        - id: g8h
+          text: 見直しています
+          lang: ja
+        - id: r8j
+          text: 食い違っています
+          lang: ja
+    answer:
+      correct_option_id: r8j
+    explanation:
+      vi: 食い違う - mâu thuẫn, khác nhau. 打ち明ける (thổ lộ), 見直す (xem lại), 取り組む (nỗ lực) không chỉ sự trái ngược ý kiến.
+    display_answer: 食い違っています
