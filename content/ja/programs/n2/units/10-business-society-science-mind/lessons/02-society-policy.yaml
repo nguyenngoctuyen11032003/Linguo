@@ -1,0 +1,374 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n2-u10-society-policy
+order_index: 2
+level: n2
+title:
+  vi: Xã hội và chính sách - 格差・介護・福祉・改革
+objectives:
+  - vi: "Dùng từ vựng vấn đề xã hội: 格差, 失業, 高齢者, 介護, 福祉, 医療, 保険."
+  - vi: "Dùng từ vựng chính sách và quyền: 改革, 規制, 人権, 差別."
+  - vi: Đọc hiểu bài báo và bình luận về xã hội.
+estimated_minutes: 20
+skills:
+  - vocabulary
+  - reading
+  - listening
+  - speaking
+prerequisites:
+  - ja:lesson:n2-u10-business
+items:
+  - item: ja:item:n2-u10-kakusa
+  - item: ja:item:n2-u10-shitsugyou
+  - item: ja:item:n2-u10-koureisha
+  - item: ja:item:n2-u10-kaigo
+  - item: ja:item:n2-u10-fukushi
+  - item: ja:item:n2-u10-iryou
+  - item: ja:item:n2-u10-hoken
+  - item: ja:item:n2-u10-kaikaku
+  - item: ja:item:n2-u10-kisei
+  - item: ja:item:n2-u10-jinken
+  - item: ja:item:n2-u10-sabetsu
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc và nói về các vấn đề xã hội - 所得の格差が広がっています。高齢者の介護が問題になっています。
+  - type: explain
+    text:
+      vi: "Vấn đề xã hội: 格差 (chênh lệch), 失業 (thất nghiệp), 高齢者 (người cao tuổi), 介護 (chăm sóc), 福祉 (phúc lợi), 医療 (y tế), 保険 (bảo hiểm). Ví dụ 格差が広がる, 失業率が上がる, 介護が必要になる."
+  - type: explain
+    text:
+      vi: "Chính sách và quyền: 改革 (cải cách), 規制 (quy định hạn chế), 人権 (nhân quyền), 差別 (phân biệt). Ví dụ 制度を改革する, 規制を強める / 緩める, 差別をなくす."
+  - type: explain
+    text:
+      vi: "Các cụm hay gặp: 福祉の充実 (hoàn thiện phúc lợi), 医療費の負担 (gánh nặng chi phí y tế), 介護保険 (bảo hiểm chăm sóc dài hạn), 人権を守る."
+  - type: deep_explain
+    text:
+      vi: 介護 là chăm sóc người cần được giúp trong sinh hoạt (người già, người khuyết tật), khác 看護 (điều dưỡng - chăm sóc người bệnh trong y tế). 規制 trái nghĩa 緩和 (nới lỏng). 格差 thường đi với 所得 (thu nhập), 地域 (vùng miền). 差別 thường đi với 人種, 性別, 年齢 (chủng tộc, giới tính, tuổi tác).
+  - type: example
+    target: 所得の格差が広がっています。
+    target_lang: ja
+    translation:
+      vi: Chênh lệch thu nhập đang nới rộng.
+    note:
+      vi: 格差.
+  - type: example
+    target: 母の介護のために、仕事を辞めました。
+    target_lang: ja
+    translation:
+      vi: Tôi nghỉ việc để chăm sóc mẹ.
+    note:
+      vi: 介護.
+  - type: example
+    target: 政府は規制を強めました。
+    target_lang: ja
+    translation:
+      vi: Chính phủ đã siết chặt quy định.
+    note:
+      vi: 規制.
+  - type: example
+    target: 人種による差別をなくさなければなりません。
+    target_lang: ja
+    translation:
+      vi: Phải xoá bỏ phân biệt đối xử theo chủng tộc.
+    note:
+      vi: 差別.
+  - type: common_mistake
+    wrong: 母の看護のために仕事を辞めました。(chăm sóc người già)
+    right: 母の介護のために仕事を辞めました。
+    target_lang: ja
+    note:
+      vi: 介護 là chăm sóc sinh hoạt người già; 看護 là điều dưỡng ở bệnh viện.
+  - type: common_mistake
+    wrong: 規制を緩めて、きびしくなりました。
+    right: 規制を緩めて、自由になりました。
+    target_lang: ja
+    note:
+      vi: 緩める là nới lỏng nên kết quả là tự do hơn, không phải nghiêm hơn.
+  - type: summary
+    points:
+      - vi: 格差 · 失業 · 高齢者 · 介護 · 福祉 · 医療 · 保険.
+      - vi: 改革 · 規制 · 人権 · 差別.
+      - vi: 規制を強める ↔ 緩める.
+      - vi: 介護 (sinh hoạt) ≠ 看護 (y tế).
+exercises:
+  - key: ja:exercise:n2-u10-society-policy-s1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u10-kakusa
+    prompt:
+      stem: Từ nào có nghĩa là “chênh lệch (giàu nghèo)”?
+      stem_lang: vi
+      options:
+        - id: ta7
+          text: 格差
+          lang: ja
+        - id: fki
+          text: 福祉
+          lang: ja
+        - id: a2u
+          text: 規制
+          lang: ja
+        - id: m01
+          text: 改革
+          lang: ja
+    answer:
+      correct_option_id: ta7
+    explanation:
+      vi: 格差 là chênh lệch. 改革 là cải cách, 規制 là quy định hạn chế, 福祉 là phúc lợi.
+    display_answer: 格差
+  - key: ja:exercise:n2-u10-society-policy-s2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u10-kaigo
+    prompt:
+      stem: Bạn nói về việc chăm sóc người già trong sinh hoạt. Từ nào?
+      stem_lang: vi
+      options:
+        - id: ylf
+          text: 介護
+          lang: ja
+        - id: e4a
+          text: 保険
+          lang: ja
+        - id: apg
+          text: 失業
+          lang: ja
+        - id: qry
+          text: 医療
+          lang: ja
+    answer:
+      correct_option_id: ylf
+    explanation:
+      vi: 介護 là chăm sóc người cần giúp trong sinh hoạt. 医療 là y tế, 保険 là bảo hiểm, 失業 là thất nghiệp.
+    display_answer: 介護
+  - key: ja:exercise:n2-u10-society-policy-s3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u10-koureisha
+    prompt:
+      audio_asset_id: null
+      fallback_text: 高齢者が増えて、介護が必要な人も増えています。
+      options:
+        - id: obb
+          text: Người cao tuổi tăng nên người cần chăm sóc cũng tăng.
+          lang: vi
+        - id: hpo
+          text: Người cao tuổi tăng nhưng người cần chăm sóc giảm.
+          lang: vi
+        - id: scl
+          text: Người cao tuổi giảm nên người cần chăm sóc cũng giảm.
+          lang: vi
+        - id: j1w
+          text: Người trẻ tăng nên người cần chăm sóc tăng.
+          lang: vi
+    answer:
+      correct_option_id: obb
+    explanation:
+      vi: 高齢者が増える - người cao tuổi tăng; 介護が必要な人 - người cần chăm sóc.
+    display_answer: Người cao tuổi tăng nên người cần chăm sóc cũng tăng.
+  - key: ja:exercise:n2-u10-society-policy-s4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u10-jinken
+    prompt:
+      template: "{{b1}}を守ることは大切です。 (Bảo vệ nhân quyền là điều quan trọng.)"
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Quyền của con người.
+        - Bắt đầu bằng 人.
+    answer:
+      blanks:
+        b1:
+          - 人権
+          - じんけん
+    known_wrong:
+      - answer: 差別
+        feedback_vi: 差別 là phân biệt đối xử; thứ cần bảo vệ là 人権.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 人権 - nhân quyền.
+    display_answer: 人権を守ることは大切です。
+  - key: ja:exercise:n2-u10-society-policy-s5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u10-kisei
+    prompt:
+      stem: Chính phủ siết chặt quy định. Từ nào?
+      stem_lang: vi
+      options:
+        - id: rrr
+          text: 規制
+          lang: ja
+        - id: ns2
+          text: 改革
+          lang: ja
+        - id: g8l
+          text: 保険
+          lang: ja
+        - id: vbn
+          text: 福祉
+          lang: ja
+    answer:
+      correct_option_id: rrr
+    explanation:
+      vi: 規制 là quy định hạn chế. 改革 là cải cách, 福祉 là phúc lợi, 保険 là bảo hiểm.
+    display_answer: 規制
+  - key: ja:exercise:n2-u10-society-policy-s6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u10-iryou
+    prompt:
+      template: "{{b1}}費が高くなっています。 (Chi phí y tế đang tăng cao.)"
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 医療
+          - いりょう
+    known_wrong:
+      - answer: 保険
+        feedback_vi: 保険 là bảo hiểm; 医療費 là chi phí y tế.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 医療費 - chi phí y tế.
+    display_answer: 医療費が高くなっています。
+  - key: ja:exercise:n2-u10-society-policy-s7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u10-sabetsu
+    prompt:
+      template: 人種による{{b1}}をなくしましょう。 (Hãy xoá bỏ sự phân biệt đối xử theo chủng tộc.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 差別
+          - さべつ
+    known_wrong:
+      - answer: 格差
+        feedback_vi: 格差 là chênh lệch; phân biệt theo chủng tộc là 差別.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 差別 - phân biệt đối xử.
+    display_answer: 人種による差別をなくしましょう。
+  - key: ja:exercise:n2-u10-society-policy-s8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u10-kakusa
+    prompt:
+      source_text: Chênh lệch thu nhập đang nới rộng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 所得の格差が広がっています。
+        - 所得の格差が拡大しています。
+        - しょとくのかくさがひろがっています。
+        - 所得格差が広がっています。
+    known_wrong:
+      - answer: 所得の格差が狭まっています。
+        feedback_vi: 広がる là nới rộng; 狭まる là thu hẹp.
+        error_tag: meaning
+    explanation:
+      vi: 格差が広がる - chênh lệch nới rộng.
+    display_answer: 所得の格差が広がっています。
+  - key: ja:exercise:n2-u10-society-policy-s9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n2-u10-fukushi
+    prompt:
+      source_text: 高齢者が増えて、介護や医療の費用も増えています。福祉制度を改革する必要があります。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Người cao tuổi tăng nên chi phí chăm sóc và y tế cũng tăng. Cần cải cách chế độ phúc lợi.
+        - Số người già tăng và chi phí chăm sóc, y tế cũng tăng. Cần phải cải cách chế độ phúc lợi.
+        - Người cao tuổi tăng lên, chi phí chăm sóc và y tế cũng tăng. Cần cải cách hệ thống phúc lợi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Người cao tuổi giảm nên chi phí chăm sóc cũng giảm. Không cần cải cách chế độ phúc lợi.
+        feedback_vi: 増えて là tăng.
+        error_tag: meaning
+    explanation:
+      vi: 高齢者が増える - người già tăng; 福祉制度を改革する - cải cách phúc lợi.
+    display_answer: Người cao tuổi tăng nên chi phí chăm sóc và y tế cũng tăng. Cần cải cách chế độ phúc lợi.
+  - key: ja:exercise:n2-u10-society-policy-s10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u10-hoken
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Tôi tham gia bảo hiểm y tế."'
+      tokens:
+        - id: t1
+          text: 健康
+        - id: t3
+          text: 入っています。
+        - id: t2
+          text: 保険に
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: Danh từ ghép 健康保険 + に + 入っています.
+    display_answer: 健康保険に入っています。
+  - key: ja:exercise:n2-u10-society-policy-s11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u10-kaikaku
+    prompt:
+      stem: Cần thay đổi triệt để chế độ. Từ nào?
+      stem_lang: vi
+      options:
+        - id: q3v
+          text: 失業
+          lang: ja
+        - id: uxc
+          text: 差別
+          lang: ja
+        - id: rif
+          text: 規制
+          lang: ja
+        - id: q6d
+          text: 改革
+          lang: ja
+    answer:
+      correct_option_id: q6d
+    explanation:
+      vi: 改革 là cải cách. 規制 là hạn chế, 失業 là thất nghiệp, 差別 là phân biệt.
+    display_answer: 改革

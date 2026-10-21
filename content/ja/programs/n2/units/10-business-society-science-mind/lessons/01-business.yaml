@@ -1,0 +1,379 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n2-u10-business
+order_index: 1
+level: n2
+title:
+  vi: Kinh doanh và thương mại - 業績・取引・投資・赤字
+objectives:
+  - vi: "Dùng từ vựng kinh doanh: 業績, 取引, 交渉, 提携, 競争, 需要, 供給."
+  - vi: "Nói về tài chính: 投資, 赤字, 黒字, 倒産, 貿易, 株."
+  - vi: Đọc hiểu tin kinh tế ngắn.
+estimated_minutes: 20
+skills:
+  - vocabulary
+  - reading
+  - listening
+  - speaking
+prerequisites:
+  - ja:lesson:n2-u9-koto-naku
+items:
+  - item: ja:item:n2-u10-gyouseki
+  - item: ja:item:n2-u10-torihiki
+  - item: ja:item:n2-u10-koushou
+  - item: ja:item:n2-u10-teikei
+  - item: ja:item:n2-u10-kyousou
+  - item: ja:item:n2-u10-juyou
+  - item: ja:item:n2-u10-kyoukyuu
+  - item: ja:item:n2-u10-toushi
+  - item: ja:item:n2-u10-akaji
+  - item: ja:item:n2-u10-kuroji
+  - item: ja:item:n2-u10-tousan
+  - item: ja:item:n2-u10-boueki
+  - item: ja:item:n2-u10-kabu
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được tin kinh doanh - 今年の業績は黒字になりました。需要に供給が追いつきません。 - và bàn luận về đàm phán, liên kết, đầu tư.
+  - type: explain
+    text:
+      vi: "Hoạt động kinh doanh: 業績 (kết quả kinh doanh), 取引 (giao dịch), 交渉 (đàm phán), 提携 (liên kết), 競争 (cạnh tranh). Thị trường: 需要 (nhu cầu), 供給 (cung cấp), 貿易 (ngoại thương)."
+  - type: explain
+    text:
+      vi: "Tài chính: 投資 (đầu tư), 株 (cổ phiếu), 黒字 (có lãi), 赤字 (thua lỗ), 倒産 (phá sản). Ví dụ 赤字が続く, 黒字に転じる, 倒産に追い込まれる, 株が上がる."
+  - type: explain
+    text:
+      vi: "Các cụm quen thuộc: 需要が高まる, 供給が不足する, 競争が激しい, 取引を始める, 交渉に応じる, 提携を結ぶ, 投資を行う."
+  - type: deep_explain
+    text:
+      vi: 黒字 (chữ đen) là có lãi, 赤字 (chữ đỏ) là thua lỗ - theo màu mực kế toán xưa. 取引 là giao dịch chung (取引先 - đối tác), còn 貿易 chỉ thương mại với nước ngoài. 提携 là liên kết có tính chiến lược, khác 協力 (hợp tác chung). 株 hay đi với 買う / 売る / 上がる / 下がる.
+  - type: example
+    target: 今年は黒字になりました。
+    target_lang: ja
+    translation:
+      vi: Năm nay công ty đã có lãi.
+    note:
+      vi: 黒字 - có lãi.
+  - type: example
+    target: 需要に供給が追いつきません。
+    target_lang: ja
+    translation:
+      vi: Nguồn cung không theo kịp nhu cầu.
+    note:
+      vi: 需要・供給.
+  - type: example
+    target: 二つの会社が提携して、新しい事業を始めました。
+    target_lang: ja
+    translation:
+      vi: Hai công ty liên kết và bắt đầu một dự án mới.
+    note:
+      vi: 提携.
+  - type: example
+    target: 不景気で、多くの会社が倒産しました。
+    target_lang: ja
+    translation:
+      vi: Do suy thoái, nhiều công ty phá sản.
+    note:
+      vi: 倒産.
+  - type: common_mistake
+    wrong: 会社は黒字が続いて、困っています。
+    right: 会社は赤字が続いて、困っています。
+    target_lang: ja
+    note:
+      vi: 黒字 là có lãi nên không gây khó; thua lỗ liên tục là 赤字.
+  - type: common_mistake
+    wrong: 日本は国内で貿易しています。
+    right: 日本は外国と貿易しています。
+    target_lang: ja
+    note:
+      vi: 貿易 chỉ thương mại với nước ngoài.
+  - type: summary
+    points:
+      - vi: 業績 · 取引 · 交渉 · 提携 · 競争 · 需要 · 供給 · 貿易.
+      - vi: 投資 · 株 · 黒字 · 赤字 · 倒産.
+      - vi: 黒字 có lãi ↔ 赤字 thua lỗ.
+      - vi: 提携を結ぶ · 交渉に応じる · 競争が激しい.
+exercises:
+  - key: ja:exercise:n2-u10-business-b1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u10-akaji
+    prompt:
+      stem: Từ nào có nghĩa là “thua lỗ”?
+      stem_lang: vi
+      options:
+        - id: w9y
+          text: 赤字
+          lang: ja
+        - id: i32
+          text: 黒字
+          lang: ja
+        - id: yae
+          text: 投資
+          lang: ja
+        - id: l1i
+          text: 取引
+          lang: ja
+    answer:
+      correct_option_id: w9y
+    explanation:
+      vi: 赤字 là thua lỗ. 黒字 là có lãi, 投資 là đầu tư, 取引 là giao dịch.
+    display_answer: 赤字
+  - key: ja:exercise:n2-u10-business-b2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u10-juyou
+    prompt:
+      stem: Bạn nói “nhu cầu của thị trường”. Từ nào?
+      stem_lang: vi
+      options:
+        - id: wit
+          text: 競争
+          lang: ja
+        - id: r36
+          text: 供給
+          lang: ja
+        - id: gyo
+          text: 提携
+          lang: ja
+        - id: ppt
+          text: 需要
+          lang: ja
+    answer:
+      correct_option_id: ppt
+    explanation:
+      vi: 需要 là nhu cầu. 供給 là nguồn cung, 競争 là cạnh tranh, 提携 là liên kết.
+    display_answer: 需要
+  - key: ja:exercise:n2-u10-business-b3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u10-tousan
+    prompt:
+      audio_asset_id: null
+      fallback_text: 不景気で、多くの会社が倒産しました。
+      options:
+        - id: t9k
+          text: Nhiều công ty đã liên kết với nhau.
+          lang: vi
+        - id: mvf
+          text: Do kinh tế tốt nhiều công ty đã mở rộng.
+          lang: vi
+        - id: a7g
+          text: Do suy thoái nhiều công ty đã phá sản.
+          lang: vi
+        - id: edx
+          text: Nhiều công ty đã đầu tư vào cổ phiếu.
+          lang: vi
+    answer:
+      correct_option_id: a7g
+    explanation:
+      vi: 不景気 - suy thoái; 倒産 - phá sản.
+    display_answer: Do suy thoái nhiều công ty đã phá sản.
+  - key: ja:exercise:n2-u10-business-b4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u10-kuroji
+    prompt:
+      template: 今年は{{b1}}になりました。 (Năm nay công ty đã có lãi.)
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Nghĩa là có lãi.
+        - Bắt đầu bằng 黒.
+    answer:
+      blanks:
+        b1:
+          - 黒字
+          - くろじ
+    known_wrong:
+      - answer: 赤字
+        feedback_vi: 赤字 là thua lỗ - ngược nghĩa.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 黒字 - có lãi.
+    display_answer: 今年は黒字になりました。
+  - key: ja:exercise:n2-u10-business-b5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u10-boueki
+    prompt:
+      stem: Hoạt động mua bán với nước ngoài gọi là gì?
+      stem_lang: vi
+      options:
+        - id: y43
+          text: 交渉
+          lang: ja
+        - id: iah
+          text: 株
+          lang: ja
+        - id: aqm
+          text: 貿易
+          lang: ja
+        - id: xew
+          text: 取引
+          lang: ja
+    answer:
+      correct_option_id: aqm
+    explanation:
+      vi: 貿易 là ngoại thương. 取引 là giao dịch chung, 交渉 là đàm phán, 株 là cổ phiếu.
+    display_answer: 貿易
+  - key: ja:exercise:n2-u10-business-b6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u10-koushou
+    prompt:
+      template: 価格について{{b1}}しています。 (Chúng tôi đang đàm phán về giá cả.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 交渉
+          - こうしょう
+    known_wrong:
+      - answer: 取引
+        feedback_vi: 取引 là giao dịch; "đàm phán" là 交渉.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 交渉 - đàm phán.
+    display_answer: 価格について交渉しています。
+  - key: ja:exercise:n2-u10-business-b7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u10-toushi
+    prompt:
+      template: 新しい事業に{{b1}}します。 (Tôi đầu tư vào dự án mới.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 投資
+          - とうし
+    known_wrong:
+      - answer: 提携
+        feedback_vi: 提携 là liên kết; đưa vốn vào là 投資.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 投資 - đầu tư.
+    display_answer: 新しい事業に投資します。
+  - key: ja:exercise:n2-u10-business-b8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u10-kyousou
+    prompt:
+      source_text: Cạnh tranh ngày càng gay gắt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 競争が激しくなっています。
+        - 競争が激しくなってきました。
+        - きょうそうがはげしくなっています。
+        - 競争が激しくなってきている。
+    known_wrong:
+      - answer: 競争が少なくなっています。
+        feedback_vi: 激しい là gay gắt; 少ない là ít.
+        error_tag: meaning
+    explanation:
+      vi: 競争が激しくなる - cạnh tranh gay gắt dần.
+    display_answer: 競争が激しくなっています。
+  - key: ja:exercise:n2-u10-business-b9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n2-u10-gyouseki
+    prompt:
+      source_text: 今年の業績は去年より上がり、黒字になりました。しかし、競争が激しくなっているので、気を抜けません。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Kết quả kinh doanh năm nay cao hơn năm ngoái và có lãi. Tuy nhiên cạnh tranh ngày càng gay gắt nên không thể chủ quan.
+        - Thành tích kinh doanh năm nay tốt hơn năm ngoái, đã có lãi. Nhưng cạnh tranh gay gắt nên không được lơ là.
+        - Năm nay kết quả kinh doanh tăng so với năm ngoái và có lãi. Tuy vậy vì cạnh tranh ngày càng khốc liệt, ta không thể lơ là.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Kết quả kinh doanh năm nay thấp hơn năm ngoái và thua lỗ. Nhưng cạnh tranh giảm nên có thể chủ quan.
+        feedback_vi: 黒字 là có lãi; 競争が激しくなっている là cạnh tranh gay gắt.
+        error_tag: meaning
+    explanation:
+      vi: 業績が上がる - kết quả tăng; 黒字 - có lãi; 気を抜けない - không thể lơ là.
+    display_answer: Kết quả kinh doanh năm nay cao hơn năm ngoái và có lãi. Tuy nhiên cạnh tranh ngày càng gay gắt nên không thể chủ quan.
+  - key: ja:exercise:n2-u10-business-b10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u10-teikei
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Hai công ty liên kết và bắt đầu dự án mới."'
+      tokens:
+        - id: t4
+          text: 始めました。
+        - id: t2
+          text: 提携して、
+        - id: t1
+          text: 二つの会社が
+        - id: t3
+          text: 新しい事業を
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Chủ thể → 提携して (liên kết) → tân ngữ → 始めました.
+    display_answer: 二つの会社が提携して、新しい事業を始めました。
+  - key: ja:exercise:n2-u10-business-b11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u10-kabu
+    prompt:
+      stem: Bạn mua cổ phiếu và có lãi. Cụm nào đúng?
+      stem_lang: vi
+      options:
+        - id: mjh
+          text: 株を交渉して、利益を出しました
+          lang: ja
+        - id: a5j
+          text: 株を貿易して、利益を出しました
+          lang: ja
+        - id: yxx
+          text: 株を買って、利益を出しました
+          lang: ja
+        - id: kzk
+          text: 株を倒産して、利益を出しました
+          lang: ja
+    answer:
+      correct_option_id: yxx
+    explanation:
+      vi: 株を買う - mua cổ phiếu. 貿易する, 交渉する, 倒産する không đi với 株.
+    display_answer: 株を買って、利益を出しました

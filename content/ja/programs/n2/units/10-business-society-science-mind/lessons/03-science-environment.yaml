@@ -1,0 +1,374 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n2-u10-science
+order_index: 3
+level: n2
+title:
+  vi: Khoa học và môi trường - 汚染・絶滅・仮説・分析
+objectives:
+  - vi: "Dùng từ vựng môi trường: 汚染, 廃棄物, 再生, 発電, 絶滅, 生態系."
+  - vi: "Dùng từ vựng khoa học: 宇宙, 遺伝子, 仮説, 検証, 分析."
+  - vi: Đọc hiểu đoạn văn khoa học-môi trường ngắn.
+estimated_minutes: 20
+skills:
+  - vocabulary
+  - reading
+  - listening
+  - speaking
+prerequisites:
+  - ja:lesson:n2-u10-society-policy
+items:
+  - item: ja:item:n2-u10-osen
+  - item: ja:item:n2-u10-haikibutsu
+  - item: ja:item:n2-u10-saisei
+  - item: ja:item:n2-u10-hatsuden
+  - item: ja:item:n2-u10-zetsumetsu
+  - item: ja:item:n2-u10-seitaikei
+  - item: ja:item:n2-u10-uchuu
+  - item: ja:item:n2-u10-idenshi
+  - item: ja:item:n2-u10-kasetsu
+  - item: ja:item:n2-u10-kenshou
+  - item: ja:item:n2-u10-bunseki
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được văn bản môi trường và khoa học - 大気汚染が深刻です。仮説を立てて、データを分析します。
+  - type: explain
+    text:
+      vi: "Môi trường: 汚染 (ô nhiễm), 廃棄物 (chất thải), 再生 (tái sinh, tái chế), 発電 (phát điện), 絶滅 (tuyệt chủng), 生態系 (hệ sinh thái). Ví dụ 大気汚染, 廃棄物を減らす, 再生可能エネルギー, 絶滅の危機."
+  - type: explain
+    text:
+      vi: "Khoa học: 宇宙 (vũ trụ), 遺伝子 (gen), 仮説 (giả thuyết), 検証 (kiểm chứng), 分析 (phân tích). Ví dụ 仮説を立てる, 仮説を検証する, データを分析する."
+  - type: explain
+    text:
+      vi: "Chuỗi nghiên cứu điển hình: 仮説を立てる → 実験する → データを分析する → 仮説を検証する → 結果をまとめる. Dùng từ nối kết quả: その結果, したがって."
+  - type: deep_explain
+    text:
+      vi: 再生 có nhiều nghĩa - tái sinh (再生可能エネルギー), tái chế (再生紙), phát lại (動画の再生). 検証 là xác nhận một giả thuyết bằng bằng chứng; 証明 là chứng minh hoàn toàn; 確認 là kiểm tra đơn giản. 分析 chia nhỏ để hiểu, trái nghĩa 総合 (tổng hợp).
+  - type: example
+    target: 大気汚染が深刻な問題になっています。
+    target_lang: ja
+    translation:
+      vi: Ô nhiễm không khí đang trở thành vấn đề nghiêm trọng.
+    note:
+      vi: 汚染.
+  - type: example
+    target: 太陽光で発電して、廃棄物を減らします。
+    target_lang: ja
+    translation:
+      vi: Phát điện bằng ánh sáng mặt trời và giảm chất thải.
+    note:
+      vi: 発電・廃棄物.
+  - type: example
+    target: 絶滅の危機にある動物を守りましょう。
+    target_lang: ja
+    translation:
+      vi: Hãy bảo vệ các loài động vật đang có nguy cơ tuyệt chủng.
+    note:
+      vi: 絶滅.
+  - type: example
+    target: 仮説を立てて、データを分析し、結果を検証します。
+    target_lang: ja
+    translation:
+      vi: Đặt giả thuyết, phân tích dữ liệu và kiểm chứng kết quả.
+    note:
+      vi: 仮説・分析・検証.
+  - type: common_mistake
+    wrong: 再生紙は新しい紙の一種です。(giấy mới)
+    right: 再生紙は古紙から作った紙です。
+    target_lang: ja
+    note:
+      vi: 再生紙 là giấy tái chế từ giấy cũ.
+  - type: common_mistake
+    wrong: 仮説を分析して、実験します。
+    right: 仮説を立てて、実験します。
+    target_lang: ja
+    note:
+      vi: Giả thuyết được "đặt ra" (立てる), không phải phân tích trước khi làm thí nghiệm.
+  - type: summary
+    points:
+      - vi: 汚染 · 廃棄物 · 再生 · 発電 · 絶滅 · 生態系.
+      - vi: 宇宙 · 遺伝子 · 仮説 · 検証 · 分析.
+      - vi: 仮説を立てる → 実験 → 分析 → 検証.
+      - vi: 再生 - tái sinh / tái chế / phát lại.
+exercises:
+  - key: ja:exercise:n2-u10-science-c1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u10-osen
+    prompt:
+      stem: Từ nào có nghĩa là “ô nhiễm”?
+      stem_lang: vi
+      options:
+        - id: eee
+          text: 発電
+          lang: ja
+        - id: tm4
+          text: 絶滅
+          lang: ja
+        - id: ejy
+          text: 汚染
+          lang: ja
+        - id: ljw
+          text: 再生
+          lang: ja
+    answer:
+      correct_option_id: ejy
+    explanation:
+      vi: 汚染 là ô nhiễm. 絶滅 là tuyệt chủng, 再生 là tái chế/tái sinh, 発電 là phát điện.
+    display_answer: 汚染
+  - key: ja:exercise:n2-u10-science-c2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u10-kasetsu
+    prompt:
+      stem: Bạn đặt giả thuyết trước khi thí nghiệm. Từ nào?
+      stem_lang: vi
+      options:
+        - id: leh
+          text: 仮説
+          lang: ja
+        - id: y84
+          text: 検証
+          lang: ja
+        - id: kpe
+          text: 遺伝子
+          lang: ja
+        - id: s52
+          text: 分析
+          lang: ja
+    answer:
+      correct_option_id: leh
+    explanation:
+      vi: 仮説 là giả thuyết. 検証 là kiểm chứng, 分析 là phân tích, 遺伝子 là gen.
+    display_answer: 仮説
+  - key: ja:exercise:n2-u10-science-c3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u10-zetsumetsu
+    prompt:
+      audio_asset_id: null
+      fallback_text: 絶滅の危機にある動物を守りましょう。
+      options:
+        - id: uf1
+          text: Hãy săn các động vật quý hiếm.
+          lang: vi
+        - id: d1g
+          text: Hãy nuôi nhiều động vật ở nhà.
+          lang: vi
+        - id: umb
+          text: Các động vật đã tuyệt chủng sẽ quay lại.
+          lang: vi
+        - id: lz4
+          text: Hãy bảo vệ các loài động vật đang có nguy cơ tuyệt chủng.
+          lang: vi
+    answer:
+      correct_option_id: lz4
+    explanation:
+      vi: 絶滅の危機 - nguy cơ tuyệt chủng; 守りましょう - hãy bảo vệ.
+    display_answer: Hãy bảo vệ các loài động vật đang có nguy cơ tuyệt chủng.
+  - key: ja:exercise:n2-u10-science-c4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u10-bunseki
+    prompt:
+      template: データを{{b1}}します。 (Tôi phân tích dữ liệu.)
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Chia nhỏ dữ liệu để hiểu.
+        - Bắt đầu bằng 分.
+    answer:
+      blanks:
+        b1:
+          - 分析
+          - ぶんせき
+    known_wrong:
+      - answer: 検証
+        feedback_vi: 検証 là kiểm chứng; chia nhỏ dữ liệu để hiểu là 分析.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 分析 - phân tích.
+    display_answer: データを分析します。
+  - key: ja:exercise:n2-u10-science-c5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u10-hatsuden
+    prompt:
+      stem: Bạn nói “Phát điện bằng ánh sáng mặt trời”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: gm9
+          text: 太陽光で発電します。
+          lang: ja
+        - id: ewb
+          text: 太陽光が発電します。
+          lang: ja
+        - id: k27
+          text: 太陽光に発電します。
+          lang: ja
+        - id: oun
+          text: 太陽光を発電します。
+          lang: ja
+    answer:
+      correct_option_id: gm9
+    explanation:
+      vi: 太陽光で発電する - phát điện bằng ánh sáng mặt trời. を, に, が không đúng ở đây.
+    display_answer: 太陽光で発電します。
+  - key: ja:exercise:n2-u10-science-c6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u10-haikibutsu
+    prompt:
+      template: "{{b1}}を減らす努力をしています。 (Chúng tôi nỗ lực giảm chất thải.)"
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - 廃棄物
+          - はいきぶつ
+    known_wrong:
+      - answer: 汚染
+        feedback_vi: 汚染 là ô nhiễm; "giảm" thứ thải ra là 廃棄物.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 廃棄物 - chất thải.
+    display_answer: 廃棄物を減らす努力をしています。
+  - key: ja:exercise:n2-u10-science-c7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u10-kenshou
+    prompt:
+      template: 仮説を{{b1}}する必要があります。 (Cần kiểm chứng giả thuyết.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 検証
+          - けんしょう
+    known_wrong:
+      - answer: 分析
+        feedback_vi: 分析 là phân tích; xác nhận đúng sai của giả thuyết là 検証.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 検証 - kiểm chứng.
+    display_answer: 仮説を検証する必要があります。
+  - key: ja:exercise:n2-u10-science-c8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u10-osen
+    prompt:
+      source_text: Ô nhiễm không khí rất nghiêm trọng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 大気汚染が深刻です。
+        - 大気汚染は深刻です。
+        - たいきおせんがしんこくです。
+        - 大気汚染が深刻な問題です。
+    known_wrong:
+      - answer: 大気汚染が深刻になりません。
+        feedback_vi: Câu nói hiện trạng nghiêm trọng, không phải "không trở nên nghiêm trọng".
+        error_tag: meaning
+    explanation:
+      vi: 大気汚染 - ô nhiễm không khí; 深刻 - nghiêm trọng.
+    display_answer: 大気汚染が深刻です。
+  - key: ja:exercise:n2-u10-science-c9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n2-u10-seitaikei
+    prompt:
+      source_text: 生態系を守るために、廃棄物を減らし、再生可能なエネルギーで発電します。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Để bảo vệ hệ sinh thái, giảm chất thải và phát điện bằng năng lượng tái tạo.
+        - Họ giảm chất thải và phát điện bằng năng lượng tái sinh để bảo vệ hệ sinh thái.
+        - Để giữ gìn hệ sinh thái, người ta giảm rác thải và dùng năng lượng tái tạo để phát điện.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Để phá hệ sinh thái, tăng chất thải và phát điện bằng than.
+        feedback_vi: 守るために là để bảo vệ.
+        error_tag: meaning
+    explanation:
+      vi: 生態系を守る - bảo vệ hệ sinh thái; 再生可能 - có thể tái tạo.
+    display_answer: Để bảo vệ hệ sinh thái, giảm chất thải và phát điện bằng năng lượng tái tạo.
+  - key: ja:exercise:n2-u10-science-c10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u10-kasetsu
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Đặt giả thuyết rồi làm thí nghiệm."'
+      tokens:
+        - id: t3
+          text: 実験します。
+        - id: t2
+          text: 立てて、
+        - id: t1
+          text: 仮説を
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: Tân ngữ + 立てる (đặt) + 実験します.
+    display_answer: 仮説を立てて、実験します。
+  - key: ja:exercise:n2-u10-science-c11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u10-uchuu
+    prompt:
+      stem: Ước mơ của bạn là bay ra ngoài Trái Đất. Từ nào?
+      stem_lang: vi
+      options:
+        - id: jjt
+          text: 宇宙
+          lang: ja
+        - id: gjo
+          text: 廃棄物
+          lang: ja
+        - id: caq
+          text: 遺伝子
+          lang: ja
+        - id: xic
+          text: 生態系
+          lang: ja
+    answer:
+      correct_option_id: jjt
+    explanation:
+      vi: 宇宙 là vũ trụ. 遺伝子 là gen, 生態系 là hệ sinh thái, 廃棄物 là chất thải.
+    display_answer: 宇宙

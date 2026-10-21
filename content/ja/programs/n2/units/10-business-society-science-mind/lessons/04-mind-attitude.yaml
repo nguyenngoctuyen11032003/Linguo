@@ -1,0 +1,375 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n2-u10-mind
+order_index: 4
+level: n2
+title:
+  vi: Tâm lý và thái độ - 性格・態度・不安・共感
+objectives:
+  - vi: "Dùng từ vựng tính cách, thái độ: 性格, 態度, 価値観, 偏見."
+  - vi: "Dùng từ vựng cảm xúc: 孤独, 不安, 緊張, 満足, 不満, 共感, 葛藤."
+  - vi: Đọc và nói về cảm xúc, quan hệ giữa người với người.
+estimated_minutes: 20
+skills:
+  - vocabulary
+  - reading
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n2-u10-science
+items:
+  - item: ja:item:n2-u10-seikaku
+  - item: ja:item:n2-u10-taido
+  - item: ja:item:n2-u10-kachikan
+  - item: ja:item:n2-u10-henken
+  - item: ja:item:n2-u10-kodoku
+  - item: ja:item:n2-u10-fuan
+  - item: ja:item:n2-u10-kinchou
+  - item: ja:item:n2-u10-manzoku
+  - item: ja:item:n2-u10-fuman
+  - item: ja:item:n2-u10-sonchou
+  - item: ja:item:n2-u10-kyoukan
+  - item: ja:item:n2-u10-kattou
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được về tính cách và cảm xúc - 人によって価値観が違います。将来が不安です。彼の話に共感しました。
+  - type: explain
+    text:
+      vi: "Tính cách và thái độ: 性格 (tính cách), 態度 (thái độ), 価値観 (giá trị quan), 偏見 (định kiến), 尊重 (tôn trọng), 共感 (đồng cảm). Ví dụ 明るい性格, 態度が悪い, 価値観が違う, 偏見を持つ, 意見を尊重する."
+  - type: explain
+    text:
+      vi: "Cảm xúc: 孤独 (cô đơn), 不安 (bất an), 緊張 (căng thẳng), 満足 (hài lòng), 不満 (bất mãn), 葛藤 (giằng xé). Ví dụ 孤独を感じる, 不安になる, 緊張する, 結果に満足している, 不満がある."
+  - type: explain
+    text:
+      vi: "Hai cụm đối lập thường gặp: 満足 ↔ 不満; 共感 ↔ 反感 (phản cảm); 尊重 ↔ 無視 (phớt lờ). Dùng khi bình luận hay viết bài nghị luận."
+  - type: deep_explain
+    text:
+      vi: 満足 vừa là danh từ vừa là する-động từ (満足する, 満足している). 不安 dùng cho lo lắng mơ hồ về tương lai, còn 心配 là lo cho một việc cụ thể. 共感 là chia sẻ cảm xúc, 同情 (thương hại, đã học N1) có sắc thái từ trên xuống. 偏見 thường đi với 持つ / 抱く / なくす.
+  - type: example
+    target: 人によって価値観が違います。
+    target_lang: ja
+    translation:
+      vi: Quan niệm sống khác nhau theo từng người.
+    note:
+      vi: 価値観.
+  - type: example
+    target: 一人暮らしで、孤独を感じることがあります。
+    target_lang: ja
+    translation:
+      vi: Sống một mình nên có lúc tôi cảm thấy cô đơn.
+    note:
+      vi: 孤独.
+  - type: example
+    target: 結果に満足していますが、給料には不満があります。
+    target_lang: ja
+    translation:
+      vi: Tôi hài lòng với kết quả nhưng bất mãn với lương.
+    note:
+      vi: 満足・不満.
+  - type: example
+    target: 相手の意見を尊重して、偏見を持たないようにしています。
+    target_lang: ja
+    translation:
+      vi: Tôi cố gắng tôn trọng ý kiến người khác và không mang định kiến.
+    note:
+      vi: 尊重・偏見.
+  - type: common_mistake
+    wrong: 将来が心配で、漠然とした不安を感じます。(lo cho việc cụ thể)
+    right: 試験が心配です。
+    target_lang: ja
+    note:
+      vi: 心配 dùng cho lo lắng về việc cụ thể (kỳ thi); 不安 là bất an mơ hồ.
+  - type: common_mistake
+    wrong: 彼の話に同情して、私も同じ経験があります。(đồng cảm)
+    right: 彼の話に共感して、私も同じ経験があります。
+    target_lang: ja
+    note:
+      vi: 共感 là cùng cảm xúc; 同情 là thương cảm từ bên ngoài.
+  - type: summary
+    points:
+      - vi: 性格 · 態度 · 価値観 · 偏見 · 尊重 · 共感.
+      - vi: 孤独 · 不安 · 緊張 · 満足 · 不満 · 葛藤.
+      - vi: 満足 ↔ 不満 · 共感 ↔ 反感.
+      - vi: 不安 (mơ hồ) ≠ 心配 (cụ thể).
+exercises:
+  - key: ja:exercise:n2-u10-mind-m1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u10-kodoku
+    prompt:
+      stem: Từ nào có nghĩa là “cô đơn”?
+      stem_lang: vi
+      options:
+        - id: un7
+          text: 緊張
+          lang: ja
+        - id: ejx
+          text: 共感
+          lang: ja
+        - id: maa
+          text: 孤独
+          lang: ja
+        - id: dzm
+          text: 満足
+          lang: ja
+    answer:
+      correct_option_id: maa
+    explanation:
+      vi: 孤独 là cô đơn. 緊張 là căng thẳng, 満足 là hài lòng, 共感 là đồng cảm.
+    display_answer: 孤独
+  - key: ja:exercise:n2-u10-mind-m2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u10-henken
+    prompt:
+      stem: Bạn nói “định kiến”. Từ nào?
+      stem_lang: vi
+      options:
+        - id: nyw
+          text: 偏見
+          lang: ja
+        - id: eg0
+          text: 態度
+          lang: ja
+        - id: gew
+          text: 尊重
+          lang: ja
+        - id: nk8
+          text: 価値観
+          lang: ja
+    answer:
+      correct_option_id: nyw
+    explanation:
+      vi: 偏見 là định kiến. 価値観 là giá trị quan, 態度 là thái độ, 尊重 là tôn trọng.
+    display_answer: 偏見
+  - key: ja:exercise:n2-u10-mind-m3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u10-manzoku
+    prompt:
+      audio_asset_id: null
+      fallback_text: 結果に満足していますが、給料には不満があります。
+      options:
+        - id: tns
+          text: Tôi bất mãn với kết quả nhưng hài lòng với lương.
+          lang: vi
+        - id: t94
+          text: Tôi bất mãn cả kết quả và lương.
+          lang: vi
+        - id: mk4
+          text: Tôi hài lòng với kết quả nhưng bất mãn với lương.
+          lang: vi
+        - id: c6o
+          text: Tôi hài lòng cả kết quả và lương.
+          lang: vi
+    answer:
+      correct_option_id: mk4
+    explanation:
+      vi: 結果に満足 - hài lòng với kết quả; 給料には不満 - bất mãn với lương.
+    display_answer: Tôi hài lòng với kết quả nhưng bất mãn với lương.
+  - key: ja:exercise:n2-u10-mind-m4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u10-fuan
+    prompt:
+      template: 将来が{{b1}}です。 (Tôi bất an về tương lai.)
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Cảm xúc lo âu mơ hồ.
+        - Bắt đầu bằng 不.
+    answer:
+      blanks:
+        b1:
+          - 不安
+          - ふあん
+    known_wrong:
+      - answer: 満足
+        feedback_vi: 満足 là hài lòng - ngược nghĩa.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 不安 - bất an, lo âu.
+    display_answer: 将来が不安です。
+  - key: ja:exercise:n2-u10-mind-m5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u10-kyoukan
+    prompt:
+      stem: Bạn chia sẻ cảm xúc với một người qua câu chuyện của họ. Từ nào?
+      stem_lang: vi
+      options:
+        - id: jca
+          text: 偏見
+          lang: ja
+        - id: k3w
+          text: 共感
+          lang: ja
+        - id: lby
+          text: 尊重
+          lang: ja
+        - id: whv
+          text: 葛藤
+          lang: ja
+    answer:
+      correct_option_id: k3w
+    explanation:
+      vi: 共感 là đồng cảm. 尊重 là tôn trọng, 偏見 là định kiến, 葛藤 là giằng xé.
+    display_answer: 共感
+  - key: ja:exercise:n2-u10-mind-m6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u10-kinchou
+    prompt:
+      template: 面接で{{b1}}しました。 (Tôi căng thẳng ở buổi phỏng vấn.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 緊張
+          - きんちょう
+    known_wrong:
+      - answer: 葛藤
+        feedback_vi: 葛藤 là giằng xé nội tâm; hồi hộp trước phỏng vấn là 緊張.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 緊張 - căng thẳng, hồi hộp.
+    display_answer: 面接で緊張しました。
+  - key: ja:exercise:n2-u10-mind-m7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u10-sonchou
+    prompt:
+      template: 相手の意見を{{b1}}します。 (Tôi tôn trọng ý kiến của đối phương.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 尊重
+          - そんちょう
+    known_wrong:
+      - answer: 共感
+        feedback_vi: 共感 là đồng cảm; "tôn trọng ý kiến" là 尊重.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 尊重 - tôn trọng.
+    display_answer: 相手の意見を尊重します。
+  - key: ja:exercise:n2-u10-mind-m8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u10-kachikan
+    prompt:
+      source_text: Quan niệm sống khác nhau theo từng người.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 人によって価値観が違います。
+        - 人によって価値観は違います。
+        - ひとによってかちかんがちがいます。
+        - 人によって価値観が異なります。
+    known_wrong:
+      - answer: 人によって価値観が同じです。
+        feedback_vi: 違います là khác nhau; 同じ là giống nhau.
+        error_tag: meaning
+    explanation:
+      vi: 人によって - tuỳ từng người; 価値観が違う - quan niệm sống khác nhau.
+    display_answer: 人によって価値観が違います。
+  - key: ja:exercise:n2-u10-mind-m9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n2-u10-kattou
+    prompt:
+      source_text: 彼は仕事と家族の間で葛藤を感じています。それでも、不満を言わずに、相手の立場を尊重しています。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Anh ấy thấy giằng xé giữa công việc và gia đình. Dù vậy anh không phàn nàn mà tôn trọng lập trường của đối phương.
+        - Anh ấy giằng xé giữa công việc và gia đình. Tuy thế, anh ấy không kêu ca, vẫn tôn trọng vị trí của người kia.
+        - Anh ấy cảm thấy mâu thuẫn trong lòng giữa công việc và gia đình. Dù vậy anh không bất mãn mà tôn trọng đối phương.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Anh ấy không có sự giằng xé giữa công việc và gia đình. Anh ấy phàn nàn mà không tôn trọng đối phương.
+        feedback_vi: 葛藤を感じる là cảm thấy giằng xé.
+        error_tag: meaning
+    explanation:
+      vi: 葛藤 - giằng xé; 不満を言わずに - không phàn nàn; 尊重 - tôn trọng.
+    display_answer: Anh ấy thấy giằng xé giữa công việc và gia đình. Dù vậy anh không phàn nàn mà tôn trọng lập trường của đối phương.
+  - key: ja:exercise:n2-u10-mind-m10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u10-seikaku
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Anh ấy có tính cách vui vẻ."'
+      tokens:
+        - id: t3
+          text: 性格です。
+        - id: t2
+          text: 明るい
+        - id: t1
+          text: 彼は
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: Chủ đề → tính từ bổ nghĩa → 性格です.
+    display_answer: 彼は明るい性格です。
+  - key: ja:exercise:n2-u10-mind-m11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u10-taido
+    prompt:
+      stem: Bạn phê bình cách cư xử thiếu lễ phép của ai đó. Từ nào?
+      stem_lang: vi
+      options:
+        - id: b4d
+          text: 偏見
+          lang: ja
+        - id: apn
+          text: 態度
+          lang: ja
+        - id: e7j
+          text: 性格
+          lang: ja
+        - id: gfc
+          text: 価値観
+          lang: ja
+    answer:
+      correct_option_id: apn
+    explanation:
+      vi: 態度 là thái độ, cách cư xử. 性格 là tính cách, 価値観 là giá trị quan, 偏見 là định kiến.
+    display_answer: 態度

@@ -1,0 +1,854 @@
+# Học liệu unit "Từ vựng N2: kinh doanh, xã hội, khoa học và tâm lý" (JLPT N2). reading là cách đọc kana (furigana); romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n2-u10-gyouseki
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 業績
+      reading: ぎょうせき
+      romanization: gyouseki
+      pos: danh từ
+    back:
+      meaning:
+        vi: thành tích kinh doanh, kết quả hoạt động
+      examples:
+        - target: 今年の業績は去年より上がりました。
+          translation:
+            vi: Kết quả kinh doanh năm nay cao hơn năm ngoái.
+  - key: ja:item:n2-u10-torihiki
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 取引
+      reading: とりひき
+      romanization: torihiki
+      pos: danh từ
+    back:
+      meaning:
+        vi: giao dịch
+      examples:
+        - target: この会社とは十年前から取引があります。
+          translation:
+            vi: Chúng tôi giao dịch với công ty này từ mười năm nay.
+  - key: ja:item:n2-u10-koushou
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 交渉
+      reading: こうしょう
+      romanization: koushou
+      pos: danh từ
+    back:
+      meaning:
+        vi: đàm phán
+      examples:
+        - target: 価格について交渉しています。
+          translation:
+            vi: Chúng tôi đang đàm phán về giá cả.
+  - key: ja:item:n2-u10-teikei
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 提携
+      reading: ていけい
+      romanization: teikei
+      pos: danh từ
+    back:
+      meaning:
+        vi: liên kết, hợp tác (giữa tổ chức)
+      examples:
+        - target: 二つの会社が提携しました。
+          translation:
+            vi: Hai công ty đã liên kết.
+  - key: ja:item:n2-u10-kyousou
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 競争
+      reading: きょうそう
+      romanization: kyousou
+      pos: danh từ
+    back:
+      meaning:
+        vi: cạnh tranh
+      examples:
+        - target: 競争が激しくなっています。
+          translation:
+            vi: Cạnh tranh ngày càng gay gắt.
+  - key: ja:item:n2-u10-juyou
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 需要
+      reading: じゅよう
+      romanization: juyou
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhu cầu (thị trường)
+      examples:
+        - target: この商品は需要が高いです。
+          translation:
+            vi: Mặt hàng này có nhu cầu cao.
+  - key: ja:item:n2-u10-kyoukyuu
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 供給
+      reading: きょうきゅう
+      romanization: kyoukyuu
+      pos: danh từ
+    back:
+      meaning:
+        vi: cung cấp, nguồn cung
+      examples:
+        - target: 需要に供給が追いつきません。
+          translation:
+            vi: Nguồn cung không theo kịp nhu cầu.
+  - key: ja:item:n2-u10-toushi
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 投資
+      reading: とうし
+      romanization: toushi
+      pos: danh từ
+    back:
+      meaning:
+        vi: đầu tư
+      examples:
+        - target: 新しい事業に投資します。
+          translation:
+            vi: Tôi đầu tư vào một dự án mới.
+  - key: ja:item:n2-u10-akaji
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 赤字
+      reading: あかじ
+      romanization: akaji
+      pos: danh từ
+    back:
+      meaning:
+        vi: thâm hụt, lỗ
+      examples:
+        - target: 会社は赤字が続いています。
+          translation:
+            vi: Công ty liên tục thua lỗ.
+  - key: ja:item:n2-u10-kuroji
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 黒字
+      reading: くろじ
+      romanization: kuroji
+      pos: danh từ
+    back:
+      meaning:
+        vi: có lãi, thặng dư
+      examples:
+        - target: 今年は黒字になりました。
+          translation:
+            vi: Năm nay công ty đã có lãi.
+  - key: ja:item:n2-u10-tousan
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 倒産
+      reading: とうさん
+      romanization: tousan
+      pos: danh từ
+    back:
+      meaning:
+        vi: phá sản
+      examples:
+        - target: 不景気で、多くの会社が倒産しました。
+          translation:
+            vi: Do suy thoái nhiều công ty đã phá sản.
+  - key: ja:item:n2-u10-boueki
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 貿易
+      reading: ぼうえき
+      romanization: boueki
+      pos: danh từ
+    back:
+      meaning:
+        vi: thương mại quốc tế, ngoại thương
+      examples:
+        - target: 日本は貿易で栄えました。
+          translation:
+            vi: Nhật Bản đã phát triển nhờ ngoại thương.
+  - key: ja:item:n2-u10-kabu
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 株
+      reading: かぶ
+      romanization: kabu
+      pos: danh từ
+    back:
+      meaning:
+        vi: cổ phiếu
+      examples:
+        - target: 株を買って、利益を出しました。
+          translation:
+            vi: Tôi mua cổ phiếu và có lãi.
+  - key: ja:item:n2-u10-kakusa
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 格差
+      reading: かくさ
+      romanization: kakusa
+      pos: danh từ
+    back:
+      meaning:
+        vi: chênh lệch, khoảng cách (giàu nghèo)
+      examples:
+        - target: 所得の格差が広がっています。
+          translation:
+            vi: Chênh lệch thu nhập đang nới rộng.
+  - key: ja:item:n2-u10-shitsugyou
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 失業
+      reading: しつぎょう
+      romanization: shitsugyou
+      pos: danh từ
+    back:
+      meaning:
+        vi: thất nghiệp
+      examples:
+        - target: 失業率が下がりました。
+          translation:
+            vi: Tỷ lệ thất nghiệp đã giảm.
+  - key: ja:item:n2-u10-koureisha
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 高齢者
+      reading: こうれいしゃ
+      romanization: koureisha
+      pos: danh từ
+    back:
+      meaning:
+        vi: người cao tuổi
+      examples:
+        - target: 高齢者が増えています。
+          translation:
+            vi: Số người cao tuổi đang tăng.
+  - key: ja:item:n2-u10-kaigo
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 介護
+      reading: かいご
+      romanization: kaigo
+      pos: danh từ
+    back:
+      meaning:
+        vi: chăm sóc người già, người bệnh
+      examples:
+        - target: 母の介護のために、仕事を辞めました。
+          translation:
+            vi: Tôi nghỉ việc để chăm sóc mẹ.
+  - key: ja:item:n2-u10-fukushi
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 福祉
+      reading: ふくし
+      romanization: fukushi
+      pos: danh từ
+    back:
+      meaning:
+        vi: phúc lợi xã hội
+      examples:
+        - target: 福祉の制度が充実しています。
+          translation:
+            vi: Chế độ phúc lợi rất đầy đủ.
+  - key: ja:item:n2-u10-iryou
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 医療
+      reading: いりょう
+      romanization: iryou
+      pos: danh từ
+    back:
+      meaning:
+        vi: y tế, chăm sóc y tế
+      examples:
+        - target: 医療費が高くなっています。
+          translation:
+            vi: Chi phí y tế đang tăng cao.
+  - key: ja:item:n2-u10-hoken
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 保険
+      reading: ほけん
+      romanization: hoken
+      pos: danh từ
+    back:
+      meaning:
+        vi: bảo hiểm
+      examples:
+        - target: 健康保険に入っています。
+          translation:
+            vi: Tôi tham gia bảo hiểm y tế.
+  - key: ja:item:n2-u10-kaikaku
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 改革
+      reading: かいかく
+      romanization: kaikaku
+      pos: danh từ
+    back:
+      meaning:
+        vi: cải cách
+      examples:
+        - target: 制度の改革が必要です。
+          translation:
+            vi: Cần cải cách chế độ.
+  - key: ja:item:n2-u10-kisei
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 規制
+      reading: きせい
+      romanization: kisei
+      pos: danh từ
+    back:
+      meaning:
+        vi: quy định hạn chế, kiểm soát
+      examples:
+        - target: 政府は規制を強めました。
+          translation:
+            vi: Chính phủ đã siết chặt quy định.
+  - key: ja:item:n2-u10-jinken
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 人権
+      reading: じんけん
+      romanization: jinken
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhân quyền
+      examples:
+        - target: 人権を守ることは大切です。
+          translation:
+            vi: Bảo vệ nhân quyền là điều quan trọng.
+  - key: ja:item:n2-u10-sabetsu
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 差別
+      reading: さべつ
+      romanization: sabetsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: phân biệt đối xử
+      examples:
+        - target: 人種による差別をなくしましょう。
+          translation:
+            vi: Hãy xoá bỏ sự phân biệt đối xử theo chủng tộc.
+  - key: ja:item:n2-u10-osen
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 汚染
+      reading: おせん
+      romanization: osen
+      pos: danh từ
+    back:
+      meaning:
+        vi: ô nhiễm
+      examples:
+        - target: 大気汚染が深刻です。
+          translation:
+            vi: Ô nhiễm không khí rất nghiêm trọng.
+  - key: ja:item:n2-u10-haikibutsu
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 廃棄物
+      reading: はいきぶつ
+      romanization: haikibutsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: chất thải, rác thải
+      examples:
+        - target: 廃棄物を減らす努力をしています。
+          translation:
+            vi: Chúng tôi nỗ lực giảm chất thải.
+  - key: ja:item:n2-u10-saisei
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 再生
+      reading: さいせい
+      romanization: saisei
+      pos: danh từ
+    back:
+      meaning:
+        vi: tái sinh, tái chế; phát lại
+      examples:
+        - target: 再生紙を使っています。
+          translation:
+            vi: Chúng tôi dùng giấy tái chế.
+  - key: ja:item:n2-u10-hatsuden
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 発電
+      reading: はつでん
+      romanization: hatsuden
+      pos: danh từ
+    back:
+      meaning:
+        vi: phát điện
+      examples:
+        - target: 太陽光で発電します。
+          translation:
+            vi: Phát điện bằng ánh sáng mặt trời.
+  - key: ja:item:n2-u10-zetsumetsu
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 絶滅
+      reading: ぜつめつ
+      romanization: zetsumetsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: tuyệt chủng
+      examples:
+        - target: 絶滅の危機にある動物がいます。
+          translation:
+            vi: Có những loài động vật đang đứng trước nguy cơ tuyệt chủng.
+  - key: ja:item:n2-u10-seitaikei
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 生態系
+      reading: せいたいけい
+      romanization: seitaikei
+      pos: danh từ
+    back:
+      meaning:
+        vi: hệ sinh thái
+      examples:
+        - target: 生態系を守らなければなりません。
+          translation:
+            vi: Phải bảo vệ hệ sinh thái.
+  - key: ja:item:n2-u10-uchuu
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 宇宙
+      reading: うちゅう
+      romanization: uchuu
+      pos: danh từ
+    back:
+      meaning:
+        vi: vũ trụ
+      examples:
+        - target: 宇宙に行くのが夢です。
+          translation:
+            vi: Ước mơ của tôi là bay vào vũ trụ.
+  - key: ja:item:n2-u10-kasetsu
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 仮説
+      reading: かせつ
+      romanization: kasetsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: giả thuyết
+      examples:
+        - target: 仮説を立てて、実験します。
+          translation:
+            vi: Tôi đặt giả thuyết rồi làm thí nghiệm.
+  - key: ja:item:n2-u10-kenshou
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 検証
+      reading: けんしょう
+      romanization: kenshou
+      pos: danh từ
+    back:
+      meaning:
+        vi: kiểm chứng
+      examples:
+        - target: 仮説を検証する必要があります。
+          translation:
+            vi: Cần kiểm chứng giả thuyết.
+  - key: ja:item:n2-u10-bunseki
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 分析
+      reading: ぶんせき
+      romanization: bunseki
+      pos: danh từ
+    back:
+      meaning:
+        vi: phân tích
+      examples:
+        - target: データを分析します。
+          translation:
+            vi: Tôi phân tích dữ liệu.
+  - key: ja:item:n2-u10-idenshi
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 遺伝子
+      reading: いでんし
+      romanization: idenshi
+      pos: danh từ
+    back:
+      meaning:
+        vi: gen
+      examples:
+        - target: 遺伝子の研究が進んでいます。
+          translation:
+            vi: Nghiên cứu về gen đang tiến triển.
+  - key: ja:item:n2-u10-seikaku
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 性格
+      reading: せいかく
+      romanization: seikaku
+      pos: danh từ
+    back:
+      meaning:
+        vi: tính cách
+      examples:
+        - target: 彼は明るい性格です。
+          translation:
+            vi: Anh ấy có tính cách vui vẻ.
+  - key: ja:item:n2-u10-taido
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 態度
+      reading: たいど
+      romanization: taido
+      pos: danh từ
+    back:
+      meaning:
+        vi: thái độ
+      examples:
+        - target: その態度は失礼です。
+          translation:
+            vi: Thái độ đó thật thất lễ.
+  - key: ja:item:n2-u10-kachikan
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 価値観
+      reading: かちかん
+      romanization: kachikan
+      pos: danh từ
+    back:
+      meaning:
+        vi: giá trị quan, quan niệm sống
+      examples:
+        - target: 人によって価値観が違います。
+          translation:
+            vi: Quan niệm sống khác nhau theo từng người.
+  - key: ja:item:n2-u10-henken
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 偏見
+      reading: へんけん
+      romanization: henken
+      pos: danh từ
+    back:
+      meaning:
+        vi: định kiến
+      examples:
+        - target: 偏見を持たずに人を見ましょう。
+          translation:
+            vi: Hãy nhìn con người mà không mang định kiến.
+  - key: ja:item:n2-u10-kodoku
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 孤独
+      reading: こどく
+      romanization: kodoku
+      pos: danh từ / tính từ な
+    back:
+      meaning:
+        vi: cô đơn, đơn độc
+      examples:
+        - target: 一人暮らしで、孤独を感じます。
+          translation:
+            vi: Sống một mình, tôi cảm thấy cô đơn.
+  - key: ja:item:n2-u10-fuan
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 不安
+      reading: ふあん
+      romanization: fuan
+      pos: danh từ / tính từ な
+    back:
+      meaning:
+        vi: bất an, lo âu
+      examples:
+        - target: 将来が不安です。
+          translation:
+            vi: Tôi bất an về tương lai.
+  - key: ja:item:n2-u10-kinchou
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 緊張
+      reading: きんちょう
+      romanization: kinchou
+      pos: danh từ
+    back:
+      meaning:
+        vi: căng thẳng, hồi hộp
+      examples:
+        - target: 面接で緊張しました。
+          translation:
+            vi: Tôi căng thẳng ở buổi phỏng vấn.
+  - key: ja:item:n2-u10-manzoku
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 満足
+      reading: まんぞく
+      romanization: manzoku
+      pos: danh từ
+    back:
+      meaning:
+        vi: hài lòng, thoả mãn
+      examples:
+        - target: 結果に満足しています。
+          translation:
+            vi: Tôi hài lòng với kết quả.
+  - key: ja:item:n2-u10-fuman
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 不満
+      reading: ふまん
+      romanization: fuman
+      pos: danh từ / tính từ な
+    back:
+      meaning:
+        vi: bất mãn, không hài lòng
+      examples:
+        - target: 給料に不満があります。
+          translation:
+            vi: Tôi bất mãn về lương.
+  - key: ja:item:n2-u10-sonchou
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 尊重
+      reading: そんちょう
+      romanization: sonchou
+      pos: danh từ
+    back:
+      meaning:
+        vi: tôn trọng
+      examples:
+        - target: 相手の意見を尊重します。
+          translation:
+            vi: Tôi tôn trọng ý kiến của đối phương.
+  - key: ja:item:n2-u10-kyoukan
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 共感
+      reading: きょうかん
+      romanization: kyoukan
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồng cảm
+      examples:
+        - target: 彼の話に共感しました。
+          translation:
+            vi: Tôi đã đồng cảm với câu chuyện của anh ấy.
+  - key: ja:item:n2-u10-kattou
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 葛藤
+      reading: かっとう
+      romanization: kattou
+      pos: danh từ
+    back:
+      meaning:
+        vi: mâu thuẫn nội tâm, giằng xé
+      examples:
+        - target: 心の中に葛藤があります。
+          translation:
+            vi: Trong lòng tôi có sự giằng xé.
