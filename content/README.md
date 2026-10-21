@@ -105,7 +105,7 @@ items:
       vi: "“Dog” là con chó; “cat” là con mèo, “duck” là con vịt, “pig” là con lợn."
 ```
 
-- Mỗi ngôn ngữ có kho phải đủ **≥ 5 câu cho mỗi kỹ năng × cấp độ** (105 câu cho en/ko với 7 cấp, 90 câu cho ja với 6 cấp, 75 câu cho de với 5 cấp); `stem` không trùng trong cùng ngôn ngữ; đúng một phương án đúng, phương án nhiễu hợp lý nhưng chắc chắn sai.
+- Mỗi ngôn ngữ có kho phải đủ **≥ 5 câu cho mỗi kỹ năng × cấp độ** (105 câu cho en/ko với 7 cấp, 90 câu cho ja với 6 cấp, 75 câu cho de với 5 cấp; kho de hiện có 10 câu mỗi ô, 150 câu); `stem` không trùng trong cùng ngôn ngữ; đúng một phương án đúng, phương án nhiễu hợp lý nhưng chắc chắn sai.
 - `difficulty` (tuỳ chọn) mặc định là thứ tự cấp độ + 0,5 (pre_a1/hangul = 0,5 … c2/topik6 = 6,5); nếu ghi thì phải nằm trong dải của cấp.
 - Thứ tự và id phương án trong YAML không lộ ra ngoài: `pnpm content:build` xáo trộn cố định theo key và đổi id thành chuỗi ngẫu nhiên ổn định.
 - File demo giữ `key_confidence: unreviewed` (mặc định), không ghi `reviewed_by`/`reviewed_at`; file không demo phải có cả hai.
@@ -186,11 +186,12 @@ de/items/<chủ-đề>.yaml                                          # học li�
 de/programs/<program>/program.yaml                              # key de:program:<tên>
 de/programs/<program>/units/<nn>-<unit>/unit.yaml               # key de:unit:<tên>
 de/programs/<program>/units/<nn>-<unit>/lessons/<nn>-<bài>.yaml # key de:lesson:<tên>, bài tập de:exercise:<tên>
-diagnostic/de/<vocabulary|grammar|reading>.yaml                 # key de:diag:<tên>, ≥ 5 câu mỗi kỹ năng × cấp (75 câu)
+diagnostic/de/<vocabulary|grammar|reading>.yaml                 # key de:diag:<tên>, ≥ 5 câu mỗi kỹ năng × cấp (hiện 10 câu, 150 câu)
 exams/de/<tên-đề>.yaml                                          # family: goethe, key de:exam:<tên>, câu de:examq:<tên>
 de/wordlist/<tên-của-bạn>.txt                                   # từ cho phép (xem "Chính tả")
 ```
 
+- **Unit mở rộng vốn từ** (`a1w1`, `a2w1`, `a2w2`, `b1w1`–`b1w4`, `b2w1`–`b2w5`, thư mục `<nn>-wortschatz-erweitert…`): mỗi bài gom 20–25 từ cùng chủ đề (hoặc cùng loại từ: động từ, tính từ, trạng từ, danh từ trừu tượng), mỗi từ có câu ví dụ, mỗi bài có 10 bài tập tạo theo mẫu cố định (nghe, từ ↔ nghĩa, mạo từ, dịch từ, số nhiều, điền từ, dịch câu hai chiều) cùng giải thích, lỗi thường gặp và tóm tắt viết tay. Các unit này chèn trước unit ôn thi của cấp tương ứng (`order_index` của unit ôn thi dịch xuống, khoá không đổi). Lemma không được trùng với học liệu đã có (công cụ kiểm tra báo lỗi).
 - **Khoá có tiền tố unit**: khoá học liệu, bài, bài tập của một unit bắt đầu bằng mã unit (`de:item:a1u03-kaffee`, `de:exercise:a1u03-kaffee-bestellen-mcq`) để các tác giả khác nhau không bao giờ trùng khoá. Chỉ chữ thường, số, gạch ngang.
 - **Danh từ** luôn kèm mạo từ và số nhiều trong `front.text` (loại `vocab`, `pos: Nomen`): `der Tisch, -e`, `die Frau, -en`, `das Kind, -er`, `der Apfel, ¨-`, `die Mutter, ¨-`, `der Lehrer, -`, `das Auto, -s`; không có số nhiều: `die Milch (Sg.)`; chỉ có số nhiều: `die Eltern (Pl.)`. Các dạng số nhiều hợp lệ: `-e`, `-en`, `-n`, `-nen`, `-er`, `-s`, `-se`, `-`, `¨-e`, `¨-er`, `¨-` (dấu `¨` là biến âm). Câu ví dụ phải đúng giống và viết hoa danh từ.
 - **Động từ** ghi nguyên thể; bất quy tắc kèm dạng: ở A1 `fahren (du fährst)`, từ A2 `fahren, fährt, fuhr, ist gefahren`.
