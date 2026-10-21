@@ -1,0 +1,372 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n3-rules-society
+order_index: 2
+level: n3
+title:
+  vi: Quy tắc và xã hội - 許可・禁止・制限・違反・義務・権利
+objectives:
+  - vi: Dùng 許可, 禁止, 制限, 違反, 義務, 権利 trong biển báo, nội quy, quy định.
+  - vi: Dùng 承認, 提案, 協力, 援助 trong công việc nhóm.
+  - vi: Đọc hiểu nội quy ngắn.
+estimated_minutes: 18
+skills:
+  - vocabulary
+  - reading
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n3-employment
+items:
+  - item: ja:item:n3-u11-kyoka
+  - item: ja:item:n3-u11-kinshi
+  - item: ja:item:n3-u11-seigen
+  - item: ja:item:n3-u11-ihan
+  - item: ja:item:n3-u11-gimu
+  - item: ja:item:n3-u11-kenri
+  - item: ja:item:n3-u11-shounin
+  - item: ja:item:n3-u11-teian
+  - item: ja:item:n3-u11-kyouryoku
+  - item: ja:item:n3-u11-enjo
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc nội quy và nói về quyền, nghĩa vụ - 館内での撮影は禁止されている, 入場できる人数に制限がある, 誰でも教育を受ける権利がある.
+  - type: explain
+    text:
+      vi: "Quy tắc: 許可 (cho phép), 禁止 (cấm), 制限 (hạn chế), 違反 (vi phạm), 義務 (nghĩa vụ), 権利 (quyền lợi). Công việc nhóm: 承認 (phê duyệt), 提案 (đề xuất), 協力 (hợp tác), 援助 (hỗ trợ)."
+  - type: explain
+    text:
+      vi: "Cụm thông dụng: 許可を得る (được cho phép), 撮影禁止 (cấm chụp ảnh), 人数制限 (giới hạn số người), 法律に違反する (vi phạm pháp luật), 義務を果たす (làm tròn nghĩa vụ), 権利を持つ (có quyền), 承認を得る (nhận phê duyệt), 協力を求める (nhờ hợp tác)."
+  - type: deep_explain
+    text:
+      vi: "Cách dùng bị động trong biển báo: 禁止されている (bị cấm). 違反 thường đi với に: ルールに違反する, スピード違反 (vi phạm tốc độ). 義務 đối lập với 権利: 権利があるが、義務もある. 許可 vs 承認: 許可 là cho phép làm một việc; 承認 là chấp nhận một đề xuất, kế hoạch."
+  - type: example
+    target: この建物に入るには、許可が必要です。
+    target_lang: ja
+    translation:
+      vi: Để vào toà nhà này cần có giấy phép.
+    note:
+      vi: 許可.
+  - type: example
+    target: 館内での撮影は禁止されています。
+    target_lang: ja
+    translation:
+      vi: Việc chụp ảnh trong toà nhà bị cấm.
+    note:
+      vi: 禁止されている.
+  - type: example
+    target: 誰でも教育を受ける権利があります。
+    target_lang: ja
+    translation:
+      vi: Ai cũng có quyền được học hành.
+    note:
+      vi: 権利.
+  - type: example
+    target: 国から援助を受けて、学校を建てました。
+    target_lang: ja
+    translation:
+      vi: Nhận hỗ trợ từ nhà nước, họ đã xây trường.
+    note:
+      vi: 援助.
+  - type: common_mistake
+    wrong: ルールを違反しました。
+    right: ルールに違反しました。
+    target_lang: ja
+    note:
+      vi: 違反 đi với に (ルールに違反する), không dùng を.
+  - type: common_mistake
+    wrong: 納税は国民の権利です。
+    right: 納税は国民の義務です。
+    target_lang: ja
+    note:
+      vi: Nộp thuế là nghĩa vụ (義務); quyền lợi là 権利.
+  - type: summary
+    points:
+      - vi: 許可 · 禁止 · 制限 · 違反 · 義務 · 権利 · 承認 · 提案 · 協力 · 援助.
+      - vi: 〜に違反する · 〜が禁止されている · 〜に制限がある.
+      - vi: 義務 (nghĩa vụ) ≠ 権利 (quyền lợi).
+exercises:
+  - key: ja:exercise:n3-rules-society-b1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u11-kinshi
+    prompt:
+      stem: Từ nào có nghĩa là “cấm”?
+      stem_lang: vi
+      options:
+        - id: twf
+          text: 禁止
+          lang: ja
+        - id: x2g
+          text: 許可
+          lang: ja
+        - id: bac
+          text: 提案
+          lang: ja
+        - id: wnm
+          text: 協力
+          lang: ja
+    answer:
+      correct_option_id: twf
+    explanation:
+      vi: 禁止 là cấm. 許可 là cho phép, 協力 là hợp tác, 提案 là đề xuất.
+    display_answer: 禁止
+  - key: ja:exercise:n3-rules-society-b2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u11-gimu
+    prompt:
+      stem: Nộp thuế là điều gì của công dân?
+      stem_lang: vi
+      options:
+        - id: w7m
+          text: 許可
+          lang: ja
+        - id: of0
+          text: 権利
+          lang: ja
+        - id: sd2
+          text: 義務
+          lang: ja
+        - id: nn1
+          text: 提案
+          lang: ja
+    answer:
+      correct_option_id: sd2
+    explanation:
+      vi: 義務 là nghĩa vụ. 権利 là quyền lợi.
+    display_answer: 義務
+  - key: ja:exercise:n3-rules-society-b3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-u11-seigen
+    prompt:
+      audio_asset_id: null
+      fallback_text: 入場できる人数に制限があります。
+      options:
+        - id: fq2
+          text: Ai cũng có thể vào mà không hạn chế.
+          lang: vi
+        - id: fzi
+          text: Số người vào phải do bạn quyết định.
+          lang: vi
+        - id: lfz
+          text: Không được vào khi có giới hạn.
+          lang: vi
+        - id: exh
+          text: Có giới hạn về số người được vào.
+          lang: vi
+    answer:
+      correct_option_id: exh
+    explanation:
+      vi: 制限がある - có giới hạn; 入場できる人数 - số người có thể vào.
+    display_answer: Có giới hạn về số người được vào.
+  - key: ja:exercise:n3-rules-society-b4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u11-ihan
+    prompt:
+      template: ルールに{{b1}}しました。 (Tôi đã vi phạm quy tắc.)
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Đi với に.
+        - Bắt đầu bằng 違.
+    answer:
+      blanks:
+        b1:
+          - 違反
+          - いはん
+    known_wrong:
+      - answer: 許可
+        feedback_vi: 許可 là cho phép; vi phạm là 違反.
+        error_tag: noun_choice
+    explanation:
+      vi: ルールに違反する - vi phạm quy tắc.
+    display_answer: ルールに違反しました。
+  - key: ja:exercise:n3-rules-society-b5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u11-kyouryoku
+    prompt:
+      stem: Mọi người chung sức hoàn tất chuẩn bị. Từ nào?
+      stem_lang: vi
+      options:
+        - id: xe5
+          text: 協力
+          lang: ja
+        - id: tsx
+          text: 違反
+          lang: ja
+        - id: tyr
+          text: 禁止
+          lang: ja
+        - id: kju
+          text: 制限
+          lang: ja
+    answer:
+      correct_option_id: xe5
+    explanation:
+      vi: 協力 là hợp tác, chung sức.
+    display_answer: 協力
+  - key: ja:exercise:n3-rules-society-b6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u11-kyoka
+    prompt:
+      template: この建物に入るには、{{b1}}が必要です。 (Để vào toà nhà này cần có giấy phép.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 許可
+          - きょか
+    known_wrong:
+      - answer: 禁止
+        feedback_vi: 禁止 là cấm; giấy phép là 許可.
+        error_tag: noun_choice
+    explanation:
+      vi: 許可 - giấy phép.
+    display_answer: この建物に入るには、許可が必要です。
+  - key: ja:exercise:n3-rules-society-b7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u11-kenri
+    prompt:
+      template: 誰でも教育を受ける{{b1}}があります。 (Ai cũng có quyền được học hành.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 権利
+          - けんり
+    known_wrong:
+      - answer: 義務
+        feedback_vi: 義務 là nghĩa vụ; quyền được học là 権利.
+        error_tag: noun_choice
+    explanation:
+      vi: 権利 - quyền lợi.
+    display_answer: 誰でも教育を受ける権利があります。
+  - key: ja:exercise:n3-rules-society-b8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u11-teian
+    prompt:
+      source_text: Tôi đã đề xuất một phương pháp mới.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 新しい方法を提案しました。
+        - 新しい方法を提案した。
+        - あたらしいほうほうをていあんしました。
+        - 新しい方法を提案しています。
+    known_wrong:
+      - answer: 新しい方法を許可しました。
+        feedback_vi: 許可 là cho phép; đề xuất là 提案.
+        error_tag: noun_choice
+    explanation:
+      vi: 提案する - đề xuất.
+    display_answer: 新しい方法を提案しました。
+  - key: ja:exercise:n3-rules-society-b9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-u11-shounin
+    prompt:
+      source_text: 部長の承認が得られたので、来月からこの計画を始めます。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Vì đã nhận được phê duyệt của trưởng bộ phận nên từ tháng sau sẽ bắt đầu kế hoạch này.
+        - Do được trưởng bộ phận phê duyệt, từ tháng sau chúng tôi sẽ khởi động kế hoạch này.
+        - Đã có sự phê duyệt của trưởng bộ phận nên kế hoạch này bắt đầu từ tháng sau.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Trưởng bộ phận không phê duyệt nên kế hoạch huỷ.
+        feedback_vi: 承認が得られた là đã được phê duyệt.
+        error_tag: meaning
+    explanation:
+      vi: 承認が得られる - được phê duyệt; 始める - bắt đầu.
+    display_answer: Vì đã nhận được phê duyệt của trưởng bộ phận nên từ tháng sau sẽ bắt đầu kế hoạch này.
+  - key: ja:exercise:n3-rules-society-b10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u11-enjo
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Nhận hỗ trợ từ nhà nước, họ đã xây trường."'
+      tokens:
+        - id: t4
+          text: 建てました。
+        - id: t1
+          text: 国から
+        - id: t3
+          text: 学校を
+        - id: t2
+          text: 援助を受けて、
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Nguồn (から) → V-て (hỗ trợ) → tân ngữ → V.
+    display_answer: 国から援助を受けて、学校を建てました。
+  - key: ja:exercise:n3-rules-society-b11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u11-kinshi
+    prompt:
+      stem: Biển “Cấm chụp ảnh”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: slp
+          text: 撮影禁止
+          lang: ja
+        - id: tkr
+          text: 撮影協力
+          lang: ja
+        - id: km3
+          text: 撮影承認
+          lang: ja
+        - id: ca6
+          text: 撮影義務
+          lang: ja
+    answer:
+      correct_option_id: slp
+    explanation:
+      vi: 撮影禁止 - cấm chụp ảnh.
+    display_answer: 撮影禁止

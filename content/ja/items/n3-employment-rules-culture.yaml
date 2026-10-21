@@ -1,0 +1,602 @@
+# Học liệu unit "Việc làm, quy tắc xã hội và văn hoá" (JLPT N3). reading là cách đọc kana (furigana); romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n3-u11-boshuu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 募集
+      reading: ぼしゅう
+      romanization: boshuu
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: tuyển, chiêu mộ
+      examples:
+        - target: アルバイトを募集しています。
+          translation:
+            vi: Chúng tôi đang tuyển nhân viên làm thêm.
+  - key: ja:item:n3-u11-saiyou
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 採用
+      reading: さいよう
+      romanization: saiyou
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: tuyển dụng, nhận vào làm
+      examples:
+        - target: 面接の結果、三人を採用しました。
+          translation:
+            vi: Sau phỏng vấn, chúng tôi đã nhận ba người.
+  - key: ja:item:n3-u11-tenshoku
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 転職
+      reading: てんしょく
+      romanization: tenshoku
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: chuyển việc
+      examples:
+        - target: 給料が低いので、転職を考えています。
+          translation:
+            vi: Lương thấp nên tôi đang nghĩ đến chuyện chuyển việc.
+  - key: ja:item:n3-u11-taishoku
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 退職
+      reading: たいしょく
+      romanization: taishoku
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: nghỉ việc, về hưu
+      examples:
+        - target: 父は来年、六十歳で退職します。
+          translation:
+            vi: Bố tôi sẽ nghỉ hưu vào năm sau ở tuổi sáu mươi.
+  - key: ja:item:n3-u11-shoushin
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 昇進
+      reading: しょうしん
+      romanization: shoushin
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: thăng chức
+      examples:
+        - target: 努力が認められて、課長に昇進しました。
+          translation:
+            vi: Nỗ lực được công nhận nên anh ấy đã thăng chức trưởng phòng.
+  - key: ja:item:n3-u11-idou
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 異動
+      reading: いどう
+      romanization: idou
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: điều chuyển công tác
+      examples:
+        - target: 四月から大阪支店に異動します。
+          translation:
+            vi: Từ tháng Tư tôi sẽ được điều chuyển đến chi nhánh Osaka.
+  - key: ja:item:n3-u11-uketoru
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 受け取る
+      reading: うけとる
+      romanization: uketoru
+      pos: động từ
+    back:
+      meaning:
+        vi: nhận (đồ, tiền, thư)
+      examples:
+        - target: 荷物を受け取ったら、連絡してください。
+          translation:
+            vi: Khi nhận được hành lý, xin hãy liên lạc.
+  - key: ja:item:n3-u11-motomeru
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 求める
+      reading: もとめる
+      romanization: motomeru
+      pos: động từ
+    back:
+      meaning:
+        vi: đòi hỏi, tìm kiếm, yêu cầu
+      examples:
+        - target: 会社は即戦力となる人を求めています。
+          translation:
+            vi: Công ty đang tìm người có thể làm việc ngay.
+  - key: ja:item:n3-u11-kachi
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 勝つ
+      reading: かつ
+      romanization: katsu
+      pos: động từ
+    back:
+      meaning:
+        vi: thắng
+      examples:
+        - target: 決勝戦で勝って、優勝しました。
+          translation:
+            vi: Thắng ở trận chung kết nên đã vô địch.
+  - key: ja:item:n3-u11-shuuryou
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 終了
+      reading: しゅうりょう
+      romanization: shuuryou
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: kết thúc (sự kiện, hệ thống)
+      examples:
+        - target: 受付は五時で終了します。
+          translation:
+            vi: Quầy tiếp nhận sẽ đóng lúc năm giờ.
+  - key: ja:item:n3-u11-kyoka
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 許可
+      reading: きょか
+      romanization: kyoka
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: cho phép, giấy phép
+      examples:
+        - target: この建物に入るには、許可が必要です。
+          translation:
+            vi: Để vào toà nhà này cần có giấy phép.
+  - key: ja:item:n3-u11-kinshi
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 禁止
+      reading: きんし
+      romanization: kinshi
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: cấm
+      examples:
+        - target: 館内での撮影は禁止されています。
+          translation:
+            vi: Việc chụp ảnh trong toà nhà bị cấm.
+  - key: ja:item:n3-u11-seigen
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 制限
+      reading: せいげん
+      romanization: seigen
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: hạn chế, giới hạn
+      examples:
+        - target: 入場できる人数に制限があります。
+          translation:
+            vi: Có giới hạn về số người được vào.
+  - key: ja:item:n3-u11-ihan
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 違反
+      reading: いはん
+      romanization: ihan
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: vi phạm
+      examples:
+        - target: スピード違反で、罰金を払いました。
+          translation:
+            vi: Tôi đã nộp phạt vì vi phạm tốc độ.
+  - key: ja:item:n3-u11-gimu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 義務
+      reading: ぎむ
+      romanization: gimu
+      pos: danh từ
+    back:
+      meaning:
+        vi: nghĩa vụ
+      examples:
+        - target: 納税は国民の義務です。
+          translation:
+            vi: Nộp thuế là nghĩa vụ của công dân.
+  - key: ja:item:n3-u11-kenri
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 権利
+      reading: けんり
+      romanization: kenri
+      pos: danh từ
+    back:
+      meaning:
+        vi: quyền lợi
+      examples:
+        - target: 誰でも教育を受ける権利があります。
+          translation:
+            vi: Ai cũng có quyền được học hành.
+  - key: ja:item:n3-u11-shounin
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 承認
+      reading: しょうにん
+      romanization: shounin
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: phê duyệt, công nhận
+      examples:
+        - target: 部長の承認が得られました。
+          translation:
+            vi: Chúng tôi đã nhận được sự phê duyệt của trưởng bộ phận.
+  - key: ja:item:n3-u11-teian
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 提案
+      reading: ていあん
+      romanization: teian
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: đề xuất
+      examples:
+        - target: 新しい方法を提案しました。
+          translation:
+            vi: Tôi đã đề xuất một phương pháp mới.
+  - key: ja:item:n3-u11-kyouryoku
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 協力
+      reading: きょうりょく
+      romanization: kyouryoku
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: hợp tác, giúp sức
+      examples:
+        - target: みんなで協力して、準備を終えました。
+          translation:
+            vi: Mọi người cùng chung sức và hoàn tất việc chuẩn bị.
+  - key: ja:item:n3-u11-enjo
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 援助
+      reading: えんじょ
+      romanization: enjo
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: viện trợ, hỗ trợ
+      examples:
+        - target: 国から援助を受けて、学校を建てました。
+          translation:
+            vi: Nhận hỗ trợ từ nhà nước, họ đã xây trường.
+  - key: ja:item:n3-u11-bunka
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 文化
+      reading: ぶんか
+      romanization: bunka
+      pos: danh từ
+    back:
+      meaning:
+        vi: văn hoá
+      examples:
+        - target: 外国の文化を学ぶのは楽しいです。
+          translation:
+            vi: Học văn hoá nước ngoài thật thú vị.
+  - key: ja:item:n3-u11-dentou
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 伝統
+      reading: でんとう
+      romanization: dentou
+      pos: danh từ
+    back:
+      meaning:
+        vi: truyền thống
+      examples:
+        - target: この祭りは三百年の伝統があります。
+          translation:
+            vi: Lễ hội này có truyền thống ba trăm năm.
+  - key: ja:item:n3-u11-shuukyou
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 宗教
+      reading: しゅうきょう
+      romanization: shuukyou
+      pos: danh từ
+    back:
+      meaning:
+        vi: tôn giáo
+      examples:
+        - target: 国によって、宗教や習慣が違います。
+          translation:
+            vi: Tuỳ nước mà tôn giáo và phong tục khác nhau.
+  - key: ja:item:n3-u11-hozon
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 保存
+      reading: ほぞん
+      romanization: hozon
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: bảo quản, lưu giữ
+      examples:
+        - target: データをパソコンに保存しました。
+          translation:
+            vi: Tôi đã lưu dữ liệu vào máy tính.
+  - key: ja:item:n3-u11-hogo
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 保護
+      reading: ほご
+      romanization: hogo
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: bảo hộ, bảo vệ
+      examples:
+        - target: 絶滅しそうな動物を保護しています。
+          translation:
+            vi: Chúng tôi đang bảo vệ các loài động vật sắp tuyệt chủng.
+  - key: ja:item:n3-u11-iji
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 維持
+      reading: いじ
+      romanization: iji
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: duy trì
+      examples:
+        - target: 健康を維持するために、毎日運動しています。
+          translation:
+            vi: Tôi tập thể dục mỗi ngày để duy trì sức khoẻ.
+  - key: ja:item:n3-u11-ataeru
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 与える
+      reading: あたえる
+      romanization: ataeru
+      pos: động từ
+    back:
+      meaning:
+        vi: trao, mang lại, gây ra
+      examples:
+        - target: この事件は社会に大きな影響を与えました。
+          translation:
+            vi: Vụ việc này đã gây ảnh hưởng lớn đến xã hội.
+  - key: ja:item:n3-u11-koeru
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 超える
+      reading: こえる
+      romanization: koeru
+      pos: động từ
+    back:
+      meaning:
+        vi: vượt quá
+      examples:
+        - target: 参加者は予想を超えて、千人になりました。
+          translation:
+            vi: Số người tham gia vượt dự kiến, lên tới một nghìn người.
+  - key: ja:item:n3-u11-kakaku
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 価格
+      reading: かかく
+      romanization: kakaku
+      pos: danh từ
+    back:
+      meaning:
+        vi: giá cả
+      examples:
+        - target: 原料の価格が上がっています。
+          translation:
+            vi: Giá nguyên liệu đang tăng.
+  - key: ja:item:n3-u11-seizou
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 製造
+      reading: せいぞう
+      romanization: seizou
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: chế tạo, sản xuất
+      examples:
+        - target: この工場では自動車の部品を製造しています。
+          translation:
+            vi: Nhà máy này sản xuất linh kiện ô tô.
+  - key: ja:item:n3-u11-shouhi
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 消費
+      reading: しょうひ
+      romanization: shouhi
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: tiêu dùng, tiêu thụ
+      examples:
+        - target: 電気の消費量が増えています。
+          translation:
+            vi: Lượng điện tiêu thụ đang tăng.
+  - key: ja:item:n3-u11-sonshitsu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 損失
+      reading: そんしつ
+      romanization: sonshitsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: tổn thất, thua lỗ
+      examples:
+        - target: 事故のせいで、大きな損失が出ました。
+          translation:
+            vi: Do tai nạn, đã phát sinh tổn thất lớn.
+  - key: ja:item:n3-u11-shakkin
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 借金
+      reading: しゃっきん
+      romanization: shakkin
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: nợ, vay nợ
+      examples:
+        - target: 借金を返すために、毎日働いています。
+          translation:
+            vi: Tôi làm việc mỗi ngày để trả nợ.

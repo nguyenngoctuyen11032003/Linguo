@@ -1,0 +1,369 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n3-employment
+order_index: 1
+level: n3
+title:
+  vi: Việc làm - 募集・採用・転職・退職・昇進・異動
+objectives:
+  - vi: "Dùng 10 từ về tuyển dụng và sự nghiệp: 募集, 採用, 転職, 退職, 昇進, 異動, 受け取る, 求める, 勝つ, 終了."
+  - vi: Đọc hiểu thông báo tuyển dụng ngắn.
+  - vi: Phân biệt 退職 và 転職.
+estimated_minutes: 18
+skills:
+  - vocabulary
+  - reading
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n3-ue-ni-koto-kara
+items:
+  - item: ja:item:n3-u11-boshuu
+  - item: ja:item:n3-u11-saiyou
+  - item: ja:item:n3-u11-tenshoku
+  - item: ja:item:n3-u11-taishoku
+  - item: ja:item:n3-u11-shoushin
+  - item: ja:item:n3-u11-idou
+  - item: ja:item:n3-u11-uketoru
+  - item: ja:item:n3-u11-motomeru
+  - item: ja:item:n3-u11-kachi
+  - item: ja:item:n3-u11-shuuryou
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được thông báo tuyển dụng và nói về sự nghiệp - アルバイトを募集する, 三人を採用する, 転職を考える, 課長に昇進する, 大阪支店に異動する.
+  - type: explain
+    text:
+      vi: "Quá trình tuyển dụng: 募集 (tuyển) → 面接 (phỏng vấn) → 採用 (nhận vào làm). Trong công ty: 昇進 (thăng chức), 異動 (điều chuyển), 転職 (chuyển việc), 退職 (nghỉ việc, về hưu)."
+  - type: explain
+    text:
+      vi: "Động từ liên quan: 受け取る (nhận), 求める (đòi hỏi, tìm kiếm), 勝つ (thắng), 終了する (kết thúc). Ví dụ 会社は即戦力を求めている, 受付は五時で終了する."
+  - type: deep_explain
+    text:
+      vi: 退職 là rời công ty (do về hưu hoặc nghỉ); 転職 là chuyển sang công ty khác. Còn 辞める là cách nói thường ngày cho "nghỉ" (会社を辞める), 退職 trang trọng hơn. 異動 là điều chuyển nội bộ, 転勤 là chuyển nơi làm việc (đổi địa điểm). 求める mang nghĩa "yêu cầu, mong muốn" (助けを求める, 条件を求める).
+  - type: example
+    target: アルバイトを募集しています。
+    target_lang: ja
+    translation:
+      vi: Chúng tôi đang tuyển nhân viên làm thêm.
+    note:
+      vi: 募集.
+  - type: example
+    target: 努力が認められて、課長に昇進しました。
+    target_lang: ja
+    translation:
+      vi: Nỗ lực được công nhận nên anh ấy đã thăng chức trưởng phòng.
+    note:
+      vi: 昇進.
+  - type: example
+    target: 四月から大阪支店に異動します。
+    target_lang: ja
+    translation:
+      vi: Từ tháng Tư tôi sẽ được điều chuyển đến chi nhánh Osaka.
+    note:
+      vi: 異動.
+  - type: example
+    target: 受付は五時で終了します。
+    target_lang: ja
+    translation:
+      vi: Quầy tiếp nhận sẽ đóng lúc năm giờ.
+    note:
+      vi: 終了.
+  - type: common_mistake
+    wrong: 会社を転職しました。
+    right: 別の会社に転職しました。
+    target_lang: ja
+    note:
+      vi: 転職 là tự động từ, chuyển sang công ty khác dùng に (別の会社に転職する); 会社を辞める mới dùng を.
+  - type: common_mistake
+    wrong: 荷物を受けました。
+    right: 荷物を受け取りました。
+    target_lang: ja
+    note:
+      vi: Nhận đồ vật cụ thể (hành lý, thư, tiền) dùng 受け取る; 受ける dùng cho sự việc trừu tượng (試験を受ける, 影響を受ける).
+  - type: summary
+    points:
+      - vi: 募集 → 採用 · 昇進 · 異動 · 転職 · 退職 · 受け取る · 求める · 勝つ · 終了.
+      - vi: 退職 (rời công ty) ≠ 転職 (đổi công ty).
+      - vi: 異動 (nội bộ) ≠ 転勤 (đổi nơi làm việc).
+exercises:
+  - key: ja:exercise:n3-employment-a1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u11-boshuu
+    prompt:
+      stem: Từ nào có nghĩa là “tuyển, chiêu mộ”?
+      stem_lang: vi
+      options:
+        - id: aa9
+          text: 退職
+          lang: ja
+        - id: cc7
+          text: 終了
+          lang: ja
+        - id: h1x
+          text: 昇進
+          lang: ja
+        - id: r4h
+          text: 募集
+          lang: ja
+    answer:
+      correct_option_id: r4h
+    explanation:
+      vi: 募集 là tuyển. 退職 là nghỉ việc, 終了 là kết thúc, 昇進 là thăng chức.
+    display_answer: 募集
+  - key: ja:exercise:n3-employment-a2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u11-tenshoku
+    prompt:
+      stem: Bạn chuyển sang công ty khác. Từ nào?
+      stem_lang: vi
+      options:
+        - id: dpv
+          text: 退職
+          lang: ja
+        - id: oh9
+          text: 昇進
+          lang: ja
+        - id: bdd
+          text: 異動
+          lang: ja
+        - id: zm1
+          text: 転職
+          lang: ja
+    answer:
+      correct_option_id: zm1
+    explanation:
+      vi: 転職 là chuyển việc sang công ty khác. 退職 là nghỉ việc, 異動 là điều chuyển nội bộ.
+    display_answer: 転職
+  - key: ja:exercise:n3-employment-a3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-u11-shoushin
+    prompt:
+      audio_asset_id: null
+      fallback_text: 努力が認められて、課長に昇進しました。
+      options:
+        - id: mq1
+          text: Anh ấy nghỉ việc vì không được công nhận.
+          lang: vi
+        - id: dhn
+          text: Anh ấy chuyển sang công ty khác làm trưởng phòng.
+          lang: vi
+        - id: igc
+          text: Nỗ lực được công nhận nên anh ấy đã thăng chức trưởng phòng.
+          lang: vi
+        - id: c00
+          text: Anh ấy bị giáng xuống làm trưởng phòng.
+          lang: vi
+    answer:
+      correct_option_id: igc
+    explanation:
+      vi: 昇進する - thăng chức; 認められる - được công nhận.
+    display_answer: Nỗ lực được công nhận nên anh ấy đã thăng chức trưởng phòng.
+  - key: ja:exercise:n3-employment-a4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u11-idou
+    prompt:
+      template: 四月から大阪支店に{{b1}}します。 (Từ tháng Tư tôi sẽ được điều chuyển đến chi nhánh Osaka.)
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Điều chuyển nội bộ.
+        - Bắt đầu bằng 異.
+    answer:
+      blanks:
+        b1:
+          - 異動
+          - いどう
+    known_wrong:
+      - answer: 転職
+        feedback_vi: 転職 là chuyển sang công ty khác; điều chuyển nội bộ là 異動.
+        error_tag: noun_choice
+    explanation:
+      vi: 異動 - điều chuyển công tác.
+    display_answer: 四月から大阪支店に異動します。
+  - key: ja:exercise:n3-employment-a5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u11-saiyou
+    prompt:
+      stem: Công ty nhận ba người sau phỏng vấn. Từ nào?
+      stem_lang: vi
+      options:
+        - id: tza
+          text: 募集
+          lang: ja
+        - id: oio
+          text: 終了
+          lang: ja
+        - id: rha
+          text: 求める
+          lang: ja
+        - id: vyf
+          text: 採用
+          lang: ja
+    answer:
+      correct_option_id: vyf
+    explanation:
+      vi: 採用 là tuyển dụng, nhận vào làm. 募集 là tuyển (thông báo).
+    display_answer: 採用
+  - key: ja:exercise:n3-employment-a6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u11-boshuu
+    prompt:
+      template: アルバイトを{{b1}}しています。 (Chúng tôi đang tuyển nhân viên làm thêm.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 募集
+          - ぼしゅう
+    known_wrong:
+      - answer: 採用
+        feedback_vi: 採用 là nhận vào làm; thông báo tuyển người là 募集.
+        error_tag: noun_choice
+    explanation:
+      vi: 募集する - tuyển.
+    display_answer: アルバイトを募集しています。
+  - key: ja:exercise:n3-employment-a7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u11-shuuryou
+    prompt:
+      template: 受付は五時で{{b1}}します。 (Quầy tiếp nhận sẽ đóng lúc năm giờ.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 終了
+          - しゅうりょう
+    known_wrong:
+      - answer: 募集
+        feedback_vi: 募集 là tuyển; kết thúc là 終了.
+        error_tag: noun_choice
+    explanation:
+      vi: 終了する - kết thúc.
+    display_answer: 受付は五時で終了します。
+  - key: ja:exercise:n3-employment-a8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u11-taishoku
+    prompt:
+      source_text: Bố tôi sẽ nghỉ hưu vào năm sau ở tuổi sáu mươi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 父は来年、六十歳で退職します。
+        - 父は来年六十歳で退職します。
+        - ちちはらいねん、ろくじゅっさいでたいしょくします。
+        - 父は来年、六十歳で退職する。
+    known_wrong:
+      - answer: 父は来年、六十歳で転職します。
+        feedback_vi: 転職 là chuyển việc; nghỉ hưu là 退職.
+        error_tag: noun_choice
+    explanation:
+      vi: 退職 - nghỉ việc, về hưu.
+    display_answer: 父は来年、六十歳で退職します。
+  - key: ja:exercise:n3-employment-a9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-u11-motomeru
+    prompt:
+      source_text: 会社は即戦力となる人を求めていますが、採用する人数は多くありません。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Công ty đang tìm người có thể làm việc ngay, nhưng số người nhận không nhiều.
+        - Công ty cần người có thể làm được việc ngay, nhưng số lượng tuyển không nhiều.
+        - Công ty đang tìm những người làm được việc ngay, song số người được nhận không đông.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Công ty nhận rất nhiều người, kể cả người mới.
+        feedback_vi: 求めている là đang tìm; 多くありません là không nhiều.
+        error_tag: meaning
+    explanation:
+      vi: 即戦力 - người làm được việc ngay; 採用する人数 - số người nhận.
+    display_answer: Công ty đang tìm người có thể làm việc ngay, nhưng số người nhận không nhiều.
+  - key: ja:exercise:n3-employment-a10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u11-uketoru
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Khi nhận được hành lý, xin hãy liên lạc."'
+      tokens:
+        - id: t2
+          text: 受け取ったら、
+        - id: t1
+          text: 荷物を
+        - id: t3
+          text: 連絡してください。
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: Tân ngữ → V-たら → yêu cầu.
+    display_answer: 荷物を受け取ったら、連絡してください。
+  - key: ja:exercise:n3-employment-a11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u11-kachi
+    prompt:
+      stem: Thắng ở trận chung kết nên vô địch. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: jc0
+          text: 決勝戦で異動して、優勝しました
+          lang: ja
+        - id: xsf
+          text: 決勝戦で勝って、優勝しました
+          lang: ja
+        - id: rrk
+          text: 決勝戦で募集して、優勝しました
+          lang: ja
+        - id: s3f
+          text: 決勝戦で退職して、優勝しました
+          lang: ja
+    answer:
+      correct_option_id: xsf
+    explanation:
+      vi: 勝つ - thắng. 優勝する - vô địch.
+    display_answer: 決勝戦で勝って、優勝しました

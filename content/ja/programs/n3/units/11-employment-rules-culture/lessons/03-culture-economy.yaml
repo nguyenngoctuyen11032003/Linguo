@@ -1,0 +1,372 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n3-culture-economy
+order_index: 3
+level: n3
+title:
+  vi: Văn hoá và kinh tế - 文化・伝統・保護・維持・価格・消費
+objectives:
+  - vi: Dùng 文化, 伝統, 宗教, 保存, 保護, 維持 nói về văn hoá và môi trường.
+  - vi: Dùng 与える, 超える, 価格, 製造, 消費, 損失, 借金 trong chủ đề kinh tế.
+  - vi: Đọc hiểu đoạn tin ngắn.
+estimated_minutes: 18
+skills:
+  - vocabulary
+  - reading
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n3-rules-society
+items:
+  - item: ja:item:n3-u11-bunka
+  - item: ja:item:n3-u11-dentou
+  - item: ja:item:n3-u11-shuukyou
+  - item: ja:item:n3-u11-hozon
+  - item: ja:item:n3-u11-hogo
+  - item: ja:item:n3-u11-iji
+  - item: ja:item:n3-u11-ataeru
+  - item: ja:item:n3-u11-koeru
+  - item: ja:item:n3-u11-kakaku
+  - item: ja:item:n3-u11-seizou
+  - item: ja:item:n3-u11-shouhi
+  - item: ja:item:n3-u11-sonshitsu
+  - item: ja:item:n3-u11-shakkin
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc tin ngắn về văn hoá và kinh tế - 伝統を守る, データを保存する, 動物を保護する, 原料の価格が上がる, 予想を超える.
+  - type: explain
+    text:
+      vi: "Văn hoá: 文化 (văn hoá), 伝統 (truyền thống), 宗教 (tôn giáo). Giữ gìn: 保存 (bảo quản), 保護 (bảo vệ), 維持 (duy trì)."
+  - type: explain
+    text:
+      vi: "Kinh tế: 価格 (giá cả), 製造 (chế tạo), 消費 (tiêu thụ), 損失 (tổn thất), 借金 (nợ). Động từ: 与える (gây ra, trao), 超える (vượt quá)."
+  - type: deep_explain
+    text:
+      vi: "Cách dùng cố định: 影響を与える (gây ảnh hưởng), 予想を超える (vượt dự kiến), 伝統を守る (giữ gìn truyền thống), 健康を維持する (duy trì sức khoẻ), 損失が出る (phát sinh tổn thất). 保存 thiên về lưu trữ (ファイルを保存), 保護 thiên về che chở (自然保護), 維持 thiên về giữ nguyên trạng."
+  - type: example
+    target: この祭りは三百年の伝統があります。
+    target_lang: ja
+    translation:
+      vi: Lễ hội này có truyền thống ba trăm năm.
+    note:
+      vi: 伝統.
+  - type: example
+    target: 絶滅しそうな動物を保護しています。
+    target_lang: ja
+    translation:
+      vi: Chúng tôi đang bảo vệ các loài động vật sắp tuyệt chủng.
+    note:
+      vi: 保護.
+  - type: example
+    target: この事件は社会に大きな影響を与えました。
+    target_lang: ja
+    translation:
+      vi: Vụ việc này đã gây ảnh hưởng lớn đến xã hội.
+    note:
+      vi: 影響を与える.
+  - type: example
+    target: 参加者は予想を超えて、千人になりました。
+    target_lang: ja
+    translation:
+      vi: Số người tham gia vượt dự kiến, lên tới một nghìn người.
+    note:
+      vi: 超える.
+  - type: common_mistake
+    wrong: 社会を影響を与えました。
+    right: 社会に影響を与えました。
+    target_lang: ja
+    note:
+      vi: Đối tượng bị ảnh hưởng đi với に, 影響 đi với を.
+  - type: common_mistake
+    wrong: データを維持しました。(lưu)
+    right: データを保存しました。
+    target_lang: ja
+    note:
+      vi: Lưu dữ liệu là 保存; 維持 là duy trì trạng thái.
+  - type: summary
+    points:
+      - vi: 文化 · 伝統 · 宗教 · 保存 · 保護 · 維持 · 与える · 超える · 価格 · 製造 · 消費 · 損失 · 借金.
+      - vi: 影響を与える · 予想を超える · 損失が出る.
+      - vi: 保存 (lưu) ≠ 保護 (bảo vệ) ≠ 維持 (duy trì).
+exercises:
+  - key: ja:exercise:n3-culture-economy-c1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u11-dentou
+    prompt:
+      stem: Từ nào có nghĩa là “truyền thống”?
+      stem_lang: vi
+      options:
+        - id: g9d
+          text: 伝統
+          lang: ja
+        - id: k9u
+          text: 宗教
+          lang: ja
+        - id: yw7
+          text: 価格
+          lang: ja
+        - id: h4w
+          text: 文化
+          lang: ja
+    answer:
+      correct_option_id: g9d
+    explanation:
+      vi: 伝統 là truyền thống. 文化 là văn hoá, 宗教 là tôn giáo.
+    display_answer: 伝統
+  - key: ja:exercise:n3-culture-economy-c2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u11-hogo
+    prompt:
+      stem: Bảo vệ loài vật quý hiếm. Từ nào?
+      stem_lang: vi
+      options:
+        - id: vz9
+          text: 消費
+          lang: ja
+        - id: sgp
+          text: 維持
+          lang: ja
+        - id: g7j
+          text: 保存
+          lang: ja
+        - id: d4n
+          text: 保護
+          lang: ja
+    answer:
+      correct_option_id: d4n
+    explanation:
+      vi: 保護 là bảo vệ. 保存 là lưu giữ, 維持 là duy trì.
+    display_answer: 保護
+  - key: ja:exercise:n3-culture-economy-c3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-u11-koeru
+    prompt:
+      audio_asset_id: null
+      fallback_text: 参加者は予想を超えて、千人になりました。
+      options:
+        - id: t9d
+          text: Số người tham gia vượt dự kiến, lên tới một nghìn người.
+          lang: vi
+        - id: k0b
+          text: Số người tham gia đúng như dự kiến.
+          lang: vi
+        - id: rn4
+          text: Số người tham gia ít hơn dự kiến, chỉ một nghìn người.
+          lang: vi
+        - id: ycs
+          text: Một nghìn người dự đoán sẽ tham gia.
+          lang: vi
+    answer:
+      correct_option_id: t9d
+    explanation:
+      vi: 予想を超える - vượt dự kiến.
+    display_answer: Số người tham gia vượt dự kiến, lên tới một nghìn người.
+  - key: ja:exercise:n3-culture-economy-c4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u11-kakaku
+    prompt:
+      template: 原料の{{b1}}が上がっています。 (Giá nguyên liệu đang tăng.)
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Giá cả.
+        - Bắt đầu bằng 価.
+    answer:
+      blanks:
+        b1:
+          - 価格
+          - かかく
+    known_wrong:
+      - answer: 消費
+        feedback_vi: 消費 là tiêu thụ; giá cả là 価格.
+        error_tag: noun_choice
+    explanation:
+      vi: 価格 - giá cả.
+    display_answer: 原料の価格が上がっています。
+  - key: ja:exercise:n3-culture-economy-c5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u11-ataeru
+    prompt:
+      stem: Vụ việc gây ảnh hưởng lớn đến xã hội. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: bqm
+          text: 社会に大きな影響を与えました
+          lang: ja
+        - id: uif
+          text: 社会に大きな影響を超えました
+          lang: ja
+        - id: og6
+          text: 社会に大きな影響を保存しました
+          lang: ja
+        - id: afu
+          text: 社会を大きな影響を与えました
+          lang: ja
+    answer:
+      correct_option_id: bqm
+    explanation:
+      vi: 影響を与える - gây ảnh hưởng; đối tượng đi với に.
+    display_answer: 社会に大きな影響を与えました
+  - key: ja:exercise:n3-culture-economy-c6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u11-hozon
+    prompt:
+      template: データをパソコンに{{b1}}しました。 (Tôi đã lưu dữ liệu vào máy tính.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 保存
+          - ほぞん
+    known_wrong:
+      - answer: 保護
+        feedback_vi: 保護 là bảo vệ; lưu dữ liệu là 保存.
+        error_tag: noun_choice
+    explanation:
+      vi: 保存する - lưu, bảo quản.
+    display_answer: データをパソコンに保存しました。
+  - key: ja:exercise:n3-culture-economy-c7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u11-iji
+    prompt:
+      template: 健康を{{b1}}するために、毎日運動しています。 (Tôi tập thể dục mỗi ngày để duy trì sức khoẻ.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 維持
+          - いじ
+    known_wrong:
+      - answer: 保存
+        feedback_vi: 保存 là lưu giữ; duy trì sức khoẻ là 維持.
+        error_tag: noun_choice
+    explanation:
+      vi: 維持する - duy trì.
+    display_answer: 健康を維持するために、毎日運動しています。
+  - key: ja:exercise:n3-culture-economy-c8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u11-seizou
+    prompt:
+      source_text: Nhà máy này sản xuất linh kiện ô tô.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - この工場では自動車の部品を製造しています。
+        - この工場は自動車の部品を製造しています。
+        - このこうじょうではじどうしゃのぶひんをせいぞうしています。
+        - この工場では自動車の部品を製造している。
+    known_wrong:
+      - answer: この工場では自動車の部品を消費しています。
+        feedback_vi: 消費 là tiêu thụ; sản xuất là 製造.
+        error_tag: noun_choice
+    explanation:
+      vi: 製造する - chế tạo, sản xuất.
+    display_answer: この工場では自動車の部品を製造しています。
+  - key: ja:exercise:n3-culture-economy-c9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-u11-sonshitsu
+    prompt:
+      source_text: 事故のせいで、会社に大きな損失が出ましたが、借金は増えませんでした。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Vì tai nạn, công ty phát sinh tổn thất lớn nhưng nợ không tăng.
+        - Do tai nạn nên công ty bị tổn thất lớn, song nợ không tăng thêm.
+        - Tai nạn gây tổn thất lớn cho công ty, nhưng khoản nợ không tăng lên.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nhờ tai nạn nên công ty có lãi lớn và nợ giảm.
+        feedback_vi: 損失が出る là phát sinh tổn thất.
+        error_tag: meaning
+    explanation:
+      vi: 損失が出る - phát sinh tổn thất; 借金は増えませんでした - nợ không tăng.
+    display_answer: Vì tai nạn, công ty phát sinh tổn thất lớn nhưng nợ không tăng.
+  - key: ja:exercise:n3-culture-economy-c10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u11-shouhi
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Lượng điện tiêu thụ đang tăng."'
+      tokens:
+        - id: t3
+          text: 増えています。
+        - id: t2
+          text: 消費量が
+        - id: t1
+          text: 電気の
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: Danh từ bổ nghĩa → chủ ngữ → V.
+    display_answer: 電気の消費量が増えています。
+  - key: ja:exercise:n3-culture-economy-c11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u11-shakkin
+    prompt:
+      stem: Bạn làm việc để trả nợ. Từ nào?
+      stem_lang: vi
+      options:
+        - id: h2l
+          text: 借金
+          lang: ja
+        - id: xbp
+          text: 伝統
+          lang: ja
+        - id: dpw
+          text: 価格
+          lang: ja
+        - id: nze
+          text: 文化
+          lang: ja
+    answer:
+      correct_option_id: h2l
+    explanation:
+      vi: 借金 là nợ. 借金を返す - trả nợ.
+    display_answer: 借金
