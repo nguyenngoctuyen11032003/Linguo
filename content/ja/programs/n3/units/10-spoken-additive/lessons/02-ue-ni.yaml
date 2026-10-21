@@ -1,0 +1,379 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n3-ue-ni-koto-kara
+order_index: 2
+level: n3
+title:
+  vi: Bổ sung, căn cứ, giả định - ～うえに・～ことから・～としたら・～て以来
+objectives:
+  - vi: Nói "hơn nữa" bằng ～うえに và nêu căn cứ bằng ～ことから.
+  - vi: Nói giả định bằng ～としたら / とすれば và khoảng thời gian bằng ～て以来.
+  - vi: Nêu chủ đề bằng ～に関して / に関する và dùng 以上, 以下, 目的, 原因, 結果, 理由.
+estimated_minutes: 18
+skills:
+  - grammar
+  - vocabulary
+  - reading
+  - speaking
+prerequisites:
+  - ja:lesson:n3-spoken-contractions
+items:
+  - item: ja:item:n3-u10-gram-ue-ni
+  - item: ja:item:n3-u10-gram-koto-kara
+  - item: ja:item:n3-u10-gram-to-shitara
+  - item: ja:item:n3-u10-gram-te-irai
+  - item: ja:item:n3-u10-gram-ni-kansuru
+  - item: ja:item:n3-u10-ika
+  - item: ja:item:n3-u10-ijou
+  - item: ja:item:n3-u10-mokuteki
+  - item: ja:item:n3-u10-genin
+  - item: ja:item:n3-kekka
+    role: reuse
+  - item: ja:item:n3-u10-riyuu
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn lập luận chặt chẽ hơn - この店は安いうえに、おいしいです。足跡があったことから、犯人が分かりました。もし宝くじが当たったとしたら...
+  - type: explain
+    text:
+      vi: '～うえに = "hơn nữa, thêm vào đó": cộng thêm một điều cùng chiều với điều trước (tốt + tốt, xấu + xấu). Thể thường + うえに; N の / Na な + うえに. Ví dụ この店は安いうえに、おいしいです.'
+  - type: explain
+    text:
+      vi: '～ことから = "từ việc ... mà ...": nêu căn cứ để kết luận hoặc nguồn gốc của tên gọi. Ví dụ 足跡が残っていたことから、犯人が分かりました. Gần với ～から nhưng trang trọng, có tính suy luận.'
+  - type: explain
+    text:
+      vi: '～としたら / ～とすれば = "giả sử ... thì ...": giả định một điều chưa chắc rồi nói hệ quả. ～て以来 = "từ khi ... đến nay": khoảng thời gian dài liên tục. ～に関して / に関する = "liên quan đến ..." (trang trọng).'
+  - type: deep_explain
+    text:
+      vi: "So sánh ～たら (nếu, khả năng thực tế) với ～としたら (giả sử, thường điều khó xảy ra hoặc chưa chắc). ～て以来 thường đi với phủ định hoặc trạng thái liên tục: 日本へ来て以来、一度も国へ帰っていません. Từ vựng đi kèm - 以上 (trên đây, từ ... trở lên), 以下 (sau đây, từ ... trở xuống), 目的 (mục đích), 原因 (nguyên nhân), 結果 (kết quả), 理由 (lý do)."
+  - type: example
+    target: この店は安いうえに、おいしいです。
+    target_lang: ja
+    translation:
+      vi: Quán này vừa rẻ lại còn ngon.
+    note:
+      vi: うえに - hơn nữa.
+  - type: example
+    target: 足跡が残っていたことから、犯人が分かりました。
+    target_lang: ja
+    translation:
+      vi: Nhờ dấu chân còn lại mà đã tìm ra thủ phạm.
+    note:
+      vi: ことから - căn cứ.
+  - type: example
+    target: もし宝くじが当たったとしたら、何をしますか。
+    target_lang: ja
+    translation:
+      vi: Giả sử trúng xổ số thì bạn sẽ làm gì?
+    note:
+      vi: としたら - giả sử.
+  - type: example
+    target: 日本へ来て以来、毎日日本語を勉強しています。
+    target_lang: ja
+    translation:
+      vi: Từ khi đến Nhật tôi học tiếng Nhật mỗi ngày.
+    note:
+      vi: て以来 - kể từ khi.
+  - type: common_mistake
+    wrong: この店は安いうえに、高いです。
+    right: この店は安いうえに、おいしいです。
+    target_lang: ja
+    note:
+      vi: うえに nối hai điều cùng chiều; "rẻ" và "đắt" mâu thuẫn.
+  - type: common_mistake
+    wrong: 日本へ来て以来、来月、国へ帰ります。
+    right: 日本へ来て以来、一度も国へ帰っていません。
+    target_lang: ja
+    note:
+      vi: て以来 mô tả khoảng thời gian liên tục từ đó đến hiện tại, không đi với tương lai (来月).
+  - type: summary
+    points:
+      - vi: うえに - hơn nữa (cùng chiều).
+      - vi: ことから - từ việc ... mà ...
+      - vi: としたら / とすれば - giả sử.
+      - vi: て以来 - kể từ khi · に関して / に関する - liên quan đến.
+exercises:
+  - key: ja:exercise:n3-ue-ni-koto-kara-u1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u10-gram-ue-ni
+    prompt:
+      stem: Chọn câu đúng - この店は安い___、おいしいです。
+      stem_lang: vi
+      options:
+        - id: jeo
+          text: うえに
+          lang: ja
+        - id: kc6
+          text: ことから
+          lang: ja
+        - id: lgw
+          text: としたら
+          lang: ja
+        - id: j8l
+          text: て以来
+          lang: ja
+    answer:
+      correct_option_id: jeo
+    explanation:
+      vi: うえに - hơn nữa (cùng chiều tốt). ことから là căn cứ, としたら là giả sử, て以来 là kể từ khi.
+    display_answer: うえに
+  - key: ja:exercise:n3-ue-ni-koto-kara-u2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u10-gram-te-irai
+    prompt:
+      stem: Chọn câu đúng - 日本へ来て___、毎日日本語を勉強しています。
+      stem_lang: vi
+      options:
+        - id: i24
+          text: 以来
+          lang: ja
+        - id: x5y
+          text: から後
+          lang: ja
+        - id: t1w
+          text: ので
+          lang: ja
+        - id: o0q
+          text: ように
+          lang: ja
+    answer:
+      correct_option_id: i24
+    explanation:
+      vi: V て + 以来 - kể từ khi. Các dạng khác không đúng cấu trúc.
+    display_answer: 以来
+  - key: ja:exercise:n3-ue-ni-koto-kara-u3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-u10-gram-to-shitara
+    prompt:
+      audio_asset_id: null
+      fallback_text: もし宝くじが当たったとしたら、何をしますか。
+      options:
+        - id: jfw
+          text: Sau khi trúng xổ số, bạn đã làm gì?
+          lang: vi
+        - id: zgz
+          text: Nếu bạn không trúng xổ số thì làm gì?
+          lang: vi
+        - id: hiq
+          text: Hôm qua trúng xổ số, bạn đã làm gì?
+          lang: vi
+        - id: q1i
+          text: Giả sử trúng xổ số thì bạn sẽ làm gì?
+          lang: vi
+    answer:
+      correct_option_id: q1i
+    explanation:
+      vi: もし ～としたら - giả sử; 当たった - trúng; 何をしますか - làm gì.
+    display_answer: Giả sử trúng xổ số thì bạn sẽ làm gì?
+  - key: ja:exercise:n3-ue-ni-koto-kara-u4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u10-gram-koto-kara
+    prompt:
+      template: 足跡が残っていた{{b1}}、犯人が分かりました。 (Nhờ dấu chân còn lại mà đã tìm ra thủ phạm.)
+      blanks:
+        - id: b1
+          width_hint: 5
+      hint_levels:
+        - Nêu căn cứ của kết luận.
+        - Bắt đầu bằng こ.
+    answer:
+      blanks:
+        b1:
+          - ことから
+    known_wrong:
+      - answer: うえに
+        feedback_vi: うえに là "hơn nữa", không nêu căn cứ.
+        error_tag: form
+    explanation:
+      vi: ことから - từ việc ... mà ...
+    display_answer: 足跡が残っていたことから、犯人が分かりました。
+  - key: ja:exercise:n3-ue-ni-koto-kara-u5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u10-genin
+    prompt:
+      stem: Bạn muốn nói “nguyên nhân của tai nạn”. Từ nào?
+      stem_lang: vi
+      options:
+        - id: k87
+          text: 原因
+          lang: ja
+        - id: kc6
+          text: 理由
+          lang: ja
+        - id: oj2
+          text: 結果
+          lang: ja
+        - id: pax
+          text: 目的
+          lang: ja
+    answer:
+      correct_option_id: k87
+    explanation:
+      vi: 原因 là nguyên nhân. 結果 là kết quả, 目的 là mục đích, 理由 là lý do (thường nêu bởi người nói).
+    display_answer: 原因
+  - key: ja:exercise:n3-ue-ni-koto-kara-u6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u10-gram-ue-ni
+    prompt:
+      template: 彼は頭がいい{{b1}}、性格もいいです。 (Anh ấy vừa thông minh lại còn tính cách tốt.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - うえに
+    known_wrong:
+      - answer: ので
+        feedback_vi: ので là vì; câu nói thêm một ưu điểm nên dùng うえに.
+        error_tag: form
+    explanation:
+      vi: うえに - hơn nữa.
+    display_answer: 彼は頭がいいうえに、性格もいいです。
+  - key: ja:exercise:n3-ue-ni-koto-kara-u7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u10-gram-ni-kansuru
+    prompt:
+      template: 日本の歴史{{b1}}本を読みます。 (Tôi đọc sách liên quan đến lịch sử Nhật Bản.)
+      blanks:
+        - id: b1
+          width_hint: 5
+    answer:
+      blanks:
+        b1:
+          - に関する
+    known_wrong:
+      - answer: に関して
+        feedback_vi: に関して đứng trước động từ; trước danh từ 本 dùng に関する.
+        error_tag: form
+    explanation:
+      vi: N に関する + N - liên quan đến.
+    display_answer: 日本の歴史に関する本を読みます。
+  - key: ja:exercise:n3-ue-ni-koto-kara-u8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u10-gram-te-irai
+    prompt:
+      source_text: Từ khi đến Nhật tôi học tiếng Nhật mỗi ngày.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 日本へ来て以来、毎日日本語を勉強しています。
+        - 日本に来て以来、毎日日本語を勉強しています。
+        - にほんへきていらい、まいにちにほんごをべんきょうしています。
+        - 日本へ来て以来毎日日本語を勉強しています。
+    known_wrong:
+      - answer: 日本へ来て以来、毎日日本語を勉強します。
+        feedback_vi: て以来 đi với hiện tại hoàn thành (勉強しています) hoặc thì quá khứ.
+        error_tag: tense
+    explanation:
+      vi: V て + 以来 - kể từ khi; 勉強しています - đang học (liên tục).
+    display_answer: 日本へ来て以来、毎日日本語を勉強しています。
+  - key: ja:exercise:n3-ue-ni-koto-kara-u9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-u10-riyuu
+    prompt:
+      source_text: 遅れた理由を説明してください。電車が止まったことから、遅れたのでしょう。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Xin hãy giải thích lý do đến muộn. Có lẽ vì tàu dừng nên bạn bị muộn.
+        - Hãy giải thích lý do bạn muộn. Từ việc tàu dừng, chắc là vì thế mà bạn đến muộn.
+        - Xin giải thích lý do chậm trễ. Do tàu dừng nên chắc bạn đã muộn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Xin hãy giải thích lý do đến sớm. Có lẽ vì tàu chạy nhanh nên bạn đến sớm.
+        feedback_vi: 遅れた là muộn.
+        error_tag: meaning
+    explanation:
+      vi: 遅れた理由 - lý do muộn; 止まったことから - vì việc tàu dừng; のでしょう - có lẽ.
+    display_answer: Xin hãy giải thích lý do đến muộn. Có lẽ vì tàu dừng nên bạn bị muộn.
+  - key: ja:exercise:n3-ue-ni-koto-kara-u10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u10-gram-ni-kansuru
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Xin cho tôi nghe ý kiến về vấn đề môi trường."'
+      tokens:
+        - id: t4
+          text: 聞かせてください。
+        - id: t3
+          text: 意見を
+        - id: t1
+          text: 環境問題に
+        - id: t2
+          text: 関して、
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+        - - t3
+          - t1
+          - t2
+          - t4
+    explanation:
+      vi: N に関して + tân ngữ + 聞かせてください.
+    display_answer: 環境問題に関して、意見を聞かせてください。
+  - key: ja:exercise:n3-ue-ni-koto-kara-u11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u10-mokuteki
+    prompt:
+      stem: Bạn muốn hỏi mục đích chuyến đi. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: xht
+          text: 旅行の以上は何ですか。
+          lang: ja
+        - id: cxf
+          text: 旅行の原因は何ですか。
+          lang: ja
+        - id: yc5
+          text: 旅行の結果は何ですか。
+          lang: ja
+        - id: gqi
+          text: 旅行の目的は何ですか。
+          lang: ja
+    answer:
+      correct_option_id: gqi
+    explanation:
+      vi: 目的 là mục đích. 原因 là nguyên nhân, 結果 là kết quả, 以上 là "trên đây" - không hợp.
+    display_answer: 旅行の目的は何ですか。

@@ -1,0 +1,374 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n3-spoken-contractions
+order_index: 1
+level: n3
+title:
+  vi: Khẩu ngữ - ～とく・～なきゃ・～って・～てる
+objectives:
+  - vi: "Hiểu và dùng các dạng rút gọn: ～とく, ～なきゃ, ～てる, ～って."
+  - vi: "Dùng các từ khẩu ngữ: かなり, わりと, めっちゃ, やっぱり, なんか, まじで."
+  - vi: Phân biệt khẩu ngữ (với bạn bè) và văn lịch sự.
+estimated_minutes: 17
+skills:
+  - grammar
+  - vocabulary
+  - listening
+  - speaking
+prerequisites:
+  - ja:lesson:n3-education-environment
+items:
+  - item: ja:item:n3-u10-gram-toku
+  - item: ja:item:n3-u10-gram-nakya
+  - item: ja:item:n3-u10-gram-tte
+  - item: ja:item:n3-u10-gram-teru
+  - item: ja:item:n3-u10-kanari
+  - item: ja:item:n3-u10-wariato
+  - item: ja:item:n3-u10-mecha
+  - item: ja:item:n3-u10-yappari
+  - item: ja:item:n3-u10-nanka
+  - item: ja:item:n3-u10-maji
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hiểu hội thoại thân mật - 明日は早いから、もう寝なきゃ。何してるの？ - và biết khi nào nên dùng, khi nào tránh.
+  - type: explain
+    text:
+      vi: Trong khẩu ngữ, người Nhật rút gọn nhiều mẫu câu. ～ておく → ～とく (買っとく), ～なければ → ～なきゃ (帰らなきゃ), ～ている → ～てる (食べてる), ～と / という → ～って (来るって, 田中さんっていう人).
+  - type: explain
+    text:
+      vi: Các từ khẩu ngữ - かなり (khá), わりと (tương đối), めっちゃ (cực kỳ, trẻ trung), やっぱり (quả nhiên), なんか (kiểu như, hình như), まじで (thật á). Chúng làm câu nói tự nhiên nhưng hơi suồng sã.
+  - type: explain
+    text:
+      vi: Hãy chọn đúng ngữ vực - với bạn bè dùng dạng rút gọn; với người trên, trong email và bài thi viết dùng dạng đầy đủ (ておく, なければならない, ている, と / という).
+  - type: deep_explain
+    text:
+      vi: Mẫu ～なきゃ thường bỏ phần sau (いけない / ならない) nên chỉ nghe もう帰らなきゃ. ～って có nhiều chức năng - dẫn lại lời người khác (明日は雨だって), nêu chủ đề (あの店って高いよね), hỏi lại để xác nhận (え、行かないって？). Không dùng khẩu ngữ trong bài thi viết hay khi viết thư trang trọng.
+  - type: example
+    target: 先に切符を買っとくね。
+    target_lang: ja
+    translation:
+      vi: Mình mua vé trước nhé.
+    note:
+      vi: ておく → とく.
+  - type: example
+    target: 明日は早いから、もう寝なきゃ。
+    target_lang: ja
+    translation:
+      vi: Mai dậy sớm nên phải đi ngủ thôi.
+    note:
+      vi: なければ → なきゃ.
+  - type: example
+    target: 明日は雨だって。かさ持ってきなよ。
+    target_lang: ja
+    translation:
+      vi: Nghe nói mai mưa đấy. Nhớ mang ô nhé.
+    note:
+      vi: ～だって - nghe nói.
+  - type: example
+    target: 今、何してるの？ - テレビ見てるよ。
+    target_lang: ja
+    translation:
+      vi: Giờ cậu đang làm gì đấy? - Mình đang xem tivi.
+    note:
+      vi: ている → てる.
+  - type: common_mistake
+    wrong: 先生、この本を読んどいてください。
+    right: 先生、この本を読んでおいてください。
+    target_lang: ja
+    note:
+      vi: Với người trên dùng dạng đầy đủ ておく, không dùng とく.
+  - type: common_mistake
+    wrong: レポートに「明日雨って」と書きました。
+    right: レポートに「明日は雨だと言われている」と書きました。
+    target_lang: ja
+    note:
+      vi: Trong văn viết không dùng って mà dùng と / という / と言われている.
+  - type: summary
+    points:
+      - vi: ておく → とく · なければ → なきゃ · ている → てる · と / という → って.
+      - vi: かなり khá · わりと tương đối · めっちゃ cực kỳ · やっぱり quả nhiên · なんか kiểu như · まじで thật á.
+      - vi: Khẩu ngữ chỉ dùng với người thân.
+      - vi: Văn viết và với người trên - dạng đầy đủ.
+exercises:
+  - key: ja:exercise:n3-spoken-contractions-c1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u10-gram-toku
+    prompt:
+      stem: Dạng rút gọn khẩu ngữ của 買っておく là gì?
+      stem_lang: vi
+      options:
+        - id: gag
+          text: 買っちゃう
+          lang: ja
+        - id: ffg
+          text: 買ってる
+          lang: ja
+        - id: nu1
+          text: 買っとく
+          lang: ja
+        - id: loq
+          text: 買ってく
+          lang: ja
+    answer:
+      correct_option_id: nu1
+    explanation:
+      vi: 買っておく → 買っとく (ておく → とく). 買ってく là ていく, 買っちゃう là てしまう, 買ってる là ている.
+    display_answer: 買っとく
+  - key: ja:exercise:n3-spoken-contractions-c2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u10-gram-nakya
+    prompt:
+      stem: Dạng rút gọn của 帰らなければならない là gì?
+      stem_lang: vi
+      options:
+        - id: f7z
+          text: 帰らなかった
+          lang: ja
+        - id: nfl
+          text: 帰らなくて
+          lang: ja
+        - id: arr
+          text: 帰らなきゃ
+          lang: ja
+        - id: xa2
+          text: 帰らないで
+          lang: ja
+    answer:
+      correct_option_id: arr
+    explanation:
+      vi: 帰らなければならない → 帰らなきゃ (khẩu ngữ). 帰らなくて là dạng nối, 帰らないで là "đừng về/không về mà ...", 帰らなかった là quá khứ phủ định.
+    display_answer: 帰らなきゃ
+  - key: ja:exercise:n3-spoken-contractions-c3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-u10-gram-teru
+    prompt:
+      audio_asset_id: null
+      fallback_text: 今、何してるの？ - テレビ見てるよ。
+      options:
+        - id: cv4
+          text: Giờ cậu đi đâu đấy? - Mình đi xem tivi.
+          lang: vi
+        - id: yef
+          text: Sao cậu xem tivi? - Vì mình rảnh.
+          lang: vi
+        - id: l85
+          text: Giờ cậu đang làm gì đấy? - Mình đang xem tivi.
+          lang: vi
+        - id: kz2
+          text: Hôm qua cậu làm gì đấy? - Mình đã xem tivi.
+          lang: vi
+    answer:
+      correct_option_id: l85
+    explanation:
+      vi: してる - đang làm; 見てる - đang xem.
+    display_answer: Giờ cậu đang làm gì đấy? - Mình đang xem tivi.
+  - key: ja:exercise:n3-spoken-contractions-c4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u10-gram-nakya
+    prompt:
+      template: 明日は早いから、もう寝{{b1}}。 (Mai dậy sớm nên phải đi ngủ thôi.)
+      blanks:
+        - id: b1
+          width_hint: 4
+      hint_levels:
+        - Dạng khẩu ngữ của "phải".
+        - Bắt đầu bằng な.
+    answer:
+      blanks:
+        b1:
+          - なきゃ
+          - なくちゃ
+    known_wrong:
+      - answer: ないで
+        feedback_vi: ないで là "đừng/mà không"; ở đây cần nghĩa "phải".
+        error_tag: form
+    explanation:
+      vi: V ない → V なきゃ - phải làm.
+    display_answer: 明日は早いから、もう寝なきゃ。
+  - key: ja:exercise:n3-spoken-contractions-c5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u10-yappari
+    prompt:
+      stem: Bạn nghĩ “Quả nhiên mùa hè Nhật nóng nhỉ”. Từ nào hợp?
+      stem_lang: vi
+      options:
+        - id: peb
+          text: めっちゃ
+          lang: ja
+        - id: lph
+          text: かなり
+          lang: ja
+        - id: fcc
+          text: やっぱり
+          lang: ja
+        - id: pqi
+          text: まじで
+          lang: ja
+    answer:
+      correct_option_id: fcc
+    explanation:
+      vi: やっぱり là quả nhiên. めっちゃ là cực kỳ, まじで là thật á, かなり là khá.
+    display_answer: やっぱり
+  - key: ja:exercise:n3-spoken-contractions-c6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u10-gram-toku
+    prompt:
+      template: 先に切符を買{{b1}}ね。 (Mình mua vé trước nhé.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - っとく
+          - っておく
+    known_wrong:
+      - answer: ってる
+        feedback_vi: 買ってる là đang mua; "mua sẵn" dùng っとく.
+        error_tag: form
+    explanation:
+      vi: "ておく → とく: 買っとく - mua sẵn."
+    display_answer: 先に切符を買っとくね。
+  - key: ja:exercise:n3-spoken-contractions-c7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u10-gram-tte
+    prompt:
+      template: 明日は雨{{b1}}。 (Nghe nói mai mưa đấy.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - だって
+          - だそうだ
+    known_wrong:
+      - answer: って
+        feedback_vi: 雨って nghĩa là "mưa à / mưa là..."; "nghe nói mai mưa" cần だって.
+        error_tag: form
+    explanation:
+      vi: N だって - nghe nói là N.
+    display_answer: 明日は雨だって。
+  - key: ja:exercise:n3-spoken-contractions-c8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u10-gram-nakya
+    prompt:
+      source_text: Mai dậy sớm nên phải đi ngủ thôi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 明日は早いから、もう寝なきゃ。
+        - あしたははやいから、もうねなきゃ。
+        - 明日は早いから、もう寝なくちゃ。
+        - 明日は早いから、もう寝なきゃいけない。
+        - 明日は早いから、もう寝ないと。
+    known_wrong:
+      - answer: 明日は早いから、もう寝ないで。
+        feedback_vi: ないで nghĩa là "đừng ngủ"; nghĩa "phải ngủ" là なきゃ.
+        error_tag: form
+    explanation:
+      vi: V ない → V なきゃ - phải làm; 早いから - vì sớm.
+    display_answer: 明日は早いから、もう寝なきゃ。
+  - key: ja:exercise:n3-spoken-contractions-c9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-u10-gram-tte
+    prompt:
+      source_text: 明日は雨だって。じゃあ、傘を持っていかなきゃ。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nghe nói mai mưa. Vậy phải mang ô thôi.
+        - Nghe bảo mai mưa đấy. Thế thì phải mang ô theo.
+        - Mai mưa à? Vậy thì phải mang ô nhỉ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nghe nói mai nắng. Vậy không cần mang ô.
+        feedback_vi: 雨 là mưa; 傘を持っていかなきゃ là phải mang ô.
+        error_tag: meaning
+    explanation:
+      vi: 雨だって - nghe nói mưa; 持っていかなきゃ - phải mang theo.
+    display_answer: Nghe nói mai mưa. Vậy phải mang ô thôi.
+  - key: ja:exercise:n3-spoken-contractions-c10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u10-gram-toku
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Mình mua vé trước nhé."'
+      tokens:
+        - id: t3
+          text: 買っとくね。
+        - id: t1
+          text: 先に
+        - id: t2
+          text: 切符を
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: Trạng từ → tân ngữ → V とく + ね.
+    display_answer: 先に切符を買っとくね。
+  - key: ja:exercise:n3-spoken-contractions-c11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u10-mecha
+    prompt:
+      stem: Bạn nói chuyện với bạn thân và muốn nói “mì này cực kỳ ngon”. Câu nào tự nhiên?
+      stem_lang: vi
+      options:
+        - id: lhk
+          text: このラーメンはおいしいでございます。
+          lang: ja
+        - id: j1k
+          text: このラーメン、めっちゃおいしい。
+          lang: ja
+        - id: ozd
+          text: このラーメンは非常においしゅうございます。
+          lang: ja
+        - id: bxm
+          text: このラーメンはおいしゅうございますです。
+          lang: ja
+    answer:
+      correct_option_id: j1k
+    explanation:
+      vi: Với bạn thân dùng めっちゃ - thân mật. Các câu khác dùng văn quá kính hoặc sai ngữ pháp.
+    display_answer: このラーメン、めっちゃおいしい。
