@@ -1,0 +1,375 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n4-te-iku-kuru
+order_index: 1
+level: n4
+title:
+  vi: Đi - đến và thay đổi - ～ていく・～てくる
+objectives:
+  - vi: Dùng V て + 行く / 来る để nói mang đi, mang đến, làm rồi đi/đến.
+  - vi: Nói sự thay đổi diễn ra dần bằng ～ていく / ～てくる.
+  - vi: Dùng 増える, 減る, 太る, 痩せる, 変わる, だんだん để mô tả thay đổi.
+estimated_minutes: 17
+skills:
+  - grammar
+  - vocabulary
+  - speaking
+  - reading
+prerequisites:
+  - ja:lesson:n4-made-ni
+items:
+  - item: ja:item:n4-u8-gram-te-iku
+  - item: ja:item:n4-u8-gram-te-kuru
+  - item: ja:item:n4-u8-tsureru
+  - item: ja:item:n4-u8-fueru
+  - item: ja:item:n4-u8-heru
+  - item: ja:item:n4-u8-futoru
+  - item: ja:item:n4-u8-yaseru
+  - item: ja:item:n4-u8-kawaru
+  - item: ja:item:n4-u8-dandan
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được mang đi, mang đến và sự thay đổi - お弁当を持っていきます。だんだん寒くなってきました。
+  - type: explain
+    text:
+      vi: "V て + 行く / 来る có hai tầng nghĩa. Nghĩa hành động - làm rồi đi/đến: 買ってきます (mua rồi về), 持っていきます (mang đi), 走ってきました (chạy tới). Nghĩa thay đổi - 暖かくなってきました (đã dần ấm lên), これからも増えていくでしょう (sẽ tiếp tục tăng)."
+  - type: explain
+    text:
+      vi: Hướng quyết định bởi người nói - 行く là rời xa người nói/hiện tại, 来る là hướng về người nói/hiện tại. Mang đồ vật tới chỗ nói dùng 持ってくる, mang đi xa dùng 持っていく. Dẫn người đi - 連れていく, dẫn đến - 連れてくる.
+  - type: explain
+    text:
+      vi: Thay đổi tới hiện tại dùng ～てきた (だんだん寒くなってきた), thay đổi sẽ tiếp diễn dùng ～ていく (これから寒くなっていく). Từ hay đi kèm - だんだん (dần dần), 増える (tăng), 減る (giảm), 太る (béo), 痩せる (gầy), 変わる (thay đổi).
+  - type: deep_explain
+    text:
+      vi: "Cặp 買ってくる và 買っていく thường gây nhầm: 買ってくる = đi mua rồi quay về (công việc nhỏ như 飲み物を買ってきます); 買っていく = mua rồi mang đi đâu đó (友達の家へお土産を買っていきます). Cũng dùng ～てくる cho biểu hiện bắt đầu - 雨が降ってきました (trời bắt đầu mưa), 目が痛くなってきました."
+  - type: example
+    target: お弁当を持っていきます。
+    target_lang: ja
+    translation:
+      vi: Tôi mang cơm hộp đi.
+    note:
+      vi: 持っていく - mang đi.
+  - type: example
+    target: コンビニで飲み物を買ってきます。
+    target_lang: ja
+    translation:
+      vi: Tôi đi mua đồ uống ở cửa hàng tiện lợi rồi quay lại.
+    note:
+      vi: 買ってくる - mua rồi về.
+  - type: example
+    target: だんだん寒くなってきました。
+    target_lang: ja
+    translation:
+      vi: Trời dần lạnh đi.
+    note:
+      vi: なってきた - thay đổi đến hiện tại.
+  - type: example
+    target: これから外国人の観光客が増えていくでしょう。
+    target_lang: ja
+    translation:
+      vi: Từ giờ khách du lịch nước ngoài sẽ ngày càng tăng.
+    note:
+      vi: 増えていく - tiếp tục tăng.
+  - type: common_mistake
+    wrong: 友達の家へお土産を買ってきました。(mang đến nhà bạn)
+    right: 友達の家へお土産を買っていきました。
+    target_lang: ja
+    note:
+      vi: Mua rồi mang tới nơi khác dùng 買っていく; 買ってくる là mua rồi quay lại chỗ người nói.
+  - type: common_mistake
+    wrong: これから寒くなってきます。
+    right: これから寒くなっていきます。
+    target_lang: ja
+    note:
+      vi: Thay đổi từ giờ trở đi dùng ～ていく; ～てくる chỉ thay đổi tới hiện tại.
+  - type: summary
+    points:
+      - vi: V て + 行く - làm rồi đi / mang đi / thay đổi sẽ tiếp tục.
+      - vi: V て + 来る - làm rồi đến / mang đến / bắt đầu / thay đổi đến nay.
+      - vi: 連れていく dẫn đi · 連れてくる dẫn đến.
+      - vi: 増える tăng · 減る giảm · 太る béo · 痩せる gầy · 変わる đổi · だんだん dần dần.
+exercises:
+  - key: ja:exercise:n4-te-iku-kuru-i1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u8-gram-te-kuru
+    prompt:
+      stem: Bạn nhận thấy “trời đã dần lạnh đi” (thay đổi kéo dài đến lúc nói). Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: luc
+          text: だんだん寒いきました。
+          lang: ja
+        - id: iu7
+          text: だんだん寒くなってきました。
+          lang: ja
+        - id: mmc
+          text: だんだん寒くなりてきました。
+          lang: ja
+        - id: m49
+          text: だんだん寒くなっていきます。
+          lang: ja
+    answer:
+      correct_option_id: iu7
+    explanation:
+      vi: Thay đổi tới hiện tại - ～てきた. なってきました đúng; なっていきます nói về thay đổi sẽ tiếp tục từ nay; các dạng còn lại sai hình thức.
+    display_answer: だんだん寒くなってきました。
+  - key: ja:exercise:n4-te-iku-kuru-i2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u8-tsureru
+    prompt:
+      stem: Bạn dẫn con đến công viên (đi xa chỗ bạn đang nói). Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: cio
+          text: 子どもを公園へ持っていきます。
+          lang: ja
+        - id: u0s
+          text: 子どもを公園へ連れてきます。
+          lang: ja
+        - id: d4k
+          text: 子どもを公園へ持ってきます。
+          lang: ja
+        - id: uz5
+          text: 子どもを公園へ連れていきます。
+          lang: ja
+    answer:
+      correct_option_id: uz5
+    explanation:
+      vi: 連れていく - dẫn (người) đi. 持っていく dùng cho đồ vật, không dùng cho trẻ con.
+    display_answer: 子どもを公園へ連れていきます。
+  - key: ja:exercise:n4-te-iku-kuru-i3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-u8-fueru
+    prompt:
+      audio_asset_id: null
+      fallback_text: 最近、外国人の観光客が増えています。これからも増えていくでしょう。
+      options:
+        - id: pgg
+          text: Khách du lịch nước ngoài tăng. Nhưng từ nay sẽ giảm.
+          lang: vi
+        - id: vog
+          text: Khách du lịch trong nước tăng. Từ nay sẽ giảm.
+          lang: vi
+        - id: wlo
+          text: Gần đây khách du lịch nước ngoài đang giảm. Từ nay sẽ còn giảm nữa.
+          lang: vi
+        - id: wjo
+          text: Gần đây khách du lịch nước ngoài đang tăng. Từ nay sẽ còn tăng nữa.
+          lang: vi
+    answer:
+      correct_option_id: wjo
+    explanation:
+      vi: 増えています - đang tăng; 増えていく - sẽ tiếp tục tăng.
+    display_answer: Gần đây khách du lịch nước ngoài đang tăng. Từ nay sẽ còn tăng nữa.
+  - key: ja:exercise:n4-te-iku-kuru-i4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u8-gram-te-iku
+    prompt:
+      template: お弁当を持って{{b1}}。 (Tôi mang cơm hộp đi.)
+      blanks:
+        - id: b1
+          width_hint: 5
+      hint_levels:
+        - Mang đi xa người nói.
+        - Bắt đầu bằng い - いきます.
+    answer:
+      blanks:
+        b1:
+          - いきます
+          - 行きます
+    known_wrong:
+      - answer: きます
+        feedback_vi: 持ってきます là mang đến chỗ người nói; "mang đi" là 持っていきます.
+        error_tag: direction
+    explanation:
+      vi: 持っていく - mang đi.
+    display_answer: お弁当を持っていきます。
+  - key: ja:exercise:n4-te-iku-kuru-i5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u8-dandan
+    prompt:
+      stem: Từ nào có nghĩa là “dần dần”?
+      stem_lang: vi
+      options:
+        - id: psm
+          text: ちょうど
+          lang: ja
+        - id: orl
+          text: たまに
+          lang: ja
+        - id: e6e
+          text: だんだん
+          lang: ja
+        - id: qxm
+          text: ずっと
+          lang: ja
+    answer:
+      correct_option_id: e6e
+    explanation:
+      vi: だんだん là dần dần. ずっと là suốt, たまに là thỉnh thoảng, ちょうど là vừa đúng.
+    display_answer: だんだん
+  - key: ja:exercise:n4-te-iku-kuru-i6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u8-gram-te-kuru
+    prompt:
+      template: コンビニで飲み物を買って{{b1}}。 (Tôi đi mua đồ uống ở cửa hàng tiện lợi rồi quay lại.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - きます
+          - 来ます
+    known_wrong:
+      - answer: いきます
+        feedback_vi: 買っていきます là mua rồi mang đi nơi khác; mua rồi quay lại là 買ってきます.
+        error_tag: direction
+    explanation:
+      vi: 買ってくる - mua rồi về.
+    display_answer: コンビニで飲み物を買ってきます。
+  - key: ja:exercise:n4-te-iku-kuru-i7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u8-heru
+    prompt:
+      template: 人口が{{b1}}います。 (Dân số đang giảm.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - 減って
+          - へって
+    known_wrong:
+      - answer: 増えて
+        feedback_vi: 増える là tăng; câu nói dân số giảm.
+        error_tag: verb_choice
+    explanation:
+      vi: 減る - giảm; 減っています - đang giảm.
+    display_answer: 人口が減っています。
+  - key: ja:exercise:n4-te-iku-kuru-i8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u8-gram-te-kuru
+    prompt:
+      source_text: Trời dần ấm lên.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - だんだん暖かくなってきました。
+        - だんだんあたたかくなってきました。
+        - だんだん暖かくなってきた。
+        - だんだん暖かくなってきています。
+    known_wrong:
+      - answer: だんだん暖かくなっていきました。
+        feedback_vi: Thay đổi đã đến hiện tại dùng ～てきた.
+        error_tag: direction
+    explanation:
+      vi: だんだん - dần dần; 暖かくなってきました - đã ấm lên.
+    display_answer: だんだん暖かくなってきました。
+  - key: ja:exercise:n4-te-iku-kuru-i9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-u8-yaseru
+    prompt:
+      source_text: 運動して、三キロ痩せました。だんだん元気になってきました。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi tập thể dục và giảm 3 kg. Tôi dần khoẻ ra.
+        - Tập thể dục nên tôi giảm được 3 kg. Sức khoẻ dần tốt lên.
+        - Tôi tập thể dục và đã giảm ba ký. Dần dần tôi thấy khoẻ hơn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi ăn nhiều và tăng 3 kg. Tôi dần khoẻ ra.
+        feedback_vi: 痩せました là giảm cân, không phải tăng cân.
+        error_tag: verb_choice
+    explanation:
+      vi: 痩せました - giảm cân; 元気になってきました - dần khoẻ lên.
+    display_answer: Tôi tập thể dục và giảm 3 kg. Tôi dần khoẻ ra.
+  - key: ja:exercise:n4-te-iku-kuru-i10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u8-gram-te-iku
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Từ giờ khách du lịch nước ngoài sẽ ngày càng tăng."'
+      tokens:
+        - id: t2
+          text: 外国人の観光客が
+        - id: t3
+          text: 増えて
+        - id: t4
+          text: いくでしょう。
+        - id: t1
+          text: これから
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: これから (từ giờ) + chủ ngữ + 増えていく (tiếp tục tăng) + でしょう.
+    display_answer: これから外国人の観光客が増えていくでしょう。
+  - key: ja:exercise:n4-te-iku-kuru-i11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u8-kawaru
+    prompt:
+      stem: Thị trấn của bạn đã khác trước. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: sxd
+          text: 町の景色に変わりました。
+          lang: ja
+        - id: iau
+          text: 町の景色が変わりました。
+          lang: ja
+        - id: pp1
+          text: 町の景色を変わりました。
+          lang: ja
+        - id: kgx
+          text: 町の景色で変わりました。
+          lang: ja
+    answer:
+      correct_option_id: iau
+    explanation:
+      vi: 変わる là nội động từ (tự thay đổi) nên chủ ngữ đi với が. を, に, で không đúng.
+    display_answer: 町の景色が変わりました。

@@ -1,0 +1,378 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n4-ni-suru
+order_index: 2
+level: n4
+title:
+  vi: Chọn và làm cho thay đổi - ～にする・～くする
+objectives:
+  - vi: Chọn món, chọn đồ bằng N にします.
+  - vi: Làm cho một thứ thay đổi bằng A く / Na に / N に + します.
+  - vi: Dùng 選ぶ, 音, 温度, 上げる, 下げる trong yêu cầu thường ngày.
+estimated_minutes: 16
+skills:
+  - grammar
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n4-te-iku-kuru
+items:
+  - item: ja:item:n4-u8-gram-ni-suru
+  - item: ja:item:n4-u8-gram-ku-suru
+  - item: ja:item:n4-u8-erabu
+  - item: ja:item:n4-u8-oto
+  - item: ja:item:n4-u8-ondo
+  - item: ja:item:n4-u8-ageru
+  - item: ja:item:n4-u8-sageru
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn gọi món và yêu cầu chỉnh sửa - コーヒーにします。音を小さくしてください。部屋をきれいにします。
+  - type: explain
+    text:
+      vi: 'N にします = "chọn N" khi quyết định giữa nhiều lựa chọn (đặc biệt khi gọi món): 私はコーヒーにします. Hỏi - 何にしますか / どちらにしますか.'
+  - type: explain
+    text:
+      vi: 'A く / Na に / N に + します = "làm cho trở nên..." (có người chủ động làm). Ví dụ 部屋を明るくします, 音を小さくします, 部屋をきれいにします. Cùng nghĩa nhưng tự biến đổi thì dùng なります: 部屋が明るくなります.'
+  - type: explain
+    text:
+      vi: Từ hay dùng cho yêu cầu - 選ぶ (chọn), 音 (âm thanh), 温度 (nhiệt độ), 上げる (nâng, tăng), 下げる (hạ, giảm). Ví dụ 温度を上げてください, 音を下げてください.
+  - type: deep_explain
+    text:
+      vi: 'Phân biệt なる và する: なる là tự thay đổi (部屋が暗くなりました - phòng tối dần), する là chủ động làm thay đổi (部屋を暗くしました - tôi làm cho phòng tối). Khi gọi món nên nói Nにします chứ không dùng Nです (コーヒーです sẽ nghe như "đó là cà phê"). Chữ Hán - 選ぶ, 音, 温度, 上げる, 下げる.'
+  - type: example
+    target: 私はコーヒーにします。
+    target_lang: ja
+    translation:
+      vi: Tôi chọn cà phê.
+    note:
+      vi: N にします - chọn.
+  - type: example
+    target: 部屋をきれいにしました。
+    target_lang: ja
+    translation:
+      vi: Tôi đã dọn phòng cho sạch.
+    note:
+      vi: Na に + します.
+  - type: example
+    target: 音を小さくしてください。
+    target_lang: ja
+    translation:
+      vi: Xin hãy vặn nhỏ tiếng đi.
+    note:
+      vi: A く + します.
+  - type: example
+    target: 寒いですから、エアコンの温度を上げます。
+    target_lang: ja
+    translation:
+      vi: Vì lạnh nên tôi tăng nhiệt độ điều hoà.
+    note:
+      vi: 上げる - nâng lên.
+  - type: common_mistake
+    wrong: 部屋をきれいします。
+    right: 部屋をきれいにします。
+    target_lang: ja
+    note:
+      vi: Tính từ な dùng に + します, không bỏ に.
+  - type: common_mistake
+    wrong: 音が小さくしてください。
+    right: 音を小さくしてください。
+    target_lang: ja
+    note:
+      vi: Tác động có chủ ý thì tân ngữ dùng を (音を).
+  - type: summary
+    points:
+      - vi: N にします - chọn N.
+      - vi: A く / Na に / N に + します - làm cho thành...
+      - vi: A く / Na に + なります - tự thay đổi.
+      - vi: 音 · 温度 · 上げる · 下げる · 選ぶ.
+exercises:
+  - key: ja:exercise:n4-ni-suru-s1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u8-gram-ni-suru
+    prompt:
+      stem: Nhân viên hỏi “何にしますか”. Bạn chọn cà phê. Bạn nói gì?
+      stem_lang: vi
+      options:
+        - id: ayr
+          text: コーヒーをします。
+          lang: ja
+        - id: wxi
+          text: コーヒーがします。
+          lang: ja
+        - id: o8p
+          text: コーヒーでします。
+          lang: ja
+        - id: nmc
+          text: コーヒーにします。
+          lang: ja
+    answer:
+      correct_option_id: nmc
+    explanation:
+      vi: N にします - chọn N. をします, でします, がします không dùng để gọi món.
+    display_answer: コーヒーにします。
+  - key: ja:exercise:n4-ni-suru-s2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u8-gram-ku-suru
+    prompt:
+      stem: Bạn muốn vặn nhỏ tiếng. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: pm3
+          text: 音を小さなしてください。
+          lang: ja
+        - id: p9g
+          text: 音を小さくしてください。
+          lang: ja
+        - id: gy2
+          text: 音を小さいしてください。
+          lang: ja
+        - id: c30
+          text: 音を小さにしてください。
+          lang: ja
+    answer:
+      correct_option_id: p9g
+    explanation:
+      vi: "Tính từ い đổi thành く + します: 小さくします. 小さいします, 小さにします, 小さなします đều sai."
+    display_answer: 音を小さくしてください。
+  - key: ja:exercise:n4-ni-suru-s3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-u8-ondo
+    prompt:
+      audio_asset_id: null
+      fallback_text: 寒いですから、エアコンの温度を上げてください。
+      options:
+        - id: ru6
+          text: Vì lạnh nên xin hãy tăng nhiệt độ điều hoà.
+          lang: vi
+        - id: sg6
+          text: Vì ồn nên xin hãy giảm âm lượng.
+          lang: vi
+        - id: ijr
+          text: Vì nóng nên xin hãy giảm nhiệt độ điều hoà.
+          lang: vi
+        - id: vfa
+          text: Vì lạnh nên xin hãy tắt điều hoà.
+          lang: vi
+    answer:
+      correct_option_id: ru6
+    explanation:
+      vi: 寒い - lạnh; 温度を上げる - tăng nhiệt độ.
+    display_answer: Vì lạnh nên xin hãy tăng nhiệt độ điều hoà.
+  - key: ja:exercise:n4-ni-suru-s4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u8-gram-ku-suru
+    prompt:
+      template: 部屋を{{b1}}します。 (Tôi làm phòng sạch sẽ.)
+      blanks:
+        - id: b1
+          width_hint: 5
+      hint_levels:
+        - Tính từ な + trợ từ.
+        - Có に ở cuối.
+    answer:
+      blanks:
+        b1:
+          - きれいに
+    known_wrong:
+      - answer: きれい
+        feedback_vi: "Tính từ な cần に trước します: きれいにします."
+        error_tag: form
+      - answer: きれいく
+        feedback_vi: Tính từ な dùng に, không dùng く.
+        error_tag: form
+    explanation:
+      vi: Na + に + します - làm cho ...
+    display_answer: 部屋をきれいにします。
+  - key: ja:exercise:n4-ni-suru-s5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u8-sageru
+    prompt:
+      stem: Từ nào có nghĩa là “hạ xuống, giảm”?
+      stem_lang: vi
+      options:
+        - id: ctl
+          text: 選ぶ
+          lang: ja
+        - id: xtf
+          text: 下げる
+          lang: ja
+        - id: btw
+          text: 上げる
+          lang: ja
+        - id: nqx
+          text: 減る
+          lang: ja
+    answer:
+      correct_option_id: xtf
+    explanation:
+      vi: 下げる là hạ xuống (đối nghĩa 上げる). 選ぶ là chọn, 減る là tự giảm đi.
+    display_answer: 下げる
+  - key: ja:exercise:n4-ni-suru-s6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u8-gram-ni-suru
+    prompt:
+      template: ご飯とパンと、どちらに{{b1}}か。 (Cơm hay bánh mì, bạn chọn món nào?)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - します
+    known_wrong:
+      - answer: なります
+        feedback_vi: なります là trở thành; chọn là します.
+        error_tag: verb_choice
+    explanation:
+      vi: N にします - chọn; どちらにしますか - chọn cái nào?
+    display_answer: ご飯とパンと、どちらにしますか。
+  - key: ja:exercise:n4-ni-suru-s7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u8-ageru
+    prompt:
+      template: エアコンの温度を{{b1}}ください。 (Xin hãy tăng nhiệt độ điều hoà.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - 上げて
+          - あげて
+    known_wrong:
+      - answer: 下げて
+        feedback_vi: 下げて là giảm; lạnh nên cần tăng.
+        error_tag: verb_choice
+    explanation:
+      vi: 上げる - nâng lên, tăng.
+    display_answer: エアコンの温度を上げてください。
+  - key: ja:exercise:n4-ni-suru-s8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u8-gram-ku-suru
+    prompt:
+      source_text: Xin hãy vặn nhỏ tiếng đi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 音を小さくしてください。
+        - おとをちいさくしてください。
+        - 音を小さくして下さい。
+        - 音を下げてください。
+        - 音を小さくしてくれませんか。
+    known_wrong:
+      - answer: 音が小さくしてください。
+        feedback_vi: Tác động có chủ ý dùng を.
+        error_tag: particle_ga_wo
+      - answer: 音を小さいにしてください。
+        feedback_vi: Tính từ い + く + する, không dùng いに.
+        error_tag: form
+    explanation:
+      vi: 音を小さくする - làm tiếng nhỏ lại; てください - xin hãy.
+    display_answer: 音を小さくしてください。
+  - key: ja:exercise:n4-ni-suru-s9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-u8-erabu
+    prompt:
+      source_text: 好きな色を選んでください。私は青にします。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Xin hãy chọn màu bạn thích. Tôi chọn màu xanh.
+        - Hãy chọn màu bạn thích. Tôi sẽ chọn màu xanh dương.
+        - Mời bạn chọn màu yêu thích. Tôi chọn màu xanh.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Xin hãy chọn màu bạn thích. Tôi làm cho nó thành màu xanh.
+        feedback_vi: 青にします ở ngữ cảnh này là chọn màu xanh, không phải làm cho thành xanh.
+        error_tag: meaning
+    explanation:
+      vi: 選んでください - xin hãy chọn; 青にします - tôi chọn màu xanh.
+    display_answer: Xin hãy chọn màu bạn thích. Tôi chọn màu xanh.
+  - key: ja:exercise:n4-ni-suru-s10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u8-gram-ni-suru
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Tôi chọn cà phê, bạn thì sao?"'
+      tokens:
+        - id: t2
+          text: コーヒーに
+        - id: t4
+          text: あなたは？
+        - id: t1
+          text: 私は
+        - id: t3
+          text: します。
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Chủ đề → N に します (chọn) → hỏi lại.
+    display_answer: 私はコーヒーにします。あなたは？
+  - key: ja:exercise:n4-ni-suru-s11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u8-oto
+    prompt:
+      stem: Nhạc quá to và làm phiền hàng xóm. Câu nào lịch sự và đúng?
+      stem_lang: vi
+      options:
+        - id: pqn
+          text: 音は小さいにしてください。
+          lang: ja
+        - id: dbf
+          text: 音を小さくします。
+          lang: ja
+        - id: jq2
+          text: 音が小さくなってください。
+          lang: ja
+        - id: r1s
+          text: 音を小さくしてください。
+          lang: ja
+    answer:
+      correct_option_id: r1s
+    explanation:
+      vi: 音を小さくしてください là lời nhờ vặn nhỏ. Các câu khác sai trợ từ hoặc đổi nghĩa (します = tôi làm).
+    display_answer: 音を小さくしてください。

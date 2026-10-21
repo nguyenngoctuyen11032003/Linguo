@@ -1,0 +1,376 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n4-te-hoshii
+order_index: 4
+level: n4
+title:
+  vi: Mong muốn người khác - ～てほしい・～たがる
+objectives:
+  - vi: Nói mong người khác làm gì bằng V て + ほしい.
+  - vi: Nói ngôi thứ ba muốn gì bằng V たがる / たがっている.
+  - vi: Dùng 助ける, 頼る, 喜ぶ, 驚く, 相手, お願い.
+estimated_minutes: 16
+skills:
+  - grammar
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n4-sa-kata
+items:
+  - item: ja:item:n4-u8-gram-te-hoshii
+  - item: ja:item:n4-u8-gram-tagaru
+  - item: ja:item:n4-u8-tasukeru
+  - item: ja:item:n4-u8-tayoru
+  - item: ja:item:n4-u8-yorokobu
+  - item: ja:item:n4-u8-odoroku
+  - item: ja:item:n4-u8-aite
+  - item: ja:item:n4-u8-onegai
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được điều mình mong ở người khác - 友達に手伝ってほしいです。 - và điều người khác muốn - 子どもがゲームをやりたがっています。
+  - type: explain
+    text:
+      vi: 'V て + ほしい = "muốn (người khác) làm gì cho mình". Người được mong đợi đi với に (hoặc が): 友達に来てほしいです. Phủ định - V ないで + ほしい (mong đừng ...): ここで写真を撮らないでほしいです.'
+  - type: explain
+    text:
+      vi: "V たい chỉ nguyện vọng của chính người nói (hoặc câu hỏi cho người nghe). Khi muốn nói người thứ ba mong gì, dùng V ます bỏ ます + たがる hoặc たがっている: 子どもがゲームをやりたがっています."
+  - type: explain
+    text:
+      vi: Từ vựng - 助ける (giúp, cứu), 頼る (dựa vào), 喜ぶ (vui mừng), 驚く (ngạc nhiên), 相手 (đối phương), お願い (lời nhờ). お願いがあるんですが - tôi có chuyện muốn nhờ.
+  - type: deep_explain
+    text:
+      vi: Nói thẳng V てほしい với người trên nghe hơi áp đặt; lịch sự hơn dùng ～ていただきたいです hoặc ～てくださいませんか. たがる mô tả quan sát bên ngoài nên thường kết thúc bằng ～ている - 子どもはおもちゃを買いたがっている. Với cảm xúc của chính người nói không dùng たがる.
+  - type: example
+    target: 友達に手伝ってほしいです。
+    target_lang: ja
+    translation:
+      vi: Tôi muốn bạn giúp tôi.
+    note:
+      vi: Người đi với に + V てほしい.
+  - type: example
+    target: ここで写真を撮らないでほしいです。
+    target_lang: ja
+    translation:
+      vi: Tôi mong bạn đừng chụp ảnh ở đây.
+    note:
+      vi: V ないで + ほしい.
+  - type: example
+    target: 子どもがゲームをやりたがっています。
+    target_lang: ja
+    translation:
+      vi: Đứa trẻ đang muốn chơi game.
+    note:
+      vi: V たがっている - người thứ ba muốn.
+  - type: example
+    target: お願いがあるんですが、ちょっと手伝ってもらえませんか。
+    target_lang: ja
+    translation:
+      vi: Tôi có chuyện muốn nhờ, bạn giúp tôi một chút được không?
+    note:
+      vi: お願いがあるんですが - mở lời nhờ.
+  - type: common_mistake
+    wrong: 私は日本へ行きたがっています。
+    right: 私は日本へ行きたいです。
+    target_lang: ja
+    note:
+      vi: Nguyện vọng của chính mình dùng たい; たがる dành cho người khác.
+  - type: common_mistake
+    wrong: 友達は来てほしいです。
+    right: 友達に来てほしいです。
+    target_lang: ja
+    note:
+      vi: Người được mong làm gì đi với に (hoặc が), không dùng は trong câu mong muốn này.
+  - type: summary
+    points:
+      - vi: V て + ほしい - muốn người khác làm; V ないで + ほしい - mong đừng.
+      - vi: V たがる / たがっている - người khác muốn.
+      - vi: 助ける giúp · 頼る dựa vào · 喜ぶ vui mừng · 驚く ngạc nhiên.
+      - vi: お願いがあるんですが - mở lời nhờ.
+exercises:
+  - key: ja:exercise:n4-te-hoshii-h1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u8-gram-te-hoshii
+    prompt:
+      stem: Bạn muốn bạn giúp mình. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: pl9
+          text: 友達と手伝ってほしいです。
+          lang: ja
+        - id: a6x
+          text: 友達で手伝ってほしいです。
+          lang: ja
+        - id: auf
+          text: 友達に手伝ってほしいです。
+          lang: ja
+        - id: oem
+          text: 友達を手伝ってほしいです。
+          lang: ja
+    answer:
+      correct_option_id: auf
+    explanation:
+      vi: "Người được mong đợi đi với に: 友達に手伝ってほしい. を, で, と không dùng ở vị trí này."
+    display_answer: 友達に手伝ってほしいです。
+  - key: ja:exercise:n4-te-hoshii-h2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u8-gram-tagaru
+    prompt:
+      stem: Nói về em gái (ngôi thứ ba) muốn đi Nhật. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: vvy
+          text: 妹は日本へ行きたがっています。
+          lang: ja
+        - id: wu5
+          text: 妹は日本へ行ってほしいです。
+          lang: ja
+        - id: uuh
+          text: 妹は日本へ行きたがります。
+          lang: ja
+        - id: r66
+          text: 妹は日本へ行きたいです。
+          lang: ja
+    answer:
+      correct_option_id: vvy
+    explanation:
+      vi: Ngôi thứ ba dùng たがっている. 行きたいです chỉ dùng cho nguyện vọng của người nói; 行ってほしいです nghĩa là "mong em đi".
+    display_answer: 妹は日本へ行きたがっています。
+  - key: ja:exercise:n4-te-hoshii-h3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-u8-gram-te-hoshii
+    prompt:
+      audio_asset_id: null
+      fallback_text: ここで写真を撮らないでほしいです。お願いします。
+      options:
+        - id: alc
+          text: Bạn mong tôi chụp ảnh ở đây. Xin cảm ơn.
+          lang: vi
+        - id: swl
+          text: Tôi mong bạn chụp ảnh ở đây. Xin nhờ bạn.
+          lang: vi
+        - id: je9
+          text: Tôi muốn chụp ảnh ở đây. Xin cho phép.
+          lang: vi
+        - id: wb2
+          text: Tôi mong bạn đừng chụp ảnh ở đây. Xin nhờ bạn.
+          lang: vi
+    answer:
+      correct_option_id: wb2
+    explanation:
+      vi: 撮らないでほしい - mong đừng chụp; お願いします - xin nhờ.
+    display_answer: Tôi mong bạn đừng chụp ảnh ở đây. Xin nhờ bạn.
+  - key: ja:exercise:n4-te-hoshii-h4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u8-gram-te-hoshii
+    prompt:
+      template: 友達に来て{{b1}}です。 (Tôi muốn bạn đến.)
+      blanks:
+        - id: b1
+          width_hint: 4
+      hint_levels:
+        - Từ nghĩa "muốn (ai đó làm)".
+        - Bắt đầu bằng ほ - ほしい.
+    answer:
+      blanks:
+        b1:
+          - ほしい
+    known_wrong:
+      - answer: たい
+        feedback_vi: たい là nguyện vọng của chính người nói; muốn người khác làm là ほしい.
+        error_tag: form
+    explanation:
+      vi: V て + ほしい - muốn (ai) làm gì.
+    display_answer: 友達に来てほしいです。
+  - key: ja:exercise:n4-te-hoshii-h5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u8-odoroku
+    prompt:
+      stem: Từ nào có nghĩa là “ngạc nhiên”?
+      stem_lang: vi
+      options:
+        - id: awd
+          text: 驚く
+          lang: ja
+        - id: t40
+          text: 喜ぶ
+          lang: ja
+        - id: vvk
+          text: 頼る
+          lang: ja
+        - id: owj
+          text: 助ける
+          lang: ja
+    answer:
+      correct_option_id: awd
+    explanation:
+      vi: 驚く là ngạc nhiên. 喜ぶ là vui mừng, 頼る là dựa vào, 助ける là giúp đỡ.
+    display_answer: 驚く
+  - key: ja:exercise:n4-te-hoshii-h6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u8-gram-tagaru
+    prompt:
+      template: 子どもがゲームを{{b1}}います。 (Đứa trẻ đang muốn chơi game.)
+      blanks:
+        - id: b1
+          width_hint: 6
+    answer:
+      blanks:
+        b1:
+          - やりたがって
+    known_wrong:
+      - answer: やりたくて
+        feedback_vi: やりたくて là dạng nối của たい (người nói); người thứ ba dùng たがっている.
+        error_tag: form
+    explanation:
+      vi: V ます bỏ ます + たがっている - người thứ ba muốn.
+    display_answer: 子どもがゲームをやりたがっています。
+  - key: ja:exercise:n4-te-hoshii-h7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u8-tasukeru
+    prompt:
+      template: 困っている人を{{b1}}。 (Tôi giúp người đang gặp khó khăn.)
+      blanks:
+        - id: b1
+          width_hint: 5
+    answer:
+      blanks:
+        b1:
+          - 助けます
+          - たすけます
+    known_wrong:
+      - answer: 頼ります
+        feedback_vi: 頼ります là dựa vào; giúp là 助けます.
+        error_tag: verb_choice
+    explanation:
+      vi: 助ける - giúp đỡ, cứu giúp.
+    display_answer: 困っている人を助けます。
+  - key: ja:exercise:n4-te-hoshii-h8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u8-gram-te-hoshii
+    prompt:
+      source_text: Tôi muốn bạn giúp tôi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 友達に手伝ってほしいです。
+        - ともだちにてつだってほしいです。
+        - あなたに手伝ってほしいです。
+        - 手伝ってほしいです。
+        - 友達に手伝ってほしい。
+    known_wrong:
+      - answer: 友達を手伝ってほしいです。
+        feedback_vi: Người được nhờ đi với に.
+        error_tag: particle_ni_wo
+      - answer: 友達に手伝いたいです。
+        feedback_vi: たい là mình muốn giúp; câu yêu cầu bạn giúp mình dùng てほしい.
+        error_tag: form
+    explanation:
+      vi: V て + ほしい - mong người khác làm.
+    display_answer: 友達に手伝ってほしいです。
+  - key: ja:exercise:n4-te-hoshii-h9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-u8-tayoru
+    prompt:
+      source_text: 友達に頼りたくありません。でも、時々助けてほしいです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi không muốn dựa vào bạn bè. Nhưng thỉnh thoảng tôi muốn họ giúp.
+        - Tôi không muốn phụ thuộc vào bạn. Nhưng đôi khi tôi mong bạn giúp.
+        - Tôi không muốn nhờ cậy bạn bè. Nhưng thỉnh thoảng cũng muốn được giúp.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi muốn dựa vào bạn bè. Nhưng không muốn họ giúp.
+        feedback_vi: 頼りたくありません là không muốn dựa vào.
+        error_tag: negation
+    explanation:
+      vi: 頼りたくありません - không muốn dựa vào; 助けてほしい - muốn (họ) giúp.
+    display_answer: Tôi không muốn dựa vào bạn bè. Nhưng thỉnh thoảng tôi muốn họ giúp.
+  - key: ja:exercise:n4-te-hoshii-h10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u8-gram-tagaru
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Em gái tôi đang muốn đi Nhật."'
+      tokens:
+        - id: t4
+          text: います。
+        - id: t2
+          text: 日本へ
+        - id: t1
+          text: 妹は
+        - id: t3
+          text: 行きたがって
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Chủ đề (妹は) → nơi đến → 行きたがっています (người thứ ba muốn).
+    display_answer: 妹は日本へ行きたがっています。
+  - key: ja:exercise:n4-te-hoshii-h11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u8-onegai
+    prompt:
+      stem: Bạn muốn nhờ ai đó giúp. Câu mở lời nào lịch sự?
+      stem_lang: vi
+      options:
+        - id: ach
+          text: お願いをしますです。
+          lang: ja
+        - id: jbl
+          text: お願いだんですが。
+          lang: ja
+        - id: bxq
+          text: お願いがあるんですが。
+          lang: ja
+        - id: seb
+          text: お願いするんです。
+          lang: ja
+    answer:
+      correct_option_id: bxq
+    explanation:
+      vi: お願いがあるんですが là cách mở lời nhờ lịch sự. Các dạng còn lại sai ngữ pháp.
+    display_answer: お願いがあるんですが。

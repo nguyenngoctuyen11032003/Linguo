@@ -1,0 +1,374 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n4-sa-kata
+order_index: 3
+level: n4
+title:
+  vi: Danh từ hoá - ～さ・～方
+objectives:
+  - vi: Danh từ hoá tính từ bằng さ (高さ, 重さ, 長さ, 大きさ).
+  - vi: Nói "cách làm" bằng V ます (bỏ ます) + 方 (使い方, 読み方, 作り方).
+  - vi: Dùng 方法, 種類, 形, 特徴, 他, 別 để mô tả.
+estimated_minutes: 16
+skills:
+  - grammar
+  - vocabulary
+  - speaking
+  - reading
+prerequisites:
+  - ja:lesson:n4-ni-suru
+items:
+  - item: ja:item:n4-u8-gram-sa
+  - item: ja:item:n4-u8-gram-kata
+  - item: ja:item:n4-u8-houhou
+  - item: ja:item:n4-u8-shurui
+  - item: ja:item:n4-u8-katachi
+  - item: ja:item:n4-u8-tokuchou
+  - item: ja:item:n4-u8-hoka
+  - item: ja:item:n4-u8-betsu
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được độ cao, độ nặng và cách làm - この山の高さは三千メートルです。漢字の読み方を教えてください。
+  - type: explain
+    text:
+      vi: "Tính từ い (bỏ い) + さ = danh từ chỉ mức độ: 高い → 高さ, 重い → 重さ, 長い → 長さ, 大きい → 大きさ, 深い → 深さ. Tính từ な thêm さ thẳng: 静か → 静かさ (ít dùng hơn)."
+  - type: explain
+    text:
+      vi: 'V ます (bỏ ます) + 方 = "cách làm": 使う → 使い方 (cách dùng), 読む → 読み方 (cách đọc), 作る → 作り方 (cách làm), 書く → 書き方 (cách viết). Đi với を (hoặc の) - 漢字の読み方 / 漢字を読み方.'
+  - type: explain
+    text:
+      vi: Từ hữu ích - 方法 (phương pháp), 種類 (chủng loại), 形 (hình dạng), 特徴 (đặc điểm), 他 (khác), 別 (riêng, khác). Ví dụ 別の方法を考えます, 他に質問がありますか.
+  - type: deep_explain
+    text:
+      vi: Chú ý đọc - 方 đọc かた khi ghép với ます-gốc (読み方) nhưng đọc ほう khi chỉ phía hoặc so sánh (こちらのほうがいい). Cùng danh từ hoá nhưng ～さ dùng để nói mức độ của tính từ, còn ～み (甘み, 重み) thiên về cảm giác. Câu quen thuộc - ご使用方法 (しようほうほう) trên hướng dẫn sản phẩm.
+  - type: example
+    target: この山の高さは三千メートルです。
+    target_lang: ja
+    translation:
+      vi: Độ cao ngọn núi này là 3.000 mét.
+    note:
+      vi: 高い → 高さ.
+  - type: example
+    target: 荷物の重さを調べてください。
+    target_lang: ja
+    translation:
+      vi: Xin hãy kiểm tra trọng lượng hành lý.
+    note:
+      vi: 重い → 重さ.
+  - type: example
+    target: この漢字の読み方を教えてください。
+    target_lang: ja
+    translation:
+      vi: Xin hãy chỉ cho tôi cách đọc chữ Hán này.
+    note:
+      vi: 読む → 読み方.
+  - type: example
+    target: 料理の作り方を習いたいです。
+    target_lang: ja
+    translation:
+      vi: Tôi muốn học cách nấu ăn.
+    note:
+      vi: 作る → 作り方.
+  - type: common_mistake
+    wrong: この漢字の読むかたを教えてください。
+    right: この漢字の読み方を教えてください。
+    target_lang: ja
+    note:
+      vi: Trước 方 dùng ます-gốc (読み), không dùng thể từ điển 読む.
+  - type: common_mistake
+    wrong: この山の高いは三千メートルです。
+    right: この山の高さは三千メートルです。
+    target_lang: ja
+    note:
+      vi: Muốn nói "độ cao" dùng 高さ; 高い là tính từ, không làm chủ ngữ.
+  - type: summary
+    points:
+      - vi: Aい bỏ い + さ - 高さ, 重さ, 長さ, 大きさ.
+      - vi: V ます bỏ ます + 方 - 使い方, 読み方, 作り方, 書き方.
+      - vi: 方法 · 種類 · 形 · 特徴 · 他 · 別.
+      - vi: かた (方) ≠ ほう (方).
+exercises:
+  - key: ja:exercise:n4-sa-kata-a1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u8-gram-sa
+    prompt:
+      stem: Danh từ “độ nặng” của 重い là gì?
+      stem_lang: vi
+      options:
+        - id: nda
+          text: 重み
+          lang: ja
+        - id: l5p
+          text: 重く
+          lang: ja
+        - id: oqi
+          text: 重いさ
+          lang: ja
+        - id: ue1
+          text: 重さ
+          lang: ja
+    answer:
+      correct_option_id: ue1
+    explanation:
+      vi: 重い → 重さ (bỏ い + さ). 重く là dạng trạng từ, 重いさ sai hình thức, 重み nghiêng về cảm giác nặng nề hơn.
+    display_answer: 重さ
+  - key: ja:exercise:n4-sa-kata-a2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u8-gram-kata
+    prompt:
+      stem: Chọn cách nói “cách đọc” đúng.
+      stem_lang: vi
+      options:
+        - id: l5b
+          text: 読む方
+          lang: ja
+        - id: f1b
+          text: 読まない方
+          lang: ja
+        - id: j4s
+          text: 読み方
+          lang: ja
+        - id: rov
+          text: 読んだ方
+          lang: ja
+    answer:
+      correct_option_id: j4s
+    explanation:
+      vi: V ます bỏ ます + 方 - 読み方. 読む方 là "người đọc". 読んだ方, 読まない方 là "người đã đọc / không đọc".
+    display_answer: 読み方
+  - key: ja:exercise:n4-sa-kata-a3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-u8-houhou
+    prompt:
+      audio_asset_id: null
+      fallback_text: いい方法を考えましょう。別の方法もあるかもしれません。
+      options:
+        - id: g2c
+          text: Hãy dùng cách này. Cách khác không có.
+          lang: vi
+        - id: eg0
+          text: Hãy nghĩ ra cách hay. Có thể còn cách khác.
+          lang: vi
+        - id: tch
+          text: Hãy nghĩ ra cách khác. Không có cách nào hay.
+          lang: vi
+        - id: res
+          text: Hãy hỏi người khác. Có thể có cách hay.
+          lang: vi
+    answer:
+      correct_option_id: eg0
+    explanation:
+      vi: 方法 - cách; 別の方法 - cách khác; かもしれません - có thể.
+    display_answer: Hãy nghĩ ra cách hay. Có thể còn cách khác.
+  - key: ja:exercise:n4-sa-kata-a4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u8-gram-sa
+    prompt:
+      template: この山の{{b1}}は三千メートルです。 (Độ cao ngọn núi này là 3.000 mét.)
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Danh từ từ 高い.
+        - "Hai chữ: 高 + さ."
+    answer:
+      blanks:
+        b1:
+          - 高さ
+          - たかさ
+    known_wrong:
+      - answer: 高い
+        feedback_vi: 高い là tính từ; cần danh từ 高さ làm chủ ngữ.
+        error_tag: form
+    explanation:
+      vi: 高い → 高さ - độ cao.
+    display_answer: この山の高さは三千メートルです。
+  - key: ja:exercise:n4-sa-kata-a5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u8-tokuchou
+    prompt:
+      stem: Từ nào có nghĩa là “đặc điểm, đặc trưng”?
+      stem_lang: vi
+      options:
+        - id: wte
+          text: 特徴
+          lang: ja
+        - id: nx5
+          text: 方法
+          lang: ja
+        - id: lrx
+          text: 形
+          lang: ja
+        - id: wtp
+          text: 種類
+          lang: ja
+    answer:
+      correct_option_id: wte
+    explanation:
+      vi: 特徴 là đặc điểm. 種類 là chủng loại, 方法 là phương pháp, 形 là hình dạng.
+    display_answer: 特徴
+  - key: ja:exercise:n4-sa-kata-a6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u8-gram-kata
+    prompt:
+      template: この漢字の{{b1}}を教えてください。 (Xin hãy chỉ cho tôi cách đọc chữ Hán này.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - 読み方
+          - よみかた
+    known_wrong:
+      - answer: 読む方
+        feedback_vi: 読む方 là "người đọc"; "cách đọc" là 読み方.
+        error_tag: form
+    explanation:
+      vi: 読み + 方 - cách đọc.
+    display_answer: この漢字の読み方を教えてください。
+  - key: ja:exercise:n4-sa-kata-a7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u8-betsu
+    prompt:
+      template: "{{b1}}の方法も考えてみましょう。 (Hãy thử nghĩ cả cách khác nữa.)"
+      blanks:
+        - id: b1
+          width_hint: 2
+    answer:
+      blanks:
+        b1:
+          - 別
+          - べつ
+    known_wrong:
+      - answer: 他
+        feedback_vi: 他 thường đi với に (他に); 別の方法 mới tự nhiên với の.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 別の + N - N khác (riêng).
+    display_answer: 別の方法も考えてみましょう。
+  - key: ja:exercise:n4-sa-kata-a8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u8-gram-kata
+    prompt:
+      source_text: Tôi muốn học cách nấu ăn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 料理の作り方を習いたいです。
+        - りょうりのつくりかたをならいたいです。
+        - 料理の作り方を勉強したいです。
+        - 料理の作り方を習いたい。
+    known_wrong:
+      - answer: 料理の作る方を習いたいです。
+        feedback_vi: "Dùng ます-gốc: 作り方."
+        error_tag: form
+    explanation:
+      vi: 作り方 - cách làm; 習いたいです - muốn học.
+    display_answer: 料理の作り方を習いたいです。
+  - key: ja:exercise:n4-sa-kata-a9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-u8-gram-sa
+    prompt:
+      source_text: 荷物の重さは二十キロです。大きさも調べてください。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trọng lượng hành lý là 20 kg. Xin hãy kiểm tra cả kích cỡ nữa.
+        - Hành lý nặng 20 kg. Xin cũng kiểm tra kích thước.
+        - Trọng lượng hành lý là hai mươi ký. Hãy kiểm tra cả cỡ nữa.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Độ dài hành lý là 20 kg. Xin hãy kiểm tra cả kích cỡ nữa.
+        feedback_vi: 重さ là trọng lượng, 長さ mới là độ dài.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 重さ - trọng lượng; 大きさ - kích cỡ; 調べてください - xin hãy kiểm tra.
+    display_answer: Trọng lượng hành lý là 20 kg. Xin hãy kiểm tra cả kích cỡ nữa.
+  - key: ja:exercise:n4-sa-kata-a10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u8-gram-kata
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Xin hãy chỉ cho tôi cách dùng cái này."'
+      tokens:
+        - id: t1
+          text: これの
+        - id: t3
+          text: 教えて
+        - id: t2
+          text: 使い方を
+        - id: t4
+          text: ください。
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: N の + 使い方 (cách dùng) + を + 教えてください.
+    display_answer: これの使い方を教えてください。
+  - key: ja:exercise:n4-sa-kata-a11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u8-shurui
+    prompt:
+      stem: Bạn muốn hỏi “Có bao nhiêu loại?”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: ykp
+          text: 種類をいくつありますか。
+          lang: ja
+        - id: dkb
+          text: 種類でいくつありますか。
+          lang: ja
+        - id: sez
+          text: 種類にいくつありますか。
+          lang: ja
+        - id: xth
+          text: 種類はいくつありますか。
+          lang: ja
+    answer:
+      correct_option_id: xth
+    explanation:
+      vi: 種類は ... ありますか - hỏi số loại. を, に, で không dùng với ある ở cấu trúc này.
+    display_answer: 種類はいくつありますか。

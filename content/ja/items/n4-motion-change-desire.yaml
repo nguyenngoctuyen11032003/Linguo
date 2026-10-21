@@ -1,0 +1,613 @@
+# Học liệu unit "Chuyển động, thay đổi và mong muốn" (JLPT N4). reading là cách đọc kana (furigana); romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n4-u8-gram-te-iku
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: V て + 行く
+      romanization: V-te iku
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Làm gì rồi đi; mang đi; (thay đổi) tiếp tục từ bây giờ về sau. Ví dụ 持っていく (mang đi), 歩いていく (đi bộ), これからだんだん暑くなっていく.
+      examples:
+        - target: お弁当を持っていきます。
+          translation:
+            vi: Tôi mang cơm hộp đi.
+        - target: これから寒くなっていくでしょう。
+          translation:
+            vi: Từ giờ trời sẽ ngày càng lạnh.
+      confusion:
+        vi: 行く hướng ra xa người nói; 来る hướng về phía người nói.
+  - key: ja:item:n4-u8-gram-te-kuru
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: V て + 来る
+      romanization: V-te kuru
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Làm gì rồi đến; mang đến; bắt đầu xảy ra; (thay đổi) kéo dài đến lúc này. Ví dụ 買ってくる (mua về), 雨が降ってきた (trời bắt đầu mưa), だんだん寒くなってきた (dần lạnh đi).
+      examples:
+        - target: コンビニで飲み物を買ってきます。
+          translation:
+            vi: Tôi đi mua đồ uống ở cửa hàng tiện lợi rồi về.
+        - target: だんだん日本語が上手になってきました。
+          translation:
+            vi: Tiếng Nhật của tôi giỏi dần lên.
+  - key: ja:item:n4-u8-tsureru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 連れる
+      reading: つれる
+      romanization: tsureru
+      pos: động từ
+    back:
+      meaning:
+        vi: dẫn theo, đưa đi cùng
+      examples:
+        - target: 子どもを公園へ連れていきます。
+          translation:
+            vi: Tôi dẫn con đến công viên.
+      pronunciation_note:
+        vi: 連れていく (dẫn đi) / 連れてくる (dẫn đến) dùng cho người, động vật; mang đồ vật là 持っていく.
+  - key: ja:item:n4-u8-fueru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 増える
+      reading: ふえる
+      romanization: fueru
+      pos: động từ
+    back:
+      meaning:
+        vi: tăng lên
+      examples:
+        - target: 外国人の観光客が増えています。
+          translation:
+            vi: Khách du lịch nước ngoài đang tăng.
+  - key: ja:item:n4-u8-heru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 減る
+      reading: へる
+      romanization: heru
+      pos: động từ
+    back:
+      meaning:
+        vi: giảm đi
+      examples:
+        - target: 人口が減っています。
+          translation:
+            vi: Dân số đang giảm.
+  - key: ja:item:n4-u8-futoru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 太る
+      reading: ふとる
+      romanization: futoru
+      pos: động từ
+    back:
+      meaning:
+        vi: béo ra, tăng cân
+      examples:
+        - target: 最近、少し太りました。
+          translation:
+            vi: Dạo này tôi hơi tăng cân.
+  - key: ja:item:n4-u8-yaseru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 痩せる
+      reading: やせる
+      romanization: yaseru
+      pos: động từ
+    back:
+      meaning:
+        vi: gầy đi, giảm cân
+      examples:
+        - target: 運動して、三キロ痩せました。
+          translation:
+            vi: Tôi tập thể dục và giảm 3 kg.
+  - key: ja:item:n4-u8-kawaru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 変わる
+      reading: かわる
+      romanization: kawaru
+      pos: động từ
+    back:
+      meaning:
+        vi: thay đổi, đổi
+      examples:
+        - target: 町の景色が変わりました。
+          translation:
+            vi: Cảnh quan thị trấn đã thay đổi.
+  - key: ja:item:n4-u8-dandan
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: だんだん
+      romanization: dandan
+      pos: phó từ
+    back:
+      meaning:
+        vi: dần dần
+      examples:
+        - target: だんだん暖かくなってきました。
+          translation:
+            vi: Trời dần ấm lên.
+  - key: ja:item:n4-u8-gram-ni-suru
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: N + に + します
+      romanization: N ni shimasu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Chọn, quyết định (chọn món, chọn thứ). Dùng khi gọi món, chọn đồ: 私はコーヒーにします. Hỏi - 何にしますか。"
+      examples:
+        - target: 私はコーヒーにします。
+          translation:
+            vi: Tôi chọn cà phê.
+        - target: ご飯とパンと、どちらにしますか。
+          translation:
+            vi: Cơm hay bánh mì, bạn chọn món nào?
+  - key: ja:item:n4-u8-gram-ku-suru
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: A + く / Na・N + に + します
+      romanization: A-ku / Na ni shimasu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Làm cho (cái gì) trở nên... Dùng khi tác động có chủ ý: 部屋を明るくします, 音を小さくします, 部屋をきれいにします."
+      examples:
+        - target: 部屋をきれいにします。
+          translation:
+            vi: Tôi làm phòng sạch sẽ.
+        - target: 音を小さくしてください。
+          translation:
+            vi: Xin hãy vặn nhỏ tiếng đi.
+      confusion:
+        vi: A く なります - tự thay đổi (自然); A く します - có người làm cho thay đổi.
+  - key: ja:item:n4-u8-erabu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 選ぶ
+      reading: えらぶ
+      romanization: erabu
+      pos: động từ
+    back:
+      meaning:
+        vi: chọn
+      examples:
+        - target: 好きな色を選んでください。
+          translation:
+            vi: Xin hãy chọn màu bạn thích.
+  - key: ja:item:n4-u8-oto
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 音
+      reading: おと
+      romanization: oto
+      pos: danh từ
+    back:
+      meaning:
+        vi: âm thanh, tiếng
+      examples:
+        - target: 音が大きすぎます。
+          translation:
+            vi: Tiếng quá lớn.
+  - key: ja:item:n4-u8-ondo
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 温度
+      reading: おんど
+      romanization: ondo
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhiệt độ
+      examples:
+        - target: へやの温度を上げてください。
+          translation:
+            vi: Xin hãy tăng nhiệt độ phòng.
+  - key: ja:item:n4-u8-ageru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 上げる
+      reading: あげる
+      romanization: ageru
+      pos: động từ
+    back:
+      meaning:
+        vi: nâng lên, tăng
+      examples:
+        - target: エアコンの温度を上げます。
+          translation:
+            vi: Tôi tăng nhiệt độ điều hoà.
+      confusion:
+        vi: "あげる (上げる, nâng) và あげる (cho, 挙げる) viết khác nhau: 上げる đối nghĩa với 下げる."
+  - key: ja:item:n4-u8-sageru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 下げる
+      reading: さげる
+      romanization: sageru
+      pos: động từ
+    back:
+      meaning:
+        vi: hạ xuống, giảm
+      examples:
+        - target: 音を下げてください。
+          translation:
+            vi: Xin hãy hạ âm lượng.
+  - key: ja:item:n4-u8-gram-sa
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: Aい (bỏ い) / Na + さ
+      romanization: A-sa
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Danh từ hoá tính từ: mức độ, độ ... Ví dụ 高い → 高さ (độ cao), 重い → 重さ (độ nặng), 長い → 長さ (độ dài), 大きい → 大きさ (kích cỡ)."
+      examples:
+        - target: この山の高さは三千メートルです。
+          translation:
+            vi: Độ cao ngọn núi này là 3.000 mét.
+        - target: 荷物の重さを調べてください。
+          translation:
+            vi: Xin hãy kiểm tra trọng lượng hành lý.
+  - key: ja:item:n4-u8-gram-kata
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: V ます (bỏ ます) + 方
+      romanization: V-masu stem + kata
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: 'Cách làm... : 使い方 (cách dùng), 読み方 (cách đọc), 作り方 (cách làm), 書き方 (cách viết). Danh từ hoá hành động theo "cách".'
+      examples:
+        - target: この漢字の読み方を教えてください。
+          translation:
+            vi: Xin hãy chỉ cho tôi cách đọc chữ Hán này.
+        - target: 料理の作り方を習いたいです。
+          translation:
+            vi: Tôi muốn học cách nấu ăn.
+      confusion:
+        vi: Dạng 方 đọc かた khi theo sau ます-gốc; 方 còn đọc ほう (phía) khi so sánh.
+  - key: ja:item:n4-u8-houhou
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 方法
+      reading: ほうほう
+      romanization: houhou
+      pos: danh từ
+    back:
+      meaning:
+        vi: phương pháp, cách
+      examples:
+        - target: いい方法を考えましょう。
+          translation:
+            vi: Hãy nghĩ ra cách hay.
+  - key: ja:item:n4-u8-shurui
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 種類
+      reading: しゅるい
+      romanization: shurui
+      pos: danh từ
+    back:
+      meaning:
+        vi: chủng loại, loại
+      examples:
+        - target: いろいろな種類があります。
+          translation:
+            vi: Có nhiều loại khác nhau.
+  - key: ja:item:n4-u8-katachi
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 形
+      reading: かたち
+      romanization: katachi
+      pos: danh từ
+    back:
+      meaning:
+        vi: hình dạng, hình thức
+      examples:
+        - target: この形が好きです。
+          translation:
+            vi: Tôi thích hình dạng này.
+  - key: ja:item:n4-u8-tokuchou
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 特徴
+      reading: とくちょう
+      romanization: tokuchou
+      pos: danh từ
+    back:
+      meaning:
+        vi: đặc trưng, đặc điểm
+      examples:
+        - target: この車の特徴は小さいことです。
+          translation:
+            vi: Đặc điểm của chiếc xe này là nhỏ.
+  - key: ja:item:n4-u8-hoka
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 他
+      reading: ほか
+      romanization: hoka
+      pos: danh từ
+    back:
+      meaning:
+        vi: khác, cái khác
+      examples:
+        - target: 他に質問がありますか。
+          translation:
+            vi: Còn câu hỏi nào khác không?
+  - key: ja:item:n4-u8-betsu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 別
+      reading: べつ
+      romanization: betsu
+      pos: danh từ / tính từ な
+    back:
+      meaning:
+        vi: riêng, khác (biệt)
+      examples:
+        - target: 別の方法を考えます。
+          translation:
+            vi: Tôi sẽ nghĩ một cách khác.
+  - key: ja:item:n4-u8-gram-te-hoshii
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: V て + ほしい / V ないで + ほしい
+      romanization: V-te hoshii
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Muốn (ai đó) làm gì cho mình. Người được mong đợi đi với に/が: 友達に来てほしい. Phủ định - 行かないでほしい (mong đừng đi)."
+      examples:
+        - target: 友達に手伝ってほしいです。
+          translation:
+            vi: Tôi muốn bạn giúp tôi.
+        - target: ここで写真を撮らないでほしいです。
+          translation:
+            vi: Tôi mong bạn đừng chụp ảnh ở đây.
+      confusion:
+        vi: V たい - người nói muốn tự làm; V てほしい - người nói muốn người khác làm.
+  - key: ja:item:n4-u8-gram-tagaru
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: V ます (bỏ ます) + たがる / たがっている
+      romanization: V-tagaru
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Ngôi thứ ba muốn làm gì (người khác, trẻ em). Dùng khi quan sát biểu hiện mong muốn của người khác.
+      examples:
+        - target: 子どもがゲームをやりたがっています。
+          translation:
+            vi: Đứa trẻ đang muốn chơi game.
+        - target: 妹は日本へ行きたがっています。
+          translation:
+            vi: Em gái tôi đang muốn đi Nhật.
+      confusion:
+        vi: V たい dùng cho người nói và câu hỏi; ngôi thứ ba dùng たがる / たがっている (hoặc thêm そうです).
+  - key: ja:item:n4-u8-tasukeru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 助ける
+      reading: たすける
+      romanization: tasukeru
+      pos: động từ
+    back:
+      meaning:
+        vi: giúp đỡ, cứu
+      examples:
+        - target: 困っている人を助けます。
+          translation:
+            vi: Tôi giúp người đang gặp khó khăn.
+  - key: ja:item:n4-u8-tayoru
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 頼る
+      reading: たよる
+      romanization: tayoru
+      pos: động từ
+    back:
+      meaning:
+        vi: dựa vào, nhờ cậy
+      examples:
+        - target: 友達に頼りたくありません。
+          translation:
+            vi: Tôi không muốn dựa vào bạn bè.
+  - key: ja:item:n4-u8-yorokobu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 喜ぶ
+      reading: よろこぶ
+      romanization: yorokobu
+      pos: động từ
+    back:
+      meaning:
+        vi: vui mừng, hoan hỷ
+      examples:
+        - target: 子どもたちは大喜びしました。
+          translation:
+            vi: Bọn trẻ vô cùng vui mừng.
+  - key: ja:item:n4-u8-odoroku
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 驚く
+      reading: おどろく
+      romanization: odoroku
+      pos: động từ
+    back:
+      meaning:
+        vi: ngạc nhiên, giật mình
+      examples:
+        - target: ニュースを聞いて驚きました。
+          translation:
+            vi: Nghe tin tức tôi đã ngạc nhiên.
+  - key: ja:item:n4-u8-aite
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 相手
+      reading: あいて
+      romanization: aite
+      pos: danh từ
+    back:
+      meaning:
+        vi: đối phương, người đối diện
+      examples:
+        - target: 相手の話をよく聞きましょう。
+          translation:
+            vi: Hãy lắng nghe kỹ người đối diện.
+  - key: ja:item:n4-u8-onegai
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: お願い
+      reading: おねがい
+      romanization: onegai
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời nhờ, điều cầu xin
+      examples:
+        - target: お願いがあるんですが。
+          translation:
+            vi: Tôi có chuyện muốn nhờ.
