@@ -1,0 +1,381 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n3-education-environment
+order_index: 4
+level: n3
+title:
+  vi: Giáo dục, nghiên cứu và môi trường - 教育・研究・温暖化
+objectives:
+  - vi: "Dùng từ vựng giáo dục: 教育, 成績, 単位, 入学, 卒業, 受験, 奨学金."
+  - vi: "Nói về nghiên cứu: 論文, 研究, 実験, 発明, 開発, 技術."
+  - vi: "Nói về môi trường: 資源, 温暖化."
+estimated_minutes: 17
+skills:
+  - vocabulary
+  - reading
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n3-health-medical
+items:
+  - item: ja:item:n3-u9-kyouiku
+  - item: ja:item:n3-u9-seiseki
+  - item: ja:item:n3-u9-tan-i
+  - item: ja:item:n3-u9-nyuugaku
+  - item: ja:item:n3-u9-sotsugyou
+  - item: ja:item:n3-u9-juken
+  - item: ja:item:n3-u9-shougakukin
+  - item: ja:item:n3-u9-ronbun
+  - item: ja:item:n3-u9-kenkyuu
+  - item: ja:item:n3-u9-jikken
+  - item: ja:item:n3-u9-shigen
+  - item: ja:item:n3-u9-ondanka
+  - item: ja:item:n3-u9-gijutsu
+  - item: ja:item:n3-u9-kaihatsu
+  - item: ja:item:n3-u9-hatsumei
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được về học tập và nghiên cứu - 来年、大学を受験します。論文を書くのに、半年かかりました。 - và về môi trường - 地球温暖化が問題になっています。
+  - type: explain
+    text:
+      vi: "Giáo dục: 教育 (giáo dục), 成績 (thành tích), 単位 (tín chỉ), 入学 (nhập học), 卒業 (tốt nghiệp), 受験 (dự thi vào trường), 奨学金 (học bổng). Ví dụ 四月に入学する, 単位を取る, 奨学金をもらう."
+  - type: explain
+    text:
+      vi: "Nghiên cứu: 研究 (nghiên cứu), 論文 (luận văn), 実験 (thí nghiệm), 発明 (phát minh), 開発 (phát triển), 技術 (kỹ thuật). Ví dụ 新しい技術を開発する, 論文を書く."
+  - type: explain
+    text:
+      vi: "Môi trường: 資源 (tài nguyên), 温暖化 (sự nóng lên). Ví dụ 資源を大切にする, 地球温暖化が問題になっている."
+  - type: deep_explain
+    text:
+      vi: Cẩn thận 受験 là "dự thi vào trường" (大学を受験する), còn 試験を受ける là "làm bài thi nói chung". 開発 thường dùng cho sản phẩm hoặc khu vực (新製品を開発する, 住宅地を開発する); 発明 là tạo ra thứ hoàn toàn mới (電話を発明した). 単位 còn có nghĩa "đơn vị" (cm là đơn vị chiều dài). Chữ Hán - 教育, 成績, 単位, 入学, 卒業, 受験, 奨学金, 論文, 研究, 実験, 資源, 温暖化, 技術, 開発, 発明.
+  - type: example
+    target: 来年、大学を受験します。
+    target_lang: ja
+    translation:
+      vi: Sang năm tôi dự thi vào đại học.
+    note:
+      vi: 受験 - dự thi vào trường.
+  - type: example
+    target: 単位を取るために、毎週レポートを出しています。
+    target_lang: ja
+    translation:
+      vi: Tôi nộp báo cáo mỗi tuần để lấy tín chỉ.
+    note:
+      vi: 単位を取る.
+  - type: example
+    target: 論文を書くのに、半年かかりました。
+    target_lang: ja
+    translation:
+      vi: Tôi mất nửa năm để viết luận văn.
+    note:
+      vi: 論文を書く.
+  - type: example
+    target: 地球温暖化は、世界の大きな問題です。
+    target_lang: ja
+    translation:
+      vi: Sự nóng lên toàn cầu là một vấn đề lớn của thế giới.
+    note:
+      vi: 温暖化.
+  - type: common_mistake
+    wrong: 大学を試験します。
+    right: 大学を受験します。
+    target_lang: ja
+    note:
+      vi: Dự thi vào trường dùng 受験; 試験 là kỳ thi.
+  - type: common_mistake
+    wrong: 新しい薬を発明しています。(đang phát triển)
+    right: 新しい薬を開発しています。
+    target_lang: ja
+    note:
+      vi: Đang phát triển sản phẩm dùng 開発; 発明 là phát minh ra thứ hoàn toàn mới.
+  - type: summary
+    points:
+      - vi: 教育 · 成績 · 単位 · 入学 · 卒業 · 受験 · 奨学金.
+      - vi: 研究 · 論文 · 実験 · 発明 · 開発 · 技術.
+      - vi: 資源 · 温暖化.
+      - vi: 受験 (vào trường) ≠ 試験 (kỳ thi).
+exercises:
+  - key: ja:exercise:n3-education-environment-g1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u9-sotsugyou
+    prompt:
+      stem: Từ nào có nghĩa là “tốt nghiệp”?
+      stem_lang: vi
+      options:
+        - id: n3v
+          text: 成績
+          lang: ja
+        - id: evh
+          text: 受験
+          lang: ja
+        - id: sty
+          text: 入学
+          lang: ja
+        - id: jg0
+          text: 卒業
+          lang: ja
+    answer:
+      correct_option_id: jg0
+    explanation:
+      vi: 卒業 là tốt nghiệp. 入学 là nhập học, 受験 là dự thi vào trường, 成績 là thành tích.
+    display_answer: 卒業
+  - key: ja:exercise:n3-education-environment-g2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u9-juken
+    prompt:
+      stem: Bạn sắp dự thi vào đại học. Cụm nào đúng?
+      stem_lang: vi
+      options:
+        - id: wkd
+          text: 大学を試験します
+          lang: ja
+        - id: pum
+          text: 大学で受験します
+          lang: ja
+        - id: z10
+          text: 大学を受験します
+          lang: ja
+        - id: m4g
+          text: 大学に受験します
+          lang: ja
+    answer:
+      correct_option_id: z10
+    explanation:
+      vi: 大学を受験する - dự thi vào đại học. 試験 là danh từ kỳ thi, に, で không dùng với 受験 ở đây.
+    display_answer: 大学を受験します
+  - key: ja:exercise:n3-education-environment-g3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-u9-shougakukin
+    prompt:
+      audio_asset_id: null
+      fallback_text: 奨学金をもらって、日本へ留学しました。
+      options:
+        - id: ugu
+          text: Tôi nhận học bổng và đã đi du học Nhật.
+          lang: vi
+        - id: zkk
+          text: Tôi nhận học bổng nhưng không đi du học.
+          lang: vi
+        - id: g2j
+          text: Tôi nộp tiền học và đã đi du học.
+          lang: vi
+        - id: l1z
+          text: Tôi nhận lương và đi du lịch Nhật.
+          lang: vi
+    answer:
+      correct_option_id: ugu
+    explanation:
+      vi: 奨学金をもらって - nhận học bổng; 留学しました - đã du học.
+    display_answer: Tôi nhận học bổng và đã đi du học Nhật.
+  - key: ja:exercise:n3-education-environment-g4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u9-ronbun
+    prompt:
+      template: "{{b1}}を書くのに、半年かかりました。 (Viết luận văn mất nửa năm.)"
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Bài viết khoa học dài.
+        - Bắt đầu bằng 論.
+    answer:
+      blanks:
+        b1:
+          - 論文
+          - ろんぶん
+    known_wrong:
+      - answer: 実験
+        feedback_vi: 実験 là thí nghiệm; thứ "viết" là 論文.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 論文 - luận văn.
+    display_answer: 論文を書くのに、半年かかりました。
+  - key: ja:exercise:n3-education-environment-g5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u9-ondanka
+    prompt:
+      stem: Từ nào có nghĩa là “sự nóng lên (toàn cầu)”?
+      stem_lang: vi
+      options:
+        - id: o8i
+          text: 資源
+          lang: ja
+        - id: r9a
+          text: 研究
+          lang: ja
+        - id: seb
+          text: 温暖化
+          lang: ja
+        - id: zo1
+          text: 技術
+          lang: ja
+    answer:
+      correct_option_id: seb
+    explanation:
+      vi: 温暖化 là sự nóng lên. 資源 là tài nguyên, 技術 là kỹ thuật, 研究 là nghiên cứu.
+    display_answer: 温暖化
+  - key: ja:exercise:n3-education-environment-g6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u9-tan-i
+    prompt:
+      template: "{{b1}}を取るために、レポートを出します。 (Để lấy tín chỉ tôi nộp báo cáo.)"
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 単位
+          - たんい
+    known_wrong:
+      - answer: 成績
+        feedback_vi: 成績 là điểm số; "lấy" tín chỉ dùng 単位.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 単位を取る - lấy tín chỉ.
+    display_answer: 単位を取るために、レポートを出します。
+  - key: ja:exercise:n3-education-environment-g7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u9-kaihatsu
+    prompt:
+      template: 新しい薬を{{b1}}しています。 (Họ đang phát triển một loại thuốc mới.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 開発
+          - かいはつ
+    known_wrong:
+      - answer: 発明
+        feedback_vi: 発明 là phát minh ra cái hoàn toàn mới; phát triển sản phẩm dùng 開発.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 開発 - phát triển (sản phẩm).
+    display_answer: 新しい薬を開発しています。
+  - key: ja:exercise:n3-education-environment-g8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u9-juken
+    prompt:
+      source_text: Sang năm tôi dự thi vào đại học.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 来年、大学を受験します。
+        - 来年大学を受験します。
+        - らいねん、だいがくをじゅけんします。
+        - 来年、大学を受験する予定です。
+    known_wrong:
+      - answer: 来年、大学を試験します。
+        feedback_vi: 試験 là danh từ kỳ thi; dự thi vào trường dùng 受験.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 受験 - dự thi vào trường; 来年 - sang năm.
+    display_answer: 来年、大学を受験します。
+  - key: ja:exercise:n3-education-environment-g9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-u9-shigen
+    prompt:
+      source_text: 日本は資源が少ない国ですが、技術が進んでいます。地球温暖化を防ぐために、新しい技術を開発しています。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nhật Bản là nước ít tài nguyên nhưng kỹ thuật tiến bộ. Để ngăn sự nóng lên toàn cầu, Nhật đang phát triển công nghệ mới.
+        - Nhật Bản nghèo tài nguyên nhưng công nghệ phát triển. Để ngăn nóng lên toàn cầu, họ đang phát triển công nghệ mới.
+        - Nhật là nước ít tài nguyên, nhưng kỹ thuật tiên tiến. Họ phát triển công nghệ mới để ngăn sự ấm lên toàn cầu.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nhật Bản là nước nhiều tài nguyên nhưng kỹ thuật kém. Để ngăn sự nóng lên toàn cầu, họ không làm gì.
+        feedback_vi: 資源が少ない là ít tài nguyên.
+        error_tag: meaning
+    explanation:
+      vi: 資源 - tài nguyên; 技術 - kỹ thuật; 防ぐために - để ngăn ngừa; 開発 - phát triển.
+    display_answer: Nhật Bản là nước ít tài nguyên nhưng kỹ thuật tiến bộ. Để ngăn sự nóng lên toàn cầu, Nhật đang phát triển công nghệ mới.
+  - key: ja:exercise:n3-education-environment-g10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u9-kenkyuu
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Tôi đang nghiên cứu về môi trường ở trường đại học."'
+      tokens:
+        - id: t4
+          text: しています。
+        - id: t2
+          text: 環境の
+        - id: t3
+          text: 研究を
+        - id: t1
+          text: 大学で
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Nơi (大学で) → N の (環境の) → 研究を → しています.
+    display_answer: 大学で環境の研究をしています。
+  - key: ja:exercise:n3-education-environment-g11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u9-nyuugaku
+    prompt:
+      stem: Tháng 4 bạn bắt đầu vào đại học. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: a5b
+          text: 四月に大学に入学します。
+          lang: ja
+        - id: nn5
+          text: 四月に大学で入学します。
+          lang: ja
+        - id: rh4
+          text: 四月に大学が入学します。
+          lang: ja
+        - id: nky
+          text: 四月に大学を入学します。
+          lang: ja
+    answer:
+      correct_option_id: a5b
+    explanation:
+      vi: 大学に入学する - nhập học vào đại học (に). を, で, が không dùng.
+    display_answer: 四月に大学に入学します。

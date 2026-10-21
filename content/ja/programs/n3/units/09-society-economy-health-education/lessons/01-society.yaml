@@ -1,0 +1,378 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n3-society
+order_index: 1
+level: n3
+title:
+  vi: Xã hội và chính trị - 社会・政治・法律・選挙
+objectives:
+  - vi: "Dùng từ vựng xã hội, chính trị: 社会, 政治, 経済, 法律, 選挙, 国民, 制度."
+  - vi: "Nói về thuế, hưu trí, hoà bình, tội phạm: 税金, 年金, 平和, 戦争, 犯罪, 事件, 警察."
+  - vi: Nêu ví dụ tiêu biểu bằng N をはじめ(として).
+estimated_minutes: 17
+skills:
+  - vocabulary
+  - grammar
+  - reading
+  - speaking
+prerequisites:
+  - ja:lesson:n3-dake-denaku
+items:
+  - item: ja:item:n3-u9-shakai
+  - item: ja:item:n3-u9-seiji
+  - item: ja:item:n3-u9-keizai
+  - item: ja:item:n3-u9-houritsu
+  - item: ja:item:n3-u9-senkyo
+  - item: ja:item:n3-u9-kokumin
+  - item: ja:item:n3-u9-seido
+  - item: ja:item:n3-u9-zeikin
+  - item: ja:item:n3-u9-nenkin
+  - item: ja:item:n3-u9-heiwa
+  - item: ja:item:n3-u9-sensou
+  - item: ja:item:n3-u9-hanzai
+  - item: ja:item:n3-u9-jiken
+  - item: ja:item:n3-u9-keisatsu
+  - item: ja:item:n3-u9-gram-wo-hajime
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc và nói về tin tức xã hội cơ bản - 来月、市長選挙があります。国民の多くが新しい制度に賛成しています。 - và nêu ví dụ - 社長をはじめ、全員が参加しました。
+  - type: explain
+    text:
+      vi: "Từ vựng xã hội: 社会 (xã hội), 政治 (chính trị), 経済 (kinh tế), 法律 (pháp luật), 選挙 (bầu cử), 国民 (người dân), 制度 (chế độ, hệ thống), 税金 (thuế), 年金 (lương hưu). Chủ đề tin tức: 平和 (hoà bình), 戦争 (chiến tranh), 犯罪 (tội phạm), 事件 (vụ việc), 警察 (cảnh sát)."
+  - type: explain
+    text:
+      vi: 'N をはじめ(として) = "mở đầu bằng N, và cả những ... khác": 社長をはじめ、社員全員が参加しました (từ giám đốc đến toàn thể nhân viên). N là ví dụ tiêu biểu, vế sau là cả nhóm. Thường dùng trong văn trang trọng.'
+  - type: explain
+    text:
+      vi: Các cụm hay đi cùng - 選挙で投票する (bỏ phiếu), 法律を守る (tuân thủ luật), 税金を払う (nộp thuế), 制度が変わる (chế độ đổi), 犯罪が増える (tội phạm tăng), 事件が起きる (xảy ra vụ việc).
+  - type: deep_explain
+    text:
+      vi: Cẩn thận phân biệt 事件 (vụ việc, thường là vụ án hay vấn đề lớn) và 事故 (tai nạn). 警察 là cơ quan cảnh sát (警察に電話する); 警官 là một viên cảnh sát (đã học ở N5). 国民 nhấn mạnh quan hệ với quốc gia (日本国民), còn 市民 là người dân thành phố. Chữ Hán - 社会, 政治, 経済, 法律, 選挙, 国民, 制度, 税金, 年金.
+  - type: example
+    target: 来月、市長選挙があります。
+    target_lang: ja
+    translation:
+      vi: Tháng sau có cuộc bầu cử thị trưởng.
+    note:
+      vi: 選挙 - bầu cử.
+  - type: example
+    target: 国民の多くは、その制度に賛成しています。
+    target_lang: ja
+    translation:
+      vi: Phần lớn người dân tán thành chế độ đó.
+    note:
+      vi: 国民 - người dân.
+  - type: example
+    target: 社長をはじめ、社員全員が参加しました。
+    target_lang: ja
+    translation:
+      vi: Từ giám đốc đến toàn thể nhân viên đều tham gia.
+    note:
+      vi: N をはじめ - mở đầu bằng N.
+  - type: example
+    target: 昨日、駅の近くで事件があって、警察が来ました。
+    target_lang: ja
+    translation:
+      vi: Hôm qua có một vụ việc gần nhà ga và cảnh sát đã đến.
+    note:
+      vi: 事件・警察.
+  - type: common_mistake
+    wrong: 昨日、駅の近くで事件がありました。(tai nạn xe)
+    right: 昨日、駅の近くで事故がありました。
+    target_lang: ja
+    note:
+      vi: Tai nạn giao thông là 事故; 事件 là vụ việc, vụ án.
+  - type: common_mistake
+    wrong: 先生をはじめにして、みんなが来ました。
+    right: 先生をはじめ、みんなが来ました。
+    target_lang: ja
+    note:
+      vi: Mẫu cố định là をはじめ(として), không dùng をはじめにして.
+  - type: summary
+    points:
+      - vi: 社会 · 政治 · 経済 · 法律 · 選挙 · 国民 · 制度 · 税金 · 年金.
+      - vi: 平和 · 戦争 · 犯罪 · 事件 · 警察.
+      - vi: N をはじめ(として) - mở đầu bằng N, và cả ...
+      - vi: 事件 (vụ việc) ≠ 事故 (tai nạn).
+exercises:
+  - key: ja:exercise:n3-society-s1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u9-senkyo
+    prompt:
+      stem: Từ nào có nghĩa là “bầu cử”?
+      stem_lang: vi
+      options:
+        - id: rqg
+          text: 制度
+          lang: ja
+        - id: ebx
+          text: 年金
+          lang: ja
+        - id: drs
+          text: 事件
+          lang: ja
+        - id: ti4
+          text: 選挙
+          lang: ja
+    answer:
+      correct_option_id: ti4
+    explanation:
+      vi: 選挙 là bầu cử. 制度 là chế độ, 年金 là lương hưu, 事件 là vụ việc.
+    display_answer: 選挙
+  - key: ja:exercise:n3-society-s2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u9-gram-wo-hajime
+    prompt:
+      stem: Chọn câu đúng - 社長___、社員全員が参加しました。
+      stem_lang: vi
+      options:
+        - id: v9t
+          text: にはじめ
+          lang: ja
+        - id: k5k
+          text: をはじめに
+          lang: ja
+        - id: e44
+          text: とはじめ
+          lang: ja
+        - id: v2p
+          text: をはじめ
+          lang: ja
+    answer:
+      correct_option_id: v2p
+    explanation:
+      vi: N をはじめ(として) - mở đầu bằng N. Các dạng còn lại sai hình thức.
+    display_answer: をはじめ
+  - key: ja:exercise:n3-society-s3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-u9-hanzai
+    prompt:
+      audio_asset_id: null
+      fallback_text: 最近、犯罪が増えています。警察はパトロールを強くしています。
+      options:
+        - id: ul6
+          text: Gần đây tội phạm đang giảm. Cảnh sát đang giảm tuần tra.
+          lang: vi
+        - id: xf7
+          text: Gần đây thuế đang tăng. Cảnh sát tuần tra ít hơn.
+          lang: vi
+        - id: w4r
+          text: Gần đây tai nạn đang tăng. Cảnh sát nghỉ tuần tra.
+          lang: vi
+        - id: ixz
+          text: Gần đây tội phạm đang gia tăng. Cảnh sát đang tăng cường tuần tra.
+          lang: vi
+    answer:
+      correct_option_id: ixz
+    explanation:
+      vi: 犯罪が増えている - tội phạm gia tăng; 警察 - cảnh sát.
+    display_answer: Gần đây tội phạm đang gia tăng. Cảnh sát đang tăng cường tuần tra.
+  - key: ja:exercise:n3-society-s4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u9-zeikin
+    prompt:
+      template: 給料から{{b1}}を払います。 (Tôi nộp thuế từ tiền lương.)
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Tiền nhà nước thu của dân.
+        - Bắt đầu bằng 税.
+    answer:
+      blanks:
+        b1:
+          - 税金
+          - ぜいきん
+    known_wrong:
+      - answer: 年金
+        feedback_vi: 年金 là lương hưu; nộp từ lương cũng có 年金 nhưng "thuế" là 税金.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 税金 - thuế.
+    display_answer: 給料から税金を払います。
+  - key: ja:exercise:n3-society-s5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u9-houritsu
+    prompt:
+      stem: Bạn nói “Phải tuân thủ pháp luật”. Từ nào?
+      stem_lang: vi
+      options:
+        - id: syi
+          text: 経済
+          lang: ja
+        - id: dsm
+          text: 法律
+          lang: ja
+        - id: x86
+          text: 制度
+          lang: ja
+        - id: ofz
+          text: 社会
+          lang: ja
+    answer:
+      correct_option_id: dsm
+    explanation:
+      vi: 法律 là pháp luật. 制度 là chế độ, 社会 là xã hội, 経済 là kinh tế.
+    display_answer: 法律
+  - key: ja:exercise:n3-society-s6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u9-kokumin
+    prompt:
+      template: "{{b1}}の多くは、その政策に賛成しています。 (Phần lớn người dân tán thành chính sách đó.)"
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 国民
+          - こくみん
+    known_wrong:
+      - answer: 社会
+        feedback_vi: 社会 là xã hội; chủ thể "tán thành" là người dân (国民).
+        error_tag: vocab_meaning
+    explanation:
+      vi: 国民 - người dân.
+    display_answer: 国民の多くは、その政策に賛成しています。
+  - key: ja:exercise:n3-society-s7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u9-jiken
+    prompt:
+      template: 昨日、駅の近くで{{b1}}があって、警察が来ました。 (Hôm qua có một vụ việc gần nhà ga và cảnh sát đã đến.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 事件
+          - じけん
+    known_wrong:
+      - answer: 事故
+        feedback_vi: 事故 là tai nạn; có cảnh sát đến vì vụ việc nên dùng 事件.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 事件 - vụ việc, vụ án.
+    display_answer: 昨日、駅の近くで事件があって、警察が来ました。
+  - key: ja:exercise:n3-society-s8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u9-gram-wo-hajime
+    prompt:
+      source_text: Từ giám đốc đến toàn thể nhân viên đều tham gia.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 社長をはじめ、社員全員が参加しました。
+        - 社長をはじめとして、社員全員が参加しました。
+        - しゃちょうをはじめ、しゃいんぜんいんがさんかしました。
+        - 社長をはじめ社員全員が参加しました。
+    known_wrong:
+      - answer: 社長をはじめに、社員全員が参加しました。
+        feedback_vi: Mẫu cố định là をはじめ(として).
+        error_tag: form
+    explanation:
+      vi: N をはじめ - mở đầu bằng N; 参加しました - đã tham gia.
+    display_answer: 社長をはじめ、社員全員が参加しました。
+  - key: ja:exercise:n3-society-s9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-u9-seido
+    prompt:
+      source_text: 新しい制度が始まりました。国民の多くが賛成していますが、反対する人もいます。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Một chế độ mới đã bắt đầu. Phần lớn người dân tán thành nhưng cũng có người phản đối.
+        - Chế độ mới đã được áp dụng. Nhiều người dân đồng ý nhưng cũng có người không.
+        - Một hệ thống mới bắt đầu. Đa số người dân ủng hộ, nhưng vẫn có người phản đối.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Một chế độ mới đã bắt đầu. Toàn bộ người dân phản đối.
+        feedback_vi: 国民の多くが賛成 là phần lớn người dân tán thành.
+        error_tag: meaning
+    explanation:
+      vi: 制度 - chế độ; 賛成 - tán thành; 反対する - phản đối.
+    display_answer: Một chế độ mới đã bắt đầu. Phần lớn người dân tán thành nhưng cũng có người phản đối.
+  - key: ja:exercise:n3-society-s10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u9-senkyo
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Tháng sau có cuộc bầu cử thị trưởng."'
+      tokens:
+        - id: t3
+          text: あります。
+        - id: t2
+          text: 市長選挙が
+        - id: t1
+          text: 来月、
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: Thời gian → chủ ngữ (市長選挙が) → あります.
+    display_answer: 来月、市長選挙があります。
+  - key: ja:exercise:n3-society-s11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u9-keisatsu
+    prompt:
+      stem: Bạn gặp vụ việc nguy hiểm và gọi nhà chức trách. Cơ quan nào?
+      stem_lang: vi
+      options:
+        - id: tu0
+          text: 警察
+          lang: ja
+        - id: r7p
+          text: 制度
+          lang: ja
+        - id: yjv
+          text: 税金
+          lang: ja
+        - id: sq8
+          text: 年金
+          lang: ja
+    answer:
+      correct_option_id: tu0
+    explanation:
+      vi: 警察 là cảnh sát (cơ quan). 制度, 税金, 年金 không phải cơ quan hay nơi để gọi.
+    display_answer: 警察

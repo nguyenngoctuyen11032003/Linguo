@@ -1,0 +1,373 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n3-health-medical
+order_index: 3
+level: n3
+title:
+  vi: Sức khoẻ và y tế - 治療・手術・予防
+objectives:
+  - vi: "Dùng từ vựng y tế: 治療, 手術, 入院, 退院, 検査."
+  - vi: "Nói về sức khoẻ hằng ngày: 体調, 食欲, 睡眠, 栄養, 予防."
+  - vi: Báo cáo tình trạng với bác sĩ và người thân.
+estimated_minutes: 17
+skills:
+  - vocabulary
+  - reading
+  - listening
+  - speaking
+prerequisites:
+  - ja:lesson:n3-economy
+items:
+  - item: ja:item:n3-u9-chiryou
+  - item: ja:item:n3-u9-shujutsu
+  - item: ja:item:n3-u9-nyuuin
+  - item: ja:item:n3-u9-taiin
+  - item: ja:item:n3-u9-kensa
+  - item: ja:item:n3-u9-yobou
+  - item: ja:item:n3-u9-taichou
+  - item: ja:item:n3-u9-shokuyoku
+  - item: ja:item:n3-u9-suimin
+  - item: ja:item:n3-u9-eiyou
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được về sức khoẻ và bệnh viện - 体調が悪いので、病院で検査を受けました。来週、退院できます。
+  - type: explain
+    text:
+      vi: "Điều trị: 治療 (điều trị), 手術 (phẫu thuật), 入院 (nhập viện), 退院 (xuất viện), 検査 (kiểm tra, xét nghiệm). Mẫu: 検査を受ける, 手術をする, 入院している."
+  - type: explain
+    text:
+      vi: "Sức khoẻ hằng ngày: 体調 (tình trạng sức khoẻ), 食欲 (chán/ham ăn), 睡眠 (giấc ngủ), 栄養 (dinh dưỡng), 予防 (phòng ngừa). Ví dụ 体調がいい / 悪い, 食欲がない, 睡眠を取る, 栄養を考える."
+  - type: explain
+    text:
+      vi: Cách báo bác sĩ - 三日前から熱があります。食欲がありません。夜、あまり眠れません. Bác sĩ thường nói 検査をしましょう, 薬を出しておきます.
+  - type: deep_explain
+    text:
+      vi: 受ける dùng với 検査・治療・手術 (検査を受ける = được kiểm tra), còn する dùng khi bác sĩ là người làm (手術をする). 入院 (nhập viện) và 退院 (xuất viện) đối nghĩa, hai chữ chỉ khác 入/退. 予防 hay đi với 病気・風邪 (風邪を予防する), và 予防接種 là tiêm phòng. Chữ Hán - 治療, 手術, 入院, 退院, 検査, 予防, 体調, 食欲, 睡眠, 栄養.
+  - type: example
+    target: 三日前から熱があって、食欲もありません。
+    target_lang: ja
+    translation:
+      vi: Từ ba ngày trước tôi bị sốt và cũng chán ăn.
+    note:
+      vi: 食欲がない.
+  - type: example
+    target: 病院で検査を受けた結果、手術をすることになりました。
+    target_lang: ja
+    translation:
+      vi: Làm xét nghiệm ở bệnh viện xong thì quyết định phẫu thuật.
+    note:
+      vi: 検査を受ける・手術をする.
+  - type: example
+    target: 父は三日前から入院しています。来週、退院できます。
+    target_lang: ja
+    translation:
+      vi: Bố tôi nhập viện từ ba ngày trước. Tuần sau có thể xuất viện.
+    note:
+      vi: 入院・退院.
+  - type: example
+    target: 病気を予防するために、毎日運動しています。
+    target_lang: ja
+    translation:
+      vi: Tôi tập thể dục mỗi ngày để phòng bệnh.
+    note:
+      vi: 予防.
+  - type: common_mistake
+    wrong: 検査をしました。(tôi được bác sĩ kiểm tra)
+    right: 検査を受けました。
+    target_lang: ja
+    note:
+      vi: Người bệnh "được kiểm tra" dùng 受ける; 検査をする là người làm xét nghiệm.
+  - type: common_mistake
+    wrong: 睡眠をします。
+    right: 睡眠を取ります。
+    target_lang: ja
+    note:
+      vi: Giấc ngủ dùng 取る (睡眠を取る); 睡眠をします không tự nhiên.
+  - type: summary
+    points:
+      - vi: 治療 · 手術 · 入院 · 退院 · 検査.
+      - vi: 体調 · 食欲 · 睡眠 · 栄養 · 予防.
+      - vi: 検査 / 治療 / 手術 を 受ける.
+      - vi: 入院 ↔ 退院.
+exercises:
+  - key: ja:exercise:n3-health-medical-m1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u9-nyuuin
+    prompt:
+      stem: Từ nào có nghĩa là “nhập viện”?
+      stem_lang: vi
+      options:
+        - id: omw
+          text: 入院
+          lang: ja
+        - id: zt7
+          text: 検査
+          lang: ja
+        - id: gyy
+          text: 退院
+          lang: ja
+        - id: a41
+          text: 手術
+          lang: ja
+    answer:
+      correct_option_id: omw
+    explanation:
+      vi: 入院 là nhập viện. 退院 là xuất viện, 手術 là phẫu thuật, 検査 là xét nghiệm.
+    display_answer: 入院
+  - key: ja:exercise:n3-health-medical-m2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u9-kensa
+    prompt:
+      stem: Bạn được bác sĩ làm xét nghiệm. Cụm nào đúng?
+      stem_lang: vi
+      options:
+        - id: nsn
+          text: 検査に受けました
+          lang: ja
+        - id: qlx
+          text: 検査を受けました
+          lang: ja
+        - id: pr9
+          text: 検査にしました
+          lang: ja
+        - id: fux
+          text: 検査が受けました
+          lang: ja
+    answer:
+      correct_option_id: qlx
+    explanation:
+      vi: 検査を受ける - được kiểm tra. Các dạng còn lại sai trợ từ hoặc hình thức.
+    display_answer: 検査を受けました
+  - key: ja:exercise:n3-health-medical-m3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-u9-shokuyoku
+    prompt:
+      audio_asset_id: null
+      fallback_text: 三日前から熱があって、食欲もありません。
+      options:
+        - id: ynx
+          text: Từ ba ngày trước tôi đã khỏi sốt và ăn ngon.
+          lang: vi
+        - id: v70
+          text: Từ ba ngày trước tôi bị sốt và cũng chán ăn.
+          lang: vi
+        - id: q8g
+          text: Ba ngày sau tôi sẽ nhập viện vì sốt.
+          lang: vi
+        - id: stl
+          text: Từ ba ngày trước tôi bị đau đầu và không ngủ được.
+          lang: vi
+    answer:
+      correct_option_id: v70
+    explanation:
+      vi: 三日前から - từ ba ngày trước; 熱 - sốt; 食欲もありません - cũng chán ăn.
+    display_answer: Từ ba ngày trước tôi bị sốt và cũng chán ăn.
+  - key: ja:exercise:n3-health-medical-m4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u9-taiin
+    prompt:
+      template: 来週、{{b1}}できます。 (Tuần sau tôi có thể xuất viện.)
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Đối nghĩa với 入院.
+        - Bắt đầu bằng 退.
+    answer:
+      blanks:
+        b1:
+          - 退院
+          - たいいん
+    known_wrong:
+      - answer: 入院
+        feedback_vi: 入院 là nhập viện; câu nói khỏi và ra viện nên dùng 退院.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 退院 - xuất viện.
+    display_answer: 来週、退院できます。
+  - key: ja:exercise:n3-health-medical-m5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u9-yobou
+    prompt:
+      stem: Bạn muốn nói “để phòng bệnh”. Từ nào?
+      stem_lang: vi
+      options:
+        - id: yf3
+          text: 手術
+          lang: ja
+        - id: nxf
+          text: 栄養
+          lang: ja
+        - id: ke4
+          text: 予防
+          lang: ja
+        - id: ikn
+          text: 治療
+          lang: ja
+    answer:
+      correct_option_id: ke4
+    explanation:
+      vi: 予防 là phòng ngừa. 治療 là điều trị, 手術 là phẫu thuật, 栄養 là dinh dưỡng.
+    display_answer: 予防
+  - key: ja:exercise:n3-health-medical-m6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u9-taichou
+    prompt:
+      template: "{{b1}}が悪いので、今日は休みます。 (Sức khoẻ không tốt nên hôm nay tôi nghỉ.)"
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 体調
+          - たいちょう
+    known_wrong:
+      - answer: 食欲
+        feedback_vi: 食欲 là cảm giác thèm ăn; "tình trạng sức khoẻ" là 体調.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 体調 - tình trạng sức khoẻ.
+    display_answer: 体調が悪いので、今日は休みます。
+  - key: ja:exercise:n3-health-medical-m7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u9-suimin
+    prompt:
+      template: "{{b1}}を十分取ることが大切です。 (Ngủ đủ giấc là điều quan trọng.)"
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 睡眠
+          - すいみん
+    known_wrong:
+      - answer: 栄養
+        feedback_vi: 栄養 là dinh dưỡng; nói đến ngủ là 睡眠.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 睡眠を取る - ngủ.
+    display_answer: 睡眠を十分取ることが大切です。
+  - key: ja:exercise:n3-health-medical-m8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u9-yobou
+    prompt:
+      source_text: Tôi tập thể dục mỗi ngày để phòng bệnh.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 病気を予防するために、毎日運動しています。
+        - 病気を予防するために毎日運動しています。
+        - びょうきをよぼうするために、まいにちうんどうしています。
+        - 病気の予防のために、毎日運動しています。
+    known_wrong:
+      - answer: 病気を治療するために、毎日運動しています。
+        feedback_vi: 治療 là điều trị; "phòng bệnh" là 予防.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 予防 - phòng ngừa; ために - để.
+    display_answer: 病気を予防するために、毎日運動しています。
+  - key: ja:exercise:n3-health-medical-m9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-u9-shujutsu
+    prompt:
+      source_text: 検査の結果、手術することになりました。入院は一週間ぐらいです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Theo kết quả xét nghiệm, quyết định phẫu thuật. Nhập viện khoảng một tuần.
+        - Kết quả xét nghiệm là phải phẫu thuật. Ở viện khoảng một tuần.
+        - Sau khi xét nghiệm, tôi sẽ phải phẫu thuật. Nằm viện khoảng một tuần.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Theo kết quả xét nghiệm, không cần phẫu thuật. Nhập viện khoảng một tuần.
+        feedback_vi: 手術することになりました là quyết định phải phẫu thuật.
+        error_tag: meaning
+    explanation:
+      vi: 検査の結果 - kết quả xét nghiệm; ことになった - được quyết định; 入院 - nhập viện.
+    display_answer: Theo kết quả xét nghiệm, quyết định phẫu thuật. Nhập viện khoảng một tuần.
+  - key: ja:exercise:n3-health-medical-m10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u9-eiyou
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Tôi ăn có cân nhắc dinh dưỡng."'
+      tokens:
+        - id: t2
+          text: 考えて
+        - id: t1
+          text: 栄養を
+        - id: t3
+          text: 食べます。
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: 栄養を考えて (cân nhắc dinh dưỡng) + 食べます.
+    display_answer: 栄養を考えて食べます。
+  - key: ja:exercise:n3-health-medical-m11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u9-chiryou
+    prompt:
+      stem: Bạn đang được bác sĩ chữa bệnh. Cụm nào đúng?
+      stem_lang: vi
+      options:
+        - id: xxb
+          text: 治療を受けています
+          lang: ja
+        - id: my4
+          text: 治療をなっています
+          lang: ja
+        - id: j24
+          text: 治療が受けています
+          lang: ja
+        - id: gja
+          text: 治療に受けています
+          lang: ja
+    answer:
+      correct_option_id: xxb
+    explanation:
+      vi: 治療を受けている - đang được điều trị. なる, が, に không đúng với cấu trúc này.
+    display_answer: 治療を受けています

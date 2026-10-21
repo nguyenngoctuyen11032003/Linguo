@@ -1,0 +1,910 @@
+# Học liệu unit "Xã hội, kinh tế, sức khoẻ, giáo dục và môi trường" (JLPT N3). reading là cách đọc kana (furigana); romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n3-u9-shakai
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 社会
+      reading: しゃかい
+      romanization: shakai
+      pos: danh từ
+    back:
+      meaning:
+        vi: xã hội
+      examples:
+        - target: 社会に出て、五年になります。
+          translation:
+            vi: Tôi đi làm (bước vào xã hội) được năm năm.
+  - key: ja:item:n3-u9-seiji
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 政治
+      reading: せいじ
+      romanization: seiji
+      pos: danh từ
+    back:
+      meaning:
+        vi: chính trị
+      examples:
+        - target: 政治のニュースをよく読みます。
+          translation:
+            vi: Tôi hay đọc tin chính trị.
+  - key: ja:item:n3-u9-keizai
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 経済
+      reading: けいざい
+      romanization: keizai
+      pos: danh từ
+    back:
+      meaning:
+        vi: kinh tế
+      examples:
+        - target: 経済が成長しています。
+          translation:
+            vi: Nền kinh tế đang tăng trưởng.
+  - key: ja:item:n3-u9-houritsu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 法律
+      reading: ほうりつ
+      romanization: houritsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: luật, pháp luật
+      examples:
+        - target: 法律を守らなければなりません。
+          translation:
+            vi: Phải tuân thủ pháp luật.
+  - key: ja:item:n3-u9-senkyo
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 選挙
+      reading: せんきょ
+      romanization: senkyo
+      pos: danh từ
+    back:
+      meaning:
+        vi: bầu cử
+      examples:
+        - target: 来月、市長選挙があります。
+          translation:
+            vi: Tháng sau có cuộc bầu cử thị trưởng.
+  - key: ja:item:n3-u9-kokumin
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 国民
+      reading: こくみん
+      romanization: kokumin
+      pos: danh từ
+    back:
+      meaning:
+        vi: người dân, quốc dân
+      examples:
+        - target: 国民の多くは、その政策に賛成しています。
+          translation:
+            vi: Phần lớn người dân tán thành chính sách đó.
+  - key: ja:item:n3-u9-seido
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 制度
+      reading: せいど
+      romanization: seido
+      pos: danh từ
+    back:
+      meaning:
+        vi: chế độ, hệ thống
+      examples:
+        - target: 新しい制度が始まりました。
+          translation:
+            vi: Một chế độ mới đã bắt đầu.
+  - key: ja:item:n3-u9-zeikin
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 税金
+      reading: ぜいきん
+      romanization: zeikin
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền thuế
+      examples:
+        - target: 税金を払います。
+          translation:
+            vi: Tôi nộp thuế.
+  - key: ja:item:n3-u9-nenkin
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 年金
+      reading: ねんきん
+      romanization: nenkin
+      pos: danh từ
+    back:
+      meaning:
+        vi: lương hưu, quỹ hưu trí
+      examples:
+        - target: 年金の制度が変わりました。
+          translation:
+            vi: Chế độ lương hưu đã thay đổi.
+  - key: ja:item:n3-u9-heiwa
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 平和
+      reading: へいわ
+      romanization: heiwa
+      pos: danh từ / tính từ な
+    back:
+      meaning:
+        vi: hoà bình
+      examples:
+        - target: 平和な社会を作りたいです。
+          translation:
+            vi: Tôi muốn xây dựng một xã hội hoà bình.
+  - key: ja:item:n3-u9-sensou
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 戦争
+      reading: せんそう
+      romanization: sensou
+      pos: danh từ
+    back:
+      meaning:
+        vi: chiến tranh
+      examples:
+        - target: 戦争のない世界を願っています。
+          translation:
+            vi: Tôi mong một thế giới không có chiến tranh.
+  - key: ja:item:n3-u9-hanzai
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 犯罪
+      reading: はんざい
+      romanization: hanzai
+      pos: danh từ
+    back:
+      meaning:
+        vi: tội phạm
+      examples:
+        - target: 犯罪が増えています。
+          translation:
+            vi: Tội phạm đang gia tăng.
+  - key: ja:item:n3-u9-jiken
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 事件
+      reading: じけん
+      romanization: jiken
+      pos: danh từ
+    back:
+      meaning:
+        vi: vụ việc, vụ án
+      examples:
+        - target: 昨日、駅の近くで事件がありました。
+          translation:
+            vi: Hôm qua có một vụ việc gần nhà ga.
+  - key: ja:item:n3-u9-keisatsu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 警察
+      reading: けいさつ
+      romanization: keisatsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: cảnh sát (cơ quan)
+      examples:
+        - target: 警察に連絡しました。
+          translation:
+            vi: Tôi đã liên lạc với cảnh sát.
+  - key: ja:item:n3-u9-gram-wo-hajime
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: N をはじめ(として)
+      romanization: N o hajime (toshite)
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Bắt đầu từ N (đại diện), cùng với những ... khác. Dùng để nêu ví dụ tiêu biểu trong một nhóm: 先生をはじめ、みんなが賛成しました."
+      examples:
+        - target: 社長をはじめ、社員全員が参加しました。
+          translation:
+            vi: Từ giám đốc trở đi, toàn thể nhân viên đều tham gia.
+        - target: 日本をはじめ、アジアの国々で人気があります。
+          translation:
+            vi: Được ưa chuộng ở các nước châu Á, mở đầu là Nhật Bản.
+  - key: ja:item:n3-u9-keiki
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 景気
+      reading: けいき
+      romanization: keiki
+      pos: danh từ
+    back:
+      meaning:
+        vi: tình hình kinh tế, thị trường
+      examples:
+        - target: 景気がよくなってきました。
+          translation:
+            vi: Tình hình kinh tế đã khá lên.
+  - key: ja:item:n3-u9-yunyuu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 輸入
+      reading: ゆにゅう
+      romanization: yunyuu
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhập khẩu
+      examples:
+        - target: 日本は石油を輸入しています。
+          translation:
+            vi: Nhật Bản nhập khẩu dầu mỏ.
+  - key: ja:item:n3-u9-yushutsu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 輸出
+      reading: ゆしゅつ
+      romanization: yushutsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: xuất khẩu
+      examples:
+        - target: 日本は車を輸出しています。
+          translation:
+            vi: Nhật Bản xuất khẩu ô tô.
+  - key: ja:item:n3-u9-seisan
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 生産
+      reading: せいさん
+      romanization: seisan
+      pos: danh từ
+    back:
+      meaning:
+        vi: sản xuất
+      examples:
+        - target: この工場では、車を生産しています。
+          translation:
+            vi: Nhà máy này sản xuất ô tô.
+  - key: ja:item:n3-u9-shouhin
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 商品
+      reading: しょうひん
+      romanization: shouhin
+      pos: danh từ
+    back:
+      meaning:
+        vi: hàng hoá, sản phẩm
+      examples:
+        - target: 新しい商品を発売します。
+          translation:
+            vi: Chúng tôi sẽ tung ra sản phẩm mới.
+  - key: ja:item:n3-u9-rieki
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 利益
+      reading: りえき
+      romanization: rieki
+      pos: danh từ
+    back:
+      meaning:
+        vi: lợi nhuận, lợi ích
+      examples:
+        - target: 今年は利益が増えました。
+          translation:
+            vi: Năm nay lợi nhuận tăng.
+  - key: ja:item:n3-u9-uriage
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 売り上げ
+      reading: うりあげ
+      romanization: uriage
+      pos: danh từ
+    back:
+      meaning:
+        vi: doanh thu
+      examples:
+        - target: 売り上げが去年より二割増えました。
+          translation:
+            vi: Doanh thu tăng 20% so với năm ngoái.
+  - key: ja:item:n3-u9-hiyou
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 費用
+      reading: ひよう
+      romanization: hiyou
+      pos: danh từ
+    back:
+      meaning:
+        vi: chi phí
+      examples:
+        - target: 引っ越しの費用は高いです。
+          translation:
+            vi: Chi phí chuyển nhà đắt.
+  - key: ja:item:n3-u9-shuunyuu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 収入
+      reading: しゅうにゅう
+      romanization: shuunyuu
+      pos: danh từ
+    back:
+      meaning:
+        vi: thu nhập
+      examples:
+        - target: 収入が少ないので、貯金できません。
+          translation:
+            vi: Thu nhập ít nên tôi không tiết kiệm được.
+  - key: ja:item:n3-u9-shishutsu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 支出
+      reading: ししゅつ
+      romanization: shishutsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: chi tiêu
+      examples:
+        - target: 支出を減らす努力をしています。
+          translation:
+            vi: Tôi đang cố gắng giảm chi tiêu.
+  - key: ja:item:n3-u9-chiryou
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 治療
+      reading: ちりょう
+      romanization: chiryou
+      pos: danh từ
+    back:
+      meaning:
+        vi: điều trị
+      examples:
+        - target: 病院で治療を受けています。
+          translation:
+            vi: Tôi đang được điều trị ở bệnh viện.
+  - key: ja:item:n3-u9-shujutsu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 手術
+      reading: しゅじゅつ
+      romanization: shujutsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: phẫu thuật
+      examples:
+        - target: 来週、手術をします。
+          translation:
+            vi: Tuần sau tôi phẫu thuật.
+  - key: ja:item:n3-u9-nyuuin
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 入院
+      reading: にゅういん
+      romanization: nyuuin
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhập viện
+      examples:
+        - target: 父は三日前から入院しています。
+          translation:
+            vi: Bố tôi nhập viện từ ba ngày trước.
+  - key: ja:item:n3-u9-taiin
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 退院
+      reading: たいいん
+      romanization: taiin
+      pos: danh từ
+    back:
+      meaning:
+        vi: xuất viện
+      examples:
+        - target: 来週、退院できます。
+          translation:
+            vi: Tuần sau tôi có thể xuất viện.
+  - key: ja:item:n3-u9-kensa
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 検査
+      reading: けんさ
+      romanization: kensa
+      pos: danh từ
+    back:
+      meaning:
+        vi: kiểm tra, xét nghiệm
+      examples:
+        - target: 血液の検査を受けました。
+          translation:
+            vi: Tôi đã làm xét nghiệm máu.
+  - key: ja:item:n3-u9-yobou
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 予防
+      reading: よぼう
+      romanization: yobou
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng ngừa
+      examples:
+        - target: 病気を予防するために、毎日運動しています。
+          translation:
+            vi: Tôi tập thể dục mỗi ngày để phòng bệnh.
+  - key: ja:item:n3-u9-taichou
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 体調
+      reading: たいちょう
+      romanization: taichou
+      pos: danh từ
+    back:
+      meaning:
+        vi: tình trạng sức khoẻ
+      examples:
+        - target: 体調が悪いので、今日は休みます。
+          translation:
+            vi: Sức khoẻ không tốt nên hôm nay tôi nghỉ.
+  - key: ja:item:n3-u9-shokuyoku
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 食欲
+      reading: しょくよく
+      romanization: shokuyoku
+      pos: danh từ
+    back:
+      meaning:
+        vi: cảm giác thèm ăn
+      examples:
+        - target: 暑くて、食欲がありません。
+          translation:
+            vi: Nóng quá nên tôi chán ăn.
+  - key: ja:item:n3-u9-suimin
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 睡眠
+      reading: すいみん
+      romanization: suimin
+      pos: danh từ
+    back:
+      meaning:
+        vi: giấc ngủ
+      examples:
+        - target: 睡眠は大切です。
+          translation:
+            vi: Giấc ngủ rất quan trọng.
+  - key: ja:item:n3-u9-eiyou
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 栄養
+      reading: えいよう
+      romanization: eiyou
+      pos: danh từ
+    back:
+      meaning:
+        vi: dinh dưỡng
+      examples:
+        - target: 栄養のバランスを考えて食べます。
+          translation:
+            vi: Tôi ăn có cân nhắc đến cân bằng dinh dưỡng.
+  - key: ja:item:n3-u9-kyouiku
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 教育
+      reading: きょういく
+      romanization: kyouiku
+      pos: danh từ
+    back:
+      meaning:
+        vi: giáo dục
+      examples:
+        - target: 教育は大切だと思います。
+          translation:
+            vi: Tôi nghĩ giáo dục rất quan trọng.
+  - key: ja:item:n3-u9-seiseki
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 成績
+      reading: せいせき
+      romanization: seiseki
+      pos: danh từ
+    back:
+      meaning:
+        vi: thành tích, điểm số
+      examples:
+        - target: 成績がよくなりました。
+          translation:
+            vi: Điểm số đã tốt lên.
+  - key: ja:item:n3-u9-tan-i
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 単位
+      reading: たんい
+      romanization: tan-i
+      pos: danh từ
+    back:
+      meaning:
+        vi: tín chỉ; đơn vị
+      examples:
+        - target: 単位を取るために、レポートを出します。
+          translation:
+            vi: Tôi nộp báo cáo để lấy tín chỉ.
+  - key: ja:item:n3-u9-nyuugaku
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 入学
+      reading: にゅうがく
+      romanization: nyuugaku
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhập học
+      examples:
+        - target: 四月に大学に入学します。
+          translation:
+            vi: Tháng 4 tôi nhập học đại học.
+  - key: ja:item:n3-u9-sotsugyou
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 卒業
+      reading: そつぎょう
+      romanization: sotsugyou
+      pos: danh từ
+    back:
+      meaning:
+        vi: tốt nghiệp
+      examples:
+        - target: 来年、大学を卒業します。
+          translation:
+            vi: Sang năm tôi tốt nghiệp đại học.
+  - key: ja:item:n3-u9-juken
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 受験
+      reading: じゅけん
+      romanization: juken
+      pos: danh từ
+    back:
+      meaning:
+        vi: dự thi (kỳ thi vào trường)
+      examples:
+        - target: 来年、大学を受験します。
+          translation:
+            vi: Sang năm tôi dự thi vào đại học.
+  - key: ja:item:n3-u9-shougakukin
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 奨学金
+      reading: しょうがくきん
+      romanization: shougakukin
+      pos: danh từ
+    back:
+      meaning:
+        vi: học bổng
+      examples:
+        - target: 奨学金をもらって、留学しました。
+          translation:
+            vi: Tôi nhận học bổng và đã đi du học.
+  - key: ja:item:n3-u9-ronbun
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 論文
+      reading: ろんぶん
+      romanization: ronbun
+      pos: danh từ
+    back:
+      meaning:
+        vi: luận văn, bài báo khoa học
+      examples:
+        - target: 論文を書くのに、半年かかりました。
+          translation:
+            vi: Tôi mất nửa năm để viết luận văn.
+  - key: ja:item:n3-u9-kenkyuu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 研究
+      reading: けんきゅう
+      romanization: kenkyuu
+      pos: danh từ
+    back:
+      meaning:
+        vi: nghiên cứu
+      examples:
+        - target: 大学で環境の研究をしています。
+          translation:
+            vi: Tôi đang nghiên cứu về môi trường ở trường đại học.
+  - key: ja:item:n3-u9-jikken
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 実験
+      reading: じっけん
+      romanization: jikken
+      pos: danh từ
+    back:
+      meaning:
+        vi: thí nghiệm
+      examples:
+        - target: 実験は失敗しました。
+          translation:
+            vi: Thí nghiệm đã thất bại.
+  - key: ja:item:n3-u9-shigen
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 資源
+      reading: しげん
+      romanization: shigen
+      pos: danh từ
+    back:
+      meaning:
+        vi: tài nguyên
+      examples:
+        - target: 日本は資源が少ない国です。
+          translation:
+            vi: Nhật Bản là nước nghèo tài nguyên.
+  - key: ja:item:n3-u9-ondanka
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 温暖化
+      reading: おんだんか
+      romanization: ondanka
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự nóng lên (toàn cầu)
+      examples:
+        - target: 地球温暖化が問題になっています。
+          translation:
+            vi: Sự nóng lên toàn cầu đang trở thành vấn đề.
+  - key: ja:item:n3-u9-gijutsu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 技術
+      reading: ぎじゅつ
+      romanization: gijutsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: kỹ thuật, công nghệ
+      examples:
+        - target: 日本の技術は世界で有名です。
+          translation:
+            vi: Công nghệ Nhật Bản nổi tiếng thế giới.
+  - key: ja:item:n3-u9-kaihatsu
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 開発
+      reading: かいはつ
+      romanization: kaihatsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: phát triển (sản phẩm, khu vực)
+      examples:
+        - target: 新しい薬を開発しています。
+          translation:
+            vi: Họ đang phát triển một loại thuốc mới.
+  - key: ja:item:n3-u9-hatsumei
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 発明
+      reading: はつめい
+      romanization: hatsumei
+      pos: danh từ
+    back:
+      meaning:
+        vi: phát minh
+      examples:
+        - target: 電話は誰が発明しましたか。
+          translation:
+            vi: Ai đã phát minh ra điện thoại?

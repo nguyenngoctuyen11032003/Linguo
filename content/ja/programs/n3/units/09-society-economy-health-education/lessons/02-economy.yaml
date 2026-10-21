@@ -1,0 +1,378 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n3-economy
+order_index: 2
+level: n3
+title:
+  vi: Kinh tế và kinh doanh - 景気・輸入・利益
+objectives:
+  - vi: "Dùng từ vựng kinh tế: 景気, 物価, 輸入, 輸出, 生産, 商品."
+  - vi: "Nói về doanh nghiệp: 利益, 売り上げ, 費用."
+  - vi: "Nói về thu nhập và chi tiêu: 収入, 支出, 貯金."
+estimated_minutes: 17
+skills:
+  - vocabulary
+  - reading
+  - listening
+  - speaking
+prerequisites:
+  - ja:lesson:n3-society
+items:
+  - item: ja:item:n3-u9-keiki
+  - item: ja:item:n3-bukka
+    role: reuse
+  - item: ja:item:n3-u9-yunyuu
+  - item: ja:item:n3-u9-yushutsu
+  - item: ja:item:n3-u9-seisan
+  - item: ja:item:n3-u9-shouhin
+  - item: ja:item:n3-u9-rieki
+  - item: ja:item:n3-u9-uriage
+  - item: ja:item:n3-u9-hiyou
+  - item: ja:item:n3-u9-shuunyuu
+  - item: ja:item:n3-u9-shishutsu
+  - item: ja:item:n4-u7-chokin
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hiểu tin kinh tế đơn giản - 最近、物価が上がっています。売り上げが増えて、利益も出ました。
+  - type: explain
+    text:
+      vi: "Kinh tế vĩ mô: 景気 (tình hình kinh tế), 物価 (vật giá), 輸入 (nhập khẩu), 輸出 (xuất khẩu), 生産 (sản xuất), 商品 (hàng hoá). Ví dụ 景気がよい / 悪い, 物価が上がる / 下がる."
+  - type: explain
+    text:
+      vi: "Kinh doanh: 利益 (lợi nhuận), 売り上げ (doanh thu), 費用 (chi phí). Quan hệ: 売り上げ − 費用 = 利益. Ví dụ 売り上げが二割増えました, 利益が出ました."
+  - type: explain
+    text:
+      vi: "Gia đình: 収入 (thu nhập), 支出 (chi tiêu), 貯金 (tiền tiết kiệm, đã học ở N4). Ví dụ 収入が少ないので、支出を減らします."
+  - type: deep_explain
+    text:
+      vi: 輸入 và 輸出 chỉ khác chữ đầu (入 vào / 出 ra), nên nhớ "nhập = đưa vào, xuất = đưa ra". 上がる/下がる (tự tăng giảm) dùng với 物価 (物価が上がる), còn 上げる/下げる dùng khi có người chủ động (値段を上げる). 景気 thường nói 景気がいい (tốt), 景気が悪い (xấu). Chữ Hán - 景気, 物価, 輸入, 輸出, 生産, 商品, 利益, 売り上げ, 費用, 収入, 支出.
+  - type: example
+    target: 最近、物価が上がっています。
+    target_lang: ja
+    translation:
+      vi: Gần đây vật giá đang tăng.
+    note:
+      vi: 物価が上がる.
+  - type: example
+    target: 日本は石油を輸入し、車を輸出しています。
+    target_lang: ja
+    translation:
+      vi: Nhật Bản nhập khẩu dầu mỏ và xuất khẩu ô tô.
+    note:
+      vi: 輸入 - 輸出.
+  - type: example
+    target: 今年は売り上げが増えて、利益も出ました。
+    target_lang: ja
+    translation:
+      vi: Năm nay doanh thu tăng và còn có lợi nhuận.
+    note:
+      vi: 売り上げ - 利益.
+  - type: example
+    target: 収入が少ないので、支出を減らして、貯金します。
+    target_lang: ja
+    translation:
+      vi: Vì thu nhập ít nên tôi giảm chi tiêu và tiết kiệm.
+    note:
+      vi: 収入 - 支出.
+  - type: common_mistake
+    wrong: 日本は車を輸入しています。(xuất khẩu)
+    right: 日本は車を輸出しています。
+    target_lang: ja
+    note:
+      vi: 輸出 là bán ra nước ngoài; 輸入 là mua từ nước ngoài.
+  - type: common_mistake
+    wrong: 物価を上がっています。
+    right: 物価が上がっています。
+    target_lang: ja
+    note:
+      vi: 上がる là tự động từ, đi với が.
+  - type: summary
+    points:
+      - vi: 景気 · 物価 · 輸入 · 輸出 · 生産 · 商品.
+      - vi: 売り上げ doanh thu · 費用 chi phí · 利益 lợi nhuận.
+      - vi: 収入 thu nhập · 支出 chi tiêu · 貯金 tiết kiệm.
+      - vi: 物価が上がる / 下がる.
+exercises:
+  - key: ja:exercise:n3-economy-e1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u9-yushutsu
+    prompt:
+      stem: Từ nào có nghĩa là “xuất khẩu”?
+      stem_lang: vi
+      options:
+        - id: mnq
+          text: 輸入
+          lang: ja
+        - id: sa6
+          text: 生産
+          lang: ja
+        - id: cf8
+          text: 輸出
+          lang: ja
+        - id: hvc
+          text: 商品
+          lang: ja
+    answer:
+      correct_option_id: cf8
+    explanation:
+      vi: 輸出 là xuất khẩu. 輸入 là nhập khẩu, 生産 là sản xuất, 商品 là hàng hoá.
+    display_answer: 輸出
+  - key: ja:exercise:n3-economy-e2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u9-rieki
+    prompt:
+      stem: Lợi nhuận là bao nhiêu sau khi trừ chi phí khỏi doanh thu? Từ nào?
+      stem_lang: vi
+      options:
+        - id: kdp
+          text: 利益
+          lang: ja
+        - id: cd8
+          text: 収入
+          lang: ja
+        - id: owx
+          text: 費用
+          lang: ja
+        - id: vqw
+          text: 支出
+          lang: ja
+    answer:
+      correct_option_id: kdp
+    explanation:
+      vi: 利益 là lợi nhuận (doanh thu trừ chi phí). 費用 là chi phí, 収入 là thu nhập, 支出 là chi tiêu.
+    display_answer: 利益
+  - key: ja:exercise:n3-economy-e3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-bukka
+    prompt:
+      audio_asset_id: null
+      fallback_text: 最近、物価が上がっていますから、支出を減らさなければなりません。
+      options:
+        - id: vvq
+          text: Gần đây thu nhập tăng nên không cần tiết kiệm.
+          lang: vi
+        - id: b8t
+          text: Vật giá tăng nhưng thu nhập cũng tăng.
+          lang: vi
+        - id: e3g
+          text: Gần đây vật giá đang giảm nên có thể tiêu nhiều hơn.
+          lang: vi
+        - id: s2z
+          text: Gần đây vật giá đang tăng nên phải giảm chi tiêu.
+          lang: vi
+    answer:
+      correct_option_id: s2z
+    explanation:
+      vi: 物価が上がっている - vật giá tăng; 支出を減らす - giảm chi tiêu.
+    display_answer: Gần đây vật giá đang tăng nên phải giảm chi tiêu.
+  - key: ja:exercise:n3-economy-e4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u9-uriage
+    prompt:
+      template: "{{b1}}が去年より二割増えました。 (Doanh thu tăng 20% so với năm ngoái.)"
+      blanks:
+        - id: b1
+          width_hint: 5
+      hint_levels:
+        - Số tiền bán hàng thu về.
+        - Bắt đầu bằng 売.
+    answer:
+      blanks:
+        b1:
+          - 売り上げ
+          - 売上
+          - うりあげ
+    known_wrong:
+      - answer: 利益
+        feedback_vi: 利益 là lợi nhuận; "doanh thu" là 売り上げ.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 売り上げ - doanh thu.
+    display_answer: 売り上げが去年より二割増えました。
+  - key: ja:exercise:n3-economy-e5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u9-keiki
+    prompt:
+      stem: Bạn nói “Kinh tế khá lên”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: wti
+          text: 景気がよくなってきました。
+          lang: ja
+        - id: ghy
+          text: 景気によくなってきました。
+          lang: ja
+        - id: yam
+          text: 景気をよくなってきました。
+          lang: ja
+        - id: xvf
+          text: 景気でよくなってきました。
+          lang: ja
+    answer:
+      correct_option_id: wti
+    explanation:
+      vi: 景気がよくなる - kinh tế khá lên. を, に, で không dùng với なる ở đây.
+    display_answer: 景気がよくなってきました。
+  - key: ja:exercise:n3-economy-e6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u9-yunyuu
+    prompt:
+      template: 日本は石油を{{b1}}しています。 (Nhật Bản nhập khẩu dầu mỏ.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 輸入
+          - ゆにゅう
+    known_wrong:
+      - answer: 輸出
+        feedback_vi: 輸出 là xuất khẩu; Nhật phải nhập dầu mỏ.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 輸入 - nhập khẩu.
+    display_answer: 日本は石油を輸入しています。
+  - key: ja:exercise:n3-economy-e7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u9-shuunyuu
+    prompt:
+      template: "{{b1}}が少ないので、貯金できません。 (Thu nhập ít nên tôi không tiết kiệm được.)"
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 収入
+          - しゅうにゅう
+    known_wrong:
+      - answer: 支出
+        feedback_vi: 支出 là chi tiêu; "ít" thường nói về thu nhập.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 収入 - thu nhập.
+    display_answer: 収入が少ないので、貯金できません。
+  - key: ja:exercise:n3-economy-e8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-bukka
+    prompt:
+      source_text: Gần đây vật giá đang tăng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 最近、物価が上がっています。
+        - さいきん、ぶっかがあがっています。
+        - 最近物価が上がっています。
+        - このごろ物価が上がっています。
+    known_wrong:
+      - answer: 最近、物価を上がっています。
+        feedback_vi: 上がる là tự động từ nên dùng が.
+        error_tag: particle_ga_wo
+    explanation:
+      vi: 物価が上がっている - vật giá đang tăng.
+    display_answer: 最近、物価が上がっています。
+  - key: ja:exercise:n3-economy-e9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-u9-seisan
+    prompt:
+      source_text: この工場では車を生産して、外国へ輸出しています。売り上げは去年より増えました。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nhà máy này sản xuất ô tô rồi xuất khẩu ra nước ngoài. Doanh thu đã tăng so với năm ngoái.
+        - Nhà máy này sản xuất xe hơi và xuất khẩu. Doanh thu tăng so với năm trước.
+        - Ở nhà máy này, ô tô được sản xuất và xuất khẩu ra nước ngoài. Doanh thu cao hơn năm ngoái.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nhà máy này nhập khẩu ô tô từ nước ngoài. Doanh thu giảm so với năm ngoái.
+        feedback_vi: 生産して輸出 là sản xuất và xuất khẩu.
+        error_tag: meaning
+    explanation:
+      vi: 生産 - sản xuất; 輸出 - xuất khẩu; 売り上げが増えた - doanh thu tăng.
+    display_answer: Nhà máy này sản xuất ô tô rồi xuất khẩu ra nước ngoài. Doanh thu đã tăng so với năm ngoái.
+  - key: ja:exercise:n3-economy-e10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u9-hiyou
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Chi phí chuyển nhà thì đắt."'
+      tokens:
+        - id: t3
+          text: 高いです。
+        - id: t2
+          text: 費用は
+        - id: t1
+          text: 引っ越しの
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: N の + 費用は + 高いです.
+    display_answer: 引っ越しの費用は高いです。
+  - key: ja:exercise:n3-economy-e11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u9-shouhin
+    prompt:
+      stem: Công ty sắp tung ra sản phẩm mới. Từ nào hợp? 新しい___を発売します。
+      stem_lang: vi
+      options:
+        - id: sy0
+          text: 景気
+          lang: ja
+        - id: zxj
+          text: 物価
+          lang: ja
+        - id: rsa
+          text: 収入
+          lang: ja
+        - id: j7y
+          text: 商品
+          lang: ja
+    answer:
+      correct_option_id: j7y
+    explanation:
+      vi: 商品 là hàng hoá, sản phẩm. 景気, 物価, 収入 không phải thứ bán ra.
+    display_answer: 商品
