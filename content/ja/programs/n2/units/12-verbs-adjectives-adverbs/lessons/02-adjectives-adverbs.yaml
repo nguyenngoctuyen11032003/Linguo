@@ -1,0 +1,380 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n2-u12-adjectives
+order_index: 2
+level: n2
+title:
+  vi: Tính từ và phó từ N2 - 厳しい・複雑・徐々に・せっかく
+objectives:
+  - vi: "Dùng 18 tính từ và phó từ N2: 厳しい, 激しい, 鋭い, 鈍い, 貴重, 豊か, 複雑, 単純, 明らか, 適切, 不可欠, 徐々に, 次々, 相当, 大幅, わずか, せめて, せっかく."
+  - vi: Nhận ra sắc thái và cặp từ hay đi cùng.
+  - vi: Đọc hiểu đoạn văn có các từ này.
+estimated_minutes: 20
+skills:
+  - vocabulary
+  - reading
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n2-u12-verbs
+items:
+  - item: ja:item:n2-u12-kibishii
+  - item: ja:item:n2-u12-hageshii
+  - item: ja:item:n2-u12-surudoi
+  - item: ja:item:n2-u12-nibui
+  - item: ja:item:n2-u12-kichou
+  - item: ja:item:n2-u12-yutaka
+  - item: ja:item:n2-u12-fukuzatsu
+  - item: ja:item:n2-u12-tanjun
+  - item: ja:item:n2-u12-akiraka
+  - item: ja:item:n2-u12-tekisetsu
+  - item: ja:item:n2-u12-fukaketsu
+  - item: ja:item:n2-u12-jojoni
+  - item: ja:item:n2-u12-tsugitsugi
+  - item: ja:item:n2-u12-soutou
+  - item: ja:item:n2-u12-oohaba
+  - item: ja:item:n2-u12-wazuka
+  - item: ja:item:n2-u12-semete
+  - item: ja:item:n2-u12-sekkaku
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn mô tả sự việc chính xác hơn - 競争が激しい, 複雑な問題, 売り上げが大幅に増えた, せっかく来たのに - và đọc hiểu bài đọc N2.
+  - type: explain
+    text:
+      vi: "Tính từ い: 厳しい (nghiêm khắc), 激しい (dữ dội), 鋭い (sắc bén), 鈍い (cùn, chậm). Tính từ な: 貴重 (quý giá), 豊か (phong phú), 複雑 (phức tạp), 単純 (đơn giản), 明らか (rõ ràng), 適切 (thích hợp), 不可欠 (không thể thiếu)."
+  - type: explain
+    text:
+      vi: "Phó từ: 徐々に (dần dần), 次々 (lần lượt), 相当 (khá nhiều), 大幅に (mạnh), わずかに (chút ít), せめて (ít nhất), せっかく (mất công, hiếm hoi mới). Ví dụ 売り上げが大幅に増える, 徐々に慣れる, せめて電話くらいは, せっかく来たのに."
+  - type: explain
+    text:
+      vi: "Cặp thường đi cùng: 厳しい + 教育 / 競争 / 寒さ; 激しい + 競争 / 雨 / 運動; 鋭い + 指摘 / 目; 豊か + 自然 / 経験; 複雑 + 問題 / 気持ち; 明らか + 事実 / 間違い; 不可欠 + 条件 / 存在."
+  - type: deep_explain
+    text:
+      vi: Chú ý sắc thái. 厳しい (nghiêm, khắt khe với người, điều kiện) khác 激しい (cường độ mạnh, dữ dội). 複雑 trái nghĩa 単純 hoặc 簡単. せめて đi với mong muốn tối thiểu (～てほしい, ～たい, ～くらい); せっかく đi với kết quả không như ý (せっかく～のに) hoặc dịp quý (せっかくの機会). 相当 vừa là "khá nhiều" (相当寒い) vừa là "tương đương" (一万円に相当する).
+  - type: example
+    target: 競争が激しくなっています。
+    target_lang: ja
+    translation:
+      vi: Cạnh tranh ngày càng gay gắt.
+    note:
+      vi: 激しい.
+  - type: example
+    target: 売り上げが大幅に増えました。
+    target_lang: ja
+    translation:
+      vi: Doanh thu đã tăng mạnh.
+    note:
+      vi: 大幅に.
+  - type: example
+    target: せめて電話くらいはしてほしかった。
+    target_lang: ja
+    translation:
+      vi: Ít nhất tôi cũng mong bạn gọi điện.
+    note:
+      vi: せめて.
+  - type: example
+    target: せっかく来たのに、店は休みでした。
+    target_lang: ja
+    translation:
+      vi: Mất công đến mà cửa hàng lại nghỉ.
+    note:
+      vi: せっかく.
+  - type: common_mistake
+    wrong: このナイフは鋭くなりました。(cùn)
+    right: このナイフは鈍くなりました。
+    target_lang: ja
+    note:
+      vi: Dao cùn là 鈍い; 鋭い là sắc.
+  - type: common_mistake
+    wrong: せめて来てください。(yêu cầu thẳng)
+    right: せめて電話くらいはしてください。
+    target_lang: ja
+    note:
+      vi: せめて dùng với mong muốn tối thiểu, có くらい / だけ đi kèm.
+  - type: summary
+    points:
+      - vi: 厳しい · 激しい · 鋭い · 鈍い · 貴重 · 豊か · 複雑 · 単純 · 明らか · 適切 · 不可欠.
+      - vi: 徐々に · 次々 · 相当 · 大幅に · わずか · せめて · せっかく.
+      - vi: 厳しい (khắt khe) ≠ 激しい (dữ dội).
+      - vi: せめて + mong muốn tối thiểu · せっかく + のに.
+exercises:
+  - key: ja:exercise:n2-u12-adjectives-a1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u12-hageshii
+    prompt:
+      stem: Cạnh tranh gay gắt. Từ nào?
+      stem_lang: vi
+      options:
+        - id: zwk
+          text: 豊か
+          lang: ja
+        - id: t36
+          text: 鈍い
+          lang: ja
+        - id: ca0
+          text: 激しい
+          lang: ja
+        - id: cic
+          text: 単純
+          lang: ja
+    answer:
+      correct_option_id: ca0
+    explanation:
+      vi: 激しい là dữ dội, gay gắt. 鈍い là cùn, 豊か là phong phú, 単純 là đơn giản.
+    display_answer: 激しい
+  - key: ja:exercise:n2-u12-adjectives-a2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u12-fukaketsu
+    prompt:
+      stem: Giấc ngủ là điều không thể thiếu. Từ nào?
+      stem_lang: vi
+      options:
+        - id: pa0
+          text: 貴重
+          lang: ja
+        - id: b5g
+          text: 適切
+          lang: ja
+        - id: ass
+          text: 不可欠
+          lang: ja
+        - id: ubw
+          text: 明らか
+          lang: ja
+    answer:
+      correct_option_id: ass
+    explanation:
+      vi: 不可欠 là không thể thiếu. 貴重 là quý giá, 明らか là rõ ràng, 適切 là thích hợp.
+    display_answer: 不可欠
+  - key: ja:exercise:n2-u12-adjectives-a3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u12-sekkaku
+    prompt:
+      audio_asset_id: null
+      fallback_text: せっかく来たのに、店は休みでした。
+      options:
+        - id: n2n
+          text: Mất công đến mà cửa hàng lại nghỉ.
+          lang: vi
+        - id: dzr
+          text: Tôi biết cửa hàng nghỉ nên không đến.
+          lang: vi
+        - id: osk
+          text: Cửa hàng mở nên tôi đã đến.
+          lang: vi
+        - id: zxy
+          text: Tôi đến sớm nên cửa hàng chưa mở.
+          lang: vi
+    answer:
+      correct_option_id: n2n
+    explanation:
+      vi: せっかく ～のに - mất công mà; 店は休み - cửa hàng nghỉ.
+    display_answer: Mất công đến mà cửa hàng lại nghỉ.
+  - key: ja:exercise:n2-u12-adjectives-a4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u12-oohaba
+    prompt:
+      template: 売り上げが{{b1}}に増えました。 (Doanh thu đã tăng mạnh.)
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Phó từ nghĩa "đáng kể".
+        - Bắt đầu bằng 大.
+    answer:
+      blanks:
+        b1:
+          - 大幅
+          - おおはば
+    known_wrong:
+      - answer: 徐々
+        feedback_vi: 徐々に là dần dần; "tăng mạnh" là 大幅に.
+        error_tag: adverb_choice
+    explanation:
+      vi: 大幅に - mạnh, đáng kể.
+    display_answer: 売り上げが大幅に増えました。
+  - key: ja:exercise:n2-u12-adjectives-a5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u12-jojoni
+    prompt:
+      stem: Bạn dần quen với công việc. Từ nào?
+      stem_lang: vi
+      options:
+        - id: enh
+          text: せっかく
+          lang: ja
+        - id: ldq
+          text: わずか
+          lang: ja
+        - id: pxi
+          text: せめて
+          lang: ja
+        - id: gvp
+          text: 徐々に
+          lang: ja
+    answer:
+      correct_option_id: gvp
+    explanation:
+      vi: 徐々に là dần dần. せっかく là mất công, せめて là ít nhất, わずか là chỉ một chút.
+    display_answer: 徐々に
+  - key: ja:exercise:n2-u12-adjectives-a6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u12-fukuzatsu
+    prompt:
+      template: "{{b1}}な問題で、すぐには解決できません。 (Vấn đề phức tạp nên không thể giải quyết ngay.)"
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 複雑
+          - ふくざつ
+    known_wrong:
+      - answer: 単純
+        feedback_vi: 単純 là đơn giản; không thể giải quyết ngay thì là phức tạp.
+        error_tag: adj_choice
+    explanation:
+      vi: 複雑 - phức tạp.
+    display_answer: 複雑な問題で、すぐには解決できません。
+  - key: ja:exercise:n2-u12-adjectives-a7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u12-semete
+    prompt:
+      template: "{{b1}}電話くらいはしてほしかった。 (Ít nhất tôi cũng mong bạn gọi điện.)"
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - せめて
+    known_wrong:
+      - answer: せっかく
+        feedback_vi: せっかく là mất công; mong muốn tối thiểu dùng せめて.
+        error_tag: adverb_choice
+    explanation:
+      vi: せめて - ít nhất thì.
+    display_answer: せめて電話くらいはしてほしかった。
+  - key: ja:exercise:n2-u12-adjectives-a8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u12-kibishii
+    prompt:
+      source_text: Bố tôi là người nghiêm khắc trong giáo dục.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 父は教育に厳しい人です。
+        - 父は教育に厳しいです。
+        - ちちはきょういくにきびしいひとです。
+        - 父は教育に厳しい人だ。
+    known_wrong:
+      - answer: 父は教育に激しい人です。
+        feedback_vi: 激しい là dữ dội; "nghiêm khắc" là 厳しい.
+        error_tag: adj_choice
+    explanation:
+      vi: 教育に厳しい - nghiêm khắc trong giáo dục.
+    display_answer: 父は教育に厳しい人です。
+  - key: ja:exercise:n2-u12-adjectives-a9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n2-u12-tsugitsugi
+    prompt:
+      source_text: 新しい店が次々にできて、競争が激しくなっています。相当な努力が必要です。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Các cửa hàng mới liên tiếp mở ra, cạnh tranh ngày càng gay gắt. Cần nỗ lực khá nhiều.
+        - Cửa hàng mới lần lượt xuất hiện nên cạnh tranh gay gắt hơn. Cần nỗ lực đáng kể.
+        - Nhiều cửa hàng mới mở liên tiếp và cạnh tranh trở nên gay gắt. Cần một nỗ lực không nhỏ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cửa hàng mới ít khi mở, cạnh tranh giảm. Không cần nỗ lực.
+        feedback_vi: 次々に là lần lượt, liên tiếp.
+        error_tag: meaning
+    explanation:
+      vi: 次々に - liên tiếp; 激しくなる - trở nên gay gắt; 相当 - khá nhiều.
+    display_answer: Các cửa hàng mới liên tiếp mở ra, cạnh tranh ngày càng gay gắt. Cần nỗ lực khá nhiều.
+  - key: ja:exercise:n2-u12-adjectives-a10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u12-akiraka
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Rõ ràng là anh ta sai."'
+      tokens:
+        - id: t3
+          text: 明らかです。
+        - id: t1
+          text: 彼が
+        - id: t2
+          text: 間違っているのは
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: Chủ ngữ → vế danh từ hoá → 明らかです.
+    display_answer: 彼が間違っているのは明らかです。
+  - key: ja:exercise:n2-u12-adjectives-a11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u12-yutaka
+    prompt:
+      stem: Thị trấn có nhiều thiên nhiên. Từ nào?
+      stem_lang: vi
+      options:
+        - id: kaf
+          text: 豊か
+          lang: ja
+        - id: y29
+          text: 鋭い
+          lang: ja
+        - id: pze
+          text: 厳しい
+          lang: ja
+        - id: uxn
+          text: 鈍い
+          lang: ja
+    answer:
+      correct_option_id: kaf
+    explanation:
+      vi: 自然が豊か - giàu thiên nhiên. 鋭い, 厳しい, 鈍い không đi với 自然 theo nghĩa này.
+    display_answer: 豊か

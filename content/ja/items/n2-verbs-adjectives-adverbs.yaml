@@ -1,0 +1,653 @@
+# Học liệu unit "Từ vựng N2: động từ, tính từ và phó từ" (JLPT N2). reading là cách đọc kana (furigana); romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n2-u12-sakeru
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 避ける
+      reading: さける
+      romanization: sakeru
+      pos: động từ
+    back:
+      meaning:
+        vi: tránh, né
+      examples:
+        - target: 混雑を避けて、早めに出かけました。
+          translation:
+            vi: Tôi ra khỏi nhà sớm để tránh đông đúc.
+  - key: ja:item:n2-u12-nigeru
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 逃げる
+      reading: にげる
+      romanization: nigeru
+      pos: động từ
+    back:
+      meaning:
+        vi: chạy trốn, thoát khỏi
+      examples:
+        - target: 火事のとき、慌てずに逃げてください。
+          translation:
+            vi: Khi có cháy, xin hãy thoát ra mà đừng hoảng.
+  - key: ja:item:n2-u12-mayou
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 迷う
+      reading: まよう
+      romanization: mayou
+      pos: động từ
+    back:
+      meaning:
+        vi: do dự, phân vân; lạc đường
+      examples:
+        - target: どちらにするか迷っています。
+          translation:
+            vi: Tôi đang phân vân không biết chọn bên nào.
+  - key: ja:item:n2-u12-mitomeru
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 認める
+      reading: みとめる
+      romanization: mitomeru
+      pos: động từ
+    back:
+      meaning:
+        vi: thừa nhận, công nhận
+      examples:
+        - target: 自分の間違いを認めました。
+          translation:
+            vi: Tôi đã thừa nhận lỗi của mình.
+  - key: ja:item:n2-u12-uttaeru
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 訴える
+      reading: うったえる
+      romanization: uttaeru
+      pos: động từ
+    back:
+      meaning:
+        vi: kêu gọi, khiếu nại; kiện
+      examples:
+        - target: 市民は環境の改善を訴えました。
+          translation:
+            vi: Người dân kêu gọi cải thiện môi trường.
+  - key: ja:item:n2-u12-noberu
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 述べる
+      reading: のべる
+      romanization: noberu
+      pos: động từ
+    back:
+      meaning:
+        vi: trình bày, nêu (ý kiến)
+      examples:
+        - target: 会議で自分の意見を述べました。
+          translation:
+            vi: Tôi đã trình bày ý kiến của mình trong cuộc họp.
+  - key: ja:item:n2-u12-oginau
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 補う
+      reading: おぎなう
+      romanization: oginau
+      pos: động từ
+    back:
+      meaning:
+        vi: bù đắp, bổ sung
+      examples:
+        - target: 足りない分は、アルバイトで補います。
+          translation:
+            vi: Phần thiếu tôi sẽ bù bằng việc làm thêm.
+  - key: ja:item:n2-u12-totonoeru
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 整える
+      reading: ととのえる
+      romanization: totonoeru
+      pos: động từ
+    back:
+      meaning:
+        vi: chỉnh đốn, sắp xếp cho ngay ngắn
+      examples:
+        - target: 体調を整えてから、試験に臨みます。
+          translation:
+            vi: Tôi sẽ điều chỉnh thể trạng rồi mới dự thi.
+  - key: ja:item:n2-u12-kitaeru
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 鍛える
+      reading: きたえる
+      romanization: kitaeru
+      pos: động từ
+    back:
+      meaning:
+        vi: rèn luyện
+      examples:
+        - target: 毎日走って、体を鍛えています。
+          translation:
+            vi: Tôi chạy mỗi ngày để rèn luyện cơ thể.
+  - key: ja:item:n2-u12-hagemasu
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 励ます
+      reading: はげます
+      romanization: hagemasu
+      pos: động từ
+    back:
+      meaning:
+        vi: động viên, khích lệ
+      examples:
+        - target: 落ち込んでいる友達を励ましました。
+          translation:
+            vi: Tôi đã động viên người bạn đang chán nản.
+  - key: ja:item:n2-u12-nagusameru
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 慰める
+      reading: なぐさめる
+      romanization: nagusameru
+      pos: động từ
+    back:
+      meaning:
+        vi: an ủi
+      examples:
+        - target: 泣いている子どもを慰めました。
+          translation:
+            vi: Tôi đã dỗ dành đứa trẻ đang khóc.
+  - key: ja:item:n2-u12-akogareru
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 憧れる
+      reading: あこがれる
+      romanization: akogareru
+      pos: động từ
+    back:
+      meaning:
+        vi: ngưỡng mộ, khao khát
+      examples:
+        - target: 子どもの頃から、パイロットに憧れていました。
+          translation:
+            vi: Từ nhỏ tôi đã ngưỡng mộ nghề phi công.
+  - key: ja:item:n2-u12-nageku
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 嘆く
+      reading: なげく
+      romanization: nageku
+      pos: động từ
+    back:
+      meaning:
+        vi: than thở, thương tiếc
+      examples:
+        - target: 若者は将来を嘆いています。
+          translation:
+            vi: Giới trẻ than thở về tương lai.
+  - key: ja:item:n2-u12-utagau
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 疑う
+      reading: うたがう
+      romanization: utagau
+      pos: động từ
+    back:
+      meaning:
+        vi: nghi ngờ
+      examples:
+        - target: 彼の話を疑っています。
+          translation:
+            vi: Tôi nghi ngờ lời anh ta nói.
+  - key: ja:item:n2-u12-kuyamu
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 悔やむ
+      reading: くやむ
+      romanization: kuyamu
+      pos: động từ
+    back:
+      meaning:
+        vi: hối tiếc, nuối tiếc
+      examples:
+        - target: あの時の失敗を悔やんでいます。
+          translation:
+            vi: Tôi hối tiếc về thất bại lúc đó.
+  - key: ja:item:n2-u12-nerau
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 狙う
+      reading: ねらう
+      romanization: nerau
+      pos: động từ
+    back:
+      meaning:
+        vi: nhắm tới, ngắm bắn
+      examples:
+        - target: 優勝を狙っています。
+          translation:
+            vi: Chúng tôi nhắm tới chức vô địch.
+  - key: ja:item:n2-u12-sorou
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 揃う
+      reading: そろう
+      romanization: sorou
+      pos: động từ
+    back:
+      meaning:
+        vi: tập hợp đủ, đồng đều
+      examples:
+        - target: 家族が全員揃いました。
+          translation:
+            vi: Cả gia đình đã có mặt đủ.
+  - key: ja:item:n2-u12-kakaeru
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 抱える
+      reading: かかえる
+      romanization: kakaeru
+      pos: động từ
+    back:
+      meaning:
+        vi: ôm; gánh vác (vấn đề, nợ)
+      examples:
+        - target: 多くの問題を抱えています。
+          translation:
+            vi: Tôi đang gánh nhiều vấn đề.
+  - key: ja:item:n2-u12-kibishii
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 厳しい
+      reading: きびしい
+      romanization: kibishii
+      pos: tính từ い
+    back:
+      meaning:
+        vi: nghiêm khắc, khắc nghiệt
+      examples:
+        - target: 父は教育に厳しい人です。
+          translation:
+            vi: Bố tôi là người nghiêm khắc trong giáo dục.
+  - key: ja:item:n2-u12-hageshii
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 激しい
+      reading: はげしい
+      romanization: hageshii
+      pos: tính từ い
+    back:
+      meaning:
+        vi: dữ dội, gay gắt
+      examples:
+        - target: 競争が激しくなっています。
+          translation:
+            vi: Cạnh tranh ngày càng gay gắt.
+  - key: ja:item:n2-u12-surudoi
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 鋭い
+      reading: するどい
+      romanization: surudoi
+      pos: tính từ い
+    back:
+      meaning:
+        vi: sắc bén, nhạy bén
+      examples:
+        - target: 彼は鋭い指摘をしました。
+          translation:
+            vi: Anh ấy đã đưa ra nhận xét sắc bén.
+  - key: ja:item:n2-u12-nibui
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 鈍い
+      reading: にぶい
+      romanization: nibui
+      pos: tính từ い
+    back:
+      meaning:
+        vi: cùn, chậm chạp, mờ nhạt
+      examples:
+        - target: このナイフは切れ味が鈍くなりました。
+          translation:
+            vi: Con dao này đã cùn rồi.
+  - key: ja:item:n2-u12-kichou
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 貴重
+      reading: きちょう
+      romanization: kichou
+      pos: tính từ な
+    back:
+      meaning:
+        vi: quý giá, hiếm có
+      examples:
+        - target: 貴重な経験をさせていただきました。
+          translation:
+            vi: Tôi đã có được một trải nghiệm quý giá.
+  - key: ja:item:n2-u12-yutaka
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 豊か
+      reading: ゆたか
+      romanization: yutaka
+      pos: tính từ な
+    back:
+      meaning:
+        vi: phong phú, giàu có
+      examples:
+        - target: この町は自然が豊かです。
+          translation:
+            vi: Thị trấn này giàu thiên nhiên.
+  - key: ja:item:n2-u12-fukuzatsu
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 複雑
+      reading: ふくざつ
+      romanization: fukuzatsu
+      pos: tính từ な
+    back:
+      meaning:
+        vi: phức tạp
+      examples:
+        - target: 複雑な問題で、すぐには解決できません。
+          translation:
+            vi: Vấn đề phức tạp nên không thể giải quyết ngay.
+  - key: ja:item:n2-u12-tanjun
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 単純
+      reading: たんじゅん
+      romanization: tanjun
+      pos: tính từ な
+    back:
+      meaning:
+        vi: đơn giản, giản đơn
+      examples:
+        - target: 単純なミスで、大きな損失が出ました。
+          translation:
+            vi: Một lỗi đơn giản đã gây tổn thất lớn.
+  - key: ja:item:n2-u12-akiraka
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 明らか
+      reading: あきらか
+      romanization: akiraka
+      pos: tính từ な
+    back:
+      meaning:
+        vi: rõ ràng, hiển nhiên
+      examples:
+        - target: 彼が間違っているのは明らかです。
+          translation:
+            vi: Rõ ràng là anh ta sai.
+  - key: ja:item:n2-u12-tekisetsu
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 適切
+      reading: てきせつ
+      romanization: tekisetsu
+      pos: tính từ な
+    back:
+      meaning:
+        vi: thích hợp, đúng mức
+      examples:
+        - target: 適切な対応をお願いします。
+          translation:
+            vi: Xin hãy có cách ứng xử thích hợp.
+  - key: ja:item:n2-u12-fukaketsu
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 不可欠
+      reading: ふかけつ
+      romanization: fukaketsu
+      pos: tính từ な
+    back:
+      meaning:
+        vi: không thể thiếu
+      examples:
+        - target: 睡眠は健康に不可欠です。
+          translation:
+            vi: Giấc ngủ là điều không thể thiếu cho sức khoẻ.
+  - key: ja:item:n2-u12-jojoni
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 徐々に
+      reading: じょじょに
+      romanization: jojo ni
+      pos: phó từ
+    back:
+      meaning:
+        vi: dần dần, từ từ
+      examples:
+        - target: 徐々に体が慣れてきました。
+          translation:
+            vi: Cơ thể tôi dần quen.
+  - key: ja:item:n2-u12-tsugitsugi
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 次々
+      reading: つぎつぎ
+      romanization: tsugitsugi
+      pos: phó từ
+    back:
+      meaning:
+        vi: lần lượt, liên tiếp
+      examples:
+        - target: 新しい店が次々にできています。
+          translation:
+            vi: Cửa hàng mới liên tiếp mở ra.
+  - key: ja:item:n2-u12-soutou
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 相当
+      reading: そうとう
+      romanization: soutou
+      pos: phó từ / danh từ
+    back:
+      meaning:
+        vi: khá, đáng kể; tương đương
+      examples:
+        - target: 今日は相当寒いです。
+          translation:
+            vi: Hôm nay lạnh khá nhiều.
+  - key: ja:item:n2-u12-oohaba
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 大幅
+      reading: おおはば
+      romanization: oohaba
+      pos: tính từ な / danh từ
+    back:
+      meaning:
+        vi: đáng kể, mạnh (mức biến động lớn)
+      examples:
+        - target: 売り上げが大幅に増えました。
+          translation:
+            vi: Doanh thu đã tăng mạnh.
+  - key: ja:item:n2-u12-wazuka
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: わずか
+      romanization: wazuka
+      pos: tính từ な / phó từ
+    back:
+      meaning:
+        vi: chỉ một chút, ít ỏi
+      examples:
+        - target: 残りはわずか三日です。
+          translation:
+            vi: Chỉ còn vỏn vẹn ba ngày.
+  - key: ja:item:n2-u12-semete
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: せめて
+      romanization: semete
+      pos: phó từ
+    back:
+      meaning:
+        vi: ít nhất thì, giá mà ít nhất
+      examples:
+        - target: せめて電話くらいはしてほしかった。
+          translation:
+            vi: Ít nhất tôi cũng mong bạn gọi điện.
+  - key: ja:item:n2-u12-sekkaku
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: せっかく
+      romanization: sekkaku
+      pos: phó từ
+    back:
+      meaning:
+        vi: cất công, mất công; hiếm hoi mới
+      examples:
+        - target: せっかく来たのに、店は休みでした。
+          translation:
+            vi: Mất công đến mà cửa hàng lại nghỉ.

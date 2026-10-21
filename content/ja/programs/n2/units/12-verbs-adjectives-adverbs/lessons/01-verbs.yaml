@@ -1,0 +1,384 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n2-u12-verbs
+order_index: 1
+level: n2
+title:
+  vi: Động từ N2 - 避ける・認める・励ます・憧れる
+objectives:
+  - vi: "Dùng 18 động từ N2 thông dụng trong bài đọc và hội thoại: 避ける, 逃げる, 迷う, 認める, 訴える, 述べる, 補う, 整える, 鍛える, 励ます..."
+  - vi: Nhận ra collocation đi kèm từng động từ.
+  - vi: Đọc hiểu tình huống ngắn có các động từ này.
+estimated_minutes: 20
+skills:
+  - vocabulary
+  - reading
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n2-u11-feeling
+items:
+  - item: ja:item:n2-u12-sakeru
+  - item: ja:item:n2-u12-nigeru
+  - item: ja:item:n2-u12-mayou
+  - item: ja:item:n2-u12-mitomeru
+  - item: ja:item:n2-u12-uttaeru
+  - item: ja:item:n2-u12-noberu
+  - item: ja:item:n2-u12-oginau
+  - item: ja:item:n2-u12-totonoeru
+  - item: ja:item:n2-u12-kitaeru
+  - item: ja:item:n2-u12-hagemasu
+  - item: ja:item:n2-u12-nagusameru
+  - item: ja:item:n2-u12-akogareru
+  - item: ja:item:n2-u12-nageku
+  - item: ja:item:n2-u12-utagau
+  - item: ja:item:n2-u12-kuyamu
+  - item: ja:item:n2-u12-nerau
+  - item: ja:item:n2-u12-sorou
+  - item: ja:item:n2-u12-kakaeru
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn dùng đúng 18 động từ N2 - 混雑を避ける, 自分の間違いを認める, 落ち込んでいる友達を励ます, 優勝を狙う - và đọc hiểu đoạn văn có chúng.
+  - type: explain
+    text:
+      vi: "Nhóm hành động: 避ける (tránh), 逃げる (chạy trốn), 迷う (do dự), 認める (thừa nhận), 訴える (kêu gọi), 述べる (trình bày), 補う (bù đắp), 整える (chỉnh đốn), 鍛える (rèn luyện). Nhóm cảm xúc và tác động: 励ます (động viên), 慰める (an ủi), 憧れる (ngưỡng mộ), 嘆く (than thở), 疑う (nghi ngờ), 悔やむ (hối tiếc), 狙う (nhắm tới), 揃う (đủ mặt), 抱える (gánh vác)."
+  - type: explain
+    text:
+      vi: "Collocation thường gặp: 混雑を避ける, 危険から逃げる, どちらにするか迷う, 間違いを認める, 環境の改善を訴える, 意見を述べる, 不足を補う, 体調を整える, 体を鍛える, 友達を励ます, 子どもを慰める, 将来を嘆く, 話を疑う, 失敗を悔やむ, 優勝を狙う, 全員が揃う, 問題を抱える."
+  - type: explain
+    text:
+      vi: "Chú ý trợ từ: 逃げる đi với から (火事から逃げる), 憧れる đi với に (パイロットに憧れる), 悔やむ đi với を, 揃う là tự động từ (が揃う) còn 揃える là tha động từ (を揃える)."
+  - type: deep_explain
+    text:
+      vi: Một số cặp dễ nhầm. 迷う vừa là "do dự" vừa là "lạc đường" (道に迷う); 慰める (an ủi người đang buồn) khác 励ます (cổ vũ người đang nản). 抱える ngoài "ôm" còn dùng cho vấn đề, nợ nần (問題を抱える, 借金を抱える). 訴える có thể là "kêu gọi" hoặc "khiếu nại, kiện" tuỳ ngữ cảnh. 認める vừa "thừa nhận" vừa "công nhận, cho phép".
+  - type: example
+    target: 混雑を避けて、早めに出かけました。
+    target_lang: ja
+    translation:
+      vi: Tôi ra khỏi nhà sớm để tránh đông đúc.
+    note:
+      vi: 避ける.
+  - type: example
+    target: 自分の間違いを認めて、みんなに謝りました。
+    target_lang: ja
+    translation:
+      vi: Tôi thừa nhận lỗi của mình và xin lỗi mọi người.
+    note:
+      vi: 認める.
+  - type: example
+    target: 落ち込んでいる友達を励ましました。
+    target_lang: ja
+    translation:
+      vi: Tôi đã động viên người bạn đang chán nản.
+    note:
+      vi: 励ます.
+  - type: example
+    target: 子どもの頃から、パイロットに憧れていました。
+    target_lang: ja
+    translation:
+      vi: Từ nhỏ tôi đã ngưỡng mộ nghề phi công.
+    note:
+      vi: 憧れる.
+  - type: common_mistake
+    wrong: 友達に慰めて、元気が出ました。(cổ vũ)
+    right: 友達に励まされて、元気が出ました。
+    target_lang: ja
+    note:
+      vi: Người đang nản được cổ vũ dùng 励ます; 慰める dùng khi người đang buồn.
+  - type: common_mistake
+    wrong: 家族が全員揃えました。
+    right: 家族が全員揃いました。
+    target_lang: ja
+    note:
+      vi: 揃う là tự động từ (が揃う); 揃える là tha động từ (を揃える).
+  - type: summary
+    points:
+      - vi: 避ける · 逃げる · 迷う · 認める · 訴える · 述べる · 補う · 整える · 鍛える.
+      - vi: 励ます · 慰める · 憧れる · 嘆く · 疑う · 悔やむ · 狙う · 揃う · 抱える.
+      - vi: 励ます (cổ vũ) ≠ 慰める (an ủi).
+      - vi: 揃う (tự) ≠ 揃える (tha).
+exercises:
+  - key: ja:exercise:n2-u12-verbs-v1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u12-sakeru
+    prompt:
+      stem: Từ nào có nghĩa là “tránh, né”?
+      stem_lang: vi
+      options:
+        - id: qy4
+          text: 避ける
+          lang: ja
+        - id: sl8
+          text: 逃げる
+          lang: ja
+        - id: y1k
+          text: 認める
+          lang: ja
+        - id: z2f
+          text: 迷う
+          lang: ja
+    answer:
+      correct_option_id: qy4
+    explanation:
+      vi: 避ける là tránh, né. 逃げる là chạy trốn, 迷う là do dự, 認める là thừa nhận.
+    display_answer: 避ける
+  - key: ja:exercise:n2-u12-verbs-v2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u12-hagemasu
+    prompt:
+      stem: Bạn cổ vũ người bạn đang nản. Từ nào?
+      stem_lang: vi
+      options:
+        - id: vtj
+          text: 慰める
+          lang: ja
+        - id: m10
+          text: 励ます
+          lang: ja
+        - id: vp9
+          text: 嘆く
+          lang: ja
+        - id: ys4
+          text: 疑う
+          lang: ja
+    answer:
+      correct_option_id: m10
+    explanation:
+      vi: 励ます là động viên, cổ vũ. 慰める là an ủi người đang buồn, 嘆く là than thở, 疑う là nghi ngờ.
+    display_answer: 励ます
+  - key: ja:exercise:n2-u12-verbs-v3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u12-akogareru
+    prompt:
+      audio_asset_id: null
+      fallback_text: 子どもの頃から、パイロットに憧れていました。
+      options:
+        - id: eew
+          text: Từ nhỏ tôi đã làm phi công.
+          lang: vi
+        - id: t9n
+          text: Tôi đã trở thành phi công khi còn nhỏ.
+          lang: vi
+        - id: oo6
+          text: Từ nhỏ tôi đã ngưỡng mộ nghề phi công.
+          lang: vi
+        - id: cm0
+          text: Từ nhỏ tôi đã sợ nghề phi công.
+          lang: vi
+    answer:
+      correct_option_id: oo6
+    explanation:
+      vi: 憧れる - ngưỡng mộ, khao khát; パイロット - phi công.
+    display_answer: Từ nhỏ tôi đã ngưỡng mộ nghề phi công.
+  - key: ja:exercise:n2-u12-verbs-v4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u12-mitomeru
+    prompt:
+      template: 自分の間違いを{{b1}}ました。 (Tôi đã thừa nhận lỗi của mình.)
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Thừa nhận.
+        - Bắt đầu bằng 認.
+    answer:
+      blanks:
+        b1:
+          - 認め
+          - みとめ
+    known_wrong:
+      - answer: 疑い
+        feedback_vi: 疑う là nghi ngờ; thừa nhận là 認める.
+        error_tag: verb_choice
+    explanation:
+      vi: 認める - thừa nhận.
+    display_answer: 自分の間違いを認めました。
+  - key: ja:exercise:n2-u12-verbs-v5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u12-sorou
+    prompt:
+      stem: Cả gia đình có mặt đủ. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: cl0
+          text: 家族が全員揃えました
+          lang: ja
+        - id: tf4
+          text: 家族を全員揃いました
+          lang: ja
+        - id: vir
+          text: 家族が全員揃いました
+          lang: ja
+        - id: ue7
+          text: 家族に全員揃いました
+          lang: ja
+    answer:
+      correct_option_id: vir
+    explanation:
+      vi: "揃う là tự động từ nên dùng が: 家族が揃う. 揃える mới đi với を."
+    display_answer: 家族が全員揃いました
+  - key: ja:exercise:n2-u12-verbs-v6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u12-kitaeru
+    prompt:
+      template: 毎日走って、体を{{b1}}います。 (Tôi chạy mỗi ngày để rèn luyện cơ thể.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - 鍛えて
+          - きたえて
+    known_wrong:
+      - answer: 整えて
+        feedback_vi: 整える là chỉnh đốn; rèn cơ thể là 鍛える.
+        error_tag: verb_choice
+    explanation:
+      vi: 鍛える - rèn luyện.
+    display_answer: 毎日走って、体を鍛えています。
+  - key: ja:exercise:n2-u12-verbs-v7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u12-kakaeru
+    prompt:
+      template: 多くの問題を{{b1}}います。 (Tôi đang gánh nhiều vấn đề.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - 抱えて
+          - かかえて
+    known_wrong:
+      - answer: 補って
+        feedback_vi: 補う là bù đắp; gánh vấn đề là 抱える.
+        error_tag: verb_choice
+    explanation:
+      vi: 問題を抱える - gánh vấn đề.
+    display_answer: 多くの問題を抱えています。
+  - key: ja:exercise:n2-u12-verbs-v8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u12-sakeru
+    prompt:
+      source_text: Tôi ra khỏi nhà sớm để tránh đông đúc.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 混雑を避けて、早めに出かけました。
+        - 混雑を避けるために、早めに出かけました。
+        - こんざつをさけて、はやめにでかけました。
+        - 混雑を避けて早めに出かけました。
+    known_wrong:
+      - answer: 混雑を逃げて、早めに出かけました。
+        feedback_vi: 逃げる cần から (混雑から逃げる); "tránh" dùng 避ける.
+        error_tag: verb_choice
+    explanation:
+      vi: 混雑を避ける - tránh đông đúc.
+    display_answer: 混雑を避けて、早めに出かけました。
+  - key: ja:exercise:n2-u12-verbs-v9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n2-u12-uttaeru
+    prompt:
+      source_text: 市民は環境の改善を訴えましたが、政府は問題を認めようとしませんでした。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Người dân kêu gọi cải thiện môi trường nhưng chính phủ không chịu thừa nhận vấn đề.
+        - Người dân đã yêu cầu cải thiện môi trường, nhưng chính phủ không muốn thừa nhận vấn đề.
+        - Người dân kêu gọi cải thiện môi trường, còn chính phủ nhất quyết không thừa nhận vấn đề.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Người dân thừa nhận vấn đề môi trường và chính phủ kêu gọi cải thiện.
+        feedback_vi: 訴えた là kêu gọi (người dân); 認めようとしなかった là không chịu thừa nhận (chính phủ).
+        error_tag: meaning
+    explanation:
+      vi: 訴える - kêu gọi; 認めようとしない - không chịu thừa nhận.
+    display_answer: Người dân kêu gọi cải thiện môi trường nhưng chính phủ không chịu thừa nhận vấn đề.
+  - key: ja:exercise:n2-u12-verbs-v11b
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u12-noberu
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Tôi đã trình bày ý kiến của mình trong cuộc họp."'
+      tokens:
+        - id: t2
+          text: 自分の意見を
+        - id: t3
+          text: 述べました。
+        - id: t1
+          text: 会議で
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+        - - t2
+          - t1
+          - t3
+    explanation:
+      vi: Nơi (会議で) → tân ngữ → 述べました.
+    display_answer: 会議で自分の意見を述べました。
+  - key: ja:exercise:n2-u12-verbs-v11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u12-mayou
+    prompt:
+      stem: Bạn phân vân không biết chọn bên nào. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: tky
+          text: どちらにするか迷っています
+          lang: ja
+        - id: e60
+          text: どちらにするか認めています
+          lang: ja
+        - id: a3h
+          text: どちらにするか鍛えています
+          lang: ja
+        - id: vwo
+          text: どちらにするか避けています
+          lang: ja
+    answer:
+      correct_option_id: tky
+    explanation:
+      vi: 迷う - phân vân. 認める, 避ける, 鍛える không hợp với どちらにするか.
+    display_answer: どちらにするか迷っています
