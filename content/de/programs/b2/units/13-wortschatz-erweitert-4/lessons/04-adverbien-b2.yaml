@@ -1,0 +1,236 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w4-adverbien-b2
+order_index: 4
+level: b2
+title:
+  vi: Trạng từ và từ biểu thị mức độ ở trình độ B2 (Adverbien und Gradpartikeln)
+objectives:
+  - vi: "Dùng các trạng từ biểu thị mức độ, thái độ và sự giới hạn: nahezu, geradezu, keineswegs, allenfalls."
+  - vi: "Dùng trạng từ liên kết ý: hingegen, zudem, mithin, zugleich, insbesondere."
+  - vi: Đặt trạng từ đúng vị trí trong câu và nhận biết sắc thái trang trọng.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w4-sprache-ausdruck
+items:
+  - item: de:item:b2w4-allenfalls
+  - item: de:item:b2w4-annaehernd
+  - item: de:item:b2w4-ausschliesslich
+  - item: de:item:b2w4-beispielsweise
+  - item: de:item:b2w4-ebenso
+  - item: de:item:b2w4-flaechendeckend
+  - item: de:item:b2w4-geradezu
+  - item: de:item:b2w4-gewissermassen
+  - item: de:item:b2w4-hingegen
+  - item: de:item:b2w4-insbesondere
+  - item: de:item:b2w4-keineswegs
+  - item: de:item:b2w4-mithin
+  - item: de:item:b2w4-mitunter
+  - item: de:item:b2w4-nachtraeglich
+  - item: de:item:b2w4-nahezu
+  - item: de:item:b2w4-sozusagen
+  - item: de:item:b2w4-stets
+  - item: de:item:b2w4-ueberwiegend
+  - item: de:item:b2w4-unmittelbar
+  - item: de:item:b2w4-vornehmlich
+  - item: de:item:b2w4-wahlweise
+  - item: de:item:b2w4-zugleich
+  - item: de:item:b2w4-zusehends
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn dùng đúng nhiều trạng từ trang trọng để diễn tả mức độ, giới hạn và quan hệ giữa các ý, giúp bài viết và bài nói tự nhiên và chính xác hơn.
+  - type: explain
+    text:
+      vi: "Trạng từ chỉ mức độ: nahezu (gần như), annähernd (xấp xỉ), geradezu (thật sự là, gần như là), überwiegend (chủ yếu), ausschließlich (hoàn toàn chỉ), vornehmlich (chủ yếu), gewissermaßen (có thể nói là), sozusagen (có thể nói thế). Ví dụ: Nahezu alle Teilnehmer waren zufrieden. Das ist geradezu unmöglich."
+  - type: explain
+    text:
+      vi: "Trạng từ giới hạn và phủ định: keineswegs (hoàn toàn không), allenfalls (cùng lắm), mitunter (đôi khi), zusehends (ngày càng rõ rệt). Ví dụ: Das ist keineswegs sicher. Es kommen allenfalls zehn Gäste. Mitunter ist das Wetter im April sehr launisch."
+  - type: explain
+    text:
+      vi: "Trạng từ liên kết: hingegen (ngược lại), mithin (do đó, vì vậy), zugleich (đồng thời), insbesondere (đặc biệt là), ebenso (cũng như vậy), beispielsweise, wahlweise (tùy chọn), nachträglich (sau đó, bổ sung), flächendeckend (phủ rộng), unmittelbar (trực tiếp, ngay lập tức), stets (luôn luôn). Chúng thường đứng ở vị trí đầu hoặc giữa câu."
+  - type: deep_explain
+    text:
+      vi: "Mithin thuộc văn phong rất trang trọng: Er ist mithin nicht zuständig. Hingegen đối lập hai phần: Die einen sparen, die anderen hingegen geben viel aus. Ausschließlich nhấn mạnh sự độc nhất: Das Angebot gilt ausschließlich für Neukunden. Stets khá trang trọng và văn viết; trong nói chuyện người ta hay dùng immer."
+  - type: example
+    target: Das kostet allenfalls zehn Euro.
+    target_lang: de
+    translation:
+      vi: Cái này cùng lắm chỉ tốn mười euro.
+    note:
+      vi: allenfalls = cùng lắm, nhiều nhất là.
+  - type: example
+    target: Es kamen annähernd hundert Gäste.
+    target_lang: de
+    translation:
+      vi: Gần một trăm khách đã đến.
+    note:
+      vi: annähernd = xấp xỉ, gần như.
+  - type: example
+    target: Das Angebot gilt ausschließlich für Studenten.
+    target_lang: de
+    translation:
+      vi: Ưu đãi chỉ áp dụng riêng cho sinh viên.
+    note:
+      vi: ausschließlich = chỉ riêng, hoàn toàn chỉ.
+  - type: example
+    target: Man kann beispielsweise mit dem Rad fahren.
+    target_lang: de
+    translation:
+      vi: Chẳng hạn người ta có thể đi xe đạp.
+    note:
+      vi: beispielsweise = chẳng hạn.
+  - type: common_mistake
+    wrong: Es kommen allenfalls zehn Gäste nicht.
+    right: Es kommen allenfalls zehn Gäste.
+    target_lang: de
+    note:
+      vi: Allenfalls đã mang nghĩa giới hạn (cùng lắm); không cần thêm nicht.
+  - type: common_mistake
+    wrong: Das ist keineswegs nicht sicher.
+    right: Das ist keineswegs sicher.
+    target_lang: de
+    note:
+      vi: Keineswegs đã là phủ định hoàn toàn; không thêm nicht.
+  - type: summary
+    points:
+      - vi: nahezu, annähernd, geradezu, überwiegend, ausschließlich, vornehmlich, gewissermaßen, sozusagen, insbesondere.
+      - vi: keineswegs, allenfalls, mitunter, zusehends, stets, unmittelbar, nachträglich, flächendeckend.
+      - vi: "hingegen, mithin, zugleich, ebenso, beispielsweise, wahlweise: nối ý; vị trí đầu hoặc giữa câu, động từ chia ở vị trí thứ hai."
+exercises:
+  - key: de:exercise:b2w4l4-listen-zugleich
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w4-zugleich
+    prompt:
+      audio_asset_id: null
+      fallback_text: Sie ist Ärztin und zugleich Autorin.
+      options:
+        - { id: pmp, text: Có thể chọn gọi súp hoặc salad., lang: vi }
+        - { id: xee, text: Cô ấy luôn thân thiện., lang: vi }
+        - { id: wbz, text: Cái này cùng lắm chỉ tốn mười euro., lang: vi }
+        - { id: c4i, text: Bà là bác sĩ và đồng thời là tác giả., lang: vi }
+    answer:
+      correct_option_id: c4i
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Bà là bác sĩ và đồng thời là tác giả.". Từ khoá là zugleich (đồng thời); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Bà là bác sĩ và đồng thời là tác giả.
+  - key: de:exercise:b2w4l4-mcq-vi-de-vornehmlich
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w4-vornehmlich
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "chủ yếu là"?
+      stem_lang: vi
+      options:
+        - { id: e4h, text: unmittelbar, lang: de }
+        - { id: mrm, text: nachträglich, lang: de }
+        - { id: ltb, text: mithin, lang: de }
+        - { id: xzc, text: vornehmlich, lang: de }
+    answer:
+      correct_option_id: xzc
+    explanation:
+      vi: "vornehmlich nghĩa là \"chủ yếu là\". Ví dụ: Das Angebot richtet sich vornehmlich an Familien. (Ưu đãi chủ yếu dành cho các gia đình.)"
+    display_answer: vornehmlich
+  - key: de:exercise:b2w4l4-mcq-de-vi-mithin
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w4-mithin
+    prompt:
+      stem: "\"mithin\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: bo6, text: gần như, lang: vi }
+        - { id: hem, text: "chủ yếu, phần lớn", lang: vi }
+        - { id: pok, text: "chỉ riêng, hoàn toàn chỉ", lang: vi }
+        - { id: o4e, text: "do đó, vì vậy (trang trọng)", lang: vi }
+    answer:
+      correct_option_id: o4e
+    explanation:
+      vi: "mithin nghĩa là \"do đó, vì vậy (trang trọng)\". Ví dụ: Er ist nicht zuständig, mithin kann er nicht entscheiden. (Ông ấy không có thẩm quyền, do đó không thể quyết định.)"
+    display_answer: do đó, vì vậy (trang trọng)
+  - key: de:exercise:b2w4l4-tr-word-insbesondere
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w4-insbesondere
+    prompt:
+      source_text: đặc biệt là
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - insbesondere
+    explanation:
+      vi: "\"đặc biệt là\" trong tiếng Đức là insbesondere. Ví dụ: Viele, insbesondere ältere Menschen, nutzen das Angebot."
+    display_answer: insbesondere
+  - key: de:exercise:b2w4l4-mcq-luecke-allenfalls
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w4-allenfalls
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Cái này cùng lắm chỉ tốn mười euro.\": Das kostet ___ zehn Euro."
+      stem_lang: vi
+      options:
+        - { id: jro, text: allenfalls, lang: de }
+        - { id: p1e, text: flächendeckend, lang: de }
+        - { id: byh, text: ebenso, lang: de }
+        - { id: xyi, text: ausschließlich, lang: de }
+    answer:
+      correct_option_id: jro
+    explanation:
+      vi: "Câu có nghĩa \"Cái này cùng lắm chỉ tốn mười euro.\" nên cần allenfalls (allenfalls: cùng lắm, nhiều nhất là). ebenso = cũng như vậy; flächendeckend = phủ rộng khắp; ausschließlich = chỉ riêng, hoàn toàn chỉ không đúng nghĩa của câu."
+    display_answer: allenfalls
+  - key: de:exercise:b2w4l4-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Nahezu alle Teilnehmer waren zufrieden, einige hingegen kritisierten, dass die Organisation mitunter chaotisch war.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Nahezu alle Teilnehmer waren zufrieden, einige hingegen kritisierten, dass die Organisation mitunter chaotisch war.
+        - Nahezu alle Teilnehmer waren zufrieden, einige dagegen kritisierten, dass die Organisation mitunter chaotisch war.
+        - Fast alle Teilnehmer waren zufrieden, einige hingegen kritisierten, dass die Organisation mitunter chaotisch war.
+    explanation:
+      vi: "Gợi ý đáp án: Nahezu alle Teilnehmer waren zufrieden, einige hingegen kritisierten, dass die Organisation mitunter chaotisch war. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Nahezu alle Teilnehmer waren zufrieden, einige hingegen kritisierten, dass die Organisation mitunter chaotisch war.
+    item: de:item:b2w4-hingegen
+  - key: de:exercise:b2w4l4-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Das Internet ist zusehends unverzichtbar geworden, und der Ausbau soll flächendeckend, aber ausschließlich mit öffentlichen Mitteln erfolgen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Internet ngày càng trở nên không thể thiếu và việc mở rộng cần phủ khắp, nhưng chỉ dùng nguồn công.
+        - Internet ngày càng thiết yếu, và việc phát triển hạ tầng được dự kiến phủ rộng, nhưng chỉ bằng ngân sách công.
+        - Mạng Internet dần trở nên không thể thiếu, và việc mở rộng phải phủ sóng rộng khắp, nhưng chỉ bằng nguồn lực nhà nước.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Das Internet ist zusehends unverzichtbar geworden, und der Ausbau soll flächendeckend, aber ausschließlich mit öffentlichen Mitteln erfolgen.\" nghĩa là: Internet ngày càng trở nên không thể thiếu và việc mở rộng cần phủ khắp, nhưng chỉ dùng nguồn công. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Internet ngày càng trở nên không thể thiếu và việc mở rộng cần phủ khắp, nhưng chỉ dùng nguồn công.
+    item: de:item:b2w4-ausschliesslich

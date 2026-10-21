@@ -1,0 +1,301 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w4-sprache-ausdruck
+order_index: 3
+level: b2
+title:
+  vi: Ngôn ngữ, cách diễn đạt và sự thay đổi của ngôn ngữ (Sprache und Ausdruck)
+objectives:
+  - vi: "Nói về ngôn ngữ như một chủ đề: cách diễn đạt, từ mượn, ngôn ngữ chuyên ngành."
+  - vi: "Dùng các từ để đánh giá một cách diễn đạt: geläufig, veraltet, mehrdeutig, bildhaft."
+  - vi: Dùng động từ umschreiben, formulieren để nói về cách viết và diễn đạt lại.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w4-katastrophen-unfaelle
+items:
+  - item: de:item:b2w4-fachsprache
+  - item: de:item:b2w4-umgangssprache
+  - item: de:item:b2w4-schriftsprache
+  - item: de:item:b2w4-sprachgebrauch
+  - item: de:item:b2w4-ausdrucksweise
+  - item: de:item:b2w4-sprachwandel
+  - item: de:item:b2w4-bedeutungswandel
+  - item: de:item:b2w4-fremdwort
+  - item: de:item:b2w4-anglizismus
+  - item: de:item:b2w4-mehrdeutigkeit
+  - item: de:item:b2w4-zweideutigkeit
+  - item: de:item:b2w4-metapher
+  - item: de:item:b2w4-betonung
+  - item: de:item:b2w4-satzzeichen
+  - item: de:item:b2w4-zungenbrecher
+  - item: de:item:b2w4-eselsbruecke
+  - item: de:item:b2w4-wortschoepfung
+  - item: de:item:b2w4-umschreiben
+  - item: de:item:b2w4-formulieren
+  - item: de:item:b2w4-gelaeufig
+  - item: de:item:b2w4-gebraeuchlich
+  - item: de:item:b2w4-veraltet
+  - item: de:item:b2w4-bildhaft
+  - item: de:item:b2w4-mehrdeutig
+  - item: de:item:b2w4-missverstaendlich
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn bàn luận được về ngôn ngữ, từ vay mượn và cách diễn đạt, và đánh giá được tính tự nhiên và chính xác của một cách nói hoặc một văn bản.
+  - type: explain
+    text:
+      vi: "Các loại ngôn ngữ: die Fachsprache (ngôn ngữ chuyên ngành), die Umgangssprache (ngôn ngữ đời thường, số ít), die Schriftsprache, der Sprachgebrauch (cách dùng ngôn ngữ, số ít), die Ausdrucksweise. Hiện tượng: der Sprachwandel, der Bedeutungswandel, die Wortschöpfung, das Fremdwort, der Anglizismus (số nhiều die Anglizismen)."
+  - type: explain
+    text:
+      vi: "Từ để đánh giá cách diễn đạt: geläufig (quen thuộc), gebräuchlich (thông dụng), veraltet (lỗi thời), bildhaft (có hình ảnh), mehrdeutig và missverständlich (dễ hiểu nhầm). Danh từ: die Mehrdeutigkeit, die Zweideutigkeit, die Metapher (phép ẩn dụ), die Betonung, das Satzzeichen, der Zungenbrecher, die Eselsbrücke (mẹo ghi nhớ)."
+  - type: explain
+    text:
+      vi: "Động từ: umschreiben (diễn đạt vòng, nói gián tiếp: umschreibt, umschrieb, hat umschrieben; không tách) và formulieren (diễn đạt thành lời). Ví dụ: Man kann das Wort umschreiben, wenn man es vergessen hat. Bitte formulieren Sie Ihre Frage klarer. Umschreiben tách có nghĩa viết lại: Ich schreibe den Text um."
+  - type: deep_explain
+    text:
+      vi: "Umschreiben có hai nghĩa tùy tách hay không: umschreiben (không tách, trọng âm ở âm 2) là nói vòng, định nghĩa gián tiếp; umschreiben (tách, trọng âm ở um) là viết lại. Anglizismen (từ mượn tiếng Anh như Meeting, Update) rất phổ biến trong tiếng Đức; một số người thích dùng từ thuần Đức, ví dụ Besprechung thay cho Meeting. Die Eselsbrücke là mẹo nhớ giúp ghi nhớ một quy tắc."
+  - type: example
+    target: In der Fachsprache der Medizin gibt es viele lateinische Wörter.
+    target_lang: de
+    translation:
+      vi: Trong ngôn ngữ chuyên ngành y học có nhiều từ Latinh.
+    note:
+      vi: die Fachsprache = ngôn ngữ chuyên ngành.
+  - type: example
+    target: In der Umgangssprache sagt man „kriegen“ statt „bekommen“.
+    target_lang: de
+    translation:
+      vi: Trong ngôn ngữ đời thường người ta nói “kriegen” thay cho “bekommen”.
+    note:
+      vi: die Umgangssprache = ngôn ngữ đời thường.
+  - type: example
+    target: In der Schriftsprache gelten strengere Regeln.
+    target_lang: de
+    translation:
+      vi: Ngôn ngữ viết có những quy tắc nghiêm hơn.
+    note:
+      vi: die Schriftsprache = ngôn ngữ viết.
+  - type: example
+    target: Im allgemeinen Sprachgebrauch ist das Wort selten.
+    target_lang: de
+    translation:
+      vi: Trong cách dùng ngôn ngữ chung, từ này hiếm gặp.
+    note:
+      vi: der Sprachgebrauch = cách dùng ngôn ngữ.
+  - type: common_mistake
+    wrong: Das Wort ist veralten.
+    right: Das Wort ist veraltet.
+    target_lang: de
+    note:
+      vi: "Sau sein, tính từ là Partizip II: veraltet."
+  - type: common_mistake
+    wrong: Ich habe den Text umgeschrieben und die Idee umschreiben.
+    right: Ich habe den Text umgeschrieben und die Idee umschrieben.
+    target_lang: de
+    note:
+      vi: "Hai động từ khác nhau: umschreiben (tách, viết lại) → umgeschrieben; umschreiben (không tách, nói vòng) → umschrieben."
+  - type: summary
+    points:
+      - vi: die Fachsprache, die Umgangssprache, die Schriftsprache, der Sprachgebrauch, die Ausdrucksweise, der Sprachwandel, der Bedeutungswandel, das Fremdwort, der Anglizismus.
+      - vi: geläufig, gebräuchlich, veraltet, bildhaft, mehrdeutig, missverständlich; die Mehrdeutigkeit, die Zweideutigkeit, die Metapher.
+      - vi: umschreiben (không tách) và umschreiben (tách), formulieren; die Betonung, das Satzzeichen, der Zungenbrecher, die Eselsbrücke, die Wortschöpfung.
+exercises:
+  - key: de:exercise:b2w4l3-listen-gelaeufig
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w4-gelaeufig
+    prompt:
+      audio_asset_id: null
+      fallback_text: Dieser Ausdruck ist heute nicht mehr geläufig.
+      options:
+        - { id: kjf, text: Sự biến đổi ngôn ngữ là một quá trình tự nhiên., lang: vi }
+        - { id: yrz, text: Xin hãy diễn đạt câu hỏi rõ ràng hơn., lang: vi }
+        - { id: erm, text: Ngôn ngữ viết có những quy tắc nghiêm hơn., lang: vi }
+        - { id: usp, text: Cách diễn đạt này nay không còn thông dụng., lang: vi }
+    answer:
+      correct_option_id: usp
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Cách diễn đạt này nay không còn thông dụng.". Từ khoá là geläufig (quen thuộc, thường gặp); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Cách diễn đạt này nay không còn thông dụng.
+  - key: de:exercise:b2w4l3-mcq-vi-de-zungenbrecher
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w4-zungenbrecher
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "câu khó đọc (líu lưỡi)"?
+      stem_lang: vi
+      options:
+        - { id: z5k, text: die Eselsbrücke, lang: de }
+        - { id: dyu, text: der Zungenbrecher, lang: de }
+        - { id: ral, text: die Fachsprache, lang: de }
+        - { id: zlm, text: die Umgangssprache, lang: de }
+    answer:
+      correct_option_id: dyu
+    explanation:
+      vi: "der Zungenbrecher nghĩa là \"câu khó đọc (líu lưỡi)\". Ví dụ: Der Zungenbrecher ist schwer auszusprechen. (Câu líu lưỡi này rất khó phát âm.)"
+    display_answer: der Zungenbrecher
+  - key: de:exercise:b2w4l3-mcq-de-vi-bedeutungswandel
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w4-bedeutungswandel
+    prompt:
+      stem: "\"der Bedeutungswandel\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: y0c, text: từ mới được tạo ra, lang: vi }
+        - { id: w49, text: sự thay đổi nghĩa của từ, lang: vi }
+        - { id: vrh, text: ngôn ngữ đời thường, lang: vi }
+        - { id: tsq, text: sự biến đổi ngôn ngữ, lang: vi }
+    answer:
+      correct_option_id: w49
+    explanation:
+      vi: "der Bedeutungswandel nghĩa là \"sự thay đổi nghĩa của từ\". Ví dụ: Beim Wort „geil“ gab es einen großen Bedeutungswandel. (Với từ “geil” đã có một sự thay đổi nghĩa lớn.)"
+    display_answer: sự thay đổi nghĩa của từ
+  - key: de:exercise:b2w4l3-mcq-artikel-anglizismus
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w4-anglizismus
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Anglizismus\" (từ mượn tiếng Anh): ___ Anglizismus"
+      stem_lang: vi
+      options:
+        - { id: ruk, text: das, lang: de }
+        - { id: ddj, text: ein, lang: de }
+        - { id: g1c, text: die, lang: de }
+        - { id: vkc, text: der, lang: de }
+    answer:
+      correct_option_id: vkc
+    explanation:
+      vi: "Anglizismus là danh từ giống đực (der): der Anglizismus; số nhiều: die Anglizismen. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: der
+  - key: de:exercise:b2w4l3-tr-word-ausdrucksweise
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w4-ausdrucksweise
+    prompt:
+      source_text: cách diễn đạt (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - die Ausdrucksweise
+    known_wrong:
+      - answer: der Ausdrucksweise
+        feedback_vi: Ausdrucksweise là giống cái, nên là die Ausdrucksweise.
+        error_tag: article
+      - answer: das Ausdrucksweise
+        feedback_vi: Ausdrucksweise là giống cái, nên là die Ausdrucksweise.
+        error_tag: article
+    explanation:
+      vi: "\"cách diễn đạt\" trong tiếng Đức là die Ausdrucksweise (số nhiều: die Ausdrucksweisen). Ví dụ: Seine Ausdrucksweise ist sehr höflich."
+    display_answer: die Ausdrucksweise
+  - key: de:exercise:b2w4l3-tr-word-umschreiben
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w4-umschreiben
+    prompt:
+      source_text: nói vòng, diễn tả gián tiếp (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - umschreiben
+    explanation:
+      vi: "\"nói vòng, diễn tả gián tiếp\" trong tiếng Đức là umschreiben. Ví dụ: Wenn man ein Wort nicht kennt, kann man es umschreiben."
+    display_answer: umschreiben
+  - key: de:exercise:b2w4l3-fill-plural-schriftsprache
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w4-schriftsprache
+    prompt:
+      template: "Singular: die Schriftsprache · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 17 }
+    answer:
+      blanks:
+        b1:
+          - Schriftsprachen
+    known_wrong:
+      - answer: Schriftsprache
+        feedback_vi: Schriftsprache là dạng số ít; số nhiều là Schriftsprachen.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Schriftsprache là die Schriftsprachen (ký hiệu trong từ điển: -n). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Schriftsprache · Plural: die Schriftsprachen"
+  - key: de:exercise:b2w4l3-mcq-luecke-fachsprache
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w4-fachsprache
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Trong ngôn ngữ chuyên ngành y học có nhiều từ Latinh.\": In der ___ der Medizin gibt es viele lateinische Wörter."
+      stem_lang: vi
+      options:
+        - { id: aq0, text: Anglizismus, lang: de }
+        - { id: u8s, text: Fachsprache, lang: de }
+        - { id: y6k, text: Bedeutungswandel, lang: de }
+        - { id: sso, text: Betonung, lang: de }
+    answer:
+      correct_option_id: u8s
+    explanation:
+      vi: "Câu có nghĩa \"Trong ngôn ngữ chuyên ngành y học có nhiều từ Latinh.\" nên cần Fachsprache (die Fachsprache: ngôn ngữ chuyên ngành). Anglizismus = từ mượn tiếng Anh; Bedeutungswandel = sự thay đổi nghĩa của từ; Betonung = trọng âm, sự nhấn mạnh không đúng nghĩa của câu."
+    display_answer: Fachsprache
+  - key: de:exercise:b2w4l3-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Dieses Wort ist heute veraltet, aber man kann es leicht umschreiben, damit es niemand missversteht.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Dieses Wort ist heute veraltet, aber man kann es leicht umschreiben, damit es niemand missversteht.
+        - Dieses Wort ist heute veraltet, aber man kann es leicht umschreiben, damit es niemand falsch versteht.
+        - Heute ist dieses Wort veraltet, aber man kann es leicht umschreiben, damit es niemand missversteht.
+    explanation:
+      vi: "Gợi ý đáp án: Dieses Wort ist heute veraltet, aber man kann es leicht umschreiben, damit es niemand missversteht. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Dieses Wort ist heute veraltet, aber man kann es leicht umschreiben, damit es niemand missversteht.
+    item: de:item:b2w4-umschreiben
+  - key: de:exercise:b2w4l3-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Viele Anglizismen sind inzwischen geläufig, obwohl sie ursprünglich Fremdwörter waren, und der Sprachwandel geht weiter.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nhiều từ mượn tiếng Anh nay đã quen thuộc, dù ban đầu là từ ngoại lai, và sự thay đổi ngôn ngữ vẫn tiếp tục.
+        - Nhiều từ gốc Anh giờ đã quen thuộc, mặc dù lúc đầu là từ nước ngoài, và sự biến đổi của ngôn ngữ vẫn tiếp diễn.
+        - Hiện nay nhiều từ Anh hóa đã quen dùng, dù lúc đầu chúng là từ ngoại lai, và ngôn ngữ vẫn tiếp tục thay đổi.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Viele Anglizismen sind inzwischen geläufig, obwohl sie ursprünglich Fremdwörter waren, und der Sprachwandel geht weiter.\" nghĩa là: Nhiều từ mượn tiếng Anh nay đã quen thuộc, dù ban đầu là từ ngoại lai, và sự thay đổi ngôn ngữ vẫn tiếp tục. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Nhiều từ mượn tiếng Anh nay đã quen thuộc, dù ban đầu là từ ngoại lai, và sự thay đổi ngôn ngữ vẫn tiếp tục.
+    item: de:item:b2w4-sprachwandel

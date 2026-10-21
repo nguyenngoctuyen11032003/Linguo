@@ -1,0 +1,307 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w4-sicherheit-kriminalitaet
+order_index: 1
+level: b2
+title:
+  vi: An ninh và tội phạm (Sicherheit und Kriminalität)
+objectives:
+  - vi: Hiểu và nói về các loại tội phạm thường gặp và quy trình điều tra.
+  - vi: Dùng các động từ einbrechen, stehlen, betrügen, gestehen, überfallen với đúng dạng Perfekt.
+  - vi: "Đọc hiểu tin tức về vụ án: Fahndung, Festnahme, Geständnis, Haftstrafe, Bewährung."
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w3-verben-b2-3
+items:
+  - item: de:item:b2w4-einbruch
+  - item: de:item:b2w4-diebstahl
+  - item: de:item:b2w4-betrug
+  - item: de:item:b2w4-raub
+  - item: de:item:b2w4-ueberfall
+  - item: de:item:b2w4-koerperverletzung
+  - item: de:item:b2w4-sachbeschaedigung
+  - item: de:item:b2w4-straftat
+  - item: de:item:b2w4-kriminalitaet
+  - item: de:item:b2w4-ermittler
+  - item: de:item:b2w4-fahndung
+  - item: de:item:b2w4-festnahme
+  - item: de:item:b2w4-zeugenaussage
+  - item: de:item:b2w4-gestaendnis
+  - item: de:item:b2w4-alibi
+  - item: de:item:b2w4-haftstrafe
+  - item: de:item:b2w4-bewaehrung
+  - item: de:item:b2w4-gefaengnis
+  - item: de:item:b2w4-praevention
+  - item: de:item:b2w4-videoueberwachung
+  - item: de:item:b2w4-notruf
+  - item: de:item:b2w4-einbrechen
+  - item: de:item:b2w4-stehlen
+  - item: de:item:b2w4-betruegen
+  - item: de:item:b2w4-ueberfallen
+  - item: de:item:b2w4-gestehen
+  - item: de:item:b2w4-erpressen
+  - item: de:item:b2w4-anzeigen
+  - item: de:item:b2w4-fahnden
+  - item: de:item:b2w4-verhaften
+  - item: de:item:b2w4-kriminell
+  - item: de:item:b2w4-vorbestraft
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu được một bản tin về vụ án hay tội phạm, kể lại một sự việc đã xảy ra, và nêu ý kiến về phòng ngừa và hình phạt.
+  - type: explain
+    text:
+      vi: "Các loại tội: der Einbruch (đột nhập), der Diebstahl (trộm cắp), der Betrug (lừa đảo, số ít), der Raub, der Überfall, die Körperverletzung, die Sachbeschädigung (phá hoại tài sản), die Straftat, die Kriminalität. Người liên quan: der Ermittler, der Täter, das Opfer. Cụm: eine Straftat begehen (phạm tội)."
+  - type: explain
+    text:
+      vi: "Quy trình: die Fahndung (truy nã, truy tìm), die Festnahme, die Zeugenaussage, das Geständnis (lời thú tội), das Alibi, die Haftstrafe (án tù), die Bewährung (án treo), das Gefängnis. Phòng ngừa: die Prävention (số ít), die Videoüberwachung (số ít), der Notruf. Ví dụ: Er wurde zu zwei Jahren Haft auf Bewährung verurteilt."
+  - type: explain
+    text:
+      vi: "Động từ bất quy tắc cần học: einbrechen (bricht ein, brach ein, ist eingebrochen), stehlen (stiehlt, stahl, hat gestohlen), betrügen (betrog, hat betrogen), überfallen (überfällt, überfiel, hat überfallen), gestehen (gestand, hat gestanden). Còn erpressen, anzeigen, fahnden (nach + Dativ), verhaften có chia đều. Tính từ: kriminell, vorbestraft."
+  - type: deep_explain
+    text:
+      vi: "Einbrechen dùng sein ở Perfekt (ist eingebrochen), nhưng stehlen dùng haben (hat gestohlen). Betrug và Betrüger đều có nguồn từ betrügen. Die Bewährung nghĩa là án treo: Die Strafe wird zur Bewährung ausgesetzt. Das Alibi không phải là bằng chứng buộc tội mà là chứng cứ ngoại phạm. Cẩn thận phân biệt Diebstahl (lấy trộm không đối đầu) và Raub (dùng vũ lực)."
+  - type: example
+    target: In der Nachbarschaft gab es einen Einbruch.
+    target_lang: de
+    translation:
+      vi: Trong khu phố có một vụ đột nhập.
+    note:
+      vi: der Einbruch = vụ đột nhập.
+  - type: example
+    target: Der Diebstahl wurde der Polizei gemeldet.
+    target_lang: de
+    translation:
+      vi: Vụ trộm đã được báo cho cảnh sát.
+    note:
+      vi: der Diebstahl = vụ trộm cắp.
+  - type: example
+    target: Er wurde wegen Betrug angezeigt.
+    target_lang: de
+    translation:
+      vi: Anh ta bị tố cáo vì lừa đảo.
+    note:
+      vi: der Betrug = sự lừa đảo.
+  - type: example
+    target: Der Raub geschah am helllichten Tag.
+    target_lang: de
+    translation:
+      vi: Vụ cướp xảy ra giữa ban ngày.
+    note:
+      vi: der Raub = vụ cướp.
+  - type: common_mistake
+    wrong: Der Täter hat in das Haus eingebrochen.
+    right: Der Täter ist in das Haus eingebrochen.
+    target_lang: de
+    note:
+      vi: Einbrechen dùng sein ở Perfekt.
+  - type: common_mistake
+    wrong: Der Dieb hat die Uhr gestohlt.
+    right: Der Dieb hat die Uhr gestohlen.
+    target_lang: de
+    note:
+      vi: "Stehlen là động từ bất quy tắc: stiehlt, stahl, hat gestohlen."
+  - type: summary
+    points:
+      - vi: der Einbruch, der Diebstahl, der Betrug, der Raub, der Überfall, die Körperverletzung, die Sachbeschädigung, die Straftat, die Kriminalität.
+      - vi: die Fahndung, die Festnahme, der Ermittler, die Zeugenaussage, das Geständnis, das Alibi, die Haftstrafe, die Bewährung, das Gefängnis.
+      - vi: einbrechen (ist), stehlen, betrügen, überfallen, gestehen, erpressen, anzeigen, fahnden, verhaften; kriminell, vorbestraft; die Prävention, die Videoüberwachung.
+exercises:
+  - key: de:exercise:b2w4l1-listen-fahndung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w4-fahndung
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Polizei hat die Fahndung nach dem Täter eingeleitet.
+      options:
+        - { id: bnc, text: Trong vụ tấn công không ai bị thương., lang: vi }
+        - { id: abq, text: Kẻ lạ đã đột nhập vào văn phòng., lang: vi }
+        - { id: peu, text: Nghi phạm bị bắt ngay trong ngày., lang: vi }
+        - { id: bhd, text: Cảnh sát đã bắt đầu truy tìm thủ phạm., lang: vi }
+    answer:
+      correct_option_id: bhd
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Cảnh sát đã bắt đầu truy tìm thủ phạm.". Từ khoá là die Fahndung (việc truy nã); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Cảnh sát đã bắt đầu truy tìm thủ phạm.
+  - key: de:exercise:b2w4l1-mcq-vi-de-fahnden
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w4-fahnden
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "truy nã, truy tìm (nach + Dativ)"?
+      stem_lang: vi
+      options:
+        - { id: ga7, text: fahnden, lang: de }
+        - { id: ldj, text: anzeigen, lang: de }
+        - { id: rb2, text: erpressen, lang: de }
+        - { id: ewf, text: überfallen, lang: de }
+    answer:
+      correct_option_id: ga7
+    explanation:
+      vi: "fahnden nghĩa là \"truy nã, truy tìm (nach + Dativ)\". Ví dụ: Die Polizei fahndet nach dem Mann. (Cảnh sát truy tìm người đàn ông.)"
+    display_answer: fahnden
+  - key: de:exercise:b2w4l1-mcq-de-vi-haftstrafe
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w4-haftstrafe
+    prompt:
+      stem: "\"die Haftstrafe\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: ixk, text: trộm cắp, lang: vi }
+        - { id: ueh, text: việc phòng ngừa, lang: vi }
+        - { id: ud5, text: "tố cáo, trình báo", lang: vi }
+        - { id: q2e, text: án tù, lang: vi }
+    answer:
+      correct_option_id: q2e
+    explanation:
+      vi: "die Haftstrafe nghĩa là \"án tù\". Ví dụ: Der Täter erhielt eine Haftstrafe von drei Jahren. (Thủ phạm nhận án tù ba năm.)"
+    display_answer: án tù
+  - key: de:exercise:b2w4l1-mcq-artikel-sachbeschaedigung
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w4-sachbeschaedigung
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Sachbeschädigung\" (tội phá hoại tài sản): ___ Sachbeschädigung"
+      stem_lang: vi
+      options:
+        - { id: wiz, text: ein, lang: de }
+        - { id: ash, text: die, lang: de }
+        - { id: qb9, text: der, lang: de }
+        - { id: h5h, text: das, lang: de }
+    answer:
+      correct_option_id: ash
+    explanation:
+      vi: "Sachbeschädigung là danh từ giống cái (die): die Sachbeschädigung; số nhiều: die Sachbeschädigungen. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: die
+  - key: de:exercise:b2w4l1-tr-word-koerperverletzung
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w4-koerperverletzung
+    prompt:
+      source_text: tội gây thương tích (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - die Körperverletzung
+    known_wrong:
+      - answer: der Körperverletzung
+        feedback_vi: Körperverletzung là giống cái, nên là die Körperverletzung.
+        error_tag: article
+      - answer: das Körperverletzung
+        feedback_vi: Körperverletzung là giống cái, nên là die Körperverletzung.
+        error_tag: article
+    explanation:
+      vi: "\"tội gây thương tích\" trong tiếng Đức là die Körperverletzung (số nhiều: die Körperverletzungen). Ví dụ: Er wurde wegen Körperverletzung verurteilt."
+    display_answer: die Körperverletzung
+  - key: de:exercise:b2w4l1-tr-word-ueberfallen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w4-ueberfallen
+    prompt:
+      source_text: tấn công, cướp (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - überfallen
+    explanation:
+      vi: "\"tấn công, cướp\" trong tiếng Đức là überfallen. Ví dụ: Zwei Männer haben die Bank überfallen."
+    display_answer: überfallen
+  - key: de:exercise:b2w4l1-fill-plural-gestaendnis
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w4-gestaendnis
+    prompt:
+      template: "Singular: das Geständnis · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 14 }
+    answer:
+      blanks:
+        b1:
+          - Geständnisse
+    known_wrong:
+      - answer: Geständnis
+        feedback_vi: Geständnis là dạng số ít; số nhiều là Geständnisse.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của das Geständnis là die Geständnisse (ký hiệu trong từ điển: -se). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: das Geständnis · Plural: die Geständnisse"
+  - key: de:exercise:b2w4l1-mcq-luecke-einbruch
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w4-einbruch
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Trong khu phố có một vụ đột nhập.\": In der Nachbarschaft gab es einen ___."
+      stem_lang: vi
+      options:
+        - { id: vzr, text: Betrug, lang: de }
+        - { id: gz6, text: Ermittler, lang: de }
+        - { id: c7m, text: Einbruch, lang: de }
+        - { id: jsw, text: Körperverletzung, lang: de }
+    answer:
+      correct_option_id: c7m
+    explanation:
+      vi: "Câu có nghĩa \"Trong khu phố có một vụ đột nhập.\" nên cần Einbruch (der Einbruch: vụ đột nhập). Betrug = sự lừa đảo; Körperverletzung = tội gây thương tích; Ermittler = điều tra viên không đúng nghĩa của câu."
+    display_answer: Einbruch
+  - key: de:exercise:b2w4l1-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Der Täter ist nachts in das Haus eingebrochen, hat Schmuck gestohlen und wurde später festgenommen.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Der Täter ist nachts in das Haus eingebrochen, hat Schmuck gestohlen und wurde später festgenommen.
+        - Nachts ist der Täter in das Haus eingebrochen, hat Schmuck gestohlen und wurde später festgenommen.
+        - Der Täter brach nachts in das Haus ein, stahl Schmuck und wurde später festgenommen.
+    explanation:
+      vi: "Gợi ý đáp án: Der Täter ist nachts in das Haus eingebrochen, hat Schmuck gestohlen und wurde später festgenommen. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Der Täter ist nachts in das Haus eingebrochen, hat Schmuck gestohlen und wurde später festgenommen.
+  - key: de:exercise:b2w4l1-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Obwohl er alles gestanden hat, wurde er zu einer Haftstrafe auf Bewährung verurteilt, weil er nicht vorbestraft war.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Dù đã thú nhận tất cả, anh ta bị kết án tù treo vì chưa có tiền án.
+        - Mặc dù đã thú tội hết, anh ta chỉ bị tuyên án tù treo vì không có tiền án.
+        - Dù anh ta đã thú nhận mọi thứ, tòa vẫn tuyên án tù treo vì anh chưa từng bị kết án.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Obwohl er alles gestanden hat, wurde er zu einer Haftstrafe auf Bewährung verurteilt, weil er nicht vorbestraft war.\" nghĩa là: Dù đã thú nhận tất cả, anh ta bị kết án tù treo vì chưa có tiền án. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Dù đã thú nhận tất cả, anh ta bị kết án tù treo vì chưa có tiền án.
+    item: de:item:b2w4-haftstrafe

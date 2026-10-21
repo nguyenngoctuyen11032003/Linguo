@@ -1,0 +1,304 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w4-katastrophen-unfaelle
+order_index: 2
+level: b2
+title:
+  vi: Thiên tai, tai nạn và cứu hộ (Katastrophen und Rettung)
+objectives:
+  - vi: Gọi tên các loại thiên tai và hậu quả của chúng.
+  - vi: "Hiểu và dùng từ về cứu hộ: Evakuierung, Rettungskräfte, Notunterkunft, Katastrophenschutz."
+  - vi: Dùng các động từ evakuieren, retten, bergen, einstürzen, überleben đúng Perfekt.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w4-sicherheit-kriminalitaet
+items:
+  - item: de:item:b2w4-naturkatastrophe
+  - item: de:item:b2w4-erdbeben
+  - item: de:item:b2w4-hochwasser
+  - item: de:item:b2w4-waldbrand
+  - item: de:item:b2w4-lawine
+  - item: de:item:b2w4-vulkanausbruch
+  - item: de:item:b2w4-orkan
+  - item: de:item:b2w4-tsunami
+  - item: de:item:b2w4-truemmer
+  - item: de:item:b2w4-wiederaufbau
+  - item: de:item:b2w4-rettungskraefte
+  - item: de:item:b2w4-hilfsorganisation
+  - item: de:item:b2w4-evakuierung
+  - item: de:item:b2w4-notunterkunft
+  - item: de:item:b2w4-katastrophenschutz
+  - item: de:item:b2w4-warnsystem
+  - item: de:item:b2w4-sirene
+  - item: de:item:b2w4-evakuieren
+  - item: de:item:b2w4-retten
+  - item: de:item:b2w4-bergen
+  - item: de:item:b2w4-einstuerzen
+  - item: de:item:b2w4-ueberleben
+  - item: de:item:b2w4-wueten
+  - item: de:item:b2w4-verschuetten
+  - item: de:item:b2w4-abbrennen
+  - item: de:item:b2w4-verheerend
+  - item: de:item:b2w4-glimpflich
+  - item: de:item:b2w4-vermisst
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu tin về thiên tai hay tai nạn lớn, kể lại diễn biến, và hiểu cách cảnh báo, sơ tán và cứu hộ hoạt động.
+  - type: explain
+    text:
+      vi: "Thiên tai: die Naturkatastrophe, das Erdbeben, das Hochwasser, der Waldbrand, die Lawine, der Vulkanausbruch, der Orkan, der Tsunami. Hậu quả: die Trümmer (luôn số nhiều), das Opfer, der Wiederaufbau (số ít). Ví dụ: Nach dem Erdbeben liegt die Stadt in Trümmern."
+  - type: explain
+    text:
+      vi: "Cứu hộ: die Rettungskräfte (luôn số nhiều), die Hilfsorganisation, die Evakuierung, die Notunterkunft, der Katastrophenschutz, das Warnsystem, die Sirene. Ví dụ: Die Rettungskräfte haben die Menschen aus den Trümmern geborgen. Die Bevölkerung wurde per Sirene gewarnt."
+  - type: explain
+    text:
+      vi: "Động từ: evakuieren, retten (cứu), bergen (birgt, barg, hat geborgen: cứu ra, thu hồi), einstürzen (ist eingestürzt), überleben, wüten (hoành hành), verschütten, abbrennen (ist abgebrannt). Tính từ: verheerend (tàn phá), glimpflich (nhẹ nhàng, không quá tệ), vermisst (mất tích). Ví dụ: Der Unfall ist glimpflich ausgegangen."
+  - type: deep_explain
+    text:
+      vi: "Glimpflich thường đi với ausgehen hoặc davonkommen: Wir sind glimpflich davongekommen (chúng tôi may mắn thoát nạn nhẹ). Das Opfer dùng cho cả nạn nhân tử vong và người bị thương. Der Katastrophenschutz là hệ thống phòng chống thảm họa của nhà nước. Verschütten nghĩa là chôn vùi (bởi đất đá) hoặc làm đổ (nước): Er hat Wasser verschüttet."
+  - type: example
+    target: Die Naturkatastrophe hat Tausende obdachlos gemacht.
+    target_lang: de
+    translation:
+      vi: Thảm họa thiên nhiên đã khiến hàng nghìn người mất nhà cửa.
+    note:
+      vi: die Naturkatastrophe = thảm họa thiên nhiên.
+  - type: example
+    target: Das Erdbeben erreichte die Stärke sieben.
+    target_lang: de
+    translation:
+      vi: Trận động đất đạt cường độ bảy.
+    note:
+      vi: das Erdbeben = trận động đất.
+  - type: example
+    target: Nach dem Hochwasser begann der Wiederaufbau.
+    target_lang: de
+    translation:
+      vi: Sau trận lũ, việc xây dựng lại bắt đầu.
+    note:
+      vi: das Hochwasser = lũ lụt, nước dâng cao.
+  - type: example
+    target: Im Sommer drohen Waldbrände.
+    target_lang: de
+    translation:
+      vi: Mùa hè có nguy cơ cháy rừng.
+    note:
+      vi: der Waldbrand = cháy rừng.
+  - type: common_mistake
+    wrong: Das Haus hat eingestürzt.
+    right: Das Haus ist eingestürzt.
+    target_lang: de
+    note:
+      vi: Einstürzen dùng sein ở Perfekt.
+  - type: common_mistake
+    wrong: Die Rettungskraft hat viele Menschen gerettet.
+    right: Die Rettungskräfte haben viele Menschen gerettet.
+    target_lang: de
+    note:
+      vi: Rettungskräfte là số nhiều (một nhóm), chia động từ số nhiều.
+  - type: summary
+    points:
+      - vi: die Naturkatastrophe, das Erdbeben, das Hochwasser, der Waldbrand, die Lawine, der Vulkanausbruch, der Orkan, der Tsunami, die Trümmer (Pl.).
+      - vi: die Rettungskräfte (Pl.), die Hilfsorganisation, die Evakuierung, die Notunterkunft, der Katastrophenschutz, das Warnsystem, die Sirene, der Wiederaufbau.
+      - vi: evakuieren, retten, bergen (barg), einstürzen (ist), überleben, wüten, verschütten, abbrennen; verheerend, glimpflich, vermisst.
+exercises:
+  - key: de:exercise:b2w4l2-listen-vermisst
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w4-vermisst
+    prompt:
+      audio_asset_id: null
+      fallback_text: Drei Wanderer werden noch vermisst.
+      options:
+        - { id: g9o, text: Bệnh viện đã phải sơ tán., lang: vi }
+        - { id: omr, text: Ngôi nhà cũ cháy rụi hoàn toàn., lang: vi }
+        - { id: p5v, text: Ba người đi bộ đường dài vẫn mất tích., lang: vi }
+        - { id: g9g, text: Lực lượng cứu hộ làm việc suốt ngày đêm., lang: vi }
+    answer:
+      correct_option_id: p5v
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Ba người đi bộ đường dài vẫn mất tích.". Từ khoá là vermisst (mất tích); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Ba người đi bộ đường dài vẫn mất tích.
+  - key: de:exercise:b2w4l2-mcq-vi-de-waldbrand
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w4-waldbrand
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "cháy rừng"?
+      stem_lang: vi
+      options:
+        - { id: wq7, text: das Warnsystem, lang: de }
+        - { id: uj5, text: das Erdbeben, lang: de }
+        - { id: xkj, text: die Evakuierung, lang: de }
+        - { id: qri, text: der Waldbrand, lang: de }
+    answer:
+      correct_option_id: qri
+    explanation:
+      vi: "der Waldbrand nghĩa là \"cháy rừng\". Ví dụ: Im Sommer drohen Waldbrände. (Mùa hè có nguy cơ cháy rừng.)"
+    display_answer: der Waldbrand
+  - key: de:exercise:b2w4l2-mcq-de-vi-hochwasser
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w4-hochwasser
+    prompt:
+      stem: "\"das Hochwasser\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: rfe, text: sơ tán, lang: vi }
+        - { id: v0a, text: cháy rụi, lang: vi }
+        - { id: sh8, text: "lũ lụt, nước dâng cao", lang: vi }
+        - { id: g0v, text: sống sót, lang: vi }
+    answer:
+      correct_option_id: sh8
+    explanation:
+      vi: "das Hochwasser nghĩa là \"lũ lụt, nước dâng cao\". Ví dụ: Nach dem Hochwasser begann der Wiederaufbau. (Sau trận lũ, việc xây dựng lại bắt đầu.)"
+    display_answer: lũ lụt, nước dâng cao
+  - key: de:exercise:b2w4l2-mcq-artikel-sirene
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w4-sirene
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Sirene\" (còi báo động): ___ Sirene"
+      stem_lang: vi
+      options:
+        - { id: vh1, text: das, lang: de }
+        - { id: v4y, text: der, lang: de }
+        - { id: is2, text: ein, lang: de }
+        - { id: tg9, text: die, lang: de }
+    answer:
+      correct_option_id: tg9
+    explanation:
+      vi: "Sirene là danh từ giống cái (die): die Sirene; số nhiều: die Sirenen. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: die
+  - key: de:exercise:b2w4l2-tr-word-naturkatastrophe
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w4-naturkatastrophe
+    prompt:
+      source_text: thảm họa thiên nhiên (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - die Naturkatastrophe
+    known_wrong:
+      - answer: der Naturkatastrophe
+        feedback_vi: Naturkatastrophe là giống cái, nên là die Naturkatastrophe.
+        error_tag: article
+      - answer: das Naturkatastrophe
+        feedback_vi: Naturkatastrophe là giống cái, nên là die Naturkatastrophe.
+        error_tag: article
+    explanation:
+      vi: "\"thảm họa thiên nhiên\" trong tiếng Đức là die Naturkatastrophe (số nhiều: die Naturkatastrophen). Ví dụ: Die Naturkatastrophe hat Tausende obdachlos gemacht."
+    display_answer: die Naturkatastrophe
+  - key: de:exercise:b2w4l2-tr-word-bergen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w4-bergen
+    prompt:
+      source_text: cứu ra, thu hồi (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - bergen
+    explanation:
+      vi: "\"cứu ra, thu hồi\" trong tiếng Đức là bergen. Ví dụ: Die Taucher bargen das Wrack."
+    display_answer: bergen
+  - key: de:exercise:b2w4l2-fill-plural-orkan
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w4-orkan
+    prompt:
+      template: "Singular: der Orkan · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 8 }
+    answer:
+      blanks:
+        b1:
+          - Orkane
+    known_wrong:
+      - answer: Orkan
+        feedback_vi: Orkan là dạng số ít; số nhiều là Orkane.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của der Orkan là die Orkane (ký hiệu trong từ điển: -e). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: der Orkan · Plural: die Orkane"
+  - key: de:exercise:b2w4l2-mcq-luecke-erdbeben
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w4-erdbeben
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Trận động đất đạt cường độ bảy.\": Das ___ erreichte die Stärke sieben."
+      stem_lang: vi
+      options:
+        - { id: lxn, text: Naturkatastrophe, lang: de }
+        - { id: xzi, text: Notunterkunft, lang: de }
+        - { id: txg, text: Hilfsorganisation, lang: de }
+        - { id: h5b, text: Erdbeben, lang: de }
+    answer:
+      correct_option_id: h5b
+    explanation:
+      vi: "Câu có nghĩa \"Trận động đất đạt cường độ bảy.\" nên cần Erdbeben (das Erdbeben: trận động đất). Notunterkunft = chỗ ở khẩn cấp; Naturkatastrophe = thảm họa thiên nhiên; Hilfsorganisation = tổ chức cứu trợ không đúng nghĩa của câu."
+    display_answer: Erdbeben
+  - key: de:exercise:b2w4l2-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Nach dem Erdbeben sind viele Häuser eingestürzt, und die Rettungskräfte haben Überlebende aus den Trümmern geborgen.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Nach dem Erdbeben sind viele Häuser eingestürzt, und die Rettungskräfte haben Überlebende aus den Trümmern geborgen.
+        - Nach dem Erdbeben sind viele Häuser eingestürzt, und die Rettungskräfte haben Überlebende aus den Trümmern gerettet.
+        - Viele Häuser sind nach dem Erdbeben eingestürzt, und die Rettungskräfte haben Überlebende aus den Trümmern geborgen.
+    explanation:
+      vi: "Gợi ý đáp án: Nach dem Erdbeben sind viele Häuser eingestürzt, und die Rettungskräfte haben Überlebende aus den Trümmern geborgen. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Nach dem Erdbeben sind viele Häuser eingestürzt, und die Rettungskräfte haben Überlebende aus den Trümmern geborgen.
+    item: de:item:b2w4-erdbeben
+  - key: de:exercise:b2w4l2-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Der Waldbrand wütete tagelang, und mehrere Dörfer mussten evakuiert werden, doch die Lage endete glimpflich.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Đám cháy rừng hoành hành nhiều ngày và nhiều ngôi làng phải sơ tán, nhưng cuối cùng tình hình kết thúc nhẹ nhàng.
+        - Cháy rừng hoành hành mấy ngày, và nhiều làng phải sơ tán, nhưng rốt cuộc vẫn không quá tệ.
+        - Vụ cháy rừng hoành hành suốt nhiều ngày khiến vài ngôi làng phải sơ tán, nhưng cuối cùng thiệt hại không nghiêm trọng.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Der Waldbrand wütete tagelang, und mehrere Dörfer mussten evakuiert werden, doch die Lage endete glimpflich.\" nghĩa là: Đám cháy rừng hoành hành nhiều ngày và nhiều ngôi làng phải sơ tán, nhưng cuối cùng tình hình kết thúc nhẹ nhàng. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Đám cháy rừng hoành hành nhiều ngày và nhiều ngôi làng phải sơ tán, nhưng cuối cùng tình hình kết thúc nhẹ nhàng.
+    item: de:item:b2w4-waldbrand

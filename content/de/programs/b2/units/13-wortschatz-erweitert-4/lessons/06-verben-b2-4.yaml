@@ -1,0 +1,234 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w4-verben-b2-4
+order_index: 6
+level: b2
+title:
+  vi: "Động từ B2 (4): nhận thức, thay đổi, quan hệ (Verben 4)"
+objectives:
+  - vi: Dùng thêm khoảng hai mươi động từ B2 với giới từ và Dativ/Akkusativ đúng.
+  - vi: "Phân biệt các động từ gần nghĩa: bewahren – erhalten, schätzen – bewerten, hindern – verhindern."
+  - vi: "Chia đúng các dạng bất quy tắc: anhalten, bewahren (đều), entziehen, nachlassen, unterliegen."
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w4-ethik-religion
+items:
+  - item: de:item:b2w4-absehen
+  - item: de:item:b2w4-anhalten
+  - item: de:item:b2w4-anrechnen
+  - item: de:item:b2w4-ansetzen
+  - item: de:item:b2w4-anvertrauen
+  - item: de:item:b2w4-aufbauen
+  - item: de:item:b2w4-aufweisen
+  - item: de:item:b2w4-bewahren
+  - item: de:item:b2w4-bezwecken
+  - item: de:item:b2w4-entziehen
+  - item: de:item:b2w4-erfolgen
+  - item: de:item:b2w4-erweisen
+  - item: de:item:b2w4-handhaben
+  - item: de:item:b2w4-hindern
+  - item: de:item:b2w4-nachlassen
+  - item: de:item:b2w4-schaetzen
+  - item: de:item:b2w4-schwinden
+  - item: de:item:b2w4-sich-richten
+  - item: de:item:b2w4-unterliegen
+  - item: de:item:b2w4-verfehlen
+  - item: de:item:b2w4-zulassen
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn dùng đúng thêm nhiều động từ trang trọng trong văn bản học thuật và báo chí, nhớ giới từ và cách đi kèm quan trọng.
+  - type: explain
+    text:
+      vi: "Động từ nhận thức và đánh giá: schätzen (ước tính; quý trọng), absehen (dự đoán; von + Dativ: bỏ ý định), aufweisen (có, cho thấy), erweisen (sich als + Nom.: tỏ ra là), verfehlen (không đạt, trượt), bezwecken (nhằm mục đích), anrechnen (tính vào). Ví dụ: Die Maßnahme erweist sich als wirksam. Er hat sein Ziel verfehlt."
+  - type: explain
+    text:
+      vi: "Động từ thay đổi và quan hệ: anhalten (kéo dài: hält an, hielt an, hat angehalten), nachlassen (giảm, yếu đi: lässt nach, ließ nach, hat nachgelassen), schwinden (giảm dần: schwindet, schwand, ist geschwunden), zunehmen, entziehen (rút khỏi: entzieht, entzog, hat entzogen), unterliegen (thua, chịu sự chi phối: + Dativ), zulassen (cho phép), erfolgen (diễn ra; ist erfolgt)."
+  - type: explain
+    text:
+      vi: "Giới từ và cách: sich richten nach + Dativ (dựa theo), anvertrauen + Dativ + Akk (giao phó), hindern an + Dativ (ngăn cản việc gì), bewahren vor + Dativ (giữ khỏi). Ví dụ: Ich richte mich nach den Vorgaben. Er hat ihr das Geheimnis anvertraut. Nichts hat sie daran gehindert."
+  - type: deep_explain
+    text:
+      vi: "Erfolgen thường dùng trong văn bản hành chính: Die Zahlung erfolgt per Überweisung. Ansetzen có nhiều nghĩa: bắt đầu (zum Sprung ansetzen), định (einen Termin ansetzen). Aufbauen nghĩa là xây dựng: ein Unternehmen aufbauen; sich auf etwas aufbauen là dựa trên. Handhaben là xử lý, dùng (Wie handhabt man das Gerät?)."
+  - type: example
+    target: Von einer Klage wurde abgesehen.
+    target_lang: de
+    translation:
+      vi: Người ta đã bỏ ý định kiện.
+    note:
+      vi: absehen = dự đoán; bỏ qua (von + Dativ).
+  - type: example
+    target: Die Trockenheit hält schon Wochen an.
+    target_lang: de
+    translation:
+      vi: Tình trạng khô hạn kéo dài đã nhiều tuần.
+    note:
+      vi: anhalten = dừng lại; kéo dài.
+  - type: example
+    target: Die Studienzeit wird angerechnet.
+    target_lang: de
+    translation:
+      vi: Thời gian học được tính vào.
+    note:
+      vi: anrechnen = tính vào, ghi nhận.
+  - type: example
+    target: Die Sitzung wurde für Montag angesetzt.
+    target_lang: de
+    translation:
+      vi: Phiên họp được ấn định vào thứ Hai.
+    note:
+      vi: ansetzen = bắt đầu; ấn định.
+  - type: common_mistake
+    wrong: Die Zahlung ist per Überweisung erfolgen.
+    right: Die Zahlung erfolgt per Überweisung.
+    target_lang: de
+    note:
+      vi: "Dùng động từ chia: erfolgt (không cần sein + Partizip trong câu chính hiện tại)."
+  - type: common_mistake
+    wrong: Die Maßnahme erweist sich wirksam.
+    right: Die Maßnahme erweist sich als wirksam.
+    target_lang: de
+    note:
+      vi: Sich erweisen đi với als + tính từ/danh từ.
+  - type: summary
+    points:
+      - vi: schätzen, absehen (von + Dativ), aufweisen, erweisen (sich als), verfehlen, bezwecken, anrechnen, bewahren, handhaben.
+      - vi: "anhalten, nachlassen, schwinden, entziehen, unterliegen (+ Dativ), zulassen, erfolgen, ansetzen, aufbauen: học cả ba dạng."
+      - vi: sich richten nach + Dativ, anvertrauen + Dativ + Akk, hindern an + Dativ, bewahren vor + Dativ.
+exercises:
+  - key: de:exercise:b2w4l6-listen-erweisen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w4-erweisen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Idee erwies sich als falsch.
+      options:
+        - { id: orq, text: Cơ quan chức năng đã cho phép lưu hành loại thuốc này., lang: vi }
+        - { id: wkl, text: Ý tưởng đó tỏ ra là sai., lang: vi }
+        - { id: av8, text: Việc thanh toán được thực hiện bằng chuyển khoản., lang: vi }
+        - { id: phf, text: Chính phủ nhằm mục đích gì với đạo luật này?, lang: vi }
+    answer:
+      correct_option_id: wkl
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Ý tưởng đó tỏ ra là sai.". Từ khoá là erweisen (chứng tỏ (sich als)); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Ý tưởng đó tỏ ra là sai.
+  - key: de:exercise:b2w4l6-mcq-vi-de-schaetzen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w4-schaetzen
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "ước tính; quý trọng"?
+      stem_lang: vi
+      options:
+        - { id: pb1, text: unterliegen, lang: de }
+        - { id: rvk, text: erweisen, lang: de }
+        - { id: rqy, text: entziehen, lang: de }
+        - { id: p1g, text: schätzen, lang: de }
+    answer:
+      correct_option_id: p1g
+    explanation:
+      vi: "schätzen nghĩa là \"ước tính; quý trọng\". Ví dụ: Experten schätzen den Schaden auf eine Million Euro. (Các chuyên gia ước tính thiệt hại là một triệu euro.)"
+    display_answer: schätzen
+  - key: de:exercise:b2w4l6-mcq-de-vi-aufweisen
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w4-aufweisen
+    prompt:
+      stem: "\"aufweisen\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: r0s, text: "giảm, yếu đi", lang: vi }
+        - { id: y52, text: "cho phép, chấp thuận", lang: vi }
+        - { id: hwf, text: "trượt, không đạt", lang: vi }
+        - { id: k1l, text: "có, cho thấy", lang: vi }
+    answer:
+      correct_option_id: k1l
+    explanation:
+      vi: "aufweisen nghĩa là \"có, cho thấy\". Ví dụ: Das Gebäude weist erhebliche Mängel auf. (Tòa nhà có những khiếm khuyết đáng kể.)"
+    display_answer: có, cho thấy
+  - key: de:exercise:b2w4l6-tr-word-erfolgen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w4-erfolgen
+    prompt:
+      source_text: diễn ra, được thực hiện (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - erfolgen
+    explanation:
+      vi: "\"diễn ra, được thực hiện\" trong tiếng Đức là erfolgen. Ví dụ: Die Bezahlung erfolgt per Überweisung."
+    display_answer: erfolgen
+  - key: de:exercise:b2w4l6-mcq-luecke-absehen
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w4-absehen
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Người ta đã bỏ ý định kiện.\": Von einer Klage wurde ___."
+      stem_lang: vi
+      options:
+        - { id: oth, text: entzogen, lang: de }
+        - { id: o9k, text: abgesehen, lang: de }
+        - { id: zzi, text: schwindet, lang: de }
+        - { id: ngi, text: bezweckt, lang: de }
+    answer:
+      correct_option_id: o9k
+    explanation:
+      vi: "Câu có nghĩa \"Người ta đã bỏ ý định kiện.\" nên cần abgesehen (absehen: dự đoán; bỏ qua (von + Dativ)). bezweckt = nhằm mục đích; schwindet = giảm dần, tan biến; entzogen = rút khỏi, tước không đúng nghĩa của câu."
+    display_answer: abgesehen
+  - key: de:exercise:b2w4l6-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Die Anmeldung erfolgt online, und die Teilnahme wird nur zugelassen, wenn alle Unterlagen vorliegen.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Die Anmeldung erfolgt online, und die Teilnahme wird nur zugelassen, wenn alle Unterlagen vorliegen.
+        - Die Anmeldung erfolgt online, und die Teilnahme wird nur dann zugelassen, wenn alle Unterlagen vorliegen.
+        - Die Anmeldung erfolgt online, und man wird nur zugelassen, wenn alle Unterlagen vorliegen.
+    explanation:
+      vi: "Gợi ý đáp án: Die Anmeldung erfolgt online, und die Teilnahme wird nur zugelassen, wenn alle Unterlagen vorliegen. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Die Anmeldung erfolgt online, und die Teilnahme wird nur zugelassen, wenn alle Unterlagen vorliegen.
+    item: de:item:b2w4-erfolgen
+  - key: de:exercise:b2w4l6-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Obwohl die Wirkung des Medikaments nachgelassen hat, hat sich die Behandlung insgesamt als erfolgreich erwiesen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Dù tác dụng của thuốc đã giảm, việc điều trị nhìn chung vẫn tỏ ra thành công.
+        - Mặc dù hiệu quả của thuốc đã yếu đi, nhìn chung việc điều trị đã chứng tỏ là thành công.
+        - Dù thuốc đã bớt tác dụng, cả liệu trình nhìn chung vẫn chứng minh là thành công.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Obwohl die Wirkung des Medikaments nachgelassen hat, hat sich die Behandlung insgesamt als erfolgreich erwiesen.\" nghĩa là: Dù tác dụng của thuốc đã giảm, việc điều trị nhìn chung vẫn tỏ ra thành công. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Dù tác dụng của thuốc đã giảm, việc điều trị nhìn chung vẫn tỏ ra thành công.
+    item: de:item:b2w4-erfolgen

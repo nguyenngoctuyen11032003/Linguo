@@ -1,0 +1,297 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w4-ethik-religion
+order_index: 5
+level: b2
+title:
+  vi: Đạo đức, tôn giáo và giá trị sống (Ethik und Religion)
+objectives:
+  - vi: Nói về đạo đức, giá trị, tôn giáo và triết lý một cách trung lập, tôn trọng.
+  - vi: "Hiểu và dùng các từ: Menschenwürde, Weltanschauung, Dilemma, Gleichgültigkeit."
+  - vi: Dùng các động từ zweifeln, achten, rechtfertigen, anprangern và các tính từ moralisch, ethisch, religiös.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w4-adverbien-b2
+items:
+  - item: de:item:b2w4-ethik
+  - item: de:item:b2w4-moral
+  - item: de:item:b2w4-wertvorstellung
+  - item: de:item:b2w4-weltanschauung
+  - item: de:item:b2w4-religion
+  - item: de:item:b2w4-glaubensgemeinschaft
+  - item: de:item:b2w4-dilemma
+  - item: de:item:b2w4-menschenwuerde
+  - item: de:item:b2w4-menschenrechte
+  - item: de:item:b2w4-pflichtbewusstsein
+  - item: de:item:b2w4-gleichgueltigkeit
+  - item: de:item:b2w4-zweifeln
+  - item: de:item:b2w4-rechtfertigen
+  - item: de:item:b2w4-anprangern
+  - item: de:item:b2w4-moralisch
+  - item: de:item:b2w4-ethisch
+  - item: de:item:b2w4-religioes
+  - item: de:item:b2w4-glaeubig
+  - item: de:item:b2w4-gleichgueltig
+  - item: de:item:b2w4-verwerflich
+  - item: de:item:b2w4-unantastbar
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn thảo luận được về giá trị đạo đức, quyền con người và tôn giáo một cách tôn trọng, nêu quan điểm và lập luận về các vấn đề đạo đức.
+  - type: explain
+    text:
+      vi: "Danh từ chính: die Ethik, die Moral (đều số ít), die Wertvorstellung, die Weltanschauung (thế giới quan), die Religion, die Glaubensgemeinschaft (cộng đồng tín ngưỡng), das Dilemma (số nhiều Dilemmas hoặc Dilemmata), die Menschenwürde, die Menschenrechte (số nhiều), das Pflichtbewusstsein, die Gleichgültigkeit. Ví dụ: Die Menschenwürde ist unantastbar."
+  - type: explain
+    text:
+      vi: "Động từ: zweifeln (nghi ngờ; an + Dativ), achten (tôn trọng; achten auf = chú ý đến), rechtfertigen (biện minh), anprangern (tố cáo công khai). Tính từ: moralisch, ethisch, religiös, gläubig, gleichgültig (thờ ơ), verwerflich (đáng lên án), unantastbar (bất khả xâm phạm). Ví dụ: Viele zweifeln an der Wirksamkeit."
+  - type: explain
+    text:
+      vi: "Chú ý cách dùng: Ethik là ngành nghiên cứu về hành vi đúng, Moral là các chuẩn mực thực tế của một xã hội; Glaube(n) là niềm tin tôn giáo hoặc niềm tin nói chung. Cặp từ: Glaube ↔ Zweifel, Moral ↔ Unmoral. Dilemma dùng khi phải chọn giữa hai điều đều không tốt: Das ist ein moralisches Dilemma."
+  - type: deep_explain
+    text:
+      vi: "Artikel 1 của Grundgesetz Đức mở đầu bằng câu Die Würde des Menschen ist unantastbar, và đây là một cách diễn đạt thường dùng trong bài luận về quyền con người. Weltanschauung là thế giới quan, không nhất thiết về tôn giáo (ví dụ chủ nghĩa nhân văn). Khi nói về tôn giáo, hãy dùng ngôn ngữ trung lập: Er ist gläubig và geht regelmäßig in die Kirche."
+  - type: example
+    target: Die Ethik der Medizin beschäftigt sich mit Leben und Tod.
+    target_lang: de
+    translation:
+      vi: Đạo đức y học bàn về sự sống và cái chết.
+    note:
+      vi: die Ethik = đạo đức học, đạo đức.
+  - type: example
+    target: Er hat eine hohe Moral.
+    target_lang: de
+    translation:
+      vi: Anh ấy có đạo đức cao.
+    note:
+      vi: die Moral = đạo đức, chuẩn mực đạo đức.
+  - type: example
+    target: Die Wertvorstellungen der Generationen unterscheiden sich.
+    target_lang: de
+    translation:
+      vi: Quan niệm giá trị giữa các thế hệ khác nhau.
+    note:
+      vi: die Wertvorstellung = quan niệm giá trị.
+  - type: example
+    target: Seine Weltanschauung ist stark von der Philosophie geprägt.
+    target_lang: de
+    translation:
+      vi: Thế giới quan của ông bị ảnh hưởng mạnh bởi triết học.
+    note:
+      vi: die Weltanschauung = thế giới quan.
+  - type: common_mistake
+    wrong: Ich zweifle auf seiner Ehrlichkeit.
+    right: Ich zweifle an seiner Ehrlichkeit.
+    target_lang: de
+    note:
+      vi: Zweifeln đi với an + Dativ.
+  - type: common_mistake
+    wrong: Man muss die Würde jedes Menschen achten auf.
+    right: Man muss die Würde jedes Menschen achten.
+    target_lang: de
+    note:
+      vi: Achten (tôn trọng) có tân ngữ Akkusativ, không có auf; achten auf là chú ý đến.
+  - type: summary
+    points:
+      - vi: die Ethik, die Moral, die Wertvorstellung, die Weltanschauung, die Religion, die Glaubensgemeinschaft, das Dilemma.
+      - vi: die Menschenwürde, die Menschenrechte (Pl.), das Pflichtbewusstsein, die Gleichgültigkeit; moralisch, ethisch, religiös, gläubig, gleichgültig, verwerflich, unantastbar.
+      - vi: zweifeln (an + Dativ), achten, rechtfertigen, anprangern; Glaube ↔ Zweifel.
+exercises:
+  - key: de:exercise:b2w4l5-listen-glaeubig
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w4-glaeubig
+    prompt:
+      audio_asset_id: null
+      fallback_text: Viele Menschen sind gläubig.
+      options:
+        - { id: sao, text: Sự thờ ơ của con người là vấn đề lớn nhất., lang: vi }
+        - { id: n04, text: Nhiều người có đức tin., lang: vi }
+        - { id: sr5, text: Đạo đức y học bàn về sự sống và cái chết., lang: vi }
+        - { id: kjl, text: Ý thức trách nhiệm của anh ấy thật ấn tượng., lang: vi }
+    answer:
+      correct_option_id: n04
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Nhiều người có đức tin.". Từ khoá là gläubig (có đức tin); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Nhiều người có đức tin.
+  - key: de:exercise:b2w4l5-mcq-vi-de-menschenrechte
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w4-menschenrechte
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "quyền con người"?
+      stem_lang: vi
+      options:
+        - { id: gez, text: das Pflichtbewusstsein, lang: de }
+        - { id: byf, text: die Weltanschauung, lang: de }
+        - { id: plx, text: die Wertvorstellung, lang: de }
+        - { id: bly, text: die Menschenrechte, lang: de }
+    answer:
+      correct_option_id: bly
+    explanation:
+      vi: "die Menschenrechte nghĩa là \"quyền con người\". Ví dụ: Die Menschenrechte gelten für alle. (Quyền con người áp dụng cho tất cả mọi người.)"
+    display_answer: die Menschenrechte
+  - key: de:exercise:b2w4l5-mcq-de-vi-religion
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w4-religion
+    prompt:
+      stem: "\"die Religion\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: qpd, text: "biện minh, biện hộ", lang: vi }
+        - { id: ypj, text: thuộc đạo đức, lang: vi }
+        - { id: o7n, text: tôn giáo, lang: vi }
+        - { id: ctv, text: "thuộc tôn giáo, sùng đạo", lang: vi }
+    answer:
+      correct_option_id: o7n
+    explanation:
+      vi: "die Religion nghĩa là \"tôn giáo\". Ví dụ: In der Schule lernt man verschiedene Religionen kennen. (Ở trường người ta làm quen với nhiều tôn giáo khác nhau.)"
+    display_answer: tôn giáo
+  - key: de:exercise:b2w4l5-mcq-artikel-moral
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w4-moral
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Moral\" (đạo đức, chuẩn mực đạo đức): ___ Moral"
+      stem_lang: vi
+      options:
+        - { id: s33, text: das, lang: de }
+        - { id: vm2, text: die, lang: de }
+        - { id: v39, text: der, lang: de }
+        - { id: wg1, text: ein, lang: de }
+    answer:
+      correct_option_id: vm2
+    explanation:
+      vi: "Moral là danh từ giống cái (die): die Moral (không dùng ở số nhiều). \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: die
+  - key: de:exercise:b2w4l5-tr-word-wertvorstellung
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w4-wertvorstellung
+    prompt:
+      source_text: quan niệm giá trị (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - die Wertvorstellung
+    known_wrong:
+      - answer: der Wertvorstellung
+        feedback_vi: Wertvorstellung là giống cái, nên là die Wertvorstellung.
+        error_tag: article
+      - answer: das Wertvorstellung
+        feedback_vi: Wertvorstellung là giống cái, nên là die Wertvorstellung.
+        error_tag: article
+    explanation:
+      vi: "\"quan niệm giá trị\" trong tiếng Đức là die Wertvorstellung (số nhiều: die Wertvorstellungen). Ví dụ: Die Wertvorstellungen der Generationen unterscheiden sich."
+    display_answer: die Wertvorstellung
+  - key: de:exercise:b2w4l5-tr-word-anprangern
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w4-anprangern
+    prompt:
+      source_text: tố cáo công khai (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - anprangern
+    explanation:
+      vi: "\"tố cáo công khai\" trong tiếng Đức là anprangern. Ví dụ: Die Zeitung prangert die Missstände an."
+    display_answer: anprangern
+  - key: de:exercise:b2w4l5-fill-plural-glaubensgemeinschaft
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w4-glaubensgemeinschaft
+    prompt:
+      template: "Singular: die Glaubensgemeinschaft · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 24 }
+    answer:
+      blanks:
+        b1:
+          - Glaubensgemeinschaften
+    known_wrong:
+      - answer: Glaubensgemeinschaft
+        feedback_vi: Glaubensgemeinschaft là dạng số ít; số nhiều là Glaubensgemeinschaften.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Glaubensgemeinschaft là die Glaubensgemeinschaften (ký hiệu trong từ điển: -en). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Glaubensgemeinschaft · Plural: die Glaubensgemeinschaften"
+  - key: de:exercise:b2w4l5-mcq-luecke-ethik
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w4-ethik
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Đạo đức y học bàn về sự sống và cái chết.\": Die ___ der Medizin beschäftigt sich mit Leben und Tod."
+      stem_lang: vi
+      options:
+        - { id: e9c, text: Weltanschauung, lang: de }
+        - { id: kdu, text: Moral, lang: de }
+        - { id: xc8, text: Ethik, lang: de }
+        - { id: k0i, text: Religionen, lang: de }
+    answer:
+      correct_option_id: xc8
+    explanation:
+      vi: "Câu có nghĩa \"Đạo đức y học bàn về sự sống và cái chết.\" nên cần Ethik (die Ethik: đạo đức học, đạo đức). Moral = đạo đức, chuẩn mực đạo đức; Weltanschauung = thế giới quan; Religionen = tôn giáo không đúng nghĩa của câu."
+    display_answer: Ethik
+  - key: de:exercise:b2w4l5-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Er ist gläubig, zweifelt aber manchmal an seinen Überzeugungen, und das ist für ihn ein moralisches Dilemma.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Er ist gläubig, zweifelt aber manchmal an seinen Überzeugungen, und das ist für ihn ein moralisches Dilemma.
+        - Er ist gläubig, zweifelt aber manchmal an seinen Überzeugungen, und für ihn ist das ein moralisches Dilemma.
+        - Er ist religiös, zweifelt aber manchmal an seinen Überzeugungen, und das ist für ihn ein moralisches Dilemma.
+    explanation:
+      vi: "Gợi ý đáp án: Er ist gläubig, zweifelt aber manchmal an seinen Überzeugungen, und das ist für ihn ein moralisches Dilemma. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Er ist gläubig, zweifelt aber manchmal an seinen Überzeugungen, und das ist für ihn ein moralisches Dilemma.
+    item: de:item:b2w4-moral
+  - key: de:exercise:b2w4l5-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Die Menschenwürde ist unantastbar, und man darf Gewalt nicht rechtfertigen, sondern muss Unrecht anprangern.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Phẩm giá con người là bất khả xâm phạm, và người ta không được biện minh cho bạo lực mà phải tố cáo bất công.
+        - Nhân phẩm là không thể xâm phạm; không được biện minh cho bạo lực mà phải lên tiếng phản đối bất công.
+        - Phẩm giá con người không thể bị xâm phạm, không được biện hộ cho bạo lực mà phải tố cáo những điều bất công.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Die Menschenwürde ist unantastbar, und man darf Gewalt nicht rechtfertigen, sondern muss Unrecht anprangern.\" nghĩa là: Phẩm giá con người là bất khả xâm phạm, và người ta không được biện minh cho bạo lực mà phải tố cáo bất công. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Phẩm giá con người là bất khả xâm phạm, và người ta không được biện minh cho bạo lực mà phải tố cáo bất công.
+    item: de:item:b2w4-menschenwuerde
