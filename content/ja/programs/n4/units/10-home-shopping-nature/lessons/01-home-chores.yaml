@@ -1,0 +1,376 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n4-housework
+order_index: 1
+level: n4
+title:
+  vi: Việc nhà - 家事・洗濯機・掃除機
+objectives:
+  - vi: "Nói việc nhà: 家事, 干す, 畳む, 洗う, 汚れる, ごみ, 食器."
+  - vi: "Gọi tên đồ gia dụng: 洗濯機, 掃除機, 電子レンジ, 布団."
+  - vi: Ước lượng thời gian, số lượng bằng ぐらい / ほど.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - grammar
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n4-relationships
+items:
+  - item: ja:item:n4-u10-kaji
+  - item: ja:item:n4-u10-hosu
+  - item: ja:item:n4-u10-tatamu
+  - item: ja:item:n4-u10-gomi
+  - item: ja:item:n4-u10-soujiki
+  - item: ja:item:n4-u10-sentakuki
+  - item: ja:item:n4-u10-denshirenji
+  - item: ja:item:n4-u10-shokki
+  - item: ja:item:n4-u10-yogoreru
+  - item: ja:item:n4-u10-futon
+  - item: ja:item:n4-u10-gram-hodo-kurai
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể việc nhà hằng ngày - 洗濯物を干して、掃除機で部屋をきれいにします。 - và ước lượng thời gian - 掃除に三十分ぐらいかかります。
+  - type: explain
+    text:
+      vi: Việc nhà - 家事; giặt giũ - 洗濯機で洗って、外に干します; gấp quần áo - 服を畳みます; dọn dẹp - 掃除機をかけます; rửa bát - 食器を洗います; đổ rác - ごみを出します. Nhà Nhật dùng 布団 (nệm, chăn) để ngủ.
+  - type: explain
+    text:
+      vi: Đồ gia dụng - 洗濯機 (máy giặt), 掃除機 (máy hút bụi), 電子レンジ (lò vi sóng), 冷蔵庫 (tủ lạnh, đã học). 汚れる là nội động từ - シャツが汚れました (áo bị bẩn).
+  - type: explain
+    text:
+      vi: ぐらい (くらい) đi sau số lượng/thời gian để ước lượng - 三十分ぐらい (khoảng 30 phút). ほど chỉ mức độ - 昨日ほど寒くないです (không lạnh bằng hôm qua), 泣きたいほど悲しい (buồn đến mức muốn khóc).
+  - type: deep_explain
+    text:
+      vi: "家事 (かじ, việc nhà) và 火事 (かじ, hoả hoạn) đọc giống hệt nhưng viết khác; ngữ cảnh luôn rõ ràng (家事をする, 火事になる). ごみ ở Nhật phải phân loại và đổ đúng ngày (燃えるごみ, 燃えないごみ) - quy định này thường dạy ở lớp tiếng Nhật cho người nước ngoài. ほど khác ぐらい: ぐらい ước lượng khách quan, ほど nhấn mức độ chủ quan."
+  - type: example
+    target: 洗濯物を外に干して、服を畳みます。
+    target_lang: ja
+    translation:
+      vi: Tôi phơi đồ ra ngoài rồi gấp quần áo.
+    note:
+      vi: 干す・畳む.
+  - type: example
+    target: 掃除機で部屋をきれいにします。掃除に三十分ぐらいかかります。
+    target_lang: ja
+    translation:
+      vi: Tôi dọn phòng bằng máy hút bụi. Dọn dẹp mất khoảng 30 phút.
+    note:
+      vi: ぐらい - ước lượng.
+  - type: example
+    target: 電子レンジでご飯を温めます。
+    target_lang: ja
+    translation:
+      vi: Tôi hâm cơm bằng lò vi sóng.
+    note:
+      vi: で - dụng cụ.
+  - type: example
+    target: 今日は昨日ほど寒くないです。
+    target_lang: ja
+    translation:
+      vi: Hôm nay không lạnh bằng hôm qua.
+    note:
+      vi: ほど + phủ định - không bằng.
+  - type: common_mistake
+    wrong: 洗濯機で服を干します。
+    right: 洗濯機で服を洗います。
+    target_lang: ja
+    note:
+      vi: Giặt dùng 洗う; 干す là phơi.
+  - type: common_mistake
+    wrong: 今日は昨日ほど寒いです。
+    right: 今日は昨日ほど寒くないです。
+    target_lang: ja
+    note:
+      vi: ほど thường đi với phủ định khi so sánh "không bằng".
+  - type: summary
+    points:
+      - vi: 家事 việc nhà · 干す phơi · 畳む gấp · ごみ rác · 食器 bát đĩa · 汚れる bị bẩn · 布団 nệm.
+      - vi: 洗濯機 · 掃除機 · 電子レンジ.
+      - vi: ぐらい - ước lượng.
+      - vi: A は B ほど ～ない - A không bằng B.
+exercises:
+  - key: ja:exercise:n4-housework-h1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u10-hosu
+    prompt:
+      stem: Từ nào có nghĩa là “phơi (quần áo)”?
+      stem_lang: vi
+      options:
+        - id: dcx
+          text: 干す
+          lang: ja
+        - id: dry
+          text: 汚れる
+          lang: ja
+        - id: ksa
+          text: 畳む
+          lang: ja
+        - id: bmz
+          text: 洗う
+          lang: ja
+    answer:
+      correct_option_id: dcx
+    explanation:
+      vi: 干す là phơi. 畳む là gấp, 洗う là rửa/giặt, 汚れる là bị bẩn.
+    display_answer: 干す
+  - key: ja:exercise:n4-housework-h2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u10-gram-hodo-kurai
+    prompt:
+      stem: Chọn câu đúng - 駅から十分___かかります。
+      stem_lang: vi
+      options:
+        - id: vet
+          text: ほど
+          lang: ja
+        - id: sz9
+          text: ずつ
+          lang: ja
+        - id: dtm
+          text: だけ
+          lang: ja
+        - id: aep
+          text: ぐらい
+          lang: ja
+    answer:
+      correct_option_id: aep
+    explanation:
+      vi: Ước lượng thời gian dùng ぐらい (hoặc くらい). ほど cũng có thể nhưng nhấn mức độ; だけ và ずつ không dùng để ước lượng.
+    display_answer: ぐらい
+  - key: ja:exercise:n4-housework-h3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-u10-soujiki
+    prompt:
+      audio_asset_id: null
+      fallback_text: 掃除機で部屋をきれいにします。掃除に三十分ぐらいかかります。
+      options:
+        - id: rn9
+          text: Tôi lau phòng bằng giẻ. Dọn dẹp mất đúng 30 phút.
+          lang: vi
+        - id: z8g
+          text: Tôi dọn bếp bằng lò vi sóng. Mất khoảng 3 phút.
+          lang: vi
+        - id: jgp
+          text: Tôi dọn phòng bằng máy hút bụi. Dọn dẹp mất khoảng 30 phút.
+          lang: vi
+        - id: zih
+          text: Tôi giặt đồ bằng máy giặt. Giặt mất khoảng 30 phút.
+          lang: vi
+    answer:
+      correct_option_id: jgp
+    explanation:
+      vi: 掃除機 - máy hút bụi; 三十分ぐらい - khoảng 30 phút.
+    display_answer: Tôi dọn phòng bằng máy hút bụi. Dọn dẹp mất khoảng 30 phút.
+  - key: ja:exercise:n4-housework-h4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u10-sentakuki
+    prompt:
+      template: "{{b1}}で服を洗います。 (Tôi giặt quần áo bằng máy giặt.)"
+      blanks:
+        - id: b1
+          width_hint: 4
+      hint_levels:
+        - Thiết bị giặt đồ.
+        - Bắt đầu bằng 洗.
+    answer:
+      blanks:
+        b1:
+          - 洗濯機
+          - せんたくき
+    known_wrong:
+      - answer: 掃除機
+        feedback_vi: 掃除機 là máy hút bụi.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 洗濯機 là máy giặt.
+    display_answer: 洗濯機で服を洗います。
+  - key: ja:exercise:n4-housework-h5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u10-gomi
+    prompt:
+      stem: Ngày mai là ngày đổ rác. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: gw0
+          text: ごみを出します。
+          lang: ja
+        - id: r68
+          text: ごみを干します。
+          lang: ja
+        - id: qb7
+          text: ごみを畳みます。
+          lang: ja
+        - id: pst
+          text: ごみを汚れます。
+          lang: ja
+    answer:
+      correct_option_id: gw0
+    explanation:
+      vi: ごみを出します - đổ rác. 干す, 畳む là hành động với quần áo; 汚れる là nội động từ.
+    display_answer: ごみを出します。
+  - key: ja:exercise:n4-housework-h6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u10-tatamu
+    prompt:
+      template: 服を{{b1}}、引き出しに入れます。 (Tôi gấp quần áo rồi cho vào ngăn kéo.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - 畳んで
+          - たたんで
+    known_wrong:
+      - answer: 干して
+        feedback_vi: 干す là phơi; cho vào ngăn kéo thì phải gấp (畳む).
+        error_tag: verb_choice
+    explanation:
+      vi: 畳む - gấp; 畳んで là thể て.
+    display_answer: 服を畳んで、引き出しに入れます。
+  - key: ja:exercise:n4-housework-h7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u10-gram-hodo-kurai
+    prompt:
+      template: 今日は昨日{{b1}}寒くないです。 (Hôm nay không lạnh bằng hôm qua.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - ほど
+    known_wrong:
+      - answer: ぐらい
+        feedback_vi: ぐらい là ước lượng; so sánh "không bằng" dùng ほど.
+        error_tag: form
+    explanation:
+      vi: A は B ほど ～ない - A không ... bằng B.
+    display_answer: 今日は昨日ほど寒くないです。
+  - key: ja:exercise:n4-housework-h8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u10-hosu
+    prompt:
+      source_text: Tôi phơi đồ ra ngoài rồi gấp quần áo.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 洗濯物を外に干して、服を畳みます。
+        - せんたくものをそとにほして、ふくをたたみます。
+        - 洗濯物を外に干して、服をたたみます。
+        - 洗濯物を外に干してから、服を畳みます。
+    known_wrong:
+      - answer: 洗濯物を外に洗って、服を畳みます。
+        feedback_vi: 洗う là giặt/rửa; phơi là 干す.
+        error_tag: verb_choice
+    explanation:
+      vi: 干して - phơi; 畳みます - gấp.
+    display_answer: 洗濯物を外に干して、服を畳みます。
+  - key: ja:exercise:n4-housework-h9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-u10-yogoreru
+    prompt:
+      source_text: シャツが汚れたので、洗濯機で洗います。洗濯に一時間ぐらいかかります。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Áo sơ mi bị bẩn nên tôi giặt bằng máy giặt. Giặt mất khoảng một giờ.
+        - Vì áo bị bẩn nên tôi giặt bằng máy. Giặt khoảng một tiếng.
+        - Áo bị bẩn, nên tôi giặt bằng máy giặt. Việc giặt mất tầm một tiếng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Áo sơ mi mới nên tôi phơi ngoài trời. Phơi mất khoảng một giờ.
+        feedback_vi: 汚れた là bị bẩn; 洗濯機で洗います là giặt bằng máy.
+        error_tag: meaning
+    explanation:
+      vi: 汚れた - bị bẩn; 洗濯機で洗う - giặt bằng máy; 一時間ぐらい - khoảng một giờ.
+    display_answer: Áo sơ mi bị bẩn nên tôi giặt bằng máy giặt. Giặt mất khoảng một giờ.
+  - key: ja:exercise:n4-housework-h10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u10-soujiki
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Tôi dọn phòng bằng máy hút bụi."'
+      tokens:
+        - id: t4
+          text: します。
+        - id: t3
+          text: きれいに
+        - id: t1
+          text: 掃除機で
+        - id: t2
+          text: 部屋を
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Dụng cụ (掃除機で) → đối tượng (部屋を) → きれいにします (làm cho sạch).
+    display_answer: 掃除機で部屋をきれいにします。
+  - key: ja:exercise:n4-housework-h11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u10-futon
+    prompt:
+      stem: Người Nhật hay dùng gì để ngủ ở nhà kiểu truyền thống?
+      stem_lang: vi
+      options:
+        - id: gc9
+          text: 布団
+          lang: ja
+        - id: ejy
+          text: 食器
+          lang: ja
+        - id: wbv
+          text: ごみ
+          lang: ja
+        - id: aqe
+          text: 電子レンジ
+          lang: ja
+    answer:
+      correct_option_id: gc9
+    explanation:
+      vi: 布団 là nệm, chăn kiểu Nhật. 食器 là bát đĩa, 電子レンジ là lò vi sóng, ごみ là rác.
+    display_answer: 布団

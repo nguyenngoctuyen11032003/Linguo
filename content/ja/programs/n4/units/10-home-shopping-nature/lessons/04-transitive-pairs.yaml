@@ -1,0 +1,377 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n4-verb-pairs
+order_index: 4
+level: n4
+title:
+  vi: Tự động từ và tha động từ - 止まる・止める
+objectives:
+  - vi: "Phân biệt từng cặp tự động từ / tha động từ: 止まる / 止める, 集まる / 集める, 決まる / 決める."
+  - vi: "Chọn trợ từ đúng: が với tự động từ, を với tha động từ."
+  - vi: Dùng các cặp 見つかる / 見つける, 治る / 治す, 割れる / 割る, 落ちる / 落とす.
+estimated_minutes: 17
+skills:
+  - vocabulary
+  - grammar
+  - speaking
+  - reading
+prerequisites:
+  - ja:lesson:n4-disasters
+items:
+  - item: ja:item:n4-u10-tomaru-tomeru
+  - item: ja:item:n4-u10-kaeru-kawaru
+  - item: ja:item:n4-u10-atsumaru-atsumeru
+  - item: ja:item:n4-u10-kimaru-kimeru
+  - item: ja:item:n4-u10-mitsukaru-mitsukeru
+  - item: ja:item:n4-u10-naoru-naosu
+  - item: ja:item:n4-u10-wareru-waru
+  - item: ja:item:n4-u10-kireru-kiru
+  - item: ja:item:n4-u10-ochiru-otosu
+  - item: ja:item:n4-u10-agaru-ageru
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn chọn đúng giữa tự động từ và tha động từ - 電車が止まりました。 / 私は車を止めました。 - dựa vào trợ từ が và を.
+  - type: explain
+    text:
+      vi: Nhiều động từ tiếng Nhật đi thành cặp - tự động từ (自動詞, sự việc tự xảy ra, chủ ngữ + が) và tha động từ (他動詞, có người làm, tân ngữ + を). Ví dụ 電車が止まる (tàu dừng) ↔ 車を止める (dừng xe).
+  - type: explain
+    text:
+      vi: Cách nhớ - tự động từ nhấn kết quả, trạng thái ("cửa mở" - ドアが開く); tha động từ nhấn người làm ("tôi mở cửa" - ドアを開ける). Các cặp ở bài này - 止まる/止める, 集まる/集める, 決まる/決める, 見つかる/見つける, 治る/治す, 割れる/割る, 切れる/切る, 落ちる/落とす, 上がる/上げる, 変わる/変える.
+  - type: explain
+    text:
+      vi: Mẫu hay dùng - 日にちが決まりました (ngày đã được định) / 日にちを決めます (tôi quyết định ngày). かぎが見つかりました (chìa khoá đã được tìm thấy) / かぎを見つけました (tôi tìm thấy chìa khoá).
+  - type: deep_explain
+    text:
+      vi: 'Một số cặp có hình thức giống nhau và dễ nhầm - 治る/治す (bệnh khỏi / chữa) khác 直る/直す (sửa, hỏng được sửa) cùng cách đọc. 落ちる/落とす: 財布が落ちた (ví rơi) vs 財布を落とした (làm rơi ví - cũng thường dùng khi bị mất). Khi hỏi người ngoài, hay dùng tự động từ để tránh nói rằng mình làm ra - 電池が切れました (pin hết) thay vì "tôi làm hết pin".'
+  - type: example
+    target: 電車が止まりました。
+    target_lang: ja
+    translation:
+      vi: Tàu đã dừng.
+    note:
+      vi: Tự động từ + が.
+  - type: example
+    target: 私は駅の前で車を止めました。
+    target_lang: ja
+    translation:
+      vi: Tôi dừng xe trước ga.
+    note:
+      vi: Tha động từ + を.
+  - type: example
+    target: みんなが集まったら、始めましょう。
+    target_lang: ja
+    translation:
+      vi: Khi mọi người tập trung đủ thì bắt đầu nhé.
+    note:
+      vi: 集まる - tập trung.
+  - type: example
+    target: 財布を落としましたが、かぎは見つかりました。
+    target_lang: ja
+    translation:
+      vi: Tôi làm rơi ví nhưng chìa khoá đã được tìm thấy.
+    note:
+      vi: 落とす / 見つかる.
+  - type: common_mistake
+    wrong: 電車を止まりました。
+    right: 電車が止まりました。
+    target_lang: ja
+    note:
+      vi: Tự động từ đi với が, không dùng を.
+  - type: common_mistake
+    wrong: 日にちが決めました。
+    right: 日にちを決めました。 / 日にちが決まりました。
+    target_lang: ja
+    note:
+      vi: Tha động từ 決める cần を; tự động từ 決まる đi với が.
+  - type: summary
+    points:
+      - vi: "Tự động từ + が: 止まる · 集まる · 決まる · 見つかる · 治る · 割れる · 切れる · 落ちる · 上がる · 変わる."
+      - vi: "Tha động từ + を: 止める · 集める · 決める · 見つける · 治す · 割る · 切る · 落とす · 上げる · 変える."
+      - vi: Ví dụ - 日にちが決まりました / 日にちを決めます.
+      - vi: 治る/治す (bệnh) ≠ 直る/直す (sửa).
+exercises:
+  - key: ja:exercise:n4-verb-pairs-v1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u10-tomaru-tomeru
+    prompt:
+      stem: Chọn câu đúng - 電車___止まりました。
+      stem_lang: vi
+      options:
+        - id: n4l
+          text: を
+          lang: ja
+        - id: t4e
+          text: に
+          lang: ja
+        - id: ic9
+          text: が
+          lang: ja
+        - id: cc2
+          text: で
+          lang: ja
+    answer:
+      correct_option_id: ic9
+    explanation:
+      vi: 止まる là tự động từ nên chủ ngữ đi với が. を dùng với tha động từ 止める.
+    display_answer: が
+  - key: ja:exercise:n4-verb-pairs-v2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u10-kimaru-kimeru
+    prompt:
+      stem: Chọn câu đúng - 日にち___決めます。
+      stem_lang: vi
+      options:
+        - id: nql
+          text: を
+          lang: ja
+        - id: ggy
+          text: が
+          lang: ja
+        - id: gr0
+          text: で
+          lang: ja
+        - id: awe
+          text: に
+          lang: ja
+    answer:
+      correct_option_id: nql
+    explanation:
+      vi: 決める là tha động từ nên tân ngữ đi với を. 決まる mới đi với が.
+    display_answer: を
+  - key: ja:exercise:n4-verb-pairs-v3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-u10-mitsukaru-mitsukeru
+    prompt:
+      audio_asset_id: null
+      fallback_text: かぎが見つかりました。よかったです。
+      options:
+        - id: zh7
+          text: Chìa khoá bị mất. May quá.
+          lang: vi
+        - id: uh9
+          text: Tôi tìm thấy chìa khoá hôm qua. Rất vui.
+          lang: vi
+        - id: zj3
+          text: Tôi làm mất chìa khoá. Tiếc quá.
+          lang: vi
+        - id: tiq
+          text: Chìa khoá đã được tìm thấy. May quá.
+          lang: vi
+    answer:
+      correct_option_id: tiq
+    explanation:
+      vi: 見つかる là tự động từ - chìa khoá "được tìm thấy"; よかった - may quá.
+    display_answer: Chìa khoá đã được tìm thấy. May quá.
+  - key: ja:exercise:n4-verb-pairs-v4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u10-tomaru-tomeru
+    prompt:
+      template: 電車が{{b1}}。 (Tàu đã dừng.)
+      blanks:
+        - id: b1
+          width_hint: 7
+      hint_levels:
+        - Tự động từ - tàu tự dừng.
+        - Bắt đầu bằng 止.
+    answer:
+      blanks:
+        b1:
+          - 止まりました
+          - とまりました
+    known_wrong:
+      - answer: 止めました
+        feedback_vi: 止める là tha động từ (làm cho dừng); chủ ngữ là tàu nên dùng 止まる.
+        error_tag: transitivity
+    explanation:
+      vi: 止まる - dừng (tự dừng).
+    display_answer: 電車が止まりました。
+  - key: ja:exercise:n4-verb-pairs-v5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u10-wareru-waru
+    prompt:
+      stem: Bạn làm vỡ cốc. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: djm
+          text: コップが割りました。
+          lang: ja
+        - id: zoq
+          text: コップを割れました。
+          lang: ja
+        - id: qjr
+          text: コップを割りました。
+          lang: ja
+        - id: ile
+          text: コップが割ります。
+          lang: ja
+    answer:
+      correct_option_id: qjr
+    explanation:
+      vi: 割る là tha động từ - làm vỡ, đi với を. 割れる (tự vỡ) đi với が.
+    display_answer: コップを割りました。
+  - key: ja:exercise:n4-verb-pairs-v6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u10-ochiru-otosu
+    prompt:
+      template: 財布を{{b1}}。 (Tôi đã làm rơi ví.)
+      blanks:
+        - id: b1
+          width_hint: 7
+    answer:
+      blanks:
+        b1:
+          - 落としました
+          - おとしました
+    known_wrong:
+      - answer: 落ちました
+        feedback_vi: 落ちる là tự động từ; có tân ngữ を (財布を) thì dùng 落とす.
+        error_tag: transitivity
+    explanation:
+      vi: 財布を + 落とす - làm rơi ví.
+    display_answer: 財布を落としました。
+  - key: ja:exercise:n4-verb-pairs-v7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u10-naoru-naosu
+    prompt:
+      template: 風邪が{{b1}}。 (Cảm đã khỏi.)
+      blanks:
+        - id: b1
+          width_hint: 6
+    answer:
+      blanks:
+        b1:
+          - 治りました
+          - なおりました
+    known_wrong:
+      - answer: 治しました
+        feedback_vi: 治す là chữa (cần を); bệnh tự khỏi là 治る.
+        error_tag: transitivity
+    explanation:
+      vi: 治る - (bệnh) khỏi.
+    display_answer: 風邪が治りました。
+  - key: ja:exercise:n4-verb-pairs-v8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u10-kimaru-kimeru
+    prompt:
+      source_text: Ngày đã được quyết định.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 日にちが決まりました。
+        - ひにちがきまりました。
+        - 日にちが決まった。
+        - 日にちが決まりました
+        - 日程が決まりました。
+    known_wrong:
+      - answer: 日にちを決まりました。
+        feedback_vi: 決まる là tự động từ nên dùng が, không dùng を.
+        error_tag: transitivity
+      - answer: 日にちが決めました。
+        feedback_vi: 決める là tha động từ cần を.
+        error_tag: transitivity
+    explanation:
+      vi: 日にちが決まる - ngày được định.
+    display_answer: 日にちが決まりました。
+  - key: ja:exercise:n4-verb-pairs-v9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-u10-atsumaru-atsumeru
+    prompt:
+      source_text: 切手を集めています。みんなが集まったら、見せます。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi đang sưu tập tem. Khi mọi người tập trung, tôi sẽ cho xem.
+        - Tôi sưu tầm tem. Khi mọi người đã đến đủ thì tôi cho xem.
+        - Tôi đang thu thập tem. Khi mọi người tụ lại tôi sẽ cho xem.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi đang bán tem. Khi mọi người tập trung, tôi sẽ cho xem.
+        feedback_vi: 集める là sưu tập, không phải bán.
+        error_tag: meaning
+    explanation:
+      vi: 切手を集める - sưu tập tem (tha động từ); みんなが集まる - mọi người tụ lại (tự động từ).
+    display_answer: Tôi đang sưu tập tem. Khi mọi người tập trung, tôi sẽ cho xem.
+  - key: ja:exercise:n4-verb-pairs-v10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u10-tomaru-tomeru
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Tôi dừng xe trước ga."'
+      tokens:
+        - id: t3
+          text: 止めました。
+        - id: t1
+          text: 駅の前で
+        - id: t2
+          text: 車を
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: Nơi (駅の前で) → 車を (tân ngữ) → 止めました (tha động từ).
+    display_answer: 駅の前で車を止めました。
+  - key: ja:exercise:n4-verb-pairs-v11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u10-kireru-kiru
+    prompt:
+      stem: Điện thoại hết pin (tự hết). Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: k9t
+          text: 電池が切れました。
+          lang: ja
+        - id: wrj
+          text: 電池を切れました。
+          lang: ja
+        - id: g3z
+          text: 電池が切りました。
+          lang: ja
+        - id: vzp
+          text: 電池を切りました。
+          lang: ja
+    answer:
+      correct_option_id: k9t
+    explanation:
+      vi: 電池が切れる - pin hết (tự động từ). 電池を切る nghĩa là ngắt pin/nguồn một cách chủ ý.
+    display_answer: 電池が切れました。

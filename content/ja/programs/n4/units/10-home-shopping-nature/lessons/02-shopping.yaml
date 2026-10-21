@@ -1,0 +1,373 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n4-shopping
+order_index: 2
+level: n4
+title:
+  vi: Mua sắm - 割引・レジ・試着・返品
+objectives:
+  - vi: "Dùng từ mua sắm: 割引, セール, 袋, レジ, サイズ, 試着, 現金, お釣り."
+  - vi: "Nói việc trả hàng, nhận hoá đơn: 返品, 領収書."
+  - vi: Nhờ và hỏi ở cửa hàng bằng ～てもいいですか, ～はありますか.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - speaking
+  - listening
+  - reading
+prerequisites:
+  - ja:lesson:n4-housework
+items:
+  - item: ja:item:n4-u10-waribiki
+  - item: ja:item:n4-u10-seeru
+  - item: ja:item:n4-u10-fukuro
+  - item: ja:item:n4-u10-reji
+  - item: ja:item:n4-u10-saizu
+  - item: ja:item:n4-u10-shichaku
+  - item: ja:item:n4-u10-genkin
+  - item: ja:item:n4-u10-henpin
+  - item: ja:item:n4-u10-ryoushuusho
+  - item: ja:item:n4-u10-otsuri
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn mua sắm tự tin ở Nhật - 試着してもいいですか。もう少し大きいサイズはありますか。レジで現金で払います。
+  - type: explain
+    text:
+      vi: Giá cả - 割引 (giảm giá), セール (đợt hạ giá), 現金 (tiền mặt), お釣り (tiền thối), 領収書 (hoá đơn), 袋 (túi). Quần áo - サイズ (cỡ), 試着 (mặc thử). Thanh toán ở レジ (quầy thu ngân).
+  - type: explain
+    text:
+      vi: Hỏi và nhờ - 試着してもいいですか (Tôi mặc thử được không?), もう少し大きいサイズはありますか (Có cỡ lớn hơn không?), 袋をください (Cho tôi túi), 領収書をお願いします (Cho tôi hoá đơn).
+  - type: explain
+    text:
+      vi: Trả hàng - 返品する. Cửa hàng Nhật thường yêu cầu giữ hoá đơn và chỉ cho đổi trong thời hạn quy định. Học sinh, sinh viên thường được 割引 - 学生割引があります.
+  - type: deep_explain
+    text:
+      vi: Các mẫu hội thoại cửa hàng hay có - 袋はいりますか。 (Bạn có cần túi không?) - はい、お願いします / いいえ、大丈夫です. お釣りは二百円です - tiền thối 200 yên. サイズ trong tiếng Nhật dùng katakana cho quần áo (S, M, L). Chữ Hán - 割引, 袋, 試着, 現金, 返品, 領収書, お釣り.
+  - type: example
+    target: 試着してもいいですか。- はい、どうぞ。
+    target_lang: ja
+    translation:
+      vi: Tôi mặc thử được không ạ? - Vâng, xin mời.
+    note:
+      vi: 試着 - mặc thử.
+  - type: example
+    target: もう少し大きいサイズはありますか。
+    target_lang: ja
+    translation:
+      vi: Có cỡ lớn hơn chút không?
+    note:
+      vi: サイズ - cỡ.
+  - type: example
+    target: 学生割引があるので、千円安くなります。
+    target_lang: ja
+    translation:
+      vi: Vì có giảm giá cho sinh viên nên rẻ đi 1.000 yên.
+    note:
+      vi: 割引 - giảm giá.
+  - type: example
+    target: 現金で払うと、お釣りは二百円です。
+    target_lang: ja
+    translation:
+      vi: Trả bằng tiền mặt thì tiền thối là 200 yên.
+    note:
+      vi: 現金・お釣り.
+  - type: common_mistake
+    wrong: レジで試着します。
+    right: 試着室で試着します。
+    target_lang: ja
+    note:
+      vi: Mặc thử ở phòng thử đồ (試着室); レジ là quầy thu ngân.
+  - type: common_mistake
+    wrong: お釣りをください。(muốn xin hoá đơn)
+    right: 領収書をください。
+    target_lang: ja
+    note:
+      vi: Hoá đơn là 領収書; お釣り là tiền thối.
+  - type: summary
+    points:
+      - vi: 割引 giảm giá · セール hạ giá · 現金 tiền mặt · お釣り tiền thối · 領収書 hoá đơn · 袋 túi.
+      - vi: サイズ cỡ · 試着 mặc thử · レジ quầy thu ngân · 返品 trả hàng.
+      - vi: 試着してもいいですか。
+      - vi: もう少し大きいサイズはありますか。
+exercises:
+  - key: ja:exercise:n4-shopping-s1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u10-shichaku
+    prompt:
+      stem: Bạn muốn mặc thử áo. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: t5v
+          text: 返品してもいいですか。
+          lang: ja
+        - id: jdf
+          text: 現金してもいいですか。
+          lang: ja
+        - id: o4i
+          text: 割引してもいいですか。
+          lang: ja
+        - id: ilp
+          text: 試着してもいいですか。
+          lang: ja
+    answer:
+      correct_option_id: ilp
+    explanation:
+      vi: 試着 là mặc thử. 返品 là trả hàng, 割引 là giảm giá, 現金 là tiền mặt - đều không hợp.
+    display_answer: 試着してもいいですか。
+  - key: ja:exercise:n4-shopping-s2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u10-ryoushuusho
+    prompt:
+      stem: Bạn muốn xin hoá đơn. Từ nào?
+      stem_lang: vi
+      options:
+        - id: uyp
+          text: 領収書
+          lang: ja
+        - id: kkk
+          text: お釣り
+          lang: ja
+        - id: rfu
+          text: 袋
+          lang: ja
+        - id: lkg
+          text: 割引
+          lang: ja
+    answer:
+      correct_option_id: uyp
+    explanation:
+      vi: 領収書 là hoá đơn (biên nhận). お釣り là tiền thối, 割引 là giảm giá, 袋 là túi.
+    display_answer: 領収書
+  - key: ja:exercise:n4-shopping-s3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-u10-otsuri
+    prompt:
+      audio_asset_id: null
+      fallback_text: 現金で払います。お釣りは二百円です。
+      options:
+        - id: kt6
+          text: Tôi trả bằng thẻ. Không có tiền thối.
+          lang: vi
+        - id: wb8
+          text: Tôi nhận hoá đơn. Giảm giá 200 yên.
+          lang: vi
+        - id: l9y
+          text: Tôi trả bằng tiền mặt. Tiền thối là 2.000 yên.
+          lang: vi
+        - id: dlo
+          text: Tôi trả bằng tiền mặt. Tiền thối là 200 yên.
+          lang: vi
+    answer:
+      correct_option_id: dlo
+    explanation:
+      vi: 現金 - tiền mặt; お釣り - tiền thối; 二百円 - 200 yên.
+    display_answer: Tôi trả bằng tiền mặt. Tiền thối là 200 yên.
+  - key: ja:exercise:n4-shopping-s4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u10-saizu
+    prompt:
+      template: もう少し大きい{{b1}}はありますか。 (Có cỡ lớn hơn chút không?)
+      blanks:
+        - id: b1
+          width_hint: 4
+      hint_levels:
+        - Katakana, nghĩa là cỡ.
+        - Bắt đầu bằng サ.
+    answer:
+      blanks:
+        b1:
+          - サイズ
+    known_wrong:
+      - answer: セール
+        feedback_vi: セール là đợt giảm giá; cỡ quần áo là サイズ.
+        error_tag: vocab_meaning
+    explanation:
+      vi: サイズ là cỡ quần áo.
+    display_answer: もう少し大きいサイズはありますか。
+  - key: ja:exercise:n4-shopping-s5
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-u10-fukuro
+    prompt:
+      stem: Nhân viên hỏi “袋はいりますか”. Câu này nghĩa là gì?
+      stem_lang: vi
+      options:
+        - id: qpq
+          text: Bạn có cần hoá đơn không?
+          lang: vi
+        - id: to8
+          text: Bạn có tiền thối không?
+          lang: vi
+        - id: tcj
+          text: Bạn muốn mặc thử không?
+          lang: vi
+        - id: bvj
+          text: Bạn có cần túi không?
+          lang: vi
+    answer:
+      correct_option_id: bvj
+    explanation:
+      vi: 袋 là túi; いりますか - có cần không. Hoá đơn là 領収書, mặc thử là 試着.
+    display_answer: Bạn có cần túi không?
+  - key: ja:exercise:n4-shopping-s6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u10-waribiki
+    prompt:
+      template: 学生{{b1}}があるので、千円安くなります。 (Vì có giảm giá cho sinh viên nên rẻ đi 1.000 yên.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 割引
+          - わりびき
+    known_wrong:
+      - answer: セール
+        feedback_vi: セール là đợt hạ giá chung; "giảm giá cho sinh viên" là 学生割引.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 割引 là giảm giá.
+    display_answer: 学生割引があるので、千円安くなります。
+  - key: ja:exercise:n4-shopping-s7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u10-genkin
+    prompt:
+      template: "{{b1}}で払います。カードは使えません。 (Tôi trả bằng tiền mặt. Không dùng được thẻ.)"
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 現金
+          - げんきん
+    known_wrong:
+      - answer: 割引
+        feedback_vi: 割引 là giảm giá; trả bằng tiền mặt là 現金.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 現金 là tiền mặt.
+    display_answer: 現金で払います。カードは使えません。
+  - key: ja:exercise:n4-shopping-s8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u10-shichaku
+    prompt:
+      source_text: Tôi mặc thử được không ạ?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 試着してもいいですか。
+        - しちゃくしてもいいですか。
+        - 試着してもいいでしょうか。
+        - 試着できますか。
+        - 試着してもよろしいですか。
+    known_wrong:
+      - answer: 試着をいいですか。
+        feedback_vi: Mẫu xin phép dùng ～てもいいですか.
+        error_tag: form
+    explanation:
+      vi: 試着してもいいですか - xin phép mặc thử.
+    display_answer: 試着してもいいですか。
+  - key: ja:exercise:n4-shopping-s9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-u10-henpin
+    prompt:
+      source_text: サイズが合わなかったので、返品しました。領収書があったので、お金が戻りました。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Vì cỡ không vừa nên tôi đã trả hàng. Vì có hoá đơn nên tôi đã được hoàn tiền.
+        - Cỡ không vừa nên tôi trả hàng. Có hoá đơn nên đã nhận lại tiền.
+        - Do cỡ không vừa tôi đã trả lại hàng. Vì có hoá đơn nên tiền được hoàn lại.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì cỡ vừa nên tôi đã mua. Vì không có hoá đơn nên tôi không được hoàn tiền.
+        feedback_vi: 合わなかった là không vừa; 返品 là trả hàng.
+        error_tag: meaning
+    explanation:
+      vi: 合わなかった - không vừa; 返品 - trả hàng; 領収書 - hoá đơn; お金が戻りました - tiền được hoàn lại.
+    display_answer: Vì cỡ không vừa nên tôi đã trả hàng. Vì có hoá đơn nên tôi đã được hoàn tiền.
+  - key: ja:exercise:n4-shopping-s10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u10-reji
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Tôi thanh toán bằng tiền mặt ở quầy thu ngân."'
+      tokens:
+        - id: t2
+          text: 現金で
+        - id: t3
+          text: 払います。
+        - id: t1
+          text: レジで
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: Nơi (レジで) → cách trả (現金で) → 払います.
+    display_answer: レジで現金で払います。
+  - key: ja:exercise:n4-shopping-s11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u10-seeru
+    prompt:
+      stem: Cửa hàng đang có đợt giảm giá. Từ nào mô tả?
+      stem_lang: vi
+      options:
+        - id: bj6
+          text: 袋
+          lang: ja
+        - id: bmx
+          text: セール
+          lang: ja
+        - id: yop
+          text: レジ
+          lang: ja
+        - id: vgk
+          text: サイズ
+          lang: ja
+    answer:
+      correct_option_id: bmx
+    explanation:
+      vi: セール là đợt hạ giá. サイズ là cỡ, 袋 là túi, レジ là quầy thu ngân.
+    display_answer: セール

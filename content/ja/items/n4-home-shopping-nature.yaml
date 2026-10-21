@@ -1,0 +1,770 @@
+# Học liệu unit "Nhà cửa, mua sắm, thiên tai và tự/tha động từ" (JLPT N4). reading là cách đọc kana (furigana); romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n4-u10-kaji
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 家事
+      reading: かじ
+      romanization: kaji
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc nhà
+      examples:
+        - target: 家事は夫と分けています。
+          translation:
+            vi: Việc nhà tôi chia với chồng.
+      confusion:
+        vi: かじ (家事, việc nhà) và かじ (火事, hoả hoạn) đọc giống nhau; ngữ cảnh phân biệt.
+  - key: ja:item:n4-u10-hosu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 干す
+      reading: ほす
+      romanization: hosu
+      pos: động từ
+    back:
+      meaning:
+        vi: phơi (quần áo, chăn)
+      examples:
+        - target: 洗濯物を外に干します。
+          translation:
+            vi: Tôi phơi quần áo ra ngoài.
+  - key: ja:item:n4-u10-tatamu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 畳む
+      reading: たたむ
+      romanization: tatamu
+      pos: động từ
+    back:
+      meaning:
+        vi: gấp (quần áo, chăn)
+      examples:
+        - target: 服を畳んで、引き出しに入れます。
+          translation:
+            vi: Tôi gấp quần áo rồi cho vào ngăn kéo.
+  - key: ja:item:n4-u10-gomi
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: ごみ
+      romanization: gomi
+      pos: danh từ
+    back:
+      meaning:
+        vi: rác
+      examples:
+        - target: ごみは月曜日に出します。
+          translation:
+            vi: Rác thì đổ vào thứ Hai.
+  - key: ja:item:n4-u10-soujiki
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 掃除機
+      reading: そうじき
+      romanization: soujiki
+      pos: danh từ
+    back:
+      meaning:
+        vi: máy hút bụi
+      examples:
+        - target: 掃除機で部屋をきれいにします。
+          translation:
+            vi: Tôi dọn phòng bằng máy hút bụi.
+  - key: ja:item:n4-u10-sentakuki
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 洗濯機
+      reading: せんたくき
+      romanization: sentakuki
+      pos: danh từ
+    back:
+      meaning:
+        vi: máy giặt
+      examples:
+        - target: 洗濯機が壊れました。
+          translation:
+            vi: Máy giặt bị hỏng.
+  - key: ja:item:n4-u10-denshirenji
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 電子レンジ
+      reading: でんしレンジ
+      romanization: denshi renji
+      pos: danh từ
+    back:
+      meaning:
+        vi: lò vi sóng
+      examples:
+        - target: 電子レンジでご飯を温めます。
+          translation:
+            vi: Tôi hâm cơm bằng lò vi sóng.
+  - key: ja:item:n4-u10-shokki
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 食器
+      reading: しょっき
+      romanization: shokki
+      pos: danh từ
+    back:
+      meaning:
+        vi: bát đĩa, đồ dùng ăn uống
+      examples:
+        - target: 食器を洗います。
+          translation:
+            vi: Tôi rửa bát đĩa.
+  - key: ja:item:n4-u10-yogoreru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 汚れる
+      reading: よごれる
+      romanization: yogoreru
+      pos: động từ
+    back:
+      meaning:
+        vi: bị bẩn
+      examples:
+        - target: シャツが汚れました。
+          translation:
+            vi: Chiếc áo sơ mi bị bẩn.
+  - key: ja:item:n4-u10-futon
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 布団
+      reading: ふとん
+      romanization: futon
+      pos: danh từ
+    back:
+      meaning:
+        vi: chăn đệm kiểu Nhật
+      examples:
+        - target: 布団を敷いて寝ます。
+          translation:
+            vi: Tôi trải nệm rồi ngủ.
+  - key: ja:item:n4-u10-waribiki
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 割引
+      reading: わりびき
+      romanization: waribiki
+      pos: danh từ
+    back:
+      meaning:
+        vi: giảm giá
+      examples:
+        - target: 学生は割引があります。
+          translation:
+            vi: Sinh viên được giảm giá.
+  - key: ja:item:n4-u10-seeru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: セール
+      romanization: seeru
+      pos: danh từ
+    back:
+      meaning:
+        vi: đợt bán hạ giá
+      examples:
+        - target: 夏のセールで服を買いました。
+          translation:
+            vi: Tôi mua quần áo trong đợt giảm giá mùa hè.
+  - key: ja:item:n4-u10-fukuro
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 袋
+      reading: ふくろ
+      romanization: fukuro
+      pos: danh từ
+    back:
+      meaning:
+        vi: túi, bao
+      examples:
+        - target: 袋はいりますか。
+          translation:
+            vi: Bạn có cần túi không?
+  - key: ja:item:n4-u10-reji
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: レジ
+      romanization: reji
+      pos: danh từ
+    back:
+      meaning:
+        vi: quầy thu ngân
+      examples:
+        - target: レジで払います。
+          translation:
+            vi: Tôi thanh toán ở quầy thu ngân.
+  - key: ja:item:n4-u10-saizu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: サイズ
+      romanization: saizu
+      pos: danh từ
+    back:
+      meaning:
+        vi: cỡ (quần áo, giày)
+      examples:
+        - target: もう少し大きいサイズはありますか。
+          translation:
+            vi: Có cỡ lớn hơn chút không?
+  - key: ja:item:n4-u10-shichaku
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 試着
+      reading: しちゃく
+      romanization: shichaku
+      pos: danh từ
+    back:
+      meaning:
+        vi: mặc thử
+      examples:
+        - target: 試着してもいいですか。
+          translation:
+            vi: Tôi mặc thử được không?
+  - key: ja:item:n4-u10-genkin
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 現金
+      reading: げんきん
+      romanization: genkin
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền mặt
+      examples:
+        - target: 現金で払います。
+          translation:
+            vi: Tôi trả bằng tiền mặt.
+  - key: ja:item:n4-u10-henpin
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 返品
+      reading: へんぴん
+      romanization: henpin
+      pos: danh từ
+    back:
+      meaning:
+        vi: trả hàng
+      examples:
+        - target: サイズが合わなかったので、返品しました。
+          translation:
+            vi: Cỡ không vừa nên tôi đã trả hàng.
+  - key: ja:item:n4-u10-ryoushuusho
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 領収書
+      reading: りょうしゅうしょ
+      romanization: ryoushuusho
+      pos: danh từ
+    back:
+      meaning:
+        vi: hoá đơn (biên nhận)
+      examples:
+        - target: 領収書をください。
+          translation:
+            vi: Cho tôi hoá đơn.
+  - key: ja:item:n4-u10-otsuri
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: お釣り
+      reading: おつり
+      romanization: otsuri
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền thừa, tiền thối
+      examples:
+        - target: お釣りは二百円です。
+          translation:
+            vi: Tiền thối là 200 yên.
+  - key: ja:item:n4-u10-gram-hodo-kurai
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: N / V辞書形 + ほど / ぐらい (くらい)
+      romanization: N hodo / gurai
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Cỡ, mức, đến mức (ước lượng mức độ). ぐらい chỉ ước lượng số lượng/thời gian (一時間ぐらい); ほど nhấn mạnh mức độ, hay đi với phủ định (～ほど～ない).
+      examples:
+        - target: 駅から十分ぐらいかかります。
+          translation:
+            vi: Từ ga mất khoảng 10 phút.
+        - target: 昨日ほど寒くないです。
+          translation:
+            vi: Không lạnh bằng hôm qua.
+      confusion:
+        vi: "ぐらい = ước lượng; ほど = mức độ (A は B ほど ～ない: A không ... bằng B)."
+  - key: ja:item:n4-u10-jishin
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 地震
+      reading: じしん
+      romanization: jishin
+      pos: danh từ
+    back:
+      meaning:
+        vi: động đất
+      examples:
+        - target: 昨日、大きい地震がありました。
+          translation:
+            vi: Hôm qua có trận động đất lớn.
+  - key: ja:item:n4-u10-taifuu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 台風
+      reading: たいふう
+      romanization: taifuu
+      pos: danh từ
+    back:
+      meaning:
+        vi: bão (nhiệt đới)
+      examples:
+        - target: 台風が近づいています。
+          translation:
+            vi: Bão đang đến gần.
+  - key: ja:item:n4-u10-kaji-fire
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 火事
+      reading: かじ
+      romanization: kaji
+      pos: danh từ
+    back:
+      meaning:
+        vi: hoả hoạn, cháy
+      examples:
+        - target: 隣の家で火事がありました。
+          translation:
+            vi: Nhà bên cạnh bị cháy.
+  - key: ja:item:n4-u10-kouzui
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 洪水
+      reading: こうずい
+      romanization: kouzui
+      pos: danh từ
+    back:
+      meaning:
+        vi: lũ lụt
+      examples:
+        - target: 大雨で洪水になりました。
+          translation:
+            vi: Mưa lớn gây ra lũ lụt.
+  - key: ja:item:n4-u10-tsunami
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 津波
+      reading: つなみ
+      romanization: tsunami
+      pos: danh từ
+    back:
+      meaning:
+        vi: sóng thần
+      examples:
+        - target: 地震のあと、津波が来るかもしれません。
+          translation:
+            vi: Sau động đất có thể có sóng thần.
+  - key: ja:item:n4-u10-kion
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 気温
+      reading: きおん
+      romanization: kion
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhiệt độ không khí
+      examples:
+        - target: 今日の気温は三十五度です。
+          translation:
+            vi: Nhiệt độ hôm nay là 35 độ.
+  - key: ja:item:n4-u10-kaminari
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 雷
+      reading: かみなり
+      romanization: kaminari
+      pos: danh từ
+    back:
+      meaning:
+        vi: sấm sét
+      examples:
+        - target: 雷が鳴っています。
+          translation:
+            vi: Sấm đang nổ.
+  - key: ja:item:n4-u10-yureru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 揺れる
+      reading: ゆれる
+      romanization: yureru
+      pos: động từ
+    back:
+      meaning:
+        vi: rung, lắc, đung đưa
+      examples:
+        - target: 地震で家が揺れました。
+          translation:
+            vi: Nhà rung lắc vì động đất.
+  - key: ja:item:n4-u10-kega
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 怪我
+      reading: けが
+      romanization: kega
+      pos: danh từ
+    back:
+      meaning:
+        vi: vết thương, bị thương
+      examples:
+        - target: 転んで怪我をしました。
+          translation:
+            vi: Tôi bị ngã và bị thương.
+  - key: ja:item:n4-u10-sonaeru
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 備える
+      reading: そなえる
+      romanization: sonaeru
+      pos: động từ
+    back:
+      meaning:
+        vi: chuẩn bị phòng khi, trang bị
+      examples:
+        - target: 地震に備えて、水を用意します。
+          translation:
+            vi: Để phòng động đất, tôi chuẩn bị nước.
+  - key: ja:item:n4-u10-fusegu
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 防ぐ
+      reading: ふせぐ
+      romanization: fusegu
+      pos: động từ
+    back:
+      meaning:
+        vi: phòng ngừa, ngăn chặn
+      examples:
+        - target: 事故を防ぐために、気をつけます。
+          translation:
+            vi: Để ngăn tai nạn, tôi cẩn thận.
+  - key: ja:item:n4-u10-tomaru-tomeru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 止まる / 止める
+      reading: とまる / とめる
+      romanization: tomaru / tomeru
+      pos: động từ
+    back:
+      meaning:
+        vi: dừng (tự dừng) / dừng (làm dừng)
+      examples:
+        - target: 電車が止まりました。車を止めます。
+          translation:
+            vi: Tàu đã dừng. Tôi dừng xe.
+  - key: ja:item:n4-u10-kaeru-kawaru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 変える
+      reading: かえる
+      romanization: kaeru
+      pos: động từ
+    back:
+      meaning:
+        vi: thay đổi (làm cho đổi)
+      examples:
+        - target: 計画を変えます。
+          translation:
+            vi: Tôi thay đổi kế hoạch.
+      confusion:
+        vi: "変わる (tự đổi) ↔ 変える (làm đổi): 色が変わる / 色を変える."
+  - key: ja:item:n4-u10-atsumaru-atsumeru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 集まる / 集める
+      reading: あつまる / あつめる
+      romanization: atsumaru / atsumeru
+      pos: động từ
+    back:
+      meaning:
+        vi: tập hợp, tụ lại / thu thập
+      examples:
+        - target: みんなが集まりました。切手を集めています。
+          translation:
+            vi: Mọi người đã tập trung. Tôi sưu tập tem.
+  - key: ja:item:n4-u10-kimaru-kimeru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 決まる / 決める
+      reading: きまる / きめる
+      romanization: kimaru / kimeru
+      pos: động từ
+    back:
+      meaning:
+        vi: được quyết định / quyết định
+      examples:
+        - target: 日にちが決まりました。場所を決めます。
+          translation:
+            vi: Ngày đã được định. Tôi sẽ chọn địa điểm.
+  - key: ja:item:n4-u10-mitsukaru-mitsukeru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 見つかる / 見つける
+      reading: みつかる / みつける
+      romanization: mitsukaru / mitsukeru
+      pos: động từ
+    back:
+      meaning:
+        vi: tìm thấy (được tìm ra) / tìm ra
+      examples:
+        - target: かぎが見つかりました。いい店を見つけました。
+          translation:
+            vi: Chìa khoá đã tìm thấy. Tôi tìm được một quán tốt.
+  - key: ja:item:n4-u10-naoru-naosu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 治る / 治す
+      reading: なおる / なおす
+      romanization: naoru / naosu
+      pos: động từ
+    back:
+      meaning:
+        vi: khỏi (bệnh) / chữa trị
+      examples:
+        - target: 風邪が治りました。病気を治します。
+          translation:
+            vi: Cảm đã khỏi. Tôi chữa bệnh.
+      confusion:
+        vi: 治る/治す (bệnh) khác 直る/直す (sửa, máy móc, lỗi) cùng cách đọc.
+  - key: ja:item:n4-u10-wareru-waru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 割れる / 割る
+      reading: われる / わる
+      romanization: wareru / waru
+      pos: động từ
+    back:
+      meaning:
+        vi: vỡ / làm vỡ
+      examples:
+        - target: コップが割れました。コップを割りました。
+          translation:
+            vi: Cái cốc vỡ. Tôi làm vỡ cái cốc.
+  - key: ja:item:n4-u10-kireru-kiru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 切れる / 切る
+      reading: きれる / きる
+      romanization: kireru / kiru
+      pos: động từ
+    back:
+      meaning:
+        vi: đứt, hết (tự) / cắt
+      examples:
+        - target: 電池が切れました。糸を切ります。
+          translation:
+            vi: Pin hết. Tôi cắt chỉ.
+  - key: ja:item:n4-u10-ochiru-otosu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 落ちる / 落とす
+      reading: おちる / おとす
+      romanization: ochiru / otosu
+      pos: động từ
+    back:
+      meaning:
+        vi: rơi / làm rơi
+      examples:
+        - target: 財布が落ちました。財布を落としました。
+          translation:
+            vi: Cái ví rơi. Tôi làm rơi cái ví.
+  - key: ja:item:n4-u10-agaru-ageru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 上がる / 上げる
+      reading: あがる / あげる
+      romanization: agaru / ageru
+      pos: động từ
+    back:
+      meaning:
+        vi: tăng lên (tự) / nâng lên
+      examples:
+        - target: 物価が上がりました。温度を上げます。
+          translation:
+            vi: Vật giá đã tăng. Tôi tăng nhiệt độ.

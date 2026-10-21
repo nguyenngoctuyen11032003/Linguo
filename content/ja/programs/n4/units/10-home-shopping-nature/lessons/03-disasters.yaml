@@ -1,0 +1,376 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n4-disasters
+order_index: 3
+level: n4
+title:
+  vi: Thiên tai và an toàn - 地震・台風・停電
+objectives:
+  - vi: "Gọi tên thiên tai: 地震, 台風, 火事, 洪水, 津波, 停電, 雷."
+  - vi: "Nói tác động và chuẩn bị: 揺れる, 怪我, 備える, 防ぐ, 気温."
+  - vi: Nghe và đọc thông báo thiên tai cơ bản.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - listening
+  - reading
+  - speaking
+prerequisites:
+  - ja:lesson:n4-shopping
+items:
+  - item: ja:item:n4-u10-jishin
+  - item: ja:item:n4-u10-taifuu
+  - item: ja:item:n4-u10-kaji-fire
+  - item: ja:item:n4-u10-kouzui
+  - item: ja:item:n4-u10-tsunami
+  - item: ja:item:n2-u1-teiden
+    role: reuse
+  - item: ja:item:n4-u10-kion
+  - item: ja:item:n4-u10-kaminari
+  - item: ja:item:n4-u10-yureru
+  - item: ja:item:n4-u10-kega
+  - item: ja:item:n4-u10-sonaeru
+  - item: ja:item:n4-u10-fusegu
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hiểu thông báo thiên tai cơ bản - 台風が近づいています。 - và nói cách chuẩn bị - 地震に備えて、水を用意します。
+  - type: explain
+    text:
+      vi: Thiên tai - 地震 (động đất), 台風 (bão), 洪水 (lũ lụt), 津波 (sóng thần), 雷 (sấm sét), 火事 (hoả hoạn). Hậu quả - 停電 (mất điện), 怪我 (bị thương). 揺れる (rung lắc) mô tả động đất.
+  - type: explain
+    text:
+      vi: Nhật Bản có nhiều động đất và bão nên người dân luôn chuẩn bị - 備える (chuẩn bị phòng khi), 防ぐ (ngăn ngừa). Ví dụ 地震に備えて、水と食べ物を用意します; 事故を防ぐために、気をつけます.
+  - type: explain
+    text:
+      vi: Thời tiết - 気温 (nhiệt độ không khí). Thông báo hay có - 台風が近づいています。外に出ないでください。 / 大きい地震がありました。津波に注意してください.
+  - type: deep_explain
+    text:
+      vi: Cẩn thận 火事 (かじ, hoả hoạn) giống đọc 家事 (việc nhà). Khi nghe thông báo, hay gặp 注意 (chú ý), 避難 (sơ tán, đã học ở N3), 警報 (cảnh báo). Sau động đất người Nhật thường kiểm tra 津波 nếu ở gần biển. Từ 備える còn dùng trong 試験に備える (chuẩn bị cho kỳ thi).
+  - type: example
+    target: 昨日、大きい地震がありました。家が揺れました。
+    target_lang: ja
+    translation:
+      vi: Hôm qua có trận động đất lớn. Nhà rung lắc.
+    note:
+      vi: 地震・揺れる.
+  - type: example
+    target: 台風で停電しました。
+    target_lang: ja
+    translation:
+      vi: Vì bão nên bị mất điện.
+    note:
+      vi: 停電 - mất điện.
+  - type: example
+    target: 地震に備えて、水と食べ物を用意します。
+    target_lang: ja
+    translation:
+      vi: Để phòng động đất, tôi chuẩn bị nước và đồ ăn.
+    note:
+      vi: 備える - chuẩn bị phòng khi.
+  - type: example
+    target: 転んで怪我をしました。
+    target_lang: ja
+    translation:
+      vi: Tôi bị ngã và bị thương.
+    note:
+      vi: 怪我をする - bị thương.
+  - type: common_mistake
+    wrong: 地震が近づいています。
+    right: 台風が近づいています。
+    target_lang: ja
+    note:
+      vi: 近づく đi với bão (台風); động đất không "đến gần" trước mà xảy ra bất ngờ.
+  - type: common_mistake
+    wrong: 火事になりました。(việc nhà)
+    right: 家事をしました。
+    target_lang: ja
+    note:
+      vi: 火事 là hoả hoạn; việc nhà là 家事.
+  - type: summary
+    points:
+      - vi: 地震 · 台風 · 洪水 · 津波 · 雷 · 火事.
+      - vi: 停電 mất điện · 怪我 bị thương · 揺れる rung lắc.
+      - vi: 備える chuẩn bị · 防ぐ ngăn ngừa · 気温 nhiệt độ.
+      - vi: 火事 (hoả hoạn) ≠ 家事 (việc nhà).
+exercises:
+  - key: ja:exercise:n4-disasters-d1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u10-jishin
+    prompt:
+      stem: Từ nào có nghĩa là “động đất”?
+      stem_lang: vi
+      options:
+        - id: mr3
+          text: 台風
+          lang: ja
+        - id: jmw
+          text: 雷
+          lang: ja
+        - id: vpz
+          text: 地震
+          lang: ja
+        - id: r3l
+          text: 洪水
+          lang: ja
+    answer:
+      correct_option_id: vpz
+    explanation:
+      vi: 地震 là động đất. 台風 là bão, 洪水 là lũ lụt, 雷 là sấm sét.
+    display_answer: 地震
+  - key: ja:exercise:n4-disasters-d2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n2-u1-teiden
+    prompt:
+      stem: Bão làm cả khu mất điện. Từ nào?
+      stem_lang: vi
+      options:
+        - id: nvn
+          text: 停電
+          lang: ja
+        - id: lt7
+          text: 怪我
+          lang: ja
+        - id: zps
+          text: 津波
+          lang: ja
+        - id: n4y
+          text: 火事
+          lang: ja
+    answer:
+      correct_option_id: nvn
+    explanation:
+      vi: 停電 là mất điện. 火事 là hoả hoạn, 津波 là sóng thần, 怪我 là bị thương.
+    display_answer: 停電
+  - key: ja:exercise:n4-disasters-d3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-u10-taifuu
+    prompt:
+      audio_asset_id: null
+      fallback_text: 台風が近づいています。外に出ないでください。停電するかもしれません。
+      options:
+        - id: ox3
+          text: Có hoả hoạn. Xin đừng đến gần. Có thể mất điện.
+          lang: vi
+        - id: ndl
+          text: Bão đã đi qua. Xin ra ngoài. Có thể có lũ.
+          lang: vi
+        - id: oxm
+          text: Bão đang đến gần. Xin đừng ra ngoài. Có thể sẽ mất điện.
+          lang: vi
+        - id: ti0
+          text: Động đất vừa xảy ra. Xin ra ngoài. Có thể mất nước.
+          lang: vi
+    answer:
+      correct_option_id: oxm
+    explanation:
+      vi: 台風が近づいています - bão đang đến gần; 外に出ないでください - xin đừng ra ngoài; 停電するかもしれません - có thể mất điện.
+    display_answer: Bão đang đến gần. Xin đừng ra ngoài. Có thể sẽ mất điện.
+  - key: ja:exercise:n4-disasters-d4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u10-sonaeru
+    prompt:
+      template: 地震に{{b1}}、水を用意します。 (Để phòng động đất, tôi chuẩn bị nước.)
+      blanks:
+        - id: b1
+          width_hint: 4
+      hint_levels:
+        - Động từ nghĩa "chuẩn bị phòng khi".
+        - Bắt đầu bằng 備.
+    answer:
+      blanks:
+        b1:
+          - 備えて
+          - そなえて
+    known_wrong:
+      - answer: 防いで
+        feedback_vi: 防ぐ là ngăn chặn (ngăn tai nạn xảy ra); "chuẩn bị phòng khi" là 備える.
+        error_tag: verb_choice
+    explanation:
+      vi: 備える - chuẩn bị phòng khi.
+    display_answer: 地震に備えて、水を用意します。
+  - key: ja:exercise:n4-disasters-d5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u10-kega
+    prompt:
+      stem: Bạn bị ngã chảy máu. Cụm nào đúng?
+      stem_lang: vi
+      options:
+        - id: at6
+          text: 怪我で行きました
+          lang: ja
+        - id: twa
+          text: 怪我をしました
+          lang: ja
+        - id: qly
+          text: 怪我になりました
+          lang: ja
+        - id: n78
+          text: 怪我が変わりました
+          lang: ja
+    answer:
+      correct_option_id: twa
+    explanation:
+      vi: 怪我をする - bị thương. Các dạng còn lại không tạo nghĩa đúng.
+    display_answer: 怪我をしました
+  - key: ja:exercise:n4-disasters-d6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u10-kouzui
+    prompt:
+      template: 大雨で{{b1}}になりました。 (Mưa lớn gây ra lũ lụt.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 洪水
+          - こうずい
+    known_wrong:
+      - answer: 地震
+        feedback_vi: 地震 là động đất; mưa lớn gây lũ lụt là 洪水.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 洪水 là lũ lụt.
+    display_answer: 大雨で洪水になりました。
+  - key: ja:exercise:n4-disasters-d7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u10-yureru
+    prompt:
+      template: 地震で家が{{b1}}。 (Nhà rung lắc vì động đất.)
+      blanks:
+        - id: b1
+          width_hint: 6
+    answer:
+      blanks:
+        b1:
+          - 揺れました
+          - ゆれました
+    known_wrong:
+      - answer: 割れました
+        feedback_vi: 割れる là vỡ; rung lắc là 揺れる.
+        error_tag: verb_choice
+    explanation:
+      vi: 揺れる - rung lắc.
+    display_answer: 地震で家が揺れました。
+  - key: ja:exercise:n4-disasters-d8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u10-sonaeru
+    prompt:
+      source_text: Để phòng động đất, tôi chuẩn bị nước và đồ ăn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 地震に備えて、水と食べ物を用意します。
+        - じしんにそなえて、みずとたべものをようい します。
+        - 地震に備えて、水と食べ物を準備します。
+        - 地震に備えて水と食べ物を用意します。
+    known_wrong:
+      - answer: 地震を備えて、水と食べ物を用意します。
+        feedback_vi: "備える đi với に: 地震に備えて."
+        error_tag: particle_ni_wo
+    explanation:
+      vi: N に備えて - để phòng N; 用意します - chuẩn bị.
+    display_answer: 地震に備えて、水と食べ物を用意します。
+  - key: ja:exercise:n4-disasters-d9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-u10-kion
+    prompt:
+      source_text: 今日の気温は三十五度です。雷も鳴っています。台風が来るかもしれません。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nhiệt độ hôm nay là 35 độ. Sấm cũng đang nổ. Có thể bão sắp đến.
+        - Hôm nay nhiệt độ 35 độ. Cũng có sấm. Có thể có bão.
+        - Nhiệt độ hôm nay là 35 độ, sấm đang nổ, có thể bão sẽ tới.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nhiệt độ hôm nay là 15 độ. Có tuyết rơi. Có thể không có bão.
+        feedback_vi: 三十五度 là 35 độ; 雷 là sấm.
+        error_tag: meaning
+    explanation:
+      vi: 気温 - nhiệt độ; 雷が鳴る - sấm nổ; 来るかもしれません - có thể sẽ đến.
+    display_answer: Nhiệt độ hôm nay là 35 độ. Sấm cũng đang nổ. Có thể bão sắp đến.
+  - key: ja:exercise:n4-disasters-d10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n2-u1-teiden
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Vì bão nên bị mất điện."'
+      tokens:
+        - id: t1
+          text: 台風で
+        - id: t3
+          text: しました。
+        - id: t2
+          text: 停電
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: Nguyên nhân (台風で) → 停電 → しました.
+    display_answer: 台風で停電しました。
+  - key: ja:exercise:n4-disasters-d11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u10-fusegu
+    prompt:
+      stem: Bạn muốn nói “Để ngăn tai nạn, tôi cẩn thận”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: fur
+          text: 事故が防ぐために、気をつけます。
+          lang: ja
+        - id: nw9
+          text: 事故を備えるために、気をつけます。
+          lang: ja
+        - id: r1h
+          text: 事故で防ぐために、気をつけます。
+          lang: ja
+        - id: h3f
+          text: 事故を防ぐために、気をつけます。
+          lang: ja
+    answer:
+      correct_option_id: h3f
+    explanation:
+      vi: 防ぐ - ngăn chặn, đi với を. 備える đi với に; が và で không phù hợp.
+    display_answer: 事故を防ぐために、気をつけます。
