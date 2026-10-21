@@ -589,7 +589,7 @@ items:
     skill_tags:
       - vocabulary
     front:
-      text: der Operationssaal, ¨-e
+      text: der Operationssaal, Operationssäle
       pos: danh từ
     back:
       meaning:
