@@ -341,6 +341,9 @@ exercises:
         - - t1
           - t2
           - t3
+        - - t2
+          - t1
+          - t3
     explanation:
       vi: Nơi (レジで) → cách trả (現金で) → 払います.
     display_answer: レジで現金で払います。

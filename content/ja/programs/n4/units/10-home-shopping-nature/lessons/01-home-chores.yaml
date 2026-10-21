@@ -344,6 +344,10 @@ exercises:
           - t2
           - t3
           - t4
+        - - t2
+          - t1
+          - t3
+          - t4
     explanation:
       vi: Dụng cụ (掃除機で) → đối tượng (部屋を) → きれいにします (làm cho sạch).
     display_answer: 掃除機で部屋をきれいにします。

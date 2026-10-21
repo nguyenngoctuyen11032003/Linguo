@@ -346,6 +346,9 @@ exercises:
         - - t1
           - t2
           - t3
+        - - t2
+          - t1
+          - t3
     explanation:
       vi: Người nhận (ともだちに) → でんわを → かけます.
     display_answer: ともだちにでんわをかけます。

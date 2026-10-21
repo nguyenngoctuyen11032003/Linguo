@@ -356,6 +356,9 @@ exercises:
         - - t1
           - t2
           - t3
+        - - t2
+          - t1
+          - t3
     explanation:
       vi: Nơi diễn ra (げんかんで) → đối tượng (くつを) → động từ (ぬぎます).
     display_answer: げんかんでくつをぬぎます。

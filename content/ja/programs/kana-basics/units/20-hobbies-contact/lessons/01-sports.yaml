@@ -352,6 +352,18 @@ exercises:
           - t2
           - t3
           - t4
+        - - t2
+          - t1
+          - t3
+          - t4
+        - - t1
+          - t3
+          - t2
+          - t4
+        - - t3
+          - t1
+          - t2
+          - t4
     explanation:
       vi: Thời gian (にちようびに) → cùng ai (ともだちと) → サッカーを → します.
     display_answer: にちようびにともだちとサッカーをします。

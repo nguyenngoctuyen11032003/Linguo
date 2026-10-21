@@ -344,6 +344,9 @@ exercises:
         - - t1
           - t2
           - t3
+        - - t2
+          - t1
+          - t3
     explanation:
       vi: Nơi đựng (コップに) → vật (みずを) → いれます.
     display_answer: コップにみずをいれます。

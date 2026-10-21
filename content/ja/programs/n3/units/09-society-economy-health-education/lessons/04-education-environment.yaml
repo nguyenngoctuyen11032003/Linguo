@@ -349,6 +349,10 @@ exercises:
           - t2
           - t3
           - t4
+        - - t2
+          - t3
+          - t1
+          - t4
     explanation:
       vi: Nơi (大学で) → N の (環境の) → 研究を → しています.
     display_answer: 大学で環境の研究をしています。

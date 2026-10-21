@@ -343,6 +343,9 @@ exercises:
         - - t1
           - t2
           - t3
+        - - t2
+          - t1
+          - t3
     explanation:
       vi: Đối tượng (にほんごが) → mức độ (すこし) → động từ (わかります).
     display_answer: にほんごがすこしわかります。

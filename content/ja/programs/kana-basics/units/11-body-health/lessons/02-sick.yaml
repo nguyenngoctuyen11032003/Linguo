@@ -356,6 +356,9 @@ exercises:
         - - t1
           - t2
           - t3
+        - - t2
+          - t1
+          - t3
     explanation:
       vi: で đánh dấu nguyên nhân (bệnh) ở đầu; かいしゃを đối tượng; やすみました ở cuối.
     display_answer: びょうきでかいしゃをやすみました。

@@ -347,6 +347,10 @@ exercises:
           - t2
           - t3
           - t4
+        - - t3
+          - t1
+          - t2
+          - t4
     explanation:
       vi: N の うえに (vị trí) → đối tượng を → おきます (đặt).
     display_answer: つくえのうえにかばんをおきます。

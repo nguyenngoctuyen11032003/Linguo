@@ -345,6 +345,9 @@ exercises:
         - - t1
           - t2
           - t3
+        - - t2
+          - t1
+          - t3
     explanation:
       vi: Nơi (駅の前で) → 車を (tân ngữ) → 止めました (tha động từ).
     display_answer: 駅の前で車を止めました。

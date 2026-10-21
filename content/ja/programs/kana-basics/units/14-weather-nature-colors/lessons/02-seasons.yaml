@@ -353,6 +353,9 @@ exercises:
         - - t1
           - t2
           - t3
+        - - t2
+          - t1
+          - t3
     explanation:
       vi: Thời điểm (はるに) → chủ ngữ (さくらが) → động từ (さきます).
     display_answer: はるにさくらがさきます。
