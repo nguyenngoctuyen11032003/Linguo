@@ -1,0 +1,378 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n1-u10-adverbs
+order_index: 3
+level: n1
+title:
+  vi: Phó từ và tính từ văn viết - 概して・極めて・依然・辛うじて・敢えて
+objectives:
+  - vi: "Dùng phó từ văn viết: 概して, 極めて, 依然, 辛うじて, 敢えて, 至って, ことごとく."
+  - vi: "Dùng tính từ: 甚だしい, 煩わしい, 紛らわしい, 慎重, 懸命."
+  - vi: Nhận ra sắc thái và cặp từ hay đi cùng.
+estimated_minutes: 22
+skills:
+  - vocabulary
+  - reading
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n1-u10-verbs
+items:
+  - item: ja:item:n1-u10-hanahadashii
+  - item: ja:item:n1-u10-wazurawashii
+  - item: ja:item:n1-u10-magirawashii
+  - item: ja:item:n1-u10-shinchou
+  - item: ja:item:n1-u10-kenmei
+  - item: ja:item:n1-u10-gaishite
+  - item: ja:item:n1-u10-kiwamete
+  - item: ja:item:n1-u10-izen-n1
+  - item: ja:item:n1-u10-karoujite
+  - item: ja:item:n1-u10-aete
+  - item: ja:item:n1-u10-itatte
+  - item: ja:item:n1-u10-kotogotoku
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu văn viết dễ hơn - 極めて重要な問題です。依然として、状況は変わりません。辛うじて終電に間に合いました。
+  - type: explain
+    text:
+      vi: "Phó từ: 概して (nhìn chung), 極めて (vô cùng), 依然 (vẫn), 辛うじて (vất vả lắm mới), 敢えて (cố ý, dám), 至って (cực kỳ, thường bình thản), ことごとく (hết thảy). Tính từ: 甚だしい (quá mức), 煩わしい (phiền hà), 紛らわしい (dễ nhầm lẫn), 慎重 (thận trọng), 懸命 (hết sức)."
+  - type: explain
+    text:
+      vi: "Cặp thường đi cùng: 依然として + trạng thái; 辛うじて + ～た (kết quả suýt thất bại); 敢えて + ～する (làm điều trái xu hướng) / 敢えて ～ない (cố ý không); 至って + 元気 / 普通 / 平穏 (bình thản); ことごとく + 失敗する / 反対する; 極めて + 重要 / 困難 / 珍しい."
+  - type: explain
+    text:
+      vi: Ví dụ - 概して、今年の天気はよかったです。依然として、状況は変わりません。彼女は懸命に働いています. Phát biểu thận trọng - 慎重に検討する必要があります.
+  - type: deep_explain
+    text:
+      vi: Phân biệt các phó từ gần nghĩa - 極めて là trang trọng, 非常に chung hơn, とても là hội thoại. 辛うじて nhấn kết quả "suýt thất bại nhưng vừa đủ", khác やっと (cuối cùng cũng, có cố gắng). 敢えて có sắc thái chủ ý làm điều mà thường người ta tránh. 至って thường gắn với 平穏・元気 nên không dùng với 重要. ことごとく nhấn toàn bộ không ngoại lệ, hay đi với kết quả xấu.
+  - type: example
+    target: それは極めて重要な問題です。
+    target_lang: ja
+    translation:
+      vi: Đó là vấn đề vô cùng quan trọng.
+    note:
+      vi: 極めて.
+  - type: example
+    target: 依然として、状況は変わりません。
+    target_lang: ja
+    translation:
+      vi: Tình hình vẫn không thay đổi.
+    note:
+      vi: 依然として.
+  - type: example
+    target: 辛うじて終電に間に合いました。
+    target_lang: ja
+    translation:
+      vi: Tôi vừa kịp chuyến tàu cuối.
+    note:
+      vi: 辛うじて.
+  - type: example
+    target: 敢えて反対意見を述べます。
+    target_lang: ja
+    translation:
+      vi: Tôi cố ý nêu ý kiến phản đối.
+    note:
+      vi: 敢えて.
+  - type: common_mistake
+    wrong: 彼は至って重要な人物です。
+    right: 彼は極めて重要な人物です。
+    target_lang: ja
+    note:
+      vi: 至って đi với trạng thái bình thản (元気, 普通); "cực kỳ quan trọng" dùng 極めて.
+  - type: common_mistake
+    wrong: やっと終電に間に合いました。(suýt thất bại nhưng vừa kịp)
+    right: 辛うじて終電に間に合いました。
+    target_lang: ja
+    note:
+      vi: 辛うじて nhấn suýt thất bại; やっと nhấn cuối cùng cũng đạt được sau nỗ lực.
+  - type: summary
+    points:
+      - vi: 概して nhìn chung · 極めて vô cùng · 依然 vẫn · 辛うじて suýt soát · 敢えて cố ý · 至って cực kỳ · ことごとく hết thảy.
+      - vi: 甚だしい · 煩わしい · 紛らわしい · 慎重 · 懸命.
+      - vi: 依然として · 極めて重要 · 至って元気.
+      - vi: 辛うじて ≠ やっと.
+exercises:
+  - key: ja:exercise:n1-u10-adverbs-a1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-kiwamete
+    prompt:
+      stem: Từ nào có nghĩa là “vô cùng, cực kỳ” (văn viết)?
+      stem_lang: vi
+      options:
+        - id: o6d
+          text: 依然
+          lang: ja
+        - id: nzp
+          text: 敢えて
+          lang: ja
+        - id: hg7
+          text: 極めて
+          lang: ja
+        - id: sk6
+          text: 概して
+          lang: ja
+    answer:
+      correct_option_id: hg7
+    explanation:
+      vi: 極めて là vô cùng. 概して là nhìn chung, 依然 là vẫn, 敢えて là cố ý.
+    display_answer: 極めて
+  - key: ja:exercise:n1-u10-adverbs-a2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-karoujite
+    prompt:
+      stem: Bạn vừa kịp chuyến tàu cuối sát nút. Từ nào?
+      stem_lang: vi
+      options:
+        - id: nci
+          text: ことごとく
+          lang: ja
+        - id: a5e
+          text: 概して
+          lang: ja
+        - id: s6g
+          text: 辛うじて
+          lang: ja
+        - id: acv
+          text: 至って
+          lang: ja
+    answer:
+      correct_option_id: s6g
+    explanation:
+      vi: 辛うじて là vất vả lắm mới, suýt soát. ことごとく là hết thảy, 概して là nhìn chung, 至って là cực kỳ.
+    display_answer: 辛うじて
+  - key: ja:exercise:n1-u10-adverbs-a3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u10-izen-n1
+    prompt:
+      audio_asset_id: null
+      fallback_text: 依然として、状況は変わりません。
+      options:
+        - id: cgr
+          text: Tình hình vẫn không thay đổi.
+          lang: vi
+        - id: aoq
+          text: Tình hình thay đổi nhưng chậm.
+          lang: vi
+        - id: u0s
+          text: Tình hình đã thay đổi hoàn toàn.
+          lang: vi
+        - id: hmk
+          text: Tình hình sẽ thay đổi sớm.
+          lang: vi
+    answer:
+      correct_option_id: cgr
+    explanation:
+      vi: 依然として - vẫn; 変わりません - không thay đổi.
+    display_answer: Tình hình vẫn không thay đổi.
+  - key: ja:exercise:n1-u10-adverbs-a4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-aete
+    prompt:
+      template: "{{b1}}反対意見を述べます。 (Tôi cố ý nêu ý kiến phản đối.)"
+      blanks:
+        - id: b1
+          width_hint: 4
+      hint_levels:
+        - Phó từ nghĩa "cố ý".
+        - Bắt đầu bằng 敢.
+    answer:
+      blanks:
+        b1:
+          - 敢えて
+          - あえて
+    known_wrong:
+      - answer: 概して
+        feedback_vi: 概して là nhìn chung; "cố ý làm điều khó" dùng 敢えて.
+        error_tag: adverb_choice
+    explanation:
+      vi: 敢えて - cố ý, dám.
+    display_answer: 敢えて反対意見を述べます。
+  - key: ja:exercise:n1-u10-adverbs-a5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-magirawashii
+    prompt:
+      stem: Biểu hiện dễ gây nhầm lẫn. Từ nào?
+      stem_lang: vi
+      options:
+        - id: bvh
+          text: 慎重
+          lang: ja
+        - id: n9n
+          text: 紛らわしい
+          lang: ja
+        - id: ui0
+          text: 甚だしい
+          lang: ja
+        - id: fs7
+          text: 煩わしい
+          lang: ja
+    answer:
+      correct_option_id: n9n
+    explanation:
+      vi: 紛らわしい là dễ nhầm lẫn. 煩わしい là phiền hà, 甚だしい là quá mức, 慎重 là thận trọng.
+    display_answer: 紛らわしい
+  - key: ja:exercise:n1-u10-adverbs-a6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-gaishite
+    prompt:
+      template: "{{b1}}、今年の天気はよかったです。 (Nhìn chung, thời tiết năm nay tốt.)"
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - 概して
+          - がいして
+    known_wrong:
+      - answer: 至って
+        feedback_vi: 至って đi với trạng thái bình thản; "nhìn chung" là 概して.
+        error_tag: adverb_choice
+    explanation:
+      vi: 概して - nhìn chung.
+    display_answer: 概して、今年の天気はよかったです。
+  - key: ja:exercise:n1-u10-adverbs-a7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-kenmei
+    prompt:
+      template: 彼女は{{b1}}に働いています。 (Cô ấy làm việc hết sức mình.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 懸命
+          - けんめい
+    known_wrong:
+      - answer: 慎重
+        feedback_vi: 慎重 là thận trọng; "hết sức" là 懸命.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 懸命に - hết sức, quên mình.
+    display_answer: 彼女は懸命に働いています。
+  - key: ja:exercise:n1-u10-adverbs-a8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-kotogotoku
+    prompt:
+      source_text: Kế hoạch của anh ấy thất bại hết thảy.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 彼の計画はことごとく失敗しました。
+        - 彼の計画はことごとく失敗した。
+        - かれのけいかくはことごとくしっぱいしました。
+        - 彼の計画は、ことごとく失敗しました。
+    known_wrong:
+      - answer: 彼の計画は概して失敗しました。
+        feedback_vi: 概して là nhìn chung; "hết thảy không ngoại lệ" là ことごとく.
+        error_tag: adverb_choice
+    explanation:
+      vi: ことごとく - hết thảy, không ngoại lệ.
+    display_answer: 彼の計画はことごとく失敗しました。
+  - key: ja:exercise:n1-u10-adverbs-a9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u10-hanahadashii
+    prompt:
+      source_text: 彼の勘違いも甚だしいですが、依然として、自分の間違いを認めません。慎重に対応する必要があります。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Sự hiểu lầm của anh ta thật quá mức, nhưng anh ta vẫn không nhận lỗi. Cần xử lý thận trọng.
+        - Hiểu lầm của anh ấy quá nghiêm trọng, vậy mà vẫn không chịu nhận sai. Phải đối phó thận trọng.
+        - Anh ta hiểu lầm quá đáng mà vẫn không thừa nhận sai. Cần ứng xử thận trọng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Sự hiểu lầm của anh ta rất nhẹ, và anh ta đã nhận lỗi. Không cần thận trọng.
+        feedback_vi: 甚だしい là quá mức; 依然として là vẫn.
+        error_tag: meaning
+    explanation:
+      vi: 甚だしい - quá mức; 依然として - vẫn; 慎重に - thận trọng.
+    display_answer: Sự hiểu lầm của anh ta thật quá mức, nhưng anh ta vẫn không nhận lỗi. Cần xử lý thận trọng.
+  - key: ja:exercise:n1-u10-adverbs-a10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-kiwamete
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Đó là vấn đề vô cùng quan trọng."'
+      tokens:
+        - id: t2
+          text: 極めて
+        - id: t3
+          text: 重要な
+        - id: t4
+          text: 問題です。
+        - id: t1
+          text: それは
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Chủ đề → 極めて + tính từ な → 問題です.
+    display_answer: それは極めて重要な問題です。
+  - key: ja:exercise:n1-u10-adverbs-a11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-itatte
+    prompt:
+      stem: Bạn nói “Anh ấy vẫn cực kỳ khoẻ mạnh”. Từ nào hợp?
+      stem_lang: vi
+      options:
+        - id: bpv
+          text: 概して
+          lang: ja
+        - id: v2e
+          text: めったに
+          lang: ja
+        - id: mtg
+          text: 至って
+          lang: ja
+        - id: w38
+          text: ことごとく
+          lang: ja
+    answer:
+      correct_option_id: mtg
+    explanation:
+      vi: 至って元気 là cách nói quen thuộc. めったに (hiếm khi), ことごとく (hết thảy), 概して (nhìn chung) không hợp với 元気 theo cách này.
+    display_answer: 至って

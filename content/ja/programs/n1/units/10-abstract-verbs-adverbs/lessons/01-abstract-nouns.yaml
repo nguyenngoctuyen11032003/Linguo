@@ -1,0 +1,384 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n1-u10-abstract
+order_index: 1
+level: n1
+title:
+  vi: Danh từ trừu tượng - 余地・兆し・基盤・側面・本質
+objectives:
+  - vi: "Dùng 18 danh từ trừu tượng thường gặp trong văn N1: 余地, 兆し, 趣, 概念, 基盤, 側面, 一環, 枠組み, 潮流..."
+  - vi: Nhận ra sắc thái và collocation của từng từ.
+  - vi: Đọc hiểu đoạn bình luận ngắn.
+estimated_minutes: 22
+skills:
+  - vocabulary
+  - reading
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n1-u9-formal
+items:
+  - item: ja:item:n1-u10-yochi
+  - item: ja:item:n1-u10-kizashi
+  - item: ja:item:n1-u10-omomuki
+  - item: ja:item:n1-u10-gainen
+  - item: ja:item:n1-u10-kiban
+  - item: ja:item:n1-u10-sokumen
+  - item: ja:item:n1-u10-ikkan
+  - item: ja:item:n1-u10-wakugumi
+  - item: ja:item:n1-u10-chouryuu
+  - item: ja:item:n1-u10-kenchi
+  - item: ja:item:n1-u10-jigen
+  - item: ja:item:n1-u10-youin
+  - item: ja:item:n1-u10-keiki-n1
+  - item: ja:item:n1-u10-jittai
+  - item: ja:item:n1-u10-honshitsu
+  - item: ja:item:n1-u10-mujun
+  - item: ja:item:n1-u10-kinkou
+  - item: ja:item:n1-u10-chitsujo
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc bài bình luận N1 dễ hơn - 改善の余地があります。景気が回復する兆しが見えてきました。問題の本質を見極める必要があります。
+  - type: explain
+    text:
+      vi: Danh từ trừu tượng thường gặp - 余地 (dư địa), 兆し (dấu hiệu), 趣 (nét thanh nhã), 概念 (khái niệm), 基盤 (nền tảng), 側面 (khía cạnh), 一環 (một phần), 枠組み (khuôn khổ), 潮流 (xu thế), 見地 (quan điểm), 次元 (tầng bậc), 要因 (nhân tố), 契機 (cơ duyên), 実態 (thực trạng), 本質 (bản chất), 矛盾 (mâu thuẫn), 均衡 (cân bằng), 秩序 (trật tự).
+  - type: explain
+    text:
+      vi: "Collocation quan trọng: 余地がある / ない, 兆しが見える, 基盤を固める, 側面を持つ, 一環として, 枠組みを作る, 潮流に乗る, 見地から述べる, 要因を分析する, 契機として, 実態を調査する, 本質を見極める, 矛盾が生じる, 均衡を保つ, 秩序を守る."
+  - type: explain
+    text:
+      vi: Mẫu thường gặp trong văn viết - ～の一環として (như một phần của ...), ～を契機に (nhân dịp ...), ～の見地から (từ góc nhìn ...), ～の余地がない (không còn dư địa để ...).
+  - type: deep_explain
+    text:
+      vi: Một số từ dễ nhầm - 要因 (nhân tố có ảnh hưởng) khác 原因 (nguyên nhân trực tiếp). 契機 (cơ hội khởi đầu thay đổi) gần きっかけ nhưng trang trọng. 側面 (khía cạnh của sự việc) khác 方面 (hướng, lĩnh vực). 一環 chỉ một phần trong chuỗi các hoạt động liên quan, không dùng như "một phần" của vật thể. 趣 chỉ vẻ đẹp tinh tế, thường đi với 風景・庭・文章.
+  - type: example
+    target: この計画には、改善の余地があります。
+    target_lang: ja
+    translation:
+      vi: Kế hoạch này còn dư địa để cải thiện.
+    note:
+      vi: 余地.
+  - type: example
+    target: 景気が回復する兆しが見えてきました。
+    target_lang: ja
+    translation:
+      vi: Đã xuất hiện dấu hiệu kinh tế hồi phục.
+    note:
+      vi: 兆し.
+  - type: example
+    target: 環境保護の一環として、植樹を行います。
+    target_lang: ja
+    translation:
+      vi: Trồng cây như một phần của bảo vệ môi trường.
+    note:
+      vi: 一環として.
+  - type: example
+    target: これを契機に、制度を見直します。
+    target_lang: ja
+    translation:
+      vi: Nhân dịp này, chúng tôi sẽ xem xét lại chế độ.
+    note:
+      vi: 契機.
+  - type: common_mistake
+    wrong: 失敗の原因を分析する要因があります。
+    right: 失敗の要因を分析します。
+    target_lang: ja
+    note:
+      vi: 要因 là nhân tố có ảnh hưởng, đi với 分析; 原因 là nguyên nhân trực tiếp.
+  - type: common_mistake
+    wrong: その問題には、様々な方面があります。
+    right: その問題には、様々な側面があります。
+    target_lang: ja
+    note:
+      vi: Khía cạnh của vấn đề là 側面, không phải 方面.
+  - type: summary
+    points:
+      - vi: 余地 · 兆し · 趣 · 概念 · 基盤 · 側面 · 一環 · 枠組み · 潮流.
+      - vi: 見地 · 次元 · 要因 · 契機 · 実態 · 本質 · 矛盾 · 均衡 · 秩序.
+      - vi: ～の一環として · ～を契機に · ～の見地から.
+      - vi: 要因 (nhân tố) ≠ 原因 (nguyên nhân).
+exercises:
+  - key: ja:exercise:n1-u10-abstract-n1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-yochi
+    prompt:
+      stem: Từ nào có nghĩa là “dư địa, chỗ cho khả năng”?
+      stem_lang: vi
+      options:
+        - id: mft
+          text: 余地
+          lang: ja
+        - id: h8c
+          text: 概念
+          lang: ja
+        - id: k1m
+          text: 兆し
+          lang: ja
+        - id: gfe
+          text: 趣
+          lang: ja
+    answer:
+      correct_option_id: mft
+    explanation:
+      vi: 余地 là dư địa. 兆し là dấu hiệu, 趣 là nét thanh nhã, 概念 là khái niệm.
+    display_answer: 余地
+  - key: ja:exercise:n1-u10-abstract-n2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-kizashi
+    prompt:
+      stem: Bạn nói “Có dấu hiệu kinh tế hồi phục”. Từ nào?
+      stem_lang: vi
+      options:
+        - id: o5l
+          text: 兆し
+          lang: ja
+        - id: zjf
+          text: 均衡
+          lang: ja
+        - id: yau
+          text: 契機
+          lang: ja
+        - id: xxg
+          text: 余地
+          lang: ja
+    answer:
+      correct_option_id: o5l
+    explanation:
+      vi: 兆し là dấu hiệu, điềm báo. 余地 là dư địa, 契機 là cơ duyên, 均衡 là cân bằng.
+    display_answer: 兆し
+  - key: ja:exercise:n1-u10-abstract-n3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u10-ikkan
+    prompt:
+      audio_asset_id: null
+      fallback_text: 環境保護の一環として、毎月、植樹を行っています。
+      options:
+        - id: q96
+          text: Mỗi tháng chúng tôi trồng cây thay cho bảo vệ môi trường.
+          lang: vi
+        - id: gzd
+          text: Vì ô nhiễm, mỗi tháng chúng tôi dừng trồng cây.
+          lang: vi
+        - id: gkp
+          text: Như một phần của bảo vệ môi trường, mỗi tháng chúng tôi trồng cây.
+          lang: vi
+        - id: luu
+          text: Sau khi trồng cây chúng tôi bắt đầu bảo vệ môi trường.
+          lang: vi
+    answer:
+      correct_option_id: gkp
+    explanation:
+      vi: ～の一環として - như một phần của ...; 植樹 - trồng cây.
+    display_answer: Như một phần của bảo vệ môi trường, mỗi tháng chúng tôi trồng cây.
+  - key: ja:exercise:n1-u10-abstract-n4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-honshitsu
+    prompt:
+      template: 問題の{{b1}}を見極める必要があります。 (Cần nhìn thấu bản chất của vấn đề.)
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Cái cốt lõi của vấn đề.
+        - Bắt đầu bằng 本.
+    answer:
+      blanks:
+        b1:
+          - 本質
+          - ほんしつ
+    known_wrong:
+      - answer: 側面
+        feedback_vi: 側面 là khía cạnh; "nhìn thấu" đi với 本質.
+        error_tag: collocation
+    explanation:
+      vi: 本質を見極める - nhìn thấu bản chất.
+    display_answer: 問題の本質を見極める必要があります。
+  - key: ja:exercise:n1-u10-abstract-n5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-keiki-n1
+    prompt:
+      stem: Bạn xem xét lại chế độ nhân một sự kiện. Mẫu nào?
+      stem_lang: vi
+      options:
+        - id: uyo
+          text: これを基盤に、制度を見直します
+          lang: ja
+        - id: upa
+          text: これを兆しに、制度を見直します
+          lang: ja
+        - id: bus
+          text: これを余地に、制度を見直します
+          lang: ja
+        - id: nvk
+          text: これを契機に、制度を見直します
+          lang: ja
+    answer:
+      correct_option_id: nvk
+    explanation:
+      vi: ～を契機に - nhân dịp. 余地, 兆し, 基盤 không đi với を...に theo nghĩa này.
+    display_answer: これを契機に、制度を見直します
+  - key: ja:exercise:n1-u10-abstract-n6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-kiban
+    prompt:
+      template: 経済の{{b1}}を固めます。 (Củng cố nền tảng kinh tế.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 基盤
+          - きばん
+    known_wrong:
+      - answer: 枠組み
+        feedback_vi: 枠組み là khuôn khổ; "củng cố" nền tảng dùng 基盤.
+        error_tag: collocation
+    explanation:
+      vi: 基盤を固める - củng cố nền tảng.
+    display_answer: 経済の基盤を固めます。
+  - key: ja:exercise:n1-u10-abstract-n7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-kinkou
+    prompt:
+      template: 収入と支出の{{b1}}を保ちます。 (Giữ cân bằng giữa thu và chi.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 均衡
+          - きんこう
+    known_wrong:
+      - answer: 秩序
+        feedback_vi: 秩序 là trật tự; "cân bằng" là 均衡.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 均衡を保つ - giữ cân bằng.
+    display_answer: 収入と支出の均衡を保ちます。
+  - key: ja:exercise:n1-u10-abstract-n8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-yochi
+    prompt:
+      source_text: Kế hoạch này còn dư địa để cải thiện.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - この計画には、改善の余地があります。
+        - この計画には改善の余地があります。
+        - このけいかくには、かいぜんのよちがあります。
+        - この計画は改善の余地があります。
+    known_wrong:
+      - answer: この計画には、改善の兆しがあります。
+        feedback_vi: 兆し là dấu hiệu; "dư địa" là 余地.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 改善の余地がある - còn dư địa cải thiện.
+    display_answer: この計画には、改善の余地があります。
+  - key: ja:exercise:n1-u10-abstract-n9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u10-sokumen
+    prompt:
+      source_text: この問題には、様々な側面があります。経済の基盤を固めると同時に、秩序を守る必要があります。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Vấn đề này có nhiều khía cạnh. Vừa củng cố nền tảng kinh tế, vừa cần giữ trật tự.
+        - Vấn đề này có nhiều mặt. Cần vừa củng cố nền tảng kinh tế vừa giữ gìn trật tự.
+        - Vấn đề có nhiều khía cạnh. Phải củng cố nền tảng kinh tế và đồng thời bảo vệ trật tự.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vấn đề này chỉ có một khía cạnh. Cần làm suy yếu nền tảng kinh tế và phá vỡ trật tự.
+        feedback_vi: 様々な側面 là nhiều khía cạnh.
+        error_tag: meaning
+    explanation:
+      vi: 側面 - khía cạnh; 基盤を固める - củng cố nền tảng; 秩序を守る - giữ trật tự.
+    display_answer: Vấn đề này có nhiều khía cạnh. Vừa củng cố nền tảng kinh tế, vừa cần giữ trật tự.
+  - key: ja:exercise:n1-u10-abstract-n10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-chouryuu
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Không được lỡ nhịp với trào lưu của thời đại."'
+      tokens:
+        - id: t3
+          text: 乗り遅れては
+        - id: t2
+          text: 潮流に
+        - id: t1
+          text: 時代の
+        - id: t4
+          text: いけません。
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: N の + 潮流に + 乗り遅れては + いけません.
+    display_answer: 時代の潮流に乗り遅れてはいけません。
+  - key: ja:exercise:n1-u10-abstract-n11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-mujun
+    prompt:
+      stem: Lời anh ấy nói trước sau không nhất quán. Từ nào?
+      stem_lang: vi
+      options:
+        - id: zkf
+          text: 概念
+          lang: ja
+        - id: f67
+          text: 矛盾
+          lang: ja
+        - id: nqa
+          text: 秩序
+          lang: ja
+        - id: m5w
+          text: 均衡
+          lang: ja
+    answer:
+      correct_option_id: f67
+    explanation:
+      vi: 矛盾 là mâu thuẫn. 均衡 là cân bằng, 秩序 là trật tự, 概念 là khái niệm.
+    display_answer: 矛盾

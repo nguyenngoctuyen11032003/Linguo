@@ -1,0 +1,801 @@
+# Học liệu unit "Từ vựng N1: danh từ trừu tượng, động từ văn viết và phó từ" (JLPT N1). reading là cách đọc kana (furigana); romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n1-u10-yochi
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 余地
+      reading: よち
+      romanization: yochi
+      pos: danh từ
+    back:
+      meaning:
+        vi: chỗ trống, dư địa, khả năng
+      examples:
+        - target: この計画には、改善の余地があります。
+          translation:
+            vi: Kế hoạch này còn dư địa để cải thiện.
+  - key: ja:item:n1-u10-kizashi
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 兆し
+      reading: きざし
+      romanization: kizashi
+      pos: danh từ
+    back:
+      meaning:
+        vi: dấu hiệu, điềm báo
+      examples:
+        - target: 景気が回復する兆しが見えてきました。
+          translation:
+            vi: Đã xuất hiện dấu hiệu kinh tế hồi phục.
+  - key: ja:item:n1-u10-omomuki
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 趣
+      reading: おもむき
+      romanization: omomuki
+      pos: danh từ
+    back:
+      meaning:
+        vi: nét thanh nhã, ý vị, vẻ đẹp tinh tế
+      examples:
+        - target: この庭には、独特の趣があります。
+          translation:
+            vi: Khu vườn này có nét thanh nhã độc đáo.
+  - key: ja:item:n1-u10-gainen
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 概念
+      reading: がいねん
+      romanization: gainen
+      pos: danh từ
+    back:
+      meaning:
+        vi: khái niệm
+      examples:
+        - target: 新しい概念を理解する必要があります。
+          translation:
+            vi: Cần hiểu một khái niệm mới.
+  - key: ja:item:n1-u10-kiban
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 基盤
+      reading: きばん
+      romanization: kiban
+      pos: danh từ
+    back:
+      meaning:
+        vi: nền tảng, cơ sở
+      examples:
+        - target: 経済の基盤を固めます。
+          translation:
+            vi: Củng cố nền tảng kinh tế.
+  - key: ja:item:n1-u10-sokumen
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 側面
+      reading: そくめん
+      romanization: sokumen
+      pos: danh từ
+    back:
+      meaning:
+        vi: khía cạnh, mặt (của vấn đề)
+      examples:
+        - target: この問題には、様々な側面があります。
+          translation:
+            vi: Vấn đề này có nhiều khía cạnh.
+  - key: ja:item:n1-u10-ikkan
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 一環
+      reading: いっかん
+      romanization: ikkan
+      pos: danh từ
+    back:
+      meaning:
+        vi: một phần, một mắt xích (của tổng thể)
+      examples:
+        - target: 環境保護の一環として、植樹を行います。
+          translation:
+            vi: Trồng cây như một phần của bảo vệ môi trường.
+  - key: ja:item:n1-u10-wakugumi
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 枠組み
+      reading: わくぐみ
+      romanization: wakugumi
+      pos: danh từ
+    back:
+      meaning:
+        vi: khung, khuôn khổ
+      examples:
+        - target: 新しい制度の枠組みを作ります。
+          translation:
+            vi: Xây dựng khuôn khổ cho chế độ mới.
+  - key: ja:item:n1-u10-chouryuu
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 潮流
+      reading: ちょうりゅう
+      romanization: chouryuu
+      pos: danh từ
+    back:
+      meaning:
+        vi: xu thế, trào lưu
+      examples:
+        - target: 時代の潮流に乗り遅れてはいけません。
+          translation:
+            vi: Không được lỡ nhịp với trào lưu thời đại.
+  - key: ja:item:n1-u10-kenchi
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 見地
+      reading: けんち
+      romanization: kenchi
+      pos: danh từ
+    back:
+      meaning:
+        vi: quan điểm, góc nhìn
+      examples:
+        - target: 専門家の見地から意見を述べます。
+          translation:
+            vi: Tôi nêu ý kiến từ góc nhìn chuyên gia.
+  - key: ja:item:n1-u10-jigen
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 次元
+      reading: じげん
+      romanization: jigen
+      pos: danh từ
+    back:
+      meaning:
+        vi: tầng bậc, chiều (kích thước, mức độ)
+      examples:
+        - target: それは次元の違う問題です。
+          translation:
+            vi: Đó là vấn đề ở một tầng bậc khác.
+  - key: ja:item:n1-u10-youin
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 要因
+      reading: よういん
+      romanization: youin
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhân tố, yếu tố chính
+      examples:
+        - target: 失敗の要因を分析します。
+          translation:
+            vi: Phân tích nhân tố dẫn đến thất bại.
+  - key: ja:item:n1-u10-keiki-n1
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 契機
+      reading: けいき
+      romanization: keiki
+      pos: danh từ
+    back:
+      meaning:
+        vi: cơ duyên, dịp khởi đầu (thay đổi)
+      examples:
+        - target: これを契機に、制度を見直します。
+          translation:
+            vi: Nhân dịp này, chúng tôi sẽ xem xét lại chế độ.
+  - key: ja:item:n1-u10-jittai
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 実態
+      reading: じったい
+      romanization: jittai
+      pos: danh từ
+    back:
+      meaning:
+        vi: thực trạng, thực tế
+      examples:
+        - target: 労働の実態を調査します。
+          translation:
+            vi: Điều tra thực trạng lao động.
+  - key: ja:item:n1-u10-honshitsu
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 本質
+      reading: ほんしつ
+      romanization: honshitsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: bản chất
+      examples:
+        - target: 問題の本質を見極める必要があります。
+          translation:
+            vi: Cần nhìn thấu bản chất của vấn đề.
+  - key: ja:item:n1-u10-mujun
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 矛盾
+      reading: むじゅん
+      romanization: mujun
+      pos: danh từ
+    back:
+      meaning:
+        vi: mâu thuẫn
+      examples:
+        - target: 彼の話は矛盾しています。
+          translation:
+            vi: Lời anh ấy nói mâu thuẫn.
+  - key: ja:item:n1-u10-kinkou
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 均衡
+      reading: きんこう
+      romanization: kinkou
+      pos: danh từ
+    back:
+      meaning:
+        vi: cân bằng
+      examples:
+        - target: 収入と支出の均衡を保ちます。
+          translation:
+            vi: Giữ cân bằng giữa thu và chi.
+  - key: ja:item:n1-u10-chitsujo
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 秩序
+      reading: ちつじょ
+      romanization: chitsujo
+      pos: danh từ
+    back:
+      meaning:
+        vi: trật tự
+      examples:
+        - target: 社会の秩序を守ります。
+          translation:
+            vi: Giữ gìn trật tự xã hội.
+  - key: ja:item:n1-u10-kutsugaesu
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 覆す
+      reading: くつがえす
+      romanization: kutsugaesu
+      pos: động từ
+    back:
+      meaning:
+        vi: lật ngược, đảo ngược (kết quả, quan niệm)
+      examples:
+        - target: この発見は、これまでの常識を覆しました。
+          translation:
+            vi: Phát hiện này đã lật ngược nhận thức thông thường trước nay.
+  - key: ja:item:n1-u10-habamu
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 阻む
+      reading: はばむ
+      romanization: habamu
+      pos: động từ
+    back:
+      meaning:
+        vi: cản trở, ngăn chặn
+      examples:
+        - target: 大雪が私たちの進路を阻みました。
+          translation:
+            vi: Tuyết dày đã cản đường tiến của chúng tôi.
+  - key: ja:item:n1-u10-katayoru
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 偏る
+      reading: かたよる
+      romanization: katayoru
+      pos: động từ
+    back:
+      meaning:
+        vi: thiên lệch, nghiêng về một phía
+      examples:
+        - target: 栄養が偏らないようにしましょう。
+          translation:
+            vi: Hãy cố gắng không ăn uống thiên lệch dinh dưỡng.
+  - key: ja:item:n1-u10-okotaru
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 怠る
+      reading: おこたる
+      romanization: okotaru
+      pos: động từ
+    back:
+      meaning:
+        vi: xao nhãng, lơ là
+      examples:
+        - target: 注意を怠ると、事故につながります。
+          translation:
+            vi: Lơ là sự chú ý sẽ dẫn đến tai nạn.
+  - key: ja:item:n1-u10-unagasu
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 促す
+      reading: うながす
+      romanization: unagasu
+      pos: động từ
+    back:
+      meaning:
+        vi: thúc giục, thúc đẩy
+      examples:
+        - target: 政府は国民に注意を促しました。
+          translation:
+            vi: Chính phủ đã kêu gọi người dân chú ý.
+  - key: ja:item:n1-u10-maneku
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 招く
+      reading: まねく
+      romanization: maneku
+      pos: động từ
+    back:
+      meaning:
+        vi: mời; dẫn đến (hậu quả)
+      examples:
+        - target: 誤解を招く表現は避けましょう。
+          translation:
+            vi: Hãy tránh cách diễn đạt gây hiểu lầm.
+  - key: ja:item:n1-u10-sokonau
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 損なう
+      reading: そこなう
+      romanization: sokonau
+      pos: động từ
+    back:
+      meaning:
+        vi: làm tổn hại, làm hỏng
+      examples:
+        - target: 健康を損なう恐れがあります。
+          translation:
+            vi: Có nguy cơ làm tổn hại sức khoẻ.
+  - key: ja:item:n1-u10-taeru
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 絶える
+      reading: たえる
+      romanization: taeru
+      pos: động từ
+    back:
+      meaning:
+        vi: tuyệt, đứt, chấm dứt
+      examples:
+        - target: 連絡が絶えて、十年になります。
+          translation:
+            vi: Mất liên lạc đã được mười năm.
+      confusion:
+        vi: 絶える (đứt, chấm dứt) khác 耐える (chịu đựng), 堪える (chịu nổi) cùng đọc たえる.
+  - key: ja:item:n1-u10-manugareru
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 免れる
+      reading: まぬがれる
+      romanization: manugareru
+      pos: động từ
+    back:
+      meaning:
+        vi: thoát khỏi, tránh được (tai hoạ)
+      examples:
+        - target: 幸い、大きな被害は免れました。
+          translation:
+            vi: May mắn là chúng tôi đã tránh được thiệt hại lớn.
+  - key: ja:item:n1-u10-obiyakasu
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 脅かす
+      reading: おびやかす
+      romanization: obiyakasu
+      pos: động từ
+    back:
+      meaning:
+        vi: đe doạ, uy hiếp
+      examples:
+        - target: 環境汚染は人類の生存を脅かしています。
+          translation:
+            vi: Ô nhiễm môi trường đang đe doạ sự sinh tồn của nhân loại.
+  - key: ja:item:n1-u10-shirizokeru
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 退ける
+      reading: しりぞける
+      romanization: shirizokeru
+      pos: động từ
+    back:
+      meaning:
+        vi: bác bỏ, đẩy lui
+      examples:
+        - target: 裁判所は彼の主張を退けました。
+          translation:
+            vi: Toà án đã bác bỏ chủ trương của ông ấy.
+  - key: ja:item:n1-u10-tazusawaru
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 携わる
+      reading: たずさわる
+      romanization: tazusawaru
+      pos: động từ
+    back:
+      meaning:
+        vi: tham gia, dính líu (công việc)
+      examples:
+        - target: 長年、教育に携わってきました。
+          translation:
+            vi: Tôi đã tham gia công tác giáo dục nhiều năm.
+  - key: ja:item:n1-u10-yudaneru
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 委ねる
+      reading: ゆだねる
+      romanization: yudaneru
+      pos: động từ
+    back:
+      meaning:
+        vi: giao phó, phó mặc
+      examples:
+        - target: 判断を専門家に委ねます。
+          translation:
+            vi: Tôi giao việc phán đoán cho chuyên gia.
+  - key: ja:item:n1-u10-tsuiyasu
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 費やす
+      reading: ついやす
+      romanization: tsuiyasu
+      pos: động từ
+    back:
+      meaning:
+        vi: tiêu tốn (thời gian, tiền)
+      examples:
+        - target: この研究に十年を費やしました。
+          translation:
+            vi: Tôi đã tiêu tốn mười năm cho nghiên cứu này.
+  - key: ja:item:n1-u10-hanahadashii
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 甚だしい
+      reading: はなはだしい
+      romanization: hanahadashii
+      pos: tính từ い
+    back:
+      meaning:
+        vi: quá mức, nghiêm trọng
+      examples:
+        - target: 彼の勘違いも甚だしい。
+          translation:
+            vi: Sự hiểu lầm của anh ta thật quá mức.
+  - key: ja:item:n1-u10-wazurawashii
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 煩わしい
+      reading: わずらわしい
+      romanization: wazurawashii
+      pos: tính từ い
+    back:
+      meaning:
+        vi: phiền hà, rắc rối
+      examples:
+        - target: 人間関係が煩わしくなりました。
+          translation:
+            vi: Quan hệ giữa người với người trở nên phiền phức.
+  - key: ja:item:n1-u10-magirawashii
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 紛らわしい
+      reading: まぎらわしい
+      romanization: magirawashii
+      pos: tính từ い
+    back:
+      meaning:
+        vi: dễ nhầm lẫn
+      examples:
+        - target: 紛らわしい表現は避けてください。
+          translation:
+            vi: Xin hãy tránh những cách diễn đạt dễ gây nhầm lẫn.
+  - key: ja:item:n1-u10-shinchou
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 慎重
+      reading: しんちょう
+      romanization: shinchou
+      pos: tính từ な
+    back:
+      meaning:
+        vi: thận trọng
+      examples:
+        - target: 慎重に検討する必要があります。
+          translation:
+            vi: Cần cân nhắc thận trọng.
+  - key: ja:item:n1-u10-kenmei
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 懸命
+      reading: けんめい
+      romanization: kenmei
+      pos: tính từ な
+    back:
+      meaning:
+        vi: hết sức, quên mình
+      examples:
+        - target: 彼女は懸命に働いています。
+          translation:
+            vi: Cô ấy làm việc hết sức mình.
+  - key: ja:item:n1-u10-gaishite
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 概して
+      reading: がいして
+      romanization: gaishite
+      pos: phó từ
+    back:
+      meaning:
+        vi: nói chung, nhìn chung
+      examples:
+        - target: 概して、今年の天気はよかったです。
+          translation:
+            vi: Nhìn chung, thời tiết năm nay tốt.
+  - key: ja:item:n1-u10-kiwamete
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 極めて
+      reading: きわめて
+      romanization: kiwamete
+      pos: phó từ
+    back:
+      meaning:
+        vi: vô cùng, cực kỳ (văn viết)
+      examples:
+        - target: それは極めて重要な問題です。
+          translation:
+            vi: Đó là vấn đề vô cùng quan trọng.
+  - key: ja:item:n1-u10-izen-n1
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 依然
+      reading: いぜん
+      romanization: izen
+      pos: phó từ
+    back:
+      meaning:
+        vi: vẫn, vẫn như cũ
+      examples:
+        - target: 依然として、状況は変わりません。
+          translation:
+            vi: Tình hình vẫn không thay đổi.
+  - key: ja:item:n1-u10-karoujite
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 辛うじて
+      reading: かろうじて
+      romanization: karoujite
+      pos: phó từ
+    back:
+      meaning:
+        vi: vất vả lắm mới, suýt soát
+      examples:
+        - target: 辛うじて終電に間に合いました。
+          translation:
+            vi: Tôi vừa kịp chuyến tàu cuối.
+  - key: ja:item:n1-u10-aete
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 敢えて
+      reading: あえて
+      romanization: aete
+      pos: phó từ
+    back:
+      meaning:
+        vi: cố ý, dám (làm điều khó)
+      examples:
+        - target: 敢えて反対意見を述べます。
+          translation:
+            vi: Tôi cố ý nêu ý kiến phản đối.
+  - key: ja:item:n1-u10-itatte
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 至って
+      reading: いたって
+      romanization: itatte
+      pos: phó từ
+    back:
+      meaning:
+        vi: cực kỳ, vô cùng (thường đi với phong thái bình thản)
+      examples:
+        - target: 彼は至って元気です。
+          translation:
+            vi: Anh ấy vẫn cực kỳ khoẻ mạnh.
+  - key: ja:item:n1-u10-kotogotoku
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: ことごとく
+      romanization: kotogotoku
+      pos: phó từ
+    back:
+      meaning:
+        vi: tất cả, toàn bộ (không ngoại lệ)
+      examples:
+        - target: 彼の計画はことごとく失敗しました。
+          translation:
+            vi: Kế hoạch của anh ấy thất bại hết thảy.

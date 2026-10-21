@@ -1,0 +1,380 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n1-u10-verbs
+order_index: 2
+level: n1
+title:
+  vi: Động từ văn viết - 覆す・阻む・偏る・怠る・促す・招く
+objectives:
+  - vi: "Dùng 14 động từ văn viết thường gặp ở N1: 覆す, 阻む, 偏る, 怠る, 促す, 招く, 損なう, 絶える, 免れる, 脅かす, 退ける, 携わる, 委ねる, 費やす."
+  - vi: Nhận ra tự động từ và tha động từ trong nhóm.
+  - vi: Dùng đúng collocation trong tin tức và bình luận.
+estimated_minutes: 22
+skills:
+  - vocabulary
+  - reading
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n1-u10-abstract
+items:
+  - item: ja:item:n1-u10-kutsugaesu
+  - item: ja:item:n1-u10-habamu
+  - item: ja:item:n1-u10-katayoru
+  - item: ja:item:n1-u10-okotaru
+  - item: ja:item:n1-u10-unagasu
+  - item: ja:item:n1-u10-maneku
+  - item: ja:item:n1-u10-sokonau
+  - item: ja:item:n1-u10-taeru
+  - item: ja:item:n1-u10-manugareru
+  - item: ja:item:n1-u10-obiyakasu
+  - item: ja:item:n1-u10-shirizokeru
+  - item: ja:item:n1-u10-tazusawaru
+  - item: ja:item:n1-u10-yudaneru
+  - item: ja:item:n1-u10-tsuiyasu
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu tin tức và bình luận có nhiều động từ văn viết - 注意を怠ると、事故につながります。誤解を招く表現は避けましょう。環境汚染は人類の生存を脅かしています。
+  - type: explain
+    text:
+      vi: "Nhóm động từ tác động: 覆す (lật ngược), 阻む (cản trở), 怠る (xao nhãng), 促す (thúc giục), 招く (mời, dẫn đến), 損なう (làm tổn hại), 脅かす (đe doạ), 退ける (bác bỏ), 委ねる (giao phó), 費やす (tiêu tốn). Nhóm trạng thái và chuyển đổi: 偏る (thiên lệch), 絶える (đứt), 免れる (tránh được), 携わる (tham gia)."
+  - type: explain
+    text:
+      vi: "Collocation chính: 常識を覆す, 進路を阻む, 栄養が偏る, 注意を怠る, 注意を促す, 誤解を招く, 健康を損なう, 連絡が絶える, 被害を免れる, 生存を脅かす, 主張を退ける, 教育に携わる, 判断を委ねる, 時間を費やす."
+  - type: explain
+    text:
+      vi: 'Nhận ra nhóm tự động từ / tha động từ: 偏る (tự), 絶える (tự), 免れる (tha nhưng nghĩa "thoát khỏi"), 携わる (tự), còn lại tha động từ. Chú ý trợ từ đi kèm: ～を阻む, ～に携わる, ～を免れる.'
+  - type: deep_explain
+    text:
+      vi: "絶える (たえる) đồng âm với 耐える (chịu đựng) và 堪える (chịu nổi) - nên nhớ theo collocation (連絡が絶える, 苦痛に耐える, 見るに堪えない). 招く vừa là mời (客を招く) vừa là gây ra hậu quả (誤解を招く, 混乱を招く). 費やす khác 使う: 費やす nhấn tiêu hao lớn (時間・お金・労力). 委ねる luôn có người nhận (A を B に委ねる)."
+  - type: example
+    target: この発見は、これまでの常識を覆しました。
+    target_lang: ja
+    translation:
+      vi: Phát hiện này đã lật ngược nhận thức thông thường trước nay.
+    note:
+      vi: 覆す.
+  - type: example
+    target: 注意を怠ると、事故につながります。
+    target_lang: ja
+    translation:
+      vi: Lơ là sự chú ý sẽ dẫn đến tai nạn.
+    note:
+      vi: 怠る.
+  - type: example
+    target: 誤解を招く表現は避けましょう。
+    target_lang: ja
+    translation:
+      vi: Hãy tránh cách diễn đạt gây hiểu lầm.
+    note:
+      vi: 招く.
+  - type: example
+    target: 環境汚染は人類の生存を脅かしています。
+    target_lang: ja
+    translation:
+      vi: Ô nhiễm môi trường đang đe doạ sự sinh tồn của nhân loại.
+    note:
+      vi: 脅かす.
+  - type: common_mistake
+    wrong: 連絡が耐えて、十年になります。
+    right: 連絡が絶えて、十年になります。
+    target_lang: ja
+    note:
+      vi: "Đồng âm たえる: 絶える (đứt) - dùng với 連絡; 耐える là chịu đựng."
+  - type: common_mistake
+    wrong: 判断を専門家を委ねます。
+    right: 判断を専門家に委ねます。
+    target_lang: ja
+    note:
+      vi: 委ねる có dạng A を B に委ねる.
+  - type: summary
+    points:
+      - vi: 覆す · 阻む · 怠る · 促す · 招く · 損なう · 脅かす · 退ける · 委ねる · 費やす.
+      - vi: 偏る · 絶える · 免れる · 携わる.
+      - vi: 誤解を招く · 注意を促す · 被害を免れる · 教育に携わる.
+      - vi: 絶える ≠ 耐える ≠ 堪える.
+exercises:
+  - key: ja:exercise:n1-u10-verbs-v1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-kutsugaesu
+    prompt:
+      stem: Từ nào có nghĩa là “lật ngược (quan niệm, kết quả)”?
+      stem_lang: vi
+      options:
+        - id: vu0
+          text: 偏る
+          lang: ja
+        - id: gmw
+          text: 阻む
+          lang: ja
+        - id: qiw
+          text: 覆す
+          lang: ja
+        - id: cgt
+          text: 怠る
+          lang: ja
+    answer:
+      correct_option_id: qiw
+    explanation:
+      vi: 覆す là lật ngược. 阻む là cản trở, 偏る là thiên lệch, 怠る là xao nhãng.
+    display_answer: 覆す
+  - key: ja:exercise:n1-u10-verbs-v2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-maneku
+    prompt:
+      stem: Bạn nói “gây hiểu lầm”. Cụm nào đúng?
+      stem_lang: vi
+      options:
+        - id: afu
+          text: 誤解を阻む
+          lang: ja
+        - id: r7m
+          text: 誤解を怠る
+          lang: ja
+        - id: etj
+          text: 誤解を招く
+          lang: ja
+        - id: mtu
+          text: 誤解を委ねる
+          lang: ja
+    answer:
+      correct_option_id: etj
+    explanation:
+      vi: 誤解を招く - gây hiểu lầm. 阻む, 怠る, 委ねる không đi với 誤解 theo nghĩa này.
+    display_answer: 誤解を招く
+  - key: ja:exercise:n1-u10-verbs-v3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u10-obiyakasu
+    prompt:
+      audio_asset_id: null
+      fallback_text: 環境汚染は人類の生存を脅かしています。
+      options:
+        - id: nh5
+          text: Ô nhiễm môi trường không ảnh hưởng đến nhân loại.
+          lang: vi
+        - id: vqx
+          text: Nhân loại đang đe doạ môi trường bằng ô nhiễm.
+          lang: vi
+        - id: hx5
+          text: Ô nhiễm môi trường đang bảo vệ sự sinh tồn của nhân loại.
+          lang: vi
+        - id: yqt
+          text: Ô nhiễm môi trường đang đe doạ sự sinh tồn của nhân loại.
+          lang: vi
+    answer:
+      correct_option_id: yqt
+    explanation:
+      vi: 脅かす - đe doạ; 人類の生存 - sự sinh tồn của nhân loại.
+    display_answer: Ô nhiễm môi trường đang đe doạ sự sinh tồn của nhân loại.
+  - key: ja:exercise:n1-u10-verbs-v4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-okotaru
+    prompt:
+      template: 注意を{{b1}}と、事故につながります。 (Lơ là sự chú ý sẽ dẫn đến tai nạn.)
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Động từ nghĩa "lơ là".
+        - Bắt đầu bằng 怠.
+    answer:
+      blanks:
+        b1:
+          - 怠る
+          - おこたる
+    known_wrong:
+      - answer: 促す
+        feedback_vi: 促す là thúc giục; "lơ là chú ý" là 怠る.
+        error_tag: collocation
+    explanation:
+      vi: 注意を怠る - lơ là, thiếu chú ý.
+    display_answer: 注意を怠ると、事故につながります。
+  - key: ja:exercise:n1-u10-verbs-v5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-manugareru
+    prompt:
+      stem: Bạn thoát khỏi thiệt hại lớn. Cụm nào đúng?
+      stem_lang: vi
+      options:
+        - id: qxj
+          text: 大きな被害を費やしました
+          lang: ja
+        - id: mfe
+          text: 大きな被害を偏りました
+          lang: ja
+        - id: f9v
+          text: 大きな被害を免れました
+          lang: ja
+        - id: nvy
+          text: 大きな被害を促しました
+          lang: ja
+    answer:
+      correct_option_id: f9v
+    explanation:
+      vi: 被害を免れる - tránh được thiệt hại. 促す, 偏る, 費やす không đi với 被害.
+    display_answer: 大きな被害を免れました
+  - key: ja:exercise:n1-u10-verbs-v6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-habamu
+    prompt:
+      template: 大雪が私たちの進路を{{b1}}。 (Tuyết dày đã cản đường tiến của chúng tôi.)
+      blanks:
+        - id: b1
+          width_hint: 6
+    answer:
+      blanks:
+        b1:
+          - 阻みました
+          - はばみました
+    known_wrong:
+      - answer: 覆しました
+        feedback_vi: 覆す là lật ngược; cản đường là 阻む.
+        error_tag: collocation
+    explanation:
+      vi: 進路を阻む - cản đường tiến.
+    display_answer: 大雪が私たちの進路を阻みました。
+  - key: ja:exercise:n1-u10-verbs-v7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-tazusawaru
+    prompt:
+      template: 長年、教育に{{b1}}きました。 (Tôi đã tham gia công tác giáo dục nhiều năm.)
+      blanks:
+        - id: b1
+          width_hint: 5
+    answer:
+      blanks:
+        b1:
+          - 携わって
+          - たずさわって
+    known_wrong:
+      - answer: 委ねて
+        feedback_vi: 委ねる cần tân ngữ + に; tham gia công việc dùng 携わる.
+        error_tag: collocation
+    explanation:
+      vi: ～に携わる - tham gia, dính líu đến.
+    display_answer: 長年、教育に携わってきました。
+  - key: ja:exercise:n1-u10-verbs-v8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-katayoru
+    prompt:
+      source_text: Hãy cố gắng không ăn uống thiên lệch dinh dưỡng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 栄養が偏らないようにしましょう。
+        - 栄養が偏らないようにしてください。
+        - えいようがかたよらないようにしましょう。
+        - 栄養が偏らないよう気をつけましょう。
+    known_wrong:
+      - answer: 栄養が偏るようにしましょう。
+        feedback_vi: Câu yêu cầu "không thiên lệch" nên cần ないように.
+        error_tag: negation
+    explanation:
+      vi: 栄養が偏る - dinh dưỡng thiên lệch; ないようにする - cố gắng không.
+    display_answer: 栄養が偏らないようにしましょう。
+  - key: ja:exercise:n1-u10-verbs-v9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u10-tsuiyasu
+    prompt:
+      source_text: この研究に十年を費やしました。しかし、注意を怠ったために、誤解を招いてしまいました。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi đã tiêu tốn mười năm cho nghiên cứu này. Nhưng vì lơ là sự chú ý nên đã gây ra hiểu lầm.
+        - Nghiên cứu này tốn của tôi mười năm. Vậy mà vì sơ suất nên lại gây hiểu lầm.
+        - Tôi dành mười năm cho nghiên cứu này. Tuy nhiên do lơ là chú ý nên đã dẫn đến hiểu lầm.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi đã tiêu tốn một năm cho nghiên cứu này. Vì chú ý nên không gây hiểu lầm.
+        feedback_vi: 十年 là mười năm; 怠った là lơ là.
+        error_tag: meaning
+    explanation:
+      vi: 費やす - tiêu tốn; 怠る - lơ là; 誤解を招く - gây hiểu lầm.
+    display_answer: Tôi đã tiêu tốn mười năm cho nghiên cứu này. Nhưng vì lơ là sự chú ý nên đã gây ra hiểu lầm.
+  - key: ja:exercise:n1-u10-verbs-v10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-yudaneru
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Tôi giao việc phán đoán cho chuyên gia."'
+      tokens:
+        - id: t3
+          text: 委ねます。
+        - id: t2
+          text: 専門家に
+        - id: t1
+          text: 判断を
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+        - - t2
+          - t1
+          - t3
+    explanation:
+      vi: A を B に委ねる - giao A cho B.
+    display_answer: 判断を専門家に委ねます。
+  - key: ja:exercise:n1-u10-verbs-v11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u10-shirizokeru
+    prompt:
+      stem: Toà án không chấp nhận yêu cầu của ông ấy. Từ nào?
+      stem_lang: vi
+      options:
+        - id: kgt
+          text: 促しました
+          lang: ja
+        - id: zc7
+          text: 損ないました
+          lang: ja
+        - id: q3l
+          text: 招きました
+          lang: ja
+        - id: x1v
+          text: 退けました
+          lang: ja
+    answer:
+      correct_option_id: x1v
+    explanation:
+      vi: 主張を退ける - bác bỏ chủ trương. 招く, 促す, 損なう không có nghĩa bác bỏ.
+    display_answer: 退けました
